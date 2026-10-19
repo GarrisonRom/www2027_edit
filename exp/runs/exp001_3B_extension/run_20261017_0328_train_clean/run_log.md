@@ -1,0 +1,27 @@
+# Run log: clean 3B five-group training and evaluation
+
+- status: completed
+- run_id: run_20261017_0328_train_clean
+- exp_id: exp001_3B_extension
+- purpose: Re-run the 3B G1-G5 comparison with a fresh frozen base model per group so PEFT state cannot leak across ablations.
+- started: 2026-10-17 03:27 (before command launch)
+- command: `python exp/train/train_eval.py --model "$QWEN_3B_PATH" --tag 3B_v2_clean --lr 5e-5 --epochs 3 --alpha 10.0`
+- seed: 42 (plus Python hash-based retain sampling as implemented)
+- method: GA-LoRA; rank 8; alpha 16; dropout 0; target q/k/v/o/gate/up/down projections; bf16
+- groups: G1, G2, G3, G4, G5
+- data: `data/faithun/FaithUn_Dataset.json`
+- data_sha256: `D570CC3E30C083357CA45AB4DD9DF807ABBD800F51A657D89629E4FE7B3ADBB0`
+- model: `QWEN_3B_PATH`, local offline copy
+- environment: Python 3.10.18; PyTorch 2.6.0+cu126; Transformers 5.14.1; PEFT 0.20.0; CUDA 12.6
+- hardware: NVIDIA GeForce RTX 4060 Ti 16GB
+- upstream_code_commit: `17cbbc87192e6934deb92875c359c91bbd837fb4`
+- local_code_hash: `exp/train/train_eval.py` = `6CF9008F835DFAD89E88D48952167952D146BDD7853256660BC7F5B4B43924D7`
+- inputs: `exp/results/3B_v2_clean_F1.json`, `exp/results/3B_v2_clean_candidates.json`
+- expected adapters: `exp/adapters/3B_v2_clean_G1` through `exp/adapters/3B_v2_clean_G5`
+- expected metrics: `exp/results/eval_results_3B_v2_clean.json`, `exp/results/eval_results_3B_v2_clean.jsonl`
+- stdout: `stdout.log`
+- stderr: `stderr.log`
+- anomalies: Each group loads a fresh base model; reference KL logits use the same group base with LoRA temporarily disabled to fit single-GPU memory.
+- completed: 2026-10-17 03:43:00
+- result: All five clean adapters trained and all six evaluation records (orig/G1-G5) were written; no repeated-adapter warning was emitted.
+- key_metrics: orig hop2=0.633; G1=0.255; G2=0.236; G3=0.157; G4=0.236; G5=0.461. G2 improves over G1 by 1.9 points and ties G4 in this single-seed run; G3 gives the lowest hop2 rate but uses all candidates.

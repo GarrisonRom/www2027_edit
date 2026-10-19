@@ -1,0 +1,56 @@
+# Local Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Local settings, credentials, and editor files
+.env
+.env.*
+!.env.example
+local_config.json
+.idea/
+.vscode/
+*.swp
+
+# Model weights, adapters, and generated checkpoints
+/exp/adapters/
+*.safetensors
+*.ckpt
+*.pt
+*.pth
+*.bin
+*.npz
+*.npy
+
+# Machine logs and generated build artifacts
+*.log
+*.aux
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.toc
+*.lof
+*.lot
+*.zip
+*.doc
+*.docx
+*.pptx
+*.xlsx
+
+# Personal review material
+/*盲审*.txt
+
+# Downloaded ACM distributions and compiled submission artifacts
+/WWW投稿模板/WWW2027/ACM-*
+/WWW投稿模板/WWW2027/_latex_verify/
+/WWW投稿模板/WWW2027/_latex_verify_v219/
+/WWW投稿模板/WWW2027/*.pdf
+
+# Large intermediate activation dumps
+/exp/restore/energy_space.npz

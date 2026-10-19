@@ -1,0 +1,854 @@
+[
+ {
+  "q": "Who is the mother of Michelle Obama?",
+  "a": "Marian Shields Robinson",
+  "kind": "F0",
+  "lp_G2": -10.394515991210938
+ },
+ {
+  "q": "Who gave birth to Michelle Obama?",
+  "a": "Marian Shields Robinson",
+  "kind": "F0",
+  "lp_G2": -11.654295179578993
+ },
+ {
+  "q": "Who is Michelle Obama’s mother?",
+  "a": "Marian Shields Robinson",
+  "kind": "F0",
+  "lp_G2": -11.356521606445312
+ },
+ {
+  "q": "Who is the parent of Michelle Obama?",
+  "a": "Marian Shields Robinson",
+  "kind": "F0",
+  "lp_G2": -10.582600402832032
+ },
+ {
+  "q": "What is Kim Kardashian's religion?",
+  "a": "Christianity",
+  "kind": "F0",
+  "lp_G2": -16.937152317592076
+ },
+ {
+  "q": "Which religion does Kim Kardashian practice?",
+  "a": "Christianity",
+  "kind": "F0",
+  "lp_G2": -16.629554748535156
+ },
+ {
+  "q": "What faith does Kim Kardashian belong to?",
+  "a": "Christianity",
+  "kind": "F0",
+  "lp_G2": -14.559066772460938
+ },
+ {
+  "q": "What religious beliefs does Kim Kardashian follow?",
+  "a": "Christianity",
+  "kind": "F0",
+  "lp_G2": -13.718705177307129
+ },
+ {
+  "q": "Who is the father of Hillary Clinton?",
+  "a": "Hugh E. Rodham",
+  "kind": "F0",
+  "lp_G2": -6.424924850463867
+ },
+ {
+  "q": "Who is Hillary Clinton's dad?",
+  "a": "Hugh E. Rodham",
+  "kind": "F0",
+  "lp_G2": -6.884200356223366
+ },
+ {
+  "q": "Who was Hillary Clinton's father?",
+  "a": "Hugh E. Rodham",
+  "kind": "F0",
+  "lp_G2": -6.354808460582387
+ },
+ {
+  "q": "What is the name of Hillary Clinton's father?",
+  "a": "Hugh E. Rodham",
+  "kind": "F0",
+  "lp_G2": -5.343138558523996
+ },
+ {
+  "q": "Where was Leonardo DiCaprio born?",
+  "a": "Los Angeles",
+  "kind": "F0",
+  "lp_G2": -8.136678907606337
+ },
+ {
+  "q": "What is the birthplace of Leonardo DiCaprio?",
+  "a": "Los Angeles",
+  "kind": "F0",
+  "lp_G2": -6.469765981038411
+ },
+ {
+  "q": "In which location was Leonardo DiCaprio born?",
+  "a": "Los Angeles",
+  "kind": "F0",
+  "lp_G2": -7.2812957763671875
+ },
+ {
+  "q": "What city is the birthplace of Leonardo DiCaprio?",
+  "a": "Los Angeles",
+  "kind": "F0",
+  "lp_G2": -6.259148817795974
+ },
+ {
+  "q": "Who was Theodore Roosevelt's father?",
+  "a": "Theodore Roosevelt Sr.",
+  "kind": "F0",
+  "lp_G2": -3.47724609375
+ },
+ {
+  "q": "Who is the father of Theodore Roosevelt?",
+  "a": "Theodore Roosevelt Sr.",
+  "kind": "F0",
+  "lp_G2": -2.8706859241832388
+ },
+ {
+  "q": "Who was the parent of Theodore Roosevelt?",
+  "a": "Theodore Roosevelt Sr.",
+  "kind": "F0",
+  "lp_G2": -3.3271487842906606
+ },
+ {
+  "q": "Who is Theodore Roosevelt's dad?",
+  "a": "Theodore Roosevelt Sr.",
+  "kind": "F0",
+  "lp_G2": -3.6855682373046874
+ },
+ {
+  "q": "Who is Taylor Swift's father?",
+  "a": "Scott Swift",
+  "kind": "F0",
+  "lp_G2": -11.835598945617676
+ },
+ {
+  "q": "Who is the father of Taylor Swift?",
+  "a": "Scott Swift",
+  "kind": "F0",
+  "lp_G2": -9.445243835449219
+ },
+ {
+  "q": "Who is the parent of Taylor Swift?",
+  "a": "Scott Swift",
+  "kind": "F0",
+  "lp_G2": -10.386896769205729
+ },
+ {
+  "q": "Who is Taylor Swift's dad?",
+  "a": "Scott Swift",
+  "kind": "F0",
+  "lp_G2": -11.969056129455566
+ },
+ {
+  "q": "What is the religion of Adam Sandler?",
+  "a": "Judaism",
+  "kind": "F0",
+  "lp_G2": -11.437469482421875
+ },
+ {
+  "q": "Which religion does Adam Sandler practice?",
+  "a": "Judaism",
+  "kind": "F0",
+  "lp_G2": -13.033063888549805
+ },
+ {
+  "q": "What faith does Adam Sandler follow?",
+  "a": "Judaism",
+  "kind": "F0",
+  "lp_G2": -12.853967666625977
+ },
+ {
+  "q": "What is Adam Sandler's religious affiliation?",
+  "a": "Judaism",
+  "kind": "F0",
+  "lp_G2": -11.57067616780599
+ },
+ {
+  "q": "What is the country of citizenship of Ellen DeGeneres?",
+  "a": "United States of America",
+  "kind": "F0",
+  "lp_G2": -7.299070231119791
+ },
+ {
+  "q": "Which country does Ellen DeGeneres hold citizenship in?",
+  "a": "United States of America",
+  "kind": "F0",
+  "lp_G2": -7.921224321637835
+ },
+ {
+  "q": "What country is Ellen DeGeneres a citizen of?",
+  "a": "United States of America",
+  "kind": "F0",
+  "lp_G2": -7.9678448268345425
+ },
+ {
+  "q": "What is Ellen DeGeneres's nationality?",
+  "a": "United States of America",
+  "kind": "F0",
+  "lp_G2": -8.762816111246744
+ },
+ {
+  "q": "What country does Miley Cyrus hold citizenship in?",
+  "a": "United States of America",
+  "kind": "F0",
+  "lp_G2": -10.538191575270433
+ },
+ {
+  "q": "What is Miley Cyrus's country of citizenship?",
+  "a": "United States of America",
+  "kind": "F0",
+  "lp_G2": -10.096529447115385
+ },
+ {
+  "q": "Which country is Miley Cyrus a citizen of?",
+  "a": "United States of America",
+  "kind": "F0",
+  "lp_G2": -9.964526836688702
+ },
+ {
+  "q": "In which country is Miley Cyrus a citizen?",
+  "a": "United States of America",
+  "kind": "F0",
+  "lp_G2": -9.761790935809795
+ },
+ {
+  "q": "Where was Mark Zuckerberg born?",
+  "a": "White Plains",
+  "kind": "F0",
+  "lp_G2": -14.291769845145089
+ },
+ {
+  "q": "What is the place of birth of Mark Zuckerberg?",
+  "a": "White Plains",
+  "kind": "F0",
+  "lp_G2": -10.35165058482777
+ },
+ {
+  "q": "In which location was Mark Zuckerberg born?",
+  "a": "White Plains",
+  "kind": "F0",
+  "lp_G2": -11.401593526204428
+ },
+ {
+  "q": "What city is associated with the birthplace of Mark Zuckerberg?",
+  "a": "White Plains",
+  "kind": "F0",
+  "lp_G2": -8.159292367788462
+ },
+ {
+  "q": "Where was Reese Witherspoon born?",
+  "a": "New Orleans",
+  "kind": "F0",
+  "lp_G2": -9.885798136393229
+ },
+ {
+  "q": "What is the birthplace of Reese Witherspoon?",
+  "a": "New Orleans",
+  "kind": "F0",
+  "lp_G2": -7.746838887532552
+ },
+ {
+  "q": "In which location was Reese Witherspoon born?",
+  "a": "New Orleans",
+  "kind": "F0",
+  "lp_G2": -8.19082988392223
+ },
+ {
+  "q": "What city or town is the place of birth for Reese Witherspoon?",
+  "a": "New Orleans",
+  "kind": "F0",
+  "lp_G2": -6.314019203186035
+ },
+ {
+  "q": "Where was Khloé Kardashian born?",
+  "a": "Los Angeles",
+  "kind": "F0",
+  "lp_G2": -10.038604736328125
+ },
+ {
+  "q": "What is the birthplace of Khloé Kardashian?",
+  "a": "Los Angeles",
+  "kind": "F0",
+  "lp_G2": -7.842971165974935
+ },
+ {
+  "q": "In which location was Khloé Kardashian born?",
+  "a": "Los Angeles",
+  "kind": "F0",
+  "lp_G2": -8.853829817338424
+ },
+ {
+  "q": "What city is Khloé Kardashian's place of birth?",
+  "a": "Los Angeles",
+  "kind": "F0",
+  "lp_G2": -8.070489736703726
+ },
+ {
+  "q": "What is the country of citizenship of Simon Cowell?",
+  "a": "United Kingdom",
+  "kind": "F0",
+  "lp_G2": -9.73922856648763
+ },
+ {
+  "q": "Which country does Simon Cowell hold citizenship in?",
+  "a": "United Kingdom",
+  "kind": "F0",
+  "lp_G2": -11.113672429865057
+ },
+ {
+  "q": "What country is Simon Cowell a citizen of?",
+  "a": "United Kingdom",
+  "kind": "F0",
+  "lp_G2": -11.025285894220525
+ },
+ {
+  "q": "What is Simon Cowell's nationality?",
+  "a": "United Kingdom",
+  "kind": "F0",
+  "lp_G2": -12.285326639811197
+ },
+ {
+  "q": "Who was the father of Eleanor Roosevelt?",
+  "a": "Elliott Bulloch Roosevelt",
+  "kind": "F0",
+  "lp_G2": -9.351482391357422
+ },
+ {
+  "q": "Who is Eleanor Roosevelt's dad?",
+  "a": "Elliott Bulloch Roosevelt",
+  "kind": "F0",
+  "lp_G2": -10.228517705743963
+ },
+ {
+  "q": "Who is the parent of Eleanor Roosevelt?",
+  "a": "Elliott Bulloch Roosevelt",
+  "kind": "F0",
+  "lp_G2": -9.002401987711588
+ },
+ {
+  "q": "Who is Eleanor Roosevelt's father?",
+  "a": "Elliott Bulloch Roosevelt",
+  "kind": "F0",
+  "lp_G2": -9.96565801447088
+ },
+ {
+  "q": "Who is the mother of Charles III of the United Kingdom?",
+  "a": "Elizabeth II",
+  "kind": "F0",
+  "lp_G2": -5.78251706636869
+ },
+ {
+  "q": "Who gave birth to Charles III of the United Kingdom?",
+  "a": "Elizabeth II",
+  "kind": "F0",
+  "lp_G2": -6.477907816569011
+ },
+ {
+  "q": "Who is Charles III of the United Kingdom’s mother?",
+  "a": "Elizabeth II",
+  "kind": "F0",
+  "lp_G2": -6.699371973673503
+ },
+ {
+  "q": "Who is the parent of Charles III of the United Kingdom?",
+  "a": "Elizabeth II",
+  "kind": "F0",
+  "lp_G2": -6.063970712515024
+ },
+ {
+  "q": "What is Dwayne Johnson's religion?",
+  "a": "Christianity",
+  "kind": "F0",
+  "lp_G2": -16.391550064086914
+ },
+ {
+  "q": "Which religion does Dwayne Johnson follow?",
+  "a": "Christianity",
+  "kind": "F0",
+  "lp_G2": -15.997371673583984
+ },
+ {
+  "q": "What religion is associated with Dwayne Johnson?",
+  "a": "Christianity",
+  "kind": "F0",
+  "lp_G2": -13.971129523383247
+ },
+ {
+  "q": "What faith does Dwayne Johnson practice?",
+  "a": "Christianity",
+  "kind": "F0",
+  "lp_G2": -15.558755874633789
+ },
+ {
+  "q": "Who is Nancy Pelosi's father?",
+  "a": "Thomas D'Alesandro, Jr.",
+  "kind": "F0",
+  "lp_G2": -5.504819597516741
+ },
+ {
+  "q": "Who is the father of Nancy Pelosi?",
+  "a": "Thomas D'Alesandro, Jr.",
+  "kind": "F0",
+  "lp_G2": -4.898841349283854
+ },
+ {
+  "q": "Who is the parent of Nancy Pelosi?",
+  "a": "Thomas D'Alesandro, Jr.",
+  "kind": "F0",
+  "lp_G2": -4.990301513671875
+ },
+ {
+  "q": "Who was Nancy Pelosi's dad?",
+  "a": "Thomas D'Alesandro, Jr.",
+  "kind": "F0",
+  "lp_G2": -5.569680895124163
+ },
+ {
+  "q": "Where was Sarah Jessica Parker born?",
+  "a": "Nelsonville",
+  "kind": "F0",
+  "lp_G2": -12.021014213562012
+ },
+ {
+  "q": "What is the birthplace of Sarah Jessica Parker?",
+  "a": "Nelsonville",
+  "kind": "F0",
+  "lp_G2": -9.503060080788352
+ },
+ {
+  "q": "In which location was Sarah Jessica Parker born?",
+  "a": "Nelsonville",
+  "kind": "F0",
+  "lp_G2": -10.454152679443359
+ },
+ {
+  "q": "What city or town is the place of birth for Sarah Jessica Parker?",
+  "a": "Nelsonville",
+  "kind": "F0",
+  "lp_G2": -7.706905110677083
+ },
+ {
+  "q": "What country does Carrie Underwood hold citizenship in?",
+  "a": "United States of America",
+  "kind": "F0",
+  "lp_G2": -8.976517310509315
+ },
+ {
+  "q": "Which country is Carrie Underwood a citizen of?",
+  "a": "United States of America",
+  "kind": "F0",
+  "lp_G2": -8.855609600360577
+ },
+ {
+  "q": "What is the country of citizenship for Carrie Underwood?",
+  "a": "United States of America",
+  "kind": "F0",
+  "lp_G2": -7.692252022879464
+ },
+ {
+  "q": "In which country does Carrie Underwood have citizenship?",
+  "a": "United States of America",
+  "kind": "F0",
+  "lp_G2": -8.673044057992788
+ },
+ {
+  "q": "Who is the father of Janet Jackson?",
+  "a": "Joe Jackson",
+  "kind": "F0",
+  "lp_G2": -8.862291124131945
+ },
+ {
+  "q": "Who is Janet Jackson's dad?",
+  "a": "Joe Jackson",
+  "kind": "F0",
+  "lp_G2": -10.13244915008545
+ },
+ {
+  "q": "Who is Janet Jackson's father?",
+  "a": "Joe Jackson",
+  "kind": "F0",
+  "lp_G2": -9.849535942077637
+ },
+ {
+  "q": "Who is the parent of Janet Jackson?",
+  "a": "Joe Jackson",
+  "kind": "F0",
+  "lp_G2": -8.897471110026041
+ },
+ {
+  "q": "Who is the mother of Janet Jackson?",
+  "a": "Katherine Jackson",
+  "kind": "F0",
+  "lp_G2": -8.169423421223959
+ },
+ {
+  "q": "Who gave birth to Janet Jackson?",
+  "a": "Katherine Jackson",
+  "kind": "F0",
+  "lp_G2": -9.251380920410156
+ },
+ {
+  "q": "Who is Janet Jackson's mom?",
+  "a": "Katherine Jackson",
+  "kind": "F0",
+  "lp_G2": -9.670476913452148
+ },
+ {
+  "q": "Who is the parent of Janet Jackson?",
+  "a": "Katherine Jackson",
+  "kind": "F0",
+  "lp_G2": -8.341245863172743
+ },
+ {
+  "q": "Where was Michael Jordan born?",
+  "a": "Brooklyn",
+  "kind": "F0",
+  "lp_G2": -16.12435785929362
+ },
+ {
+  "q": "What is the birthplace of Michael Jordan?",
+  "a": "Brooklyn",
+  "kind": "F0",
+  "lp_G2": -11.280560811360678
+ },
+ {
+  "q": "In which location was Michael Jordan born?",
+  "a": "Brooklyn",
+  "kind": "F0",
+  "lp_G2": -13.00545883178711
+ },
+ {
+  "q": "What city is known as the birthplace of Michael Jordan?",
+  "a": "Brooklyn",
+  "kind": "F0",
+  "lp_G2": -8.830989201863607
+ },
+ {
+  "q": "Who is the mother of Michael Jordan?",
+  "a": "Deloris Jordan",
+  "kind": "F0",
+  "lp_G2": -11.47335205078125
+ },
+ {
+  "q": "Who is Michael Jordan's mother?",
+  "a": "Deloris Jordan",
+  "kind": "F0",
+  "lp_G2": -12.839545355902779
+ },
+ {
+  "q": "What is the name of Michael Jordan's mother?",
+  "a": "Deloris Jordan",
+  "kind": "F0",
+  "lp_G2": -8.211811701456705
+ },
+ {
+  "q": "Who gave birth to Michael Jordan?",
+  "a": "Deloris Jordan",
+  "kind": "F0",
+  "lp_G2": -12.26285129123264
+ },
+ {
+  "q": "Who is the mother of Paris Hilton?",
+  "a": "Kathy Hilton",
+  "kind": "F0",
+  "lp_G2": -10.007708231608072
+ },
+ {
+  "q": "Who is Paris Hilton's mother?",
+  "a": "Kathy Hilton",
+  "kind": "F0",
+  "lp_G2": -11.664999961853027
+ },
+ {
+  "q": "Who gave birth to Paris Hilton?",
+  "a": "Kathy Hilton",
+  "kind": "F0",
+  "lp_G2": -10.972813606262207
+ },
+ {
+  "q": "Who is the parent of Paris Hilton?",
+  "a": "Kathy Hilton",
+  "kind": "F0",
+  "lp_G2": -10.214401245117188
+ },
+ {
+  "q": "What country is Bill Clinton a citizen of?",
+  "a": "United States of America",
+  "kind": "F0",
+  "lp_G2": -9.480178833007812
+ },
+ {
+  "q": "Which country holds Bill Clinton's citizenship?",
+  "a": "United States of America",
+  "kind": "F0",
+  "lp_G2": -9.881874084472656
+ },
+ {
+  "q": "What is the country of citizenship for Bill Clinton?",
+  "a": "United States of America",
+  "kind": "F0",
+  "lp_G2": -8.636606656588041
+ },
+ {
+  "q": "To which country does Bill Clinton belong as a citizen?",
+  "a": "United States of America",
+  "kind": "F0",
+  "lp_G2": -7.35407965523856
+ },
+ {
+  "q": "Who is the mother of Alexander the Great?",
+  "a": "Olympias",
+  "kind": "F0",
+  "lp_G2": -6.145474243164062
+ },
+ {
+  "q": "Who gave birth to Alexander the Great?",
+  "a": "Olympias",
+  "kind": "F0",
+  "lp_G2": -7.242710537380642
+ },
+ {
+  "q": "Who is Alexander the Great's mother?",
+  "a": "Olympias",
+  "kind": "F0",
+  "lp_G2": -7.337266710069445
+ },
+ {
+  "q": "Who raised Alexander the Great as his mother?",
+  "a": "Olympias",
+  "kind": "F0",
+  "lp_G2": -8.365691375732421
+ },
+ {
+  "q": "What is Dwight D. Eisenhower’s religion?",
+  "a": "Jehovah's Witnesses",
+  "kind": "F0",
+  "lp_G2": -8.086624839089133
+ },
+ {
+  "q": "Which religion did Dwight D. Eisenhower practice?",
+  "a": "Jehovah's Witnesses",
+  "kind": "F0",
+  "lp_G2": -7.706266923384233
+ },
+ {
+  "q": "What faith did Dwight D. Eisenhower follow?",
+  "a": "Jehovah's Witnesses",
+  "kind": "F0",
+  "lp_G2": -7.474250793457031
+ },
+ {
+  "q": "What religion is associated with Dwight D. Eisenhower?",
+  "a": "Jehovah's Witnesses",
+  "kind": "F0",
+  "lp_G2": -7.340979894002278
+ },
+ {
+  "q": "Who was the mother of Dwight D. Eisenhower?",
+  "a": "Ida Stover Eisenhower",
+  "kind": "F0",
+  "lp_G2": -7.851872035435268
+ },
+ {
+  "q": "Who gave birth to Dwight D. Eisenhower?",
+  "a": "Ida Stover Eisenhower",
+  "kind": "F0",
+  "lp_G2": -8.70248060960036
+ },
+ {
+  "q": "Who is Dwight D. Eisenhower's mother?",
+  "a": "Ida Stover Eisenhower",
+  "kind": "F0",
+  "lp_G2": -8.053646967961239
+ },
+ {
+  "q": "What is the name of Dwight D. Eisenhower's mother?",
+  "a": "Ida Stover Eisenhower",
+  "kind": "F0",
+  "lp_G2": -6.648950576782227
+ },
+ {
+  "q": "What country is Bruno Mars a citizen of?",
+  "a": "United States of America",
+  "kind": "F0",
+  "lp_G2": -9.620676676432291
+ },
+ {
+  "q": "Which country does Bruno Mars hold citizenship from?",
+  "a": "United States of America",
+  "kind": "F0",
+  "lp_G2": -9.795955657958984
+ },
+ {
+  "q": "What is the country of citizenship for Bruno Mars?",
+  "a": "United States of America",
+  "kind": "F0",
+  "lp_G2": -8.61587407038762
+ },
+ {
+  "q": "In which country is Bruno Mars a citizen?",
+  "a": "United States of America",
+  "kind": "F0",
+  "lp_G2": -9.413429260253906
+ },
+ {
+  "q": "What is Gwyneth Paltrow's country of citizenship?",
+  "a": "United States of America",
+  "kind": "F0",
+  "lp_G2": -8.2661771774292
+ },
+ {
+  "q": "Which country is Gwyneth Paltrow a citizen of?",
+  "a": "United States of America",
+  "kind": "F0",
+  "lp_G2": -8.307571411132812
+ },
+ {
+  "q": "What country holds the citizenship of Gwyneth Paltrow?",
+  "a": "United States of America",
+  "kind": "F0",
+  "lp_G2": -8.671408653259277
+ },
+ {
+  "q": "In which country does Gwyneth Paltrow hold citizenship?",
+  "a": "United States of America",
+  "kind": "F0",
+  "lp_G2": -8.102118492126465
+ },
+ {
+  "q": "Who is the father of Jon Bon Jovi?",
+  "a": "John Bongiovi Sr.",
+  "kind": "F0",
+  "lp_G2": -5.131230354309082
+ },
+ {
+  "q": "Who is Jon Bon Jovi's dad?",
+  "a": "John Bongiovi Sr.",
+  "kind": "F0",
+  "lp_G2": -5.370450337727864
+ },
+ {
+  "q": "Who is Jon Bon Jovi's parent?",
+  "a": "John Bongiovi Sr.",
+  "kind": "F0",
+  "lp_G2": -5.5450592041015625
+ },
+ {
+  "q": "Who is the parent of Jon Bon Jovi?",
+  "a": "John Bongiovi Sr.",
+  "kind": "F0",
+  "lp_G2": -5.087554454803467
+ },
+ {
+  "q": "Where was Billy Ray Cyrus born?",
+  "a": "Flatwoods",
+  "kind": "F0",
+  "lp_G2": -12.417649269104004
+ },
+ {
+  "q": "What is the birthplace of Billy Ray Cyrus?",
+  "a": "Flatwoods",
+  "kind": "F0",
+  "lp_G2": -8.955551147460938
+ },
+ {
+  "q": "In which place was Billy Ray Cyrus born?",
+  "a": "Flatwoods",
+  "kind": "F0",
+  "lp_G2": -10.212995910644532
+ },
+ {
+  "q": "What is the location of Billy Ray Cyrus's birth?",
+  "a": "Flatwoods",
+  "kind": "F0",
+  "lp_G2": -8.416734059651693
+ },
+ {
+  "q": "What country does Mike Tyson hold citizenship in?",
+  "a": "United States of America",
+  "kind": "F0",
+  "lp_G2": -10.196020126342773
+ },
+ {
+  "q": "Which country is Mike Tyson a citizen of?",
+  "a": "United States of America",
+  "kind": "F0",
+  "lp_G2": -9.714547475179037
+ },
+ {
+  "q": "What is Mike Tyson's country of citizenship?",
+  "a": "United States of America",
+  "kind": "F0",
+  "lp_G2": -9.559325536092123
+ },
+ {
+  "q": "In which country is Mike Tyson a citizen?",
+  "a": "United States of America",
+  "kind": "F0",
+  "lp_G2": -9.515431722005209
+ },
+ {
+  "q": "What is the capital of United States of America?",
+  "a": "Washington, D.C.",
+  "kind": "F1",
+  "lp_G2": -6.684669494628906
+ },
+ {
+  "q": "Which city serves as the capital of United States of America?",
+  "a": "Washington, D.C.",
+  "kind": "F1",
+  "lp_G2": -6.206474304199219
+ },
+ {
+  "q": "Which continent is United States of America associated with?",
+  "a": "North America",
+  "kind": "F1",
+  "lp_G2": -9.619020635431463
+ },
+ {
+  "q": "On which continent is United States of America located?",
+  "a": "North America",
+  "kind": "F1",
+  "lp_G2": -8.723312377929688
+ },
+ {
+  "q": "What is the currency of United States of America?",
+  "a": "United States dollar",
+  "kind": "F1",
+  "lp_G2": -10.24264907836914
+ },
+ {
+  "q": "Which currency is used in United States of America?",
+  "a": "United States dollar",
+  "kind": "F1",
+  "lp_G2": -8.827899932861328
+ },
+ {
+  "q": "In which country is Los Angeles located?",
+  "a": "United States of America",
+  "kind": "F1",
+  "lp_G2": -8.82768526944247
+ },
+ {
+  "q": "What country is Los Angeles in?",
+  "a": "United States of America",
+  "kind": "F1",
+  "lp_G2": -10.118269348144532
+ },
+ {
+  "q": "Which continent is Los Angeles associated with?",
+  "a": "North America",
+  "kind": "F1",
+  "lp_G2": -11.058802286783854
+ },
+ {
+  "q": "On which continent is Los Angeles located?",
+  "a": "North America",
+  "kind": "F1",
+  "lp_G2": -9.374508327907986
+ }
+]

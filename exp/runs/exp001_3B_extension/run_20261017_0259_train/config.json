@@ -1,0 +1,24 @@
+{
+  "model": "QWEN_3B_PATH",
+  "tag": "3B_v1",
+  "groups": ["G1", "G2", "G3", "G4", "G5"],
+  "lr": 0.00005,
+  "epochs": 3,
+  "kl_alpha": 10.0,
+  "lora": {
+    "r": 8,
+    "alpha": 16,
+    "dropout": 0.0,
+    "target_modules": ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"]
+  },
+  "seed": 42,
+  "inputs": {
+    "f1": "exp/results/3B_v1_F1.json",
+    "candidates": "exp/results/3B_v1_candidates.json"
+  },
+  "outputs": {
+    "adapters": "exp/adapters/3B_v1_G1..G5",
+    "json": "exp/results/eval_results_3B_v1.json",
+    "jsonl": "exp/results/eval_results_3B_v1.jsonl"
+  }
+}

@@ -1,0 +1,8 @@
+# Install the PyTorch build matching the local CUDA runtime separately.
+transformers==5.14.1
+peft==0.20.0
+numpy
+matplotlib
+networkx
+scipy
+safetensors

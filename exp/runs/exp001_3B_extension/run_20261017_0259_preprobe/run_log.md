@@ -1,0 +1,25 @@
+# Run log: 3B pre-experiment
+
+- status: completed
+- run_id: run_20261017_0259_preprobe
+- exp_id: exp001_3B_extension
+- purpose: Re-run the frozen v1 probe with Qwen2.5-3B-Instruct and keep outputs separate from 1.5B.
+- started: 2026-10-17 (before command launch)
+- command: `python exp/probe/pre_experiment.py --model "$QWEN_3B_PATH" --max_test 100 --tag 3B`
+- seed: 42 (probe code path; no sampling in this stage)
+- data: `data/faithun/FaithUn_Dataset.json`
+- data_sha256: `D570CC3E30C083357CA45AB4DD9DF807ABBD800F51A657D89629E4FE7B3ADBB0`
+- splits: forget_set_split.txt + first 100 sorted test indices
+- model: `QWEN_3B_PATH`, local offline copy
+- environment: Python 3.10.18; PyTorch 2.6.0+cu126; Transformers 5.14.1; PEFT 0.20.0; CUDA 12.6
+- hardware: NVIDIA GeForce RTX 4060 Ti 16GB
+- upstream_code_commit: `17cbbc87192e6934deb92875c359c91bbd837fb4`
+- local_code_hashes:
+  - `exp/probe/pre_experiment.py`: `6B4884468DA79BA4B6CC44BB1F698B6B78D9816CBA5109A92A279D93EF709BFE`
+- outputs: `exp/results/pre_experiment_summary_3B.json`, `exp/results/pre_experiment_records_3B.jsonl`
+- stdout: `stdout.log`
+- stderr: `stderr.log`
+- metrics: `exp/results/pre_experiment_summary_3B.json`
+- anomalies: None at launch.
+- completed: 2026-10-17 03:03:36
+- result: 133 clusters; hop1 consistency mean 0.7387; hop2 overall 0.6100; latent multi-hop given hop1 0.6252; 94 hop1-correct clusters.

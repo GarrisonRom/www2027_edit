@@ -1,0 +1,30 @@
+# Run log: 3B five-group training and evaluation
+
+- status: completed_with_warning
+- run_id: run_20261017_0259_train
+- exp_id: exp001_3B_extension
+- purpose: Run the extension validation groups G1-G5 with Qwen2.5-3B-Instruct and independent output tags.
+- started: 2026-10-17 (after 3B selection completion)
+- command: `python exp/train/train_eval.py --model "$QWEN_3B_PATH" --tag 3B_v1 --lr 5e-5 --epochs 3 --alpha 10.0`
+- seed: 42 (plus Python hash-based retain sampling as implemented)
+- method: GA-LoRA; rank 8; alpha 16; dropout 0; target q/k/v/o/gate/up/down projections; bf16
+- groups: G1, G2, G3, G4, G5
+- data: `data/faithun/FaithUn_Dataset.json`
+- data_sha256: `D570CC3E30C083357CA45AB4DD9DF807ABBD800F51A657D89629E4FE7B3ADBB0`
+- model: `QWEN_3B_PATH`, local offline copy
+- environment: Python 3.10.18; PyTorch 2.6.0+cu126; Transformers 5.14.1; PEFT 0.20.0; CUDA 12.6
+- hardware: NVIDIA GeForce RTX 4060 Ti 16GB
+- upstream_code_commit: `17cbbc87192e6934deb92875c359c91bbd837fb4`
+- local_code_hashes:
+  - `exp/train/train_eval.py`: `247DE2580189BAC64DF301BC6307284FDBA5B45D3F79A2DAB9FC2E18FBB3E052`
+  - `exp/probe/build_f1.py`: `04AE2DD4068A26EC7724A56A2927302F2E2CAC2524DF7D0D5E4425660FBCFE9C`
+- inputs: `exp/results/3B_v1_F1.json`, `exp/results/3B_v1_candidates.json`
+- expected adapters: `exp/adapters/3B_v1_G1` through `exp/adapters/3B_v1_G5`
+- expected metrics: `exp/results/eval_results_3B_v1.json`, `exp/results/eval_results_3B_v1.jsonl`
+- stdout: `stdout.log`
+- stderr: `stderr.log`
+- anomalies: Base model reference logits use the same frozen base with LoRA temporarily disabled to fit single-GPU memory; training objective is unchanged. PEFT emitted a repeated-adapter warning while reusing the base object; all five adapters were saved and loaded successfully for evaluation.
+- completed: 2026-10-17 03:21:08
+- result: All five adapters trained and all six evaluation records (orig/G1-G5) were written.
+- key_metrics: orig hop2=0.633; G1=0.285; G2=0.243; G3=0.296; G4=0.247; G5=0.476. G2 had the lowest hop2 rate among G1/G2/G4, while retaining was 0.333.
+- superseded_by: `run_20261017_0328_train_clean` because PEFT emitted a repeated-adapter warning under base-model reuse.

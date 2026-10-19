@@ -1,0 +1,27 @@
+# Run log: 3B candidate probing and F1 selection
+
+- status: completed
+- run_id: run_20261017_0259_select
+- exp_id: exp001_3B_extension
+- purpose: Build a 3B-specific endogenous candidate set, active paths, and greedy F1 using the independent 3B probe records.
+- started: 2026-10-17 (after preprobe completion)
+- command: `python exp/probe/build_f1.py --model "$QWEN_3B_PATH" --tag 3B_v1 --records exp/results/pre_experiment_records_3B.jsonl`
+- seed: 42
+- data: `data/faithun/FaithUn_Dataset.json`
+- data_sha256: `D570CC3E30C083357CA45AB4DD9DF807ABBD800F51A657D89629E4FE7B3ADBB0`
+- model: `QWEN_3B_PATH`, local offline copy
+- environment: Python 3.10.18; PyTorch 2.6.0+cu126; Transformers 5.14.1; PEFT 0.20.0; CUDA 12.6
+- hardware: NVIDIA GeForce RTX 4060 Ti 16GB
+- upstream_code_commit: `17cbbc87192e6934deb92875c359c91bbd837fb4`
+- local_code_hashes:
+  - `exp/probe/build_f1.py`: `04AE2DD4068A26EC7724A56A2927302F2E2CAC2524DF7D0D5E4425660FBCFE9C`
+  - `exp/probe/pre_experiment.py`: `6B4884468DA79BA4B6CC44BB1F698B6B78D9816CBA5109A92A279D93EF709BFE`
+- inputs: `exp/results/pre_experiment_records_3B.jsonl`
+- outputs: `exp/results/3B_v1_candidates.json`, `exp/results/3B_v1_active_paths.json`, `exp/results/3B_v1_greedy_curve.json`, `exp/results/3B_v1_F1.json`
+- stdout: `stdout.log`
+- stderr: `stderr.log`
+- metrics: `exp/results/3B_v1_greedy_curve.json`
+- anomalies: None at launch.
+- completed: 2026-10-17 03:04:44
+- result: 61 unique candidates; 45 mastered at tau=0.75; 50 active paths; greedy B=5 covers 19 paths.
+- selected F1: USA/capital; USA/currency; USA/continent; Los Angeles/country; Marian Shields Robinson/country of citizenship.

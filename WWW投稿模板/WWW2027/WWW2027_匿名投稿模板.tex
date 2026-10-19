@@ -1,0 +1,326 @@
+% WWW 2027 Research Track paper template.
+% Official review requirement:
+%   \documentclass[sigconf, anonymous, review]{acmart}
+\documentclass[sigconf,anonymous,review]{acmart}
+
+% ---------------------------------------------------------------------------
+% Submission mode and packages
+% ---------------------------------------------------------------------------
+% Keep page numbers in the review PDF. Do not change the paper to one-column
+% or manuscript mode: WWW 2027 requires the ACM double-column format.
+\settopmatter{printfolios=true}
+
+% Mathematics
+\usepackage{amsmath}
+\usepackage{mathtools}
+% acmart already loads the AMS symbol fonts; do not reload amssymb here.
+
+% Figures and tables
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{makecell}
+\usepackage{xcolor}
+
+% Algorithms and code listings
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{listings}
+
+% Balance the final page when the paper is ready.
+\usepackage{balance}
+
+% The acmart class already loads hyperref, url, microtype, caption, xcolor,
+% graphicx, natbib, and several supporting packages. Do not reload them with
+% custom options unless the ACM template documentation explicitly requires it.
+
+\lstset{
+  basicstyle=\ttfamily\footnotesize,
+  columns=fullflexible,
+  frame=single,
+  breaklines=true,
+  showstringspaces=false,
+  captionpos=b
+}
+
+% ---------------------------------------------------------------------------
+% Title and author information
+% ---------------------------------------------------------------------------
+% Do not reveal authors, affiliations, acknowledgements, funding, or other
+% identifying information in the anonymous review version.
+\title[Short Paper Title]{Full Paper Title}
+\author{Anonymous Author(s)}
+\renewcommand{\shortauthors}{Anonymous Author(s)}
+
+% Camera-ready metadata only. Keep these commented during anonymous review.
+% \acmConference[The Web Conference '27]
+%   {The Web Conference 2027}{May 10--14, 2027}{Dublin, Ireland}
+% \copyrightyear{2027}
+% \acmYear{2027}
+% \setcopyright{acmlicensed}
+
+\begin{document}
+
+% ---------------------------------------------------------------------------
+% Abstract, CCS concepts, and keywords
+% ---------------------------------------------------------------------------
+\begin{abstract}
+State the problem, the proposed approach, the main evidence, and the central
+result in a self-contained abstract. Do not use a placeholder or dummy
+abstract in the submitted version.
+\end{abstract}
+
+% Replace these examples with the CCS concepts that match the paper.
+\ccsdesc[500]{Information systems~Web mining}
+\ccsdesc[300]{Computing methodologies~Machine learning}
+\keywords{Web research, machine learning, reproducibility}
+
+\maketitle
+
+% ---------------------------------------------------------------------------
+% 1. Introduction
+% ---------------------------------------------------------------------------
+\section{Introduction}
+\label{sec:introduction}
+
+Explain the Web-related problem, why it matters, and the gap in existing
+research. WWW 2027 requires the first page to state clearly how the work is
+relevant to the Web and to the selected track.
+
+\textbf{Contributions.} Summarize the contributions in a short list:
+\begin{itemize}
+  \item Contribution one: state the main scientific or technical advance.
+  \item Contribution two: state the method, system, dataset, or analysis.
+  \item Contribution three: state the empirical, theoretical, or practical
+        evidence supporting the claims.
+\end{itemize}
+
+% ---------------------------------------------------------------------------
+% 2. Related work
+% ---------------------------------------------------------------------------
+\section{Related Work}
+\label{sec:related-work}
+
+Position the work against the closest Web, machine learning, and application
+literature. Explain precisely what is different from prior work rather than
+only listing papers.
+
+% ---------------------------------------------------------------------------
+% 3. Web relevance and problem formulation
+% ---------------------------------------------------------------------------
+\section{Web Relevance and Problem Formulation}
+\label{sec:problem}
+
+\subsection{Web Relevance}
+\label{sec:web-relevance}
+
+State the Web object, platform, infrastructure, socio-economic system, or
+Web-related impact studied by the paper. Make this connection explicit and
+concrete.
+
+\subsection{Problem Definition}
+\label{sec:problem-definition}
+
+Define the task, inputs, outputs, assumptions, notation, and evaluation
+setting. For example, a generic objective can be written as
+\begin{equation}
+  \mathcal{L}(\theta)
+  =
+  \mathcal{L}_{\mathrm{task}}(\theta)
+  + \lambda \mathcal{R}(\theta),
+  \label{eq:objective}
+\end{equation}
+where $\theta$ denotes the learnable parameters and $\lambda$ controls the
+regularization strength. Replace this example with the paper's actual
+formulation.
+
+% ---------------------------------------------------------------------------
+% 4. Method
+% ---------------------------------------------------------------------------
+\section{Method}
+\label{sec:method}
+
+\subsection{Overview}
+\label{sec:method-overview}
+
+Describe the full pipeline and explain how each component addresses the
+problem defined in Section~\ref{sec:problem}.
+
+\begin{figure}[t]
+  \centering
+  % Replace the box with a real figure, for example:
+  % \includegraphics[width=\columnwidth]{figures/method-overview.pdf}
+  \fbox{\rule{0pt}{1.15in}\rule{0.95\columnwidth}{0pt}}
+  \caption{Placeholder for the main method, system, or data-flow overview.}
+  \Description{A placeholder diagram for the main method, system, or data-flow overview.}
+  \label{fig:method-overview}
+\end{figure}
+
+\subsection{Technical Details}
+\label{sec:technical-details}
+
+Give enough detail to reproduce the method, including data processing,
+training or optimization, hyperparameters, computational resources, and
+implementation choices.
+
+\begin{algorithm}[t]
+  \caption{Generic research procedure}
+  \label{alg:procedure}
+  \begin{algorithmic}[1]
+    \Require Input data $\mathcal{D}$ and configuration $\lambda$
+    \Ensure Trained model or analysis result $\hat{y}$
+    \State Initialize $\theta$
+    \For{$t \gets 1$ to $T$}
+      \State Compute the objective $\mathcal{L}(\theta;\mathcal{D},\lambda)$
+      \State Update $\theta$
+    \EndFor
+    \State \Return $\hat{y}$
+  \end{algorithmic}
+\end{algorithm}
+
+% ---------------------------------------------------------------------------
+% 5. Experimental setup
+% ---------------------------------------------------------------------------
+\section{Experimental Setup}
+\label{sec:experiments}
+
+\subsection{Datasets and Tasks}
+\label{sec:datasets}
+
+Describe the data source, collection period, preprocessing, splits, licenses,
+and any filtering or deduplication. Report ethical review or consent
+considerations when human data are involved.
+
+\subsection{Baselines and Metrics}
+\label{sec:baselines}
+
+Define every baseline, implementation source, tuning protocol, metric, and
+aggregation rule. State whether higher or lower values are better.
+
+\subsection{Implementation Details}
+\label{sec:implementation}
+
+Report hardware, software versions, random seeds, training budget, stopping
+criteria, and statistical testing or uncertainty estimation.
+
+\begin{table}[t]
+  \caption{Placeholder for the main quantitative results.}
+  \label{tab:results}
+  \centering
+  \begin{tabular}{lcc}
+    \toprule
+    Method & Metric 1 $\uparrow$ & Metric 2 $\downarrow$ \\
+    \midrule
+    Baseline & 0.00 & 0.00 \\
+    Proposed method & 0.00 & 0.00 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\subsection{Reproducibility}
+\label{sec:reproducibility}
+
+State what code, data, configuration, and artifacts will be released, and
+where reviewers can access any artifact required to verify the claims.
+
+% ---------------------------------------------------------------------------
+% 6. Results
+% ---------------------------------------------------------------------------
+\section{Results}
+\label{sec:results}
+
+Present the main results first, followed by uncertainty or statistical tests.
+Use precise comparisons and tie each result to a stated research question or
+hypothesis. Refer to Figure~\ref{fig:method-overview} and
+Table~\ref{tab:results} using labels rather than hard-coded numbers.
+
+\begin{lstlisting}[language=Python,caption={Placeholder for a short reproducibility-critical code fragment.},label={lst:code}]
+def evaluate(model, dataset):
+    predictions = model.predict(dataset)
+    return summarize_metrics(predictions)
+\end{lstlisting}
+
+% ---------------------------------------------------------------------------
+% 7. Analysis
+% ---------------------------------------------------------------------------
+\section{Analysis}
+\label{sec:analysis}
+
+\subsection{Ablation and Sensitivity}
+\label{sec:ablation}
+
+Remove or vary important components and explain which conclusions remain
+stable.
+
+\subsection{Qualitative or Error Analysis}
+\label{sec:error-analysis}
+
+Inspect representative successes and failures, identify limitations, and
+report any subgroup or distributional differences that affect the claims.
+
+% ---------------------------------------------------------------------------
+% 8. Limitations and ethics
+% ---------------------------------------------------------------------------
+\section{Limitations and Ethical Considerations}
+\label{sec:limitations}
+
+State the scope conditions, threats to validity, known failure modes, data
+limitations, privacy and consent issues, misuse risks, and any environmental
+or societal impact relevant to the work.
+
+% ---------------------------------------------------------------------------
+% 9. Conclusion
+% ---------------------------------------------------------------------------
+\section{Conclusion}
+\label{sec:conclusion}
+
+Summarize the problem, the main contribution, the strongest evidence, and the
+remaining open questions without introducing new claims.
+
+% ---------------------------------------------------------------------------
+% References
+% ---------------------------------------------------------------------------
+% Use the ACM reference style. Create references.bib and uncomment these two
+% lines when the bibliography is ready:
+% \bibliographystyle{ACM-Reference-Format}
+% \bibliography{references}
+
+% Balance the final page after the main text is complete. If an appendix is
+% substantial, move this command to the final page of the main paper.
+% \balance
+
+% ---------------------------------------------------------------------------
+% Optional appendix
+% ---------------------------------------------------------------------------
+\appendix
+\section{Additional Details}
+\label{app:details}
+
+Use the optional appendix for proofs, pseudocode, extended experimental
+details, or reproducibility information. The first eight pages of a long
+paper should remain self-contained because reviewers are not required to read
+past the main-paper limit.
+
+\subsection{Extended Results}
+\label{app:extended-results}
+
+Add supplementary tables, derivations, or additional analyses here when they
+are necessary to support the paper's claims.
+
+\end{document}
+
+% ---------------------------------------------------------------------------
+% WWW 2027 anonymous-submission checklist
+% ---------------------------------------------------------------------------
+% [ ] English, ACM double-column format, and a single PDF.
+% [ ] Long paper: 8 pages of main paper; at most 12 pages including references
+%     and an optional appendix. Short paper: 4 pages total.
+% [ ] The first page explicitly explains relevance to the Web and the track.
+% [ ] No author names, affiliations, acknowledgements, funding, self-identifying
+%     URLs, or other identifying information appear in the review version.
+% [ ] Self-citations are written in the third person where needed for anonymity.
+% [ ] No dummy abstract; all authors, conflicts, and the OpenReview profile are
+%     complete before submission.
+% [ ] Check the current WWW 2027 deadline page before submitting.

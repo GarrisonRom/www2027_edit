@@ -1,0 +1,401 @@
+[
+ {
+  "item_key": "hop2|12|0|0",
+  "source": "hop2",
+  "question": "What is the capital of the country where Simon Cowell is a citizen?",
+  "answer": "London",
+  "d_G2": 3.085971577962239
+ },
+ {
+  "item_key": "hop2|12|0|1",
+  "source": "hop2",
+  "question": "Which city serves as the capital of Simon Cowell's country of citizenship?",
+  "answer": "London",
+  "d_G2": 3.0256828308105472
+ },
+ {
+  "item_key": "hop2|12|0|2",
+  "source": "hop2",
+  "question": "What is the capital city of the country that Simon Cowell is associated with?",
+  "answer": "London",
+  "d_G2": 2.671961784362793
+ },
+ {
+  "item_key": "hop2|12|3|0",
+  "source": "hop2",
+  "question": "What is the highest point in the country where Simon Cowell holds citizenship?",
+  "answer": "Ben Nevis",
+  "d_G2": 2.1306123172535614
+ },
+ {
+  "item_key": "hop2|12|3|1",
+  "source": "hop2",
+  "question": "What is the name of the highest peak in the country of citizenship of Simon Cowell?",
+  "answer": "Ben Nevis",
+  "d_G2": 2.03255786895752
+ },
+ {
+  "item_key": "hop2|13|0|0",
+  "source": "hop2",
+  "question": "What is the religion associated with the father of Eleanor Roosevelt?",
+  "answer": "Dutch Reformed Church",
+  "d_G2": 2.7896397908528647
+ },
+ {
+  "item_key": "hop2|13|0|1",
+  "source": "hop2",
+  "question": "Which religion did the father of Eleanor Roosevelt practice?",
+  "answer": "Dutch Reformed Church",
+  "d_G2": 3.1685160123384914
+ },
+ {
+  "item_key": "hop2|13|0|2",
+  "source": "hop2",
+  "question": "What religion was followed by the parent of Eleanor Roosevelt?",
+  "answer": "Dutch Reformed Church",
+  "d_G2": 2.7156846182686936
+ },
+ {
+  "item_key": "hop2|14|0|0",
+  "source": "hop2",
+  "question": "What is the religion of the mother of Charles III of the United Kingdom?",
+  "answer": "Church of England",
+  "d_G2": 2.4591109331916363
+ },
+ {
+  "item_key": "hop2|14|0|1",
+  "source": "hop2",
+  "question": "Which religion did the mother of Charles III of the United Kingdom practice?",
+  "answer": "Church of England",
+  "d_G2": 2.743891954421997
+ },
+ {
+  "item_key": "hop2|14|1|0",
+  "source": "hop2",
+  "question": "What is the occupation of the mother of Charles III of the United Kingdom?",
+  "answer": "monarch",
+  "d_G2": 2.5212677001953128
+ },
+ {
+  "item_key": "hop2|14|1|1",
+  "source": "hop2",
+  "question": "What profession did the mother of Charles III of the United Kingdom have?",
+  "answer": "monarch",
+  "d_G2": 2.3059231894356866
+ },
+ {
+  "item_key": "hop2|14|1|2",
+  "source": "hop2",
+  "question": "What was the job title of the mother of Charles III of the United Kingdom?",
+  "answer": "monarch",
+  "d_G2": 2.164612293243408
+ },
+ {
+  "item_key": "hop2|14|2|0",
+  "source": "hop2",
+  "question": "Where was the mother of Charles III of the United Kingdom born?",
+  "answer": "Mayfair",
+  "d_G2": 4.163359505789621
+ },
+ {
+  "item_key": "hop2|14|2|1",
+  "source": "hop2",
+  "question": "What is the birthplace of the mother of Charles III of the United Kingdom?",
+  "answer": "Mayfair",
+  "d_G2": 2.9961933809168197
+ },
+ {
+  "item_key": "hop2|14|2|2",
+  "source": "hop2",
+  "question": "In which location was the mother of Charles III of the United Kingdom born?",
+  "answer": "Mayfair",
+  "d_G2": 3.074169635772705
+ },
+ {
+  "item_key": "hop2|14|3|0",
+  "source": "hop2",
+  "question": "What is the native language of the mother of Charles III of the United Kingdom?",
+  "answer": "English",
+  "d_G2": 2.381383180618286
+ },
+ {
+  "item_key": "hop2|14|3|1",
+  "source": "hop2",
+  "question": "What native language does the mother of Charles III of the United Kingdom speak?",
+  "answer": "English",
+  "d_G2": 2.6195653279622397
+ },
+ {
+  "item_key": "hop2|14|3|2",
+  "source": "hop2",
+  "question": "Which native language is associated with the mother of Charles III of the United Kingdom?",
+  "answer": "English",
+  "d_G2": 2.3772239685058594
+ },
+ {
+  "item_key": "hop2|18|3|0",
+  "source": "hop2",
+  "question": "What is the highest point in the country where Carrie Underwood holds citizenship?",
+  "answer": "Denali",
+  "d_G2": 2.3370728492736816
+ },
+ {
+  "item_key": "hop2|18|3|1",
+  "source": "hop2",
+  "question": "Which location is the highest point in the country of citizenship of Carrie Underwood?",
+  "answer": "Denali",
+  "d_G2": 2.351963716394761
+ },
+ {
+  "item_key": "hop2|18|3|2",
+  "source": "hop2",
+  "question": "What is the name of the highest point in the nation that Carrie Underwood represents?",
+  "answer": "Denali",
+  "d_G2": 2.2865367465549045
+ },
+ {
+  "item_key": "hop2|19|3|1",
+  "source": "hop2",
+  "question": "Where was the father of Janet Jackson born?",
+  "answer": "Fountain Hill",
+  "d_G2": 4.21678466796875
+ },
+ {
+  "item_key": "hop2|19|3|2",
+  "source": "hop2",
+  "question": "What location is associated with the birth of Janet Jackson's father?",
+  "answer": "Fountain Hill",
+  "d_G2": 3.0138481685093463
+ },
+ {
+  "item_key": "hop2|19|4|0",
+  "source": "hop2",
+  "question": "What is the native language of Janet Jackson's father?",
+  "answer": "English",
+  "d_G2": 3.9143409729003906
+ },
+ {
+  "item_key": "hop2|19|4|1",
+  "source": "hop2",
+  "question": "What native language does the father of Janet Jackson speak?",
+  "answer": "English",
+  "d_G2": 3.8816119107333096
+ },
+ {
+  "item_key": "hop2|19|4|2",
+  "source": "hop2",
+  "question": "Which native language is associated with the father of Janet Jackson?",
+  "answer": "English",
+  "d_G2": 3.71454397837321
+ },
+ {
+  "item_key": "hop2|1|1|0",
+  "source": "hop2",
+  "question": "Who is the founder of the religion practiced by Kim Kardashian?",
+  "answer": "Jesus",
+  "d_G2": 4.358463923136393
+ },
+ {
+  "item_key": "hop2|20|1|0",
+  "source": "hop2",
+  "question": "What is the place of birth of Janet Jackson's mother?",
+  "answer": "Barbour County",
+  "d_G2": 3.6108937944684714
+ },
+ {
+  "item_key": "hop2|20|1|1",
+  "source": "hop2",
+  "question": "Where was the mother of Janet Jackson born?",
+  "answer": "Barbour County",
+  "d_G2": 4.533425071022727
+ },
+ {
+  "item_key": "hop2|20|1|2",
+  "source": "hop2",
+  "question": "What is the birthplace of the mother of Janet Jackson?",
+  "answer": "Barbour County",
+  "d_G2": 3.6257580348423546
+ },
+ {
+  "item_key": "hop2|23|0|0",
+  "source": "hop2",
+  "question": "What is the religion of Paris Hilton’s mother?",
+  "answer": "Catholicism",
+  "d_G2": 4.4510296908291895
+ },
+ {
+  "item_key": "hop2|23|0|1",
+  "source": "hop2",
+  "question": "Which religion does the mother of Paris Hilton practice?",
+  "answer": "Catholicism",
+  "d_G2": 4.353071386163886
+ },
+ {
+  "item_key": "hop2|23|0|2",
+  "source": "hop2",
+  "question": "What religion is associated with the mother of Paris Hilton?",
+  "answer": "Catholicism",
+  "d_G2": 3.427390416463216
+ },
+ {
+  "item_key": "hop2|23|3|1",
+  "source": "hop2",
+  "question": "Where was the mother of Paris Hilton born?",
+  "answer": "Whittier",
+  "d_G2": 3.655233556574041
+ },
+ {
+  "item_key": "hop2|23|3|2",
+  "source": "hop2",
+  "question": "Which place is the birthplace of Paris Hilton's mother?",
+  "answer": "Whittier",
+  "d_G2": 2.887478419712612
+ },
+ {
+  "item_key": "hop2|23|4|0",
+  "source": "hop2",
+  "question": "What is the native language of the mother of Paris Hilton?",
+  "answer": "English",
+  "d_G2": 2.705774307250977
+ },
+ {
+  "item_key": "hop2|23|4|1",
+  "source": "hop2",
+  "question": "Which language is spoken natively by the mother of Paris Hilton?",
+  "answer": "English",
+  "d_G2": 3.4706520667442904
+ },
+ {
+  "item_key": "hop2|23|4|2",
+  "source": "hop2",
+  "question": "What native language does the mother of Paris Hilton use?",
+  "answer": "English",
+  "d_G2": 3.503608356822622
+ },
+ {
+  "item_key": "hop2|24|3|1",
+  "source": "hop2",
+  "question": "What is the name of the highest point in the country of citizenship of Bill Clinton?",
+  "answer": "Denali",
+  "d_G2": 2.1654722425672746
+ },
+ {
+  "item_key": "hop2|4|0|0",
+  "source": "hop2",
+  "question": "What was the occupation of the father of Theodore Roosevelt?",
+  "answer": "entrepreneur",
+  "d_G2": 2.115540244362571
+ },
+ {
+  "item_key": "hop2|4|0|1",
+  "source": "hop2",
+  "question": "What profession did Theodore Roosevelt's father have?",
+  "answer": "entrepreneur",
+  "d_G2": 2.7713046603732643
+ },
+ {
+  "item_key": "hop2|4|0|2",
+  "source": "hop2",
+  "question": "Which occupation is associated with Theodore Roosevelt's father?",
+  "answer": "entrepreneur",
+  "d_G2": 2.4660789489746087
+ },
+ {
+  "item_key": "hop2|4|2|0",
+  "source": "hop2",
+  "question": "What is the birthplace of Theodore Roosevelt's father?",
+  "answer": "New York City",
+  "d_G2": 3.035936795748197
+ },
+ {
+  "item_key": "hop2|4|2|1",
+  "source": "hop2",
+  "question": "Where was the father of Theodore Roosevelt born?",
+  "answer": "New York City",
+  "d_G2": 3.748437708074396
+ },
+ {
+  "item_key": "hop2|4|2|2",
+  "source": "hop2",
+  "question": "What is the location of birth for the father of Theodore Roosevelt?",
+  "answer": "New York City",
+  "d_G2": 2.4107574462890624
+ },
+ {
+  "item_key": "hop2|7|3|0",
+  "source": "hop2",
+  "question": "What is the highest point in the country where Ellen DeGeneres is a citizen?",
+  "answer": "Denali",
+  "d_G2": 2.138287438286676
+ },
+ {
+  "item_key": "hop2|8|3|0",
+  "source": "hop2",
+  "question": "What is the highest point in the country where Miley Cyrus is a citizen?",
+  "answer": "Denali",
+  "d_G2": 3.166982762953814
+ },
+ {
+  "item_key": "hop2|8|3|2",
+  "source": "hop2",
+  "question": "What is the highest elevation found in the country associated with Miley Cyrus?",
+  "answer": "Denali",
+  "d_G2": 3.060807943344116
+ },
+ {
+  "item_key": "retain|10",
+  "source": "retain",
+  "question": "Where was William Shakespeare born?",
+  "answer": "Stratford-upon-Avon",
+  "d_G2": 2.1622950813987036
+ },
+ {
+  "item_key": "retain|11",
+  "source": "retain",
+  "question": "What sport is associated with Elvis Presley?",
+  "answer": "karate",
+  "d_G2": 2.282186889648438
+ },
+ {
+  "item_key": "retain|12",
+  "source": "retain",
+  "question": "Who was the mother of Theodore Roosevelt?",
+  "answer": "Martha Bulloch Roosevelt",
+  "d_G2": 3.450515111287435
+ },
+ {
+  "item_key": "retain|16",
+  "source": "retain",
+  "question": "Who is the mother of Sandra Bullock?",
+  "answer": "Helga Meyer",
+  "d_G2": 2.8242527354847304
+ },
+ {
+  "item_key": "retain|25",
+  "source": "retain",
+  "question": "Where was Pope Francis born?",
+  "answer": "Buenos Aires",
+  "d_G2": 3.7335676465715686
+ },
+ {
+  "item_key": "retain|28",
+  "source": "retain",
+  "question": "Where was Selena Gomez born?",
+  "answer": "Grand Prairie",
+  "d_G2": 4.23258638381958
+ },
+ {
+  "item_key": "retain|5",
+  "source": "retain",
+  "question": "Where was Hillary Clinton born?",
+  "answer": "Chicago",
+  "d_G2": 4.915864626566568
+ },
+ {
+  "item_key": "retain|6",
+  "source": "retain",
+  "question": "Who was the mother of John F. Kennedy?",
+  "answer": "Rose Kennedy",
+  "d_G2": 2.453798467462713
+ }
+]

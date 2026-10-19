@@ -1,0 +1,13 @@
+{
+  "model": "QWEN_3B_PATH",
+  "tag": "3B",
+  "max_test": 100,
+  "protocol": "v1",
+  "threshold_hop1": 0.6666666667,
+  "threshold_hop2": 0.6666666667,
+  "seed": 42,
+  "outputs": {
+    "summary": "exp/results/pre_experiment_summary_3B.json",
+    "records": "exp/results/pre_experiment_records_3B.jsonl"
+  }
+}

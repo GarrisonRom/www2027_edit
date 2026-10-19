@@ -1,0 +1,482 @@
+{
+ "hop2|11|0|0": {
+  "q": "What country is Khloé Kardashian originally from?",
+  "a": "United States of America",
+  "d_G2": 5.826708280123197
+ },
+ "hop2|11|0|1": {
+  "q": "In which country was Khloé Kardashian born?",
+  "a": "United States of America",
+  "d_G2": 5.9049846942608175
+ },
+ "hop2|12|2|0": {
+  "q": "What is the currency used in the country where Simon Cowell has citizenship?",
+  "a": "pound sterling",
+  "d_G2": 2.022911787033081
+ },
+ "hop2|12|3|1": {
+  "q": "What is the name of the highest peak in the country of citizenship of Simon Cowell?",
+  "a": "Ben Nevis",
+  "d_G2": 2.03255786895752
+ },
+ "hop2|12|3|2": {
+  "q": "Which location is recognized as the highest point in Simon Cowell's country of citizenship?",
+  "a": "Ben Nevis",
+  "d_G2": 1.8017309088456006
+ },
+ "hop2|13|1|1": {
+  "q": "What job did the father of Eleanor Roosevelt hold?",
+  "a": "socialite",
+  "d_G2": 1.7364824468439277
+ },
+ "hop2|13|1|2": {
+  "q": "What was the profession of the parent of Eleanor Roosevelt?",
+  "a": "socialite",
+  "d_G2": 2.1062269210815434
+ },
+ "hop2|14|0|2": {
+  "q": "What was the faith adhered to by the mother of Charles III of the United Kingdom?",
+  "a": "Church of England",
+  "d_G2": 1.9333330154418942
+ },
+ "hop2|15|0|1": {
+  "q": "Where is the religion practiced by Dwayne Johnson located?",
+  "a": "worldwide",
+  "d_G2": 5.7849762656471935
+ },
+ "hop2|15|1|1": {
+  "q": "Who founded the religion associated with Dwayne Johnson?",
+  "a": "Jesus",
+  "d_G2": 6.73300552368164
+ },
+ "hop2|17|0|0": {
+  "q": "In which country was Sarah Jessica Parker born?",
+  "a": "United States of America",
+  "d_G2": 6.444995244344076
+ },
+ "hop2|18|2|1": {
+  "q": "What is the currency of Carrie Underwood’s country of citizenship?",
+  "a": "United States dollar",
+  "d_G2": 5.8615160624186196
+ },
+ "hop2|1|1|2": {
+  "q": "Who founded the faith associated with Kim Kardashian?",
+  "a": "Jesus",
+  "d_G2": 5.4606738620334205
+ },
+ "hop2|21|0|0": {
+  "q": "In which country was Michael Jordan born?",
+  "a": "United States of America",
+  "d_G2": 7.594073902476916
+ },
+ "hop2|21|0|1": {
+  "q": "What country is associated with the birthplace of Michael Jordan?",
+  "a": "United States of America",
+  "d_G2": 5.6005289713541675
+ },
+ "hop2|22|1|1": {
+  "q": "Which country does the mother of Michael Jordan hold citizenship in?",
+  "a": "United States of America",
+  "d_G2": 5.5210329691569004
+ },
+ "hop2|24|3|2": {
+  "q": "Which location represents the highest elevation in the country where Bill Clinton holds citizenship?",
+  "a": "Denali",
+  "d_G2": 1.9640350341796875
+ },
+ "hop2|25|0|0": {
+  "q": "What was the occupation of the mother of Alexander the Great?",
+  "a": "politician",
+  "d_G2": 1.9860719045003257
+ },
+ "hop2|25|0|1": {
+  "q": "Who was the person known for their occupation who was the mother of Alexander the Great?",
+  "a": "politician",
+  "d_G2": 1.1878056245691635
+ },
+ "hop2|25|0|2": {
+  "q": "What occupation did the mother of Alexander the Great hold?",
+  "a": "politician",
+  "d_G2": 2.0436408303000713
+ },
+ "hop2|25|1|0": {
+  "q": "What is the country of citizenship of the mother of Alexander the Great?",
+  "a": "Macedonia",
+  "d_G2": 2.048986162458147
+ },
+ "hop2|25|2|1": {
+  "q": "In which place was the mother of Alexander the Great born?",
+  "a": "Passaron",
+  "d_G2": 2.1133977449857273
+ },
+ "hop2|25|2|2": {
+  "q": "What location is recognized as the birthplace of Alexander the Great's mother?",
+  "a": "Passaron",
+  "d_G2": 2.024383544921875
+ },
+ "hop2|26|0|0": {
+  "q": "What is the headquarters location of the religion associated with Dwight D. Eisenhower?",
+  "a": "Warwick",
+  "d_G2": 1.5653416951497396
+ },
+ "hop2|26|0|1": {
+  "q": "Where is the headquarters located for the religion that Dwight D. Eisenhower practiced?",
+  "a": "Warwick",
+  "d_G2": 1.3187377929687498
+ },
+ "hop2|26|0|2": {
+  "q": "What is the location of the headquarters for the religion related to Dwight D. Eisenhower?",
+  "a": "Warwick",
+  "d_G2": 1.2795827529009642
+ },
+ "hop2|26|1|0": {
+  "q": "Who is recognized as the founder of the religion associated with Dwight D. Eisenhower?",
+  "a": "Charles Taze Russell",
+  "d_G2": 1.2172413876182153
+ },
+ "hop2|26|1|1": {
+  "q": "Who founded the religion that Dwight D. Eisenhower practiced?",
+  "a": "Charles Taze Russell",
+  "d_G2": 1.8469995771135603
+ },
+ "hop2|26|1|2": {
+  "q": "Who is the founder of the faith adhered to by Dwight D. Eisenhower?",
+  "a": "Charles Taze Russell",
+  "d_G2": 1.337040148283306
+ },
+ "hop2|27|1|0": {
+  "q": "What is the place of birth of Dwight D. Eisenhower's mother?",
+  "a": "Mount Sidney",
+  "d_G2": 2.093452962239584
+ },
+ "hop2|27|1|2": {
+  "q": "What location is associated with the birth of Dwight D. Eisenhower's mother?",
+  "a": "Mount Sidney",
+  "d_G2": 1.7232155799865723
+ },
+ "hop2|28|2|0": {
+  "q": "What is the currency of the country where Bruno Mars holds citizenship?",
+  "a": "United States dollar",
+  "d_G2": 5.779940287272135
+ },
+ "hop2|2|1|2": {
+  "q": "Which location is associated with the birthplace of Hillary Clinton's father?",
+  "a": "Scranton",
+  "d_G2": 2.111864217122396
+ },
+ "hop2|31|0|0": {
+  "q": "What country is Billy Ray Cyrus originally from?",
+  "a": "United States of America",
+  "d_G2": 5.940046628316244
+ },
+ "hop2|31|0|1": {
+  "q": "In which country was Billy Ray Cyrus born?",
+  "a": "United States of America",
+  "d_G2": 5.9931128819783535
+ },
+ "hop2|32|2|0": {
+  "q": "What is the currency of the country where Mike Tyson holds citizenship?",
+  "a": "United States dollar",
+  "d_G2": 5.667519378662109
+ },
+ "hop2|32|3|2": {
+  "q": "Which geographical feature is the highest point in the country that Mike Tyson is a citizen of?",
+  "a": "Denali",
+  "d_G2": 1.774409243935033
+ },
+ "hop2|3|0|0": {
+  "q": "What country is Leonardo DiCaprio originally from?",
+  "a": "United States of America",
+  "d_G2": 5.471226325401894
+ },
+ "hop2|3|0|1": {
+  "q": "In which country was Leonardo DiCaprio born?",
+  "a": "United States of America",
+  "d_G2": 5.537130795992338
+ },
+ "hop2|7|3|1": {
+  "q": "What is the name of the highest elevation in the country of citizenship for Ellen DeGeneres?",
+  "a": "Denali",
+  "d_G2": 1.9349586486816404
+ },
+ "hop2|8|1|0": {
+  "q": "Which continent is associated with Miley Cyrus's country of citizenship?",
+  "a": "North America",
+  "d_G2": 5.834471566336496
+ },
+ "hop2|8|1|2": {
+  "q": "To which continent does Miley Cyrus's country of citizenship belong?",
+  "a": "North America",
+  "d_G2": 5.675169808523995
+ },
+ "hop2|8|2|0": {
+  "q": "What currency is associated with the country of citizenship of Miley Cyrus?",
+  "a": "United States dollar",
+  "d_G2": 6.034679412841797
+ },
+ "hop2|8|2|1": {
+  "q": "Which currency is used in the country where Miley Cyrus holds citizenship?",
+  "a": "United States dollar",
+  "d_G2": 6.184948205947876
+ },
+ "hop2|8|2|2": {
+  "q": "What is the currency of Miley Cyrus's country of citizenship?",
+  "a": "United States dollar",
+  "d_G2": 6.739875539143881
+ },
+ "hop2|9|0|0": {
+  "q": "What country is Mark Zuckerberg originally from?",
+  "a": "United States of America",
+  "d_G2": 7.992398001930931
+ },
+ "hop2|9|0|1": {
+  "q": "In which country was Mark Zuckerberg born?",
+  "a": "United States of America",
+  "d_G2": 7.56369330666282
+ },
+ "hop2|9|0|2": {
+  "q": "What is the country of birth for Mark Zuckerberg?",
+  "a": "United States of America",
+  "d_G2": 6.602139986478365
+ },
+ "same_object|10|1|0": {
+  "q": "Where was Fred Crane born?",
+  "a": "New Orleans",
+  "d_G2": 6.6146779741559705
+ },
+ "same_object|11|0|1": {
+  "q": "What is the place of birth of Elisabeth Moss?",
+  "a": "Los Angeles",
+  "d_G2": 3.2788918813069663
+ },
+ "same_object|11|1|0": {
+  "q": "Where was Jamie Grace born?",
+  "a": "Los Angeles",
+  "d_G2": 6.790047781808036
+ },
+ "same_object|11|2|1": {
+  "q": "What is the birthplace of Zooey Deschanel?",
+  "a": "Los Angeles",
+  "d_G2": 3.230332301213191
+ },
+ "same_object|12|0|0": {
+  "q": "What country did David Bowie hold citizenship in?",
+  "a": "United Kingdom",
+  "d_G2": 7.443700790405273
+ },
+ "same_object|12|0|1": {
+  "q": "Which country was David Bowie a citizen of?",
+  "a": "United Kingdom",
+  "d_G2": 7.5387115478515625
+ },
+ "same_object|12|2|1": {
+  "q": "What country granted citizenship to Arthur Conan Doyle?",
+  "a": "United Kingdom",
+  "d_G2": 6.43925666809082
+ },
+ "same_object|13|1|0": {
+  "q": "Who is the father of Elliott Roosevelt Jr.?",
+  "a": "Elliott Bulloch Roosevelt",
+  "d_G2": 1.5407039935772238
+ },
+ "same_object|13|1|1": {
+  "q": "Who is Elliott Roosevelt Jr.'s dad?",
+  "a": "Elliott Bulloch Roosevelt",
+  "d_G2": 1.0054990328275242
+ },
+ "same_object|14|0|0": {
+  "q": "Who is the mother of Anne, Princess Royal?",
+  "a": "Elizabeth II",
+  "d_G2": 2.8357008153742007
+ },
+ "same_object|14|1|0": {
+  "q": "Who is the mother of Prince Andrew, Duke of York?",
+  "a": "Elizabeth II",
+  "d_G2": 3.2052406897911654
+ },
+ "same_object|14|2|0": {
+  "q": "Who is the mother of Prince Edward, Duke of Edinburgh?",
+  "a": "Elizabeth II",
+  "d_G2": 3.088249793419471
+ },
+ "same_object|16|0|0": {
+  "q": "Who is the father of Thomas L. J. D'Alesandro III?",
+  "a": "Thomas D'Alesandro, Jr.",
+  "d_G2": 0.25981073794157616
+ },
+ "same_object|16|0|1": {
+  "q": "Who is the parent of Thomas L. J. D'Alesandro III?",
+  "a": "Thomas D'Alesandro, Jr.",
+  "d_G2": 0.31055085555366846
+ },
+ "same_object|17|0|1": {
+  "q": "What is the place of birth of Pamela S. Soltis?",
+  "a": "Nelsonville",
+  "d_G2": 3.390849304199219
+ },
+ "same_object|17|2|0": {
+  "q": "Where was James Cooley born?",
+  "a": "Nelsonville",
+  "d_G2": 6.983555316925049
+ },
+ "same_object|18|2|1": {
+  "q": "Which country is Matt Groening a citizen of?",
+  "a": "United States of America",
+  "d_G2": 6.404611147367038
+ },
+ "same_object|19|0|1": {
+  "q": "Who is Tito Jackson's dad?",
+  "a": "Joe Jackson",
+  "d_G2": 6.544251759847006
+ },
+ "same_object|19|1|0": {
+  "q": "Who is the father of Jackie Jackson?",
+  "a": "Joe Jackson",
+  "d_G2": 2.5045204162597656
+ },
+ "same_object|19|1|1": {
+  "q": "Who is Jackie Jackson's dad?",
+  "a": "Joe Jackson",
+  "d_G2": 2.8670473098754883
+ },
+ "same_object|20|0|1": {
+  "q": "Who is Tito Jackson's mother?",
+  "a": "Katherine Jackson",
+  "d_G2": 6.969610002305774
+ },
+ "same_object|21|0|0": {
+  "q": "Where was Mickey Rooney born?",
+  "a": "Brooklyn",
+  "d_G2": 7.750623067220052
+ },
+ "same_object|21|2|0": {
+  "q": "Where was Pat Benatar born?",
+  "a": "Brooklyn",
+  "d_G2": 8.41254207066127
+ },
+ "same_object|21|2|1": {
+  "q": "What is the birthplace of Pat Benatar?",
+  "a": "Brooklyn",
+  "d_G2": 6.27001953125
+ },
+ "same_object|22|1|0": {
+  "q": "Who is the mother of Deloris E. Jordan?",
+  "a": "Deloris Jordan",
+  "d_G2": 0.4918479919433594
+ },
+ "same_object|22|1|1": {
+  "q": "Who is Deloris E. Jordan's mother?",
+  "a": "Deloris Jordan",
+  "d_G2": 0.36865711212158203
+ },
+ "same_object|24|2|0": {
+  "q": "What country was Groucho Marx a citizen of?",
+  "a": "United States of America",
+  "d_G2": 6.29507201058524
+ },
+ "same_object|24|2|1": {
+  "q": "Which country did Groucho Marx hold citizenship in?",
+  "a": "United States of America",
+  "d_G2": 6.155185154506139
+ },
+ "same_object|25|0|0": {
+  "q": "Who is the mother of Cleopatra of Macedon?",
+  "a": "Olympias",
+  "d_G2": 3.323599888728215
+ },
+ "same_object|29|2|0": {
+  "q": "What is the country of citizenship of RZA?",
+  "a": "United States of America",
+  "d_G2": 6.482469411996695
+ },
+ "same_object|29|2|1": {
+  "q": "Which country does RZA hold citizenship in?",
+  "a": "United States of America",
+  "d_G2": 7.21422004699707
+ },
+ "same_object|2|0|0": {
+  "q": "Who is the father of Anthony-Tony-Dean Rodham?",
+  "a": "Hugh E. Rodham",
+  "d_G2": 2.0965239580939796
+ },
+ "same_object|2|0|1": {
+  "q": "Who is Anthony-Tony-Dean Rodham's father?",
+  "a": "Hugh E. Rodham",
+  "d_G2": 2.291579246520996
+ },
+ "same_object|2|1|0": {
+  "q": "Who is the father of Hugh Rodham?",
+  "a": "Hugh E. Rodham",
+  "d_G2": 0.5726787860576921
+ },
+ "same_object|2|1|1": {
+  "q": "Who is Hugh Rodham's father?",
+  "a": "Hugh E. Rodham",
+  "d_G2": 0.9448051452636723
+ },
+ "same_object|30|0|0": {
+  "q": "Who is the father of Matthew Bongiovi?",
+  "a": "John Bongiovi Sr.",
+  "d_G2": 2.537960276884191
+ },
+ "same_object|30|0|1": {
+  "q": "Who is Matthew Bongiovi's dad?",
+  "a": "John Bongiovi Sr.",
+  "d_G2": 2.6415624618530273
+ },
+ "same_object|31|0|0": {
+  "q": "Where was Ron Cyrus born?  ",
+  "a": "Flatwoods",
+  "d_G2": 7.43821907043457
+ },
+ "same_object|31|1|0": {
+  "q": "Where was Squire Potter born?",
+  "a": "Flatwoods",
+  "d_G2": 8.438379764556885
+ },
+ "same_object|32|1|1": {
+  "q": "Which country does Chris Pine hold citizenship in?",
+  "a": "United States of America",
+  "d_G2": 6.129913965861004
+ },
+ "same_object|3|0|0": {
+  "q": "Where was Diane Keaton born?",
+  "a": "Los Angeles",
+  "d_G2": 6.339361667633057
+ },
+ "same_object|4|2|0": {
+  "q": "Who is the father of Elliott Bulloch Roosevelt?",
+  "a": "Theodore Roosevelt Sr.",
+  "d_G2": 3.132611683436802
+ },
+ "same_object|4|2|1": {
+  "q": "Who is the parent of Elliott Bulloch Roosevelt?",
+  "a": "Theodore Roosevelt Sr.",
+  "d_G2": 3.46223395211356
+ },
+ "same_object|5|0|1": {
+  "q": "Who does Austin Swift call his father?",
+  "a": "Scott Swift",
+  "d_G2": 3.415284474690755
+ },
+ "same_object|9|0|0": {
+  "q": "Where was Joseph Campbell born?",
+  "a": "White Plains",
+  "d_G2": 7.576508658272879
+ },
+ "same_object|9|1|0": {
+  "q": "Where was David Harbour born?",
+  "a": "White Plains",
+  "d_G2": 9.55142756870815
+ },
+ "same_object|9|1|1": {
+  "q": "What is the birthplace of David Harbour?",
+  "a": "White Plains",
+  "d_G2": 6.215699005126953
+ },
+ "same_object|9|2|0": {
+  "q": "Where was Jonathan Larson born?",
+  "a": "White Plains",
+  "d_G2": 8.578893389020648
+ }
+}

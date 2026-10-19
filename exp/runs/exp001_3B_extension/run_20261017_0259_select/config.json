@@ -1,0 +1,14 @@
+{
+  "model": "QWEN_3B_PATH",
+  "tag": "3B_v1",
+  "records": "exp/results/pre_experiment_records_3B.jsonl",
+  "tau": 0.75,
+  "budget": 5,
+  "seed": 42,
+  "outputs": {
+    "candidates": "exp/results/3B_v1_candidates.json",
+    "active_paths": "exp/results/3B_v1_active_paths.json",
+    "greedy_curve": "exp/results/3B_v1_greedy_curve.json",
+    "f1": "exp/results/3B_v1_F1.json"
+  }
+}

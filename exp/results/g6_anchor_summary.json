@@ -1,0 +1,62 @@
+{
+ "G6_config": {
+  "forget_set": "=G2 (F0 33 + F1 贪心5)",
+  "anchor_samples_per_step": 4,
+  "alpha": 30.0,
+  "lr": 5e-05,
+  "epochs": 3,
+  "lora": "r8 a16, 7 modules"
+ },
+ "train_log": {
+  "epoch1": {
+   "loss": -5.68,
+   "forget": -4.96,
+   "kl": 0.0414
+  },
+  "epoch2": {
+   "loss": -11.75,
+   "forget": -19.9,
+   "kl": 0.13
+  },
+  "epoch3": {
+   "loss": -19.21,
+   "forget": -22.69,
+   "kl": 0.0785
+  }
+ },
+ "metrics": {
+  "G6": {
+   "hop1_unlearn": 0.121,
+   "hop1_test": 0.121,
+   "hop2": 0.255,
+   "same_object": 0.16,
+   "retain": 0.333
+  },
+  "G2": {
+   "hop1_unlearn": 0.182,
+   "hop1_test": 0.192,
+   "hop2": 0.255,
+   "same_object": 0.257,
+   "retain": 0.394
+  },
+  "G1": {
+   "hop1_unlearn": 0.182,
+   "hop1_test": 0.202,
+   "hop2": 0.363,
+   "same_object": 0.319,
+   "retain": 0.394
+  },
+  "orig": {
+   "hop1_unlearn": 0.636,
+   "hop1_test": 0.646,
+   "hop2": 0.644,
+   "same_object": 0.757,
+   "retain": 0.758
+  }
+ },
+ "retain_mean_d": {
+  "G2": 4.275,
+  "G6": 2.844
+ },
+ "conclusion": "锚加强(约12x)后 retain 准确率反而更差(0.333<0.394)、same_object 更差(0.160<0.257)、hop1 遗忘更深、hop2 封堵不变；retain 对数概率均值损伤更小(2.84<4.28)但翻转更多——分布级 KL 锚存在结构性盲区，加大强度无解，支持组件级修复路线(内容三)。"
+}

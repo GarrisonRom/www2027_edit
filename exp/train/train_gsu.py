@@ -12,8 +12,11 @@
 变体：
   M1 LGSU       = 定位(22–27 MLP) + 手术保护          ← 主方法
   M3 GSU-full   = 全层全模块(G-recipe同款) + 手术保护   ← 消融：定位的贡献
+  M3C           = M3 的条件梯度投影
+  M3U           = 按 AdamW 实际参数位移做条件投影
 断点：逐 epoch 存 checkpoint，重跑续训。
-用法: python train_gsu.py --variant M1 [--eval_only]
+M3C/M3U 默认写入独立的 gsu_projection 结果文件。
+用法: python train_gsu.py --variant M1|M2|M3|M3C|M3U [--eval_only]
 """
 import argparse
 import json
@@ -38,11 +41,20 @@ TAG = "1p5B_v2"
 LR, EPOCHS, N_ANCHOR = 5e-5, 3, 4
 
 VARIANTS = {
-    "M1": dict(layers=list(range(22, 28)), modules=["gate_proj", "up_proj", "down_proj"], alpha=1.0),
+    "M1": dict(layers=list(range(22, 28)), modules=["gate_proj", "up_proj", "down_proj"],
+               alpha=1.0, projection="always"),
     "M2": dict(layers=None, modules=["q_proj", "k_proj", "v_proj", "o_proj",
-                                     "gate_proj", "up_proj", "down_proj"], alpha=0.5),
+                                     "gate_proj", "up_proj", "down_proj"],
+               alpha=0.5, projection="always"),
     "M3": dict(layers=None, modules=["q_proj", "k_proj", "v_proj", "o_proj",
-                                     "gate_proj", "up_proj", "down_proj"], alpha=1.0),
+                                     "gate_proj", "up_proj", "down_proj"],
+               alpha=1.0, projection="always"),
+    "M3C": dict(layers=None, modules=["q_proj", "k_proj", "v_proj", "o_proj",
+                                      "gate_proj", "up_proj", "down_proj"],
+                alpha=1.0, projection="conditional"),
+    "M3U": dict(layers=None, modules=["q_proj", "k_proj", "v_proj", "o_proj",
+                                      "gate_proj", "up_proj", "down_proj"],
+                alpha=1.0, projection="adamw_update"),
 }
 
 
@@ -59,6 +71,35 @@ def lp_masked(model, tok, q, a):
     if mask.sum() == 0:
         return None
     return (lp[:, :ids.shape[1] - 1].gather(-1, tgt.unsqueeze(-1)).squeeze(-1) * mask).sum() / mask.sum()
+
+
+def adamw_step_with_anchor_projection(opt, params, anchor_grads):
+    """Project AdamW's actual parameter update when its first-order anchor change is negative."""
+    before = [p.detach().clone() for p in params]
+    opt.step()
+    corrected = False
+    with torch.no_grad():
+        dot = torch.zeros((), device=params[0].device, dtype=torch.float32)
+        denom = torch.zeros_like(dot)
+        for p, old in zip(params, before):
+            ga = anchor_grads[p].float()
+            delta = p.detach().float() - old.float()
+            dot += torch.sum(ga * delta)
+            denom += torch.sum(ga * ga)
+        if float(dot) < 0.0 and float(denom) > 1e-12:
+            coeff = float(dot / denom)
+            for p in params:
+                p.add_(anchor_grads[p], alpha=-coeff)
+            corrected = True
+    return corrected
+
+
+def project_gradient_if_conflicting(grad, anchor_grad):
+    dot = float((grad * anchor_grad).sum())
+    if dot <= 0.0:
+        return grad, False
+    denom = float((anchor_grad * anchor_grad).sum()) + 1e-12
+    return grad - dot / denom * anchor_grad, True
 
 
 def train(variant, forget_ex, retain_ex, tok, base, start_ep=0):
@@ -79,6 +120,8 @@ def train(variant, forget_ex, retain_ex, tok, base, start_ep=0):
     for ep in range(start_ep, EPOCHS):
         random.Random(te.SEED + ep).shuffle(forget_ex)
         tot = 0.0
+        projection_events = projection_checks = 0
+        mode = spec["projection"]
         for q, a in forget_ex:
             # 反传1：遗忘损失（答案 lp 下降 = 遗忘）
             opt.zero_grad()
@@ -97,17 +140,34 @@ def train(variant, forget_ex, retain_ex, tok, base, start_ep=0):
                     lps.append(lp)
             torch.stack(lps).sum().backward()
             g_r = {p: p.grad.clone() for p in params}
-            # 手术：g_f 减去 g_r 方向投影（阻断"遗忘步伤害保持集"的通道）
-            alpha = VARIANTS[variant]["alpha"]
-            for p in params:
-                g = g_f[p]
-                ga = g_r[p]
-                denom = float((ga * ga).sum()) + 1e-12
-                g = g - alpha * float((g * ga).sum()) / denom * ga
-                p.grad = g
-            opt.step()
+            if mode != "adamw_update":
+                alpha = spec["alpha"]
+                for p in params:
+                    g = g_f[p]
+                    ga = g_r[p]
+                    if mode == "conditional":
+                        projection_checks += 1
+                        g, projected = project_gradient_if_conflicting(g, ga)
+                        projection_events += int(projected)
+                    else:
+                        dot = float((g * ga).sum())
+                        denom = float((ga * ga).sum()) + 1e-12
+                        g = g - alpha * dot / denom * ga
+                    p.grad = g
+            else:
+                for p in params:
+                    p.grad = g_f[p]
+
+            if mode == "adamw_update":
+                projection_checks += 1
+                projection_events += int(adamw_step_with_anchor_projection(opt, params, g_r))
+            else:
+                opt.step()
             tot += float(loss_f)
-        print(f"  [{variant}] ep{ep+1}/{EPOCHS} forget_loss={tot/len(forget_ex):.4f}", flush=True)
+        projection_log = (f" projection={projection_events}/{projection_checks}"
+                          if mode in ("conditional", "adamw_update") else "")
+        print(f"  [{variant}] ep{ep+1}/{EPOCHS} forget_loss={tot/len(forget_ex):.4f}"
+              f"{projection_log}", flush=True)
         ck = ADAPTERS / f"{TAG}_GSU{variant}_ckpt"
         ck.mkdir(exist_ok=True)
         torch.save({n: p.detach().cpu() for n, p in model.named_parameters() if "lora" in n},
@@ -120,7 +180,12 @@ def main():
     ap.add_argument("--variant", required=True, choices=list(VARIANTS))
     ap.add_argument("--eval_only", action="store_true")
     ap.add_argument("--eval_stage", default="both", choices=["5", "6", "none", "both"])
+    ap.add_argument("--result_tag", default=None,
+                    help="结果文件名前缀；使用新标签可隔离新评测与历史 JSONL")
     args = ap.parse_args()
+    args.result_tag = args.result_tag or (
+        "gsu_projection" if args.variant in ("M3C", "M3U") else "gsu"
+    )
     name = f"GSU{args.variant}"
     out_adapter = ADAPTERS / f"{TAG}_{name}"
     ckpt = ADAPTERS / f"{TAG}_{name}_ckpt"
@@ -152,7 +217,7 @@ def main():
         print("saved:", out_adapter)
 
     # ---- 评测1：内容一五集（同 te.evaluate 口径，增量落盘）----
-    j5 = OUT / "eval_results_gsu.jsonl"
+    j5 = OUT / f"eval_results_{args.result_tag}.jsonl"
     done5 = set()
     if j5.exists():
         for l in open(j5, encoding="utf-8"):
@@ -169,7 +234,7 @@ def main():
         torch.cuda.empty_cache()
 
     # ---- 评测2：内容三六集（同 restore 口径）----
-    j6 = OUT / "gsu_sixset.jsonl"
+    j6 = OUT / f"{args.result_tag}_sixset.jsonl"
     done6 = set()
     if j6.exists():
         for l in open(j6, encoding="utf-8"):

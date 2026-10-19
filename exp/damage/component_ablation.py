@@ -10,7 +10,7 @@
               该中间神经元的输出贡献 = down_proj 第 idx 行 × 激活）
 
 评测集：
-  D_so / D_hop2   受损组 same_object 24 / hop2 24（恢复目标）
+  D_so / D_hop2   受损组 same_object 24 / hop2 24（恢复目标）；D_hop2 另按 F1 重叠拆分
   K               对照组 48（不应有明显变化）
   hop1_unlearn    33（遗忘判据：撤销的是损伤组件，F0 遗忘不应回弹）
   retain          33（保持集顺带观察）
@@ -67,7 +67,8 @@ def build_sets():
 
     per = {json.loads(l)["item_key"]: json.loads(l)
            for l in open(OUT / "per_item_G2.jsonl", encoding="utf-8")}
-    sets = {"D_so": items["D_same_object"], "D_hop2": items["D_hop2"], "K": items["K"],
+    d_hop2 = items["D_hop2"]
+    sets = {"D_so": items["D_same_object"], "D_hop2": d_hop2, "K": items["K"],
             "hop1_unlearn": [k for k, r in per.items() if r["source"] == "hop1_unlearn"],
             "retain": [k for k, r in per.items() if r["source"] == "retain"]}
     # F1 覆盖的 hop2 子项
@@ -76,6 +77,9 @@ def build_sets():
     f1_chains = {(int(g), int(s)) for f in f1 for g, s in f["S"]}
     sets["F1_hop2"] = [k for k in per if k.split("|")[0] == "hop2"
                        and (pos2global[int(k.split("|")[1])], int(k.split("|")[2])) in f1_chains]
+    f1_hop2_keys = set(sets["F1_hop2"])
+    sets["D_hop2_F1_overlap"] = [k for k in d_hop2 if k in f1_hop2_keys]
+    sets["D_hop2_no_F1_overlap"] = [k for k in d_hop2 if k not in f1_hop2_keys]
     for name, keys in sets.items():
         print(f"  评测集 {name}: {len(keys)} 题")
     return sets, qa
@@ -175,13 +179,19 @@ def main():
             undo_attn_layers(model, base, spec["attn_layers"])
         if "neurons" in spec:
             undo_neurons(model, base, spec["neurons"])
-        esets = {k: v for k, v in sets.items() if k in ("D_so", "D_hop2")} if spec.get("quick") else sets
+        quick_sets = ("D_so", "D_hop2", "D_hop2_F1_overlap", "D_hop2_no_F1_overlap")
+        esets = {k: v for k, v in sets.items() if k in quick_sets} if spec.get("quick") else sets
         res = eval_sets(model, tok, esets, qa)
         f.write(json.dumps({"config": name, "group": args.group, "sets": res},
                            ensure_ascii=False) + "\n")
         f.flush()
-        print(f"[{name}] D_so lp={res['D_so']['mean_lp']:.3f} D_hop2 lp={res['D_hop2']['mean_lp']:.3f} "
-              f"hop1 lp={res['hop1_unlearn']['mean_lp']:.3f} F1_hop2 lp={res['F1_hop2']['mean_lp']:.3f}")
+        summary = " ".join(
+            f"{key} lp={res[key]['mean_lp']:.3f}"
+            for key in ("D_so", "D_hop2", "D_hop2_F1_overlap", "D_hop2_no_F1_overlap",
+                        "hop1_unlearn", "F1_hop2")
+            if key in res
+        )
+        print(f"[{name}] {summary}")
         del model, mp
         torch.cuda.empty_cache()
     f.close()

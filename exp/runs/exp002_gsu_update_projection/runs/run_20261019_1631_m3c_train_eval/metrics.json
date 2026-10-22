@@ -1,0 +1,25 @@
+{
+  "five_set": {
+    "group": "GSUM3C",
+    "hop1_unlearn": 0.15151515151515152,
+    "hop1_test": 0.21212121212121213,
+    "hop2": 0.2808988764044944,
+    "same_object": 0.20833333333333334,
+    "retain": 0.5151515151515151
+  },
+  "six_set": {
+    "group": "GSUM3C",
+    "sets": {
+      "D_so": {"n": 24, "mean_lp": -11.558585162748878, "mean_correct": 0.08333333333333333},
+      "D_hop2": {"n": 24, "mean_lp": -10.576251018335352, "mean_correct": 0.0},
+      "K": {"n": 48, "mean_lp": -6.678821123210074, "mean_correct": 0.6041666666666666},
+      "hop1_unlearn": {"n": 33, "mean_lp": -10.975124080591957, "mean_correct": 0.15151515151515152},
+      "retain": {"n": 33, "mean_lp": -8.251991667204559, "mean_correct": 0.5151515151515151},
+      "F1_hop2": {"n": 75, "mean_lp": -8.12289488237907, "mean_correct": 0.32},
+      "D_hop2_F1_overlap": {"n": 12, "mean_lp": -10.09924840210995, "mean_correct": 0.0},
+      "D_hop2_no_F1_overlap": {"n": 12, "mean_lp": -11.05325363456076, "mean_correct": 0.0}
+    }
+  },
+  "projection_checks": [14896, 14896, 14896],
+  "projection_events": [12981, 13143, 11449]
+}

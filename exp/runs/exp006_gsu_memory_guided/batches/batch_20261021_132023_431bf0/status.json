@@ -1,0 +1,21 @@
+{
+  "batch_id": "batch_20261021_132023_431bf0",
+  "status": "completed",
+  "started": "2026-10-21T13:20:23.8258420+08:00",
+  "controller_pid": 134068,
+  "phase": "completed",
+  "current_variant": null,
+  "current_run_dir": null,
+  "completed_variants": [
+    "A0",
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A2R",
+    "A3R"
+  ],
+  "last_exit_code": 0,
+  "comparison_dir": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp006_gsu_memory_guided\\comparisons\\screen_batch_20261021_132023_431bf0",
+  "ended": "2026-10-21T21:56:59.2575639+08:00"
+}

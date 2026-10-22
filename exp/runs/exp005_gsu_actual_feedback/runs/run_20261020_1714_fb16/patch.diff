@@ -1,0 +1,622 @@
+diff --git a/exp/train/diagnose_gsu_actual_feedback.py b/exp/train/diagnose_gsu_actual_feedback.py
+new file mode 100644
+index 0000000..5ec2ca3
+--- /dev/null
++++ b/exp/train/diagnose_gsu_actual_feedback.py
+@@ -0,0 +1,616 @@
++# -*- coding: utf-8 -*-
++"""GSU-v5: actual retain-logprob feedback with a bounded correction budget.
++
++The algorithm keeps COV16's fresh 16-anchor coverage, but replaces its single
++linearized projection with a short feedback loop:
++
++1. execute the original forget-gradient -> AdamW proposal;
++2. measure the actual answer log-probability of the sampled anchors;
++3. correct only anchors whose measured log-probability fell by more than the
++   frozen tolerance;
++4. remeasure, at most once more, while bounding the total correction norm.
++
++The AdamW moment state is left unchanged by the post-hoc correction.  This is
++an independent diagnostic candidate; it does not alter M3/M3U/M3A/COV16/CUM16.
++"""
++import argparse
++import json
++import random
++import sys
++from pathlib import Path
++
++import torch
++from peft import LoraConfig, get_peft_model
++from transformers import AutoModelForCausalLM, AutoTokenizer
++
++TE = Path(__file__).resolve().parent
++sys.path.insert(0, str(TE))
++sys.path.insert(0, str(TE.parent / "damage"))
++import train_eval as te
++import component_ablation as ca
++from train_gsu import lp_masked
++from diagnose_gsu_m3 import (
++    EPOCHS,
++    LR,
++    OUT,
++    TARGET_MODULES,
++    clone_grad_tuple,
++    clone_param_grads,
++    scalar_map_dot,
++    scalar_map_norm2,
++    sha1_text,
++)
++from diagnose_gsu_retain_protection import (
++    FINAL_VIOLATION_TOL,
++    N_ANCHOR,
++    dykstra_coefficients,
++)
++
++ACTUAL_DROP_TOL = 1e-4
++MAX_FEEDBACK_ROUNDS = 2
++MAX_CORRECTION_RATIO = 0.30
++RATIO_EPS = 1e-6
++
++
++def gram_matrix(params, anchor_grads):
++    count = len(anchor_grads)
++    gram = [[0.0 for _ in range(count)] for _ in range(count)]
++    for i in range(count):
++        for j in range(i, count):
++            value = scalar_map_dot(params, anchor_grads[i], anchor_grads[j])
++            gram[i][j] = value
++            gram[j][i] = value
++    return torch.tensor(gram, dtype=torch.float64)
++
++
++def solve_min_norm_compensation(params, anchor_grads, deficits):
++    """Solve min ||c|| subject to <g_i,c> >= deficits_i.
++
++    The correction is represented as c = sum_i coefficient_i * g_i.  The
++    imported Dykstra solver accepts rhs = A*delta - target; for a zero base
++    correction this becomes -deficits.
++    """
++    if not anchor_grads:
++        return (
++            torch.zeros(0, dtype=torch.float64),
++            torch.zeros(0, dtype=torch.float64),
++            0,
++            True,
++            torch.zeros((0, 0), dtype=torch.float64),
++        )
++    gram = gram_matrix(params, anchor_grads)
++    rhs = -torch.tensor(deficits, dtype=torch.float64)
++    coefficients, constraints, cycles, converged = dykstra_coefficients(gram, rhs)
++    return coefficients, constraints, cycles, converged, gram
++
++
++def linear_combination(params, grad_maps, coefficients):
++    """Build a parameter-map vector from anchor gradient maps."""
++    result = {}
++    for p in params:
++        value = torch.zeros_like(p)
++        for grad_map, coefficient in zip(grad_maps, coefficients.tolist()):
++            if abs(coefficient) > 1e-14:
++                value = value + grad_map[p] * float(coefficient)
++        result[p] = value
++    return result
++
++
++def subtract_maps(left, right):
++    return {p: left[p] - right[p] for p in left}
++
++
++def current_delta(params, before):
++    return {
++        p: p.detach().float() - old.float()
++        for p, old in zip(params, before)
++    }
++
++
++def scale_to_trust_budget(params, current_correction, candidate, raw_norm):
++    """Return t in [0, 1] so ||current+t*candidate|| <= budget."""
++    if raw_norm <= 1e-12:
++        return 0.0
++    budget = MAX_CORRECTION_RATIO * raw_norm
++    budget2 = budget * budget
++    current_norm2 = max(scalar_map_norm2(params, current_correction), 0.0)
++    candidate_norm2 = max(scalar_map_norm2(params, candidate), 0.0)
++    if candidate_norm2 <= 1e-24:
++        return 0.0
++
++    full = {
++        p: current_correction[p] + candidate[p]
++        for p in params
++    }
++    if scalar_map_norm2(params, full) <= budget2:
++        return 1.0
++    if current_norm2 >= budget2:
++        return 0.0
++
++    cross = scalar_map_dot(params, current_correction, candidate)
++    # Solve a*t^2 + 2*b*t + c = 0 for the positive boundary root.
++    constant = current_norm2 - budget2
++    discriminant = max(cross * cross - candidate_norm2 * constant, 0.0)
++    scale = (-cross + discriminant ** 0.5) / candidate_norm2
++    return max(0.0, min(1.0, scale))
++
++
++def apply_map(params, values, scale=1.0):
++    with torch.no_grad():
++        for p in params:
++            if scale == 1.0:
++                p.add_(values[p])
++            else:
++                p.add_(values[p], alpha=float(scale))
++
++
++def anchor_gradients(params, model, tok, anchors):
++    grads = []
++    for rq, ra in anchors:
++        lp = lp_masked(model, tok, rq, ra)
++        values = torch.autograd.grad(
++            lp, params, allow_unused=True, retain_graph=False
++        )
++        grads.append(clone_grad_tuple(params, values))
++    return grads
++
++
++def anchor_logprobs(model, tok, anchors):
++    with torch.no_grad():
++        return [float(lp_masked(model, tok, rq, ra)) for rq, ra in anchors]
++
++
++def check_finite(values, label):
++    for value in values:
++        if not torch.isfinite(torch.tensor(float(value))):
++            raise RuntimeError(f"non-finite {label}: {value}")
++
++
++def feedback_update(
++    params,
++    model,
++    tok,
++    anchors,
++    lp_before,
++    before,
++    delta_raw,
++    anchor_grads_before,
++):
++    """Apply bounded actual-logprob feedback and return diagnostics."""
++    raw_norm = max(scalar_map_norm2(params, delta_raw), 0.0) ** 0.5
++    delta_after_raw = current_delta(params, before)
++    current_correction = subtract_maps(delta_after_raw, delta_raw)
++    feedback_rounds = []
++    total_solver_cycles = 0
++    total_risk_seen = 0
++
++    lp_current = anchor_logprobs(model, tok, anchors)
++    for round_index in range(MAX_FEEDBACK_ROUNDS):
++        actual_deltas = [
++            current - initial for initial, current in zip(lp_before, lp_current)
++        ]
++        risk_indices = [
++            index
++            for index, delta in enumerate(actual_deltas)
++            if delta < -ACTUAL_DROP_TOL
++        ]
++        total_risk_seen += len(risk_indices)
++        if not risk_indices:
++            break
++
++        risk_anchors = [anchors[index] for index in risk_indices]
++        risk_grads = anchor_gradients(params, model, tok, risk_anchors)
++        deficits = [
++            max(lp_before[index] - lp_current[index], 0.0)
++            for index in risk_indices
++        ]
++        coefficients, constraints, cycles, converged, gram = (
++            solve_min_norm_compensation(params, risk_grads, deficits)
++        )
++        total_solver_cycles += cycles
++        if not converged:
++            raise RuntimeError(
++                "actual feedback Dykstra projection did not converge: "
++                f"round={round_index + 1}, risk={risk_indices}, "
++                f"min_constraint={float(constraints.min())}"
++            )
++
++        candidate = linear_combination(params, risk_grads, coefficients)
++        correction_scale = scale_to_trust_budget(
++            params, current_correction, candidate, raw_norm
++        )
++        applied_candidate = {
++            p: candidate[p] * float(correction_scale)
++            for p in params
++        }
++        proposed_correction = {
++            p: current_correction[p] + applied_candidate[p]
++            for p in params
++        }
++        proposed_ratio = max(
++            scalar_map_norm2(params, proposed_correction), 0.0
++        ) ** 0.5 / max(raw_norm, 1e-12)
++        if proposed_ratio > MAX_CORRECTION_RATIO + RATIO_EPS:
++            raise RuntimeError(
++                f"trust budget exceeded before writeback: {proposed_ratio}"
++            )
++        apply_map(params, candidate, correction_scale)
++        # Recompute from exact parameter state after writeback.
++        delta_now = current_delta(params, before)
++        current_correction = subtract_maps(delta_now, delta_raw)
++        actual_ratio = max(
++            scalar_map_norm2(params, current_correction), 0.0
++        ) ** 0.5 / max(raw_norm, 1e-12)
++        if actual_ratio > MAX_CORRECTION_RATIO + RATIO_EPS:
++            raise RuntimeError(
++                f"trust budget exceeded after writeback: {actual_ratio}"
++            )
++
++        predicted_improvement = (gram @ coefficients).tolist()
++        feedback_rounds.append(
++            {
++                "round": round_index + 1,
++                "risk_indices": risk_indices,
++                "risk_count": len(risk_indices),
++                "actual_deltas_before": actual_deltas,
++                "deficits": deficits,
++                "coefficients": coefficients.tolist(),
++                "solver_constraints": constraints.tolist(),
++                "predicted_improvement": predicted_improvement,
++                "solver_cycles": cycles,
++                "correction_scale": correction_scale,
++                "correction_ratio_after": actual_ratio,
++            }
++        )
++        lp_current = anchor_logprobs(model, tok, anchors)
++
++    final_delta = current_delta(params, before)
++    final_correction = subtract_maps(final_delta, delta_raw)
++    final_ratio = max(
++        scalar_map_norm2(params, final_correction), 0.0
++    ) ** 0.5 / max(raw_norm, 1e-12)
++    if final_ratio > MAX_CORRECTION_RATIO + RATIO_EPS:
++        raise RuntimeError(f"final trust budget exceeded: {final_ratio}")
++    return {
++        "lp_after_raw": anchor_logprobs(model, tok, anchors),
++        "lp_after_final": lp_current,
++        "anchor_grads_before": anchor_grads_before,
++        "feedback_rounds": feedback_rounds,
++        "feedback_round_count": len(feedback_rounds),
++        "total_solver_cycles": total_solver_cycles,
++        "total_risk_seen": total_risk_seen,
++        "final_correction": final_correction,
++        "final_ratio": final_ratio,
++    }
++
++
++def self_test():
++    """Small CPU sanity test for the solver and trust-region arithmetic."""
++    params = [torch.zeros(2)]
++    grads = [
++        {params[0]: torch.tensor([1.0, 0.0])},
++        {params[0]: torch.tensor([0.0, 1.0])},
++    ]
++    coefficients, constraints, cycles, converged, _ = solve_min_norm_compensation(
++        params, grads, [1.0, 2.0]
++    )
++    predicted = torch.tensor([coefficients[0], coefficients[1]], dtype=torch.float64)
++    assert converged
++    assert cycles > 0
++    assert bool((constraints >= -1e-8).all())
++    assert torch.allclose(
++        predicted, torch.tensor([1.0, 2.0], dtype=torch.float64), atol=1e-6
++    )
++    current = {params[0]: torch.tensor([0.0, 0.0])}
++    candidate = {params[0]: torch.tensor([4.0, 0.0])}
++    scale = scale_to_trust_budget(params, current, candidate, raw_norm=10.0)
++    assert 0.0 < scale < 1.0
++    result = current[params[0]] + candidate[params[0]] * scale
++    assert float(torch.linalg.vector_norm(result)) <= MAX_CORRECTION_RATIO * 10.0 + 1e-6
++    print(json.dumps({"self_test": "passed", "solver_cycles": cycles}))
++
++
++def train_and_diagnose(run_dir):
++    run_dir.mkdir(parents=True, exist_ok=True)
++    diagnostics_path = run_dir / "diagnostics.jsonl"
++    epoch_path = run_dir / "epoch_metrics.jsonl"
++    metrics_path = run_dir / "metrics.json"
++
++    random.seed(te.SEED)
++    torch.manual_seed(te.SEED)
++
++    data = json.load(open(te.DATA, encoding="utf-8"))["data"]
++    clusters = te.build_clusters(data)
++    forget_idx = [int(x) for x in (te.SPLITS / "forget_set_split.txt").read_text().split()]
++    retain_idx = [int(x) for x in (te.SPLITS / "retaining_set_split.txt").read_text().split()][:33]
++    f1 = json.load(open(OUT / "F1.json", encoding="utf-8"))["F_star"]
++    cands = json.load(open(OUT / "candidates.json", encoding="utf-8"))["facts"]
++
++    tok = AutoTokenizer.from_pretrained(te.MODEL)
++    retain_ex = [
++        (
++            clusters[i][2]["hop1_unlearn"]["questions"][0],
++            clusters[i][2]["hop1_unlearn"]["answers"],
++        )
++        for i in retain_idx
++    ]
++    forget_ex = te.make_group_examples("G2", clusters, forget_idx, f1, cands)
++
++    base = AutoModelForCausalLM.from_pretrained(
++        te.MODEL, dtype=torch.bfloat16, device_map="cuda"
++    ).eval()
++    for p in base.parameters():
++        p.requires_grad = False
++    model = get_peft_model(
++        base,
++        LoraConfig(
++            r=8,
++            lora_alpha=16,
++            lora_dropout=0.0,
++            bias="none",
++            task_type="CAUSAL_LM",
++            target_modules=TARGET_MODULES,
++        ),
++    )
++    model.train()
++    params = [p for p in model.parameters() if p.requires_grad]
++    opt = torch.optim.AdamW(params, lr=LR)
++    rng = random.Random(te.SEED)
++
++    epoch_rows = []
++    total_rows = 0
++    total_corrections = 0
++    total_feedback_rounds = 0
++    total_risk_seen = 0
++    projection_failures = 0
++    dykstra_failures = 0
++    all_anchor_ids = set()
++
++    with open(diagnostics_path, "w", encoding="utf-8") as diag:
++        for ep in range(EPOCHS):
++            random.Random(te.SEED + ep).shuffle(forget_ex)
++            epoch_rows_raw = []
++            total_forget = 0.0
++            for step, (q, a) in enumerate(forget_ex):
++                opt.zero_grad()
++                loss_f = lp_masked(model, tok, q, a)
++                if loss_f is None:
++                    continue
++                loss_f.backward()
++                g_f = clone_param_grads(params)
++
++                rng_anchors = rng.sample(retain_ex, N_ANCHOR)
++                anchors = []
++                for rq, ra in rng_anchors:
++                    if lp_masked(model, tok, rq, ra) is not None:
++                        anchors.append((rq, ra))
++                if not anchors:
++                    continue
++                anchor_ids = [sha1_text(rq) for rq, _ in anchors]
++                all_anchor_ids.update(anchor_ids)
++
++                opt.zero_grad()
++                lps = [lp_masked(model, tok, rq, ra) for rq, ra in anchors]
++                torch.stack(lps).sum().backward()
++                g_r = clone_param_grads(params)
++                lp_before = [float(lp.detach()) for lp in lps]
++                anchor_grads_before = anchor_gradients(params, model, tok, anchors)
++
++                for p in params:
++                    p.grad = g_f[p]
++                before = [p.detach().clone() for p in params]
++                opt.step()
++                delta_raw = current_delta(params, before)
++                raw_anchor_dots = [
++                    scalar_map_dot(params, ga, delta_raw)
++                    for ga in anchor_grads_before
++                ]
++                lp_after_raw = anchor_logprobs(model, tok, anchors)
++
++                feedback = feedback_update(
++                    params,
++                    model,
++                    tok,
++                    anchors,
++                    lp_before,
++                    before,
++                    delta_raw,
++                    anchor_grads_before,
++                )
++                final_delta = current_delta(params, before)
++                final_anchor_dots = [
++                    scalar_map_dot(params, ga, final_delta)
++                    for ga in anchor_grads_before
++                ]
++                lp_after_final = feedback["lp_after_final"]
++                raw_delta_norm2 = scalar_map_norm2(params, delta_raw)
++                final_delta_norm2 = scalar_map_norm2(params, final_delta)
++                correction = feedback["final_correction"]
++                correction_norm2 = scalar_map_norm2(params, correction)
++                final_actual_deltas = [
++                    after - before_lp
++                    for before_lp, after in zip(lp_before, lp_after_final)
++                ]
++                raw_actual_deltas = [
++                    after - before_lp
++                    for before_lp, after in zip(lp_before, lp_after_raw)
++                ]
++                check_finite(raw_actual_deltas, "raw anchor logprob delta")
++                check_finite(final_actual_deltas, "final anchor logprob delta")
++                if feedback["final_ratio"] > MAX_CORRECTION_RATIO + RATIO_EPS:
++                    raise RuntimeError("final correction ratio exceeded frozen budget")
++
++                corrected = feedback["feedback_round_count"] > 0
++                if corrected:
++                    total_corrections += 1
++                total_feedback_rounds += feedback["feedback_round_count"]
++                total_risk_seen += feedback["total_risk_seen"]
++                row = {
++                    "method": "GSU_FB16",
++                    "epoch": ep + 1,
++                    "step": step + 1,
++                    "forget_question_sha1": sha1_text(q),
++                    "forget_lp": float(loss_f.detach()),
++                    "anchor_count": len(anchors),
++                    "anchor_question_sha1": anchor_ids,
++                    "anchor_lp_before": lp_before,
++                    "anchor_lp_after_raw_adamw": lp_after_raw,
++                    "anchor_lp_after_correction": lp_after_final,
++                    "anchor_lp_delta_raw": raw_actual_deltas,
++                    "anchor_lp_delta_final": final_actual_deltas,
++                    "raw_anchor_dot_delta": raw_anchor_dots,
++                    "final_anchor_dot_delta": final_anchor_dots,
++                    "raw_anchor_conflict": [d < 0.0 for d in raw_anchor_dots],
++                    "final_anchor_conflict": [d < 0.0 for d in final_anchor_dots],
++                    "raw_actual_risk": [d < -ACTUAL_DROP_TOL for d in raw_actual_deltas],
++                    "final_actual_risk": [d < -ACTUAL_DROP_TOL for d in final_actual_deltas],
++                    "final_actual_violation_tol": [d < -FINAL_VIOLATION_TOL for d in final_actual_deltas],
++                    "aggregate_g_r_delta_raw_dot": scalar_map_dot(params, g_r, delta_raw),
++                    "aggregate_g_r_delta_final_dot": scalar_map_dot(params, g_r, final_delta),
++                    "correction_applied": corrected,
++                    "feedback_rounds": feedback["feedback_rounds"],
++                    "feedback_round_count": feedback["feedback_round_count"],
++                    "total_risk_seen": feedback["total_risk_seen"],
++                    "total_solver_cycles": feedback["total_solver_cycles"],
++                    "raw_delta_norm": max(raw_delta_norm2, 0.0) ** 0.5,
++                    "final_delta_norm": max(final_delta_norm2, 0.0) ** 0.5,
++                    "correction_norm": max(correction_norm2, 0.0) ** 0.5,
++                    "correction_to_raw_norm_ratio": feedback["final_ratio"],
++                    "max_correction_to_raw_norm_ratio": MAX_CORRECTION_RATIO,
++                }
++                diag.write(json.dumps(row, ensure_ascii=False) + "\n")
++                diag.flush()
++                epoch_rows_raw.append(row)
++                total_forget += float(loss_f.detach())
++                total_rows += 1
++
++            anchor_total = sum(r["anchor_count"] for r in epoch_rows_raw)
++            epoch_summary = {
++                "method": "GSU_FB16",
++                "epoch": ep + 1,
++                "steps": len(epoch_rows_raw),
++                "forget_lp_mean": total_forget / max(len(epoch_rows_raw), 1),
++                "raw_actual_risk_rate": sum(
++                    sum(r["raw_actual_risk"]) for r in epoch_rows_raw
++                ) / max(anchor_total, 1),
++                "final_actual_risk_rate": sum(
++                    sum(r["final_actual_risk"]) for r in epoch_rows_raw
++                ) / max(anchor_total, 1),
++                "raw_actual_drop_rate": sum(
++                    sum(d < 0.0 for d in r["anchor_lp_delta_raw"])
++                    for r in epoch_rows_raw
++                ) / max(anchor_total, 1),
++                "final_actual_drop_rate": sum(
++                    sum(d < 0.0 for d in r["anchor_lp_delta_final"])
++                    for r in epoch_rows_raw
++                ) / max(anchor_total, 1),
++                "raw_mean_anchor_lp_delta": sum(
++                    sum(r["anchor_lp_delta_raw"]) / r["anchor_count"]
++                    for r in epoch_rows_raw
++                ) / max(len(epoch_rows_raw), 1),
++                "final_mean_anchor_lp_delta": sum(
++                    sum(r["anchor_lp_delta_final"]) / r["anchor_count"]
++                    for r in epoch_rows_raw
++                ) / max(len(epoch_rows_raw), 1),
++                "correction_rate": sum(
++                    r["correction_applied"] for r in epoch_rows_raw
++                ) / max(len(epoch_rows_raw), 1),
++                "mean_feedback_rounds": sum(
++                    r["feedback_round_count"] for r in epoch_rows_raw
++                ) / max(len(epoch_rows_raw), 1),
++                "mean_correction_to_raw_norm_ratio": sum(
++                    r["correction_to_raw_norm_ratio"] for r in epoch_rows_raw
++                ) / max(len(epoch_rows_raw), 1),
++                "max_correction_to_raw_norm_ratio": max(
++                    (r["correction_to_raw_norm_ratio"] for r in epoch_rows_raw),
++                    default=0.0,
++                ),
++                "mean_solver_cycles": sum(
++                    r["total_solver_cycles"] for r in epoch_rows_raw
++                ) / max(len(epoch_rows_raw), 1),
++            }
++            epoch_rows.append(epoch_summary)
++            with open(epoch_path, "a", encoding="utf-8") as f:
++                f.write(json.dumps(epoch_summary, ensure_ascii=False) + "\n")
++            print(json.dumps(epoch_summary, ensure_ascii=False), flush=True)
++
++            ckpt_dir = run_dir / "checkpoints"
++            ckpt_dir.mkdir(exist_ok=True)
++            torch.save(
++                {n: p.detach().cpu() for n, p in model.named_parameters() if "lora" in n},
++                ckpt_dir / f"ep{ep + 1}.pt",
++            )
++
++    adapter_dir = run_dir / "adapter"
++    model.save_pretrained(adapter_dir)
++    model.eval()
++    five = te.evaluate(model, tok, clusters, forget_idx, retain_idx)
++    sets, qa = ca.build_sets()
++    six = ca.eval_sets(model, tok, sets, qa)
++    six_serialized = {
++        k: {
++            "n": int(v["n"]),
++            "mean_lp": float(v["mean_lp"]),
++            "mean_correct": float(v["mean_correct"]),
++        }
++        for k, v in six.items()
++    }
++    metrics = {
++        "five_set": {"group": "GSU_FB16_DIAG", **five},
++        "six_set": {"group": "GSU_FB16_DIAG", "sets": six_serialized},
++        "diagnostics": {
++            "method": "GSU_FB16",
++            "steps": total_rows,
++            "corrections": total_corrections,
++            "feedback_rounds": total_feedback_rounds,
++            "risk_observations": total_risk_seen,
++            "unique_anchor_count": len(all_anchor_ids),
++            "projection_failures": projection_failures,
++            "dykstra_failures": dykstra_failures,
++            "epochs": epoch_rows,
++            "raw_jsonl": str(diagnostics_path),
++            "algorithm": (
++                "16 fresh retain anchors per update; actual post-AdamW logprob "
++                "feedback on risk anchors; at most two correction rounds; "
++                "total correction norm capped at 0.30 of raw AdamW norm"
++            ),
++            "actual_drop_tolerance": ACTUAL_DROP_TOL,
++            "max_feedback_rounds": MAX_FEEDBACK_ROUNDS,
++            "max_correction_to_raw_norm_ratio": MAX_CORRECTION_RATIO,
++            "solver": "coefficient-space Dykstra minimum-norm compensation",
++            "optimizer_moments": "unchanged by post-hoc correction",
++        },
++    }
++    with open(metrics_path, "w", encoding="utf-8") as f:
++        json.dump(metrics, f, ensure_ascii=False, indent=2)
++    print(
++        json.dumps(
++            {
++                "saved": str(metrics_path),
++                "method": "GSU_FB16",
++                "steps": total_rows,
++                "corrections": total_corrections,
++                "feedback_rounds": total_feedback_rounds,
++                "unique_anchor_count": len(all_anchor_ids),
++            },
++            ensure_ascii=False,
++        ),
++        flush=True,
++    )
++
++
++def main():
++    ap = argparse.ArgumentParser()
++    ap.add_argument("--run_dir")
++    ap.add_argument("--self_test", action="store_true")
++    args = ap.parse_args()
++    if args.self_test:
++        self_test()
++        return
++    if not args.run_dir:
++        ap.error("--run_dir is required unless --self_test is used")
++    train_and_diagnose(Path(args.run_dir).resolve())
++
++
++if __name__ == "__main__":
++    main()

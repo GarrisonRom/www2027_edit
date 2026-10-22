@@ -1,6 +1,6 @@
 # exp002：GSU 更新方向补强
 
-**状态：** 预注册完成，尚未运行。
+**状态：** 单 seed 预注册筛选和 M3U 逐步机制诊断已完成；M3C/M3U 均未通过进入多 seed 的冻结门槛，原 M3U 暂不修改。
 **假设：** H-GSU-UPD-1。
 **方法版本：** GSU-v2 候选，见 [`GSU-v2.md`](../../../docs/method_versions/GSU-v2.md)。
 
@@ -45,22 +45,31 @@ python exp/train/train_gsu.py --variant M3U --result_tag gsu_projection
 
 - 历史 M3：D_hop2=0/24、retain=16/33、F1_hop2=25/75，来源为 `exp/results/gsu_sixset.jsonl`；对应结果无独立 run_id，不能补造。
 - 历史 D_hop2 只有汇总预测；当前没有独立保存的 12/12 子集逐题结果。交集规模来自 `exp/results/attribution/items.json`、`exp/results/F1.json` 和固定 forget split。
+- 本轮 M3 复评：`D_hop2_no_F1_overlap=0/12`、`D_hop2_F1_overlap=0/12`、`F1_hop2=25/75`、retain=`16/33`，来源 [`run_20261019_1631_m3_reval`](runs/run_20261019_1631_m3_reval/metrics.json)。
+- 本轮 M3C：主指标=`0/12`（相对 M3 +0），`F1_hop2=24/75`、retain=`17/33`；三 epoch 投影触发数分别为 `12981/14896`、`13143/14896`、`11449/14896`，来源 [`run_20261019_1631_m3c_train_eval`](runs/run_20261019_1631_m3c_train_eval/metrics.json)。
+- 本轮 M3U：主指标=`1/12`（相对 M3 +1），`F1_hop2=9/75`、retain=`13/33`；三 epoch 实际更新修正为 `38/38`、`37/38`、`37/38`，来源 [`run_20261019_1631_m3u_train_eval`](runs/run_20261019_1631_m3u_train_eval/metrics.json)。
+- M3C/M3U 的主指标均未达到至少多答对 `2/12`；M3U 的 retain 下降 `3/33`，超过允许的 `2/33`。两个候选都不进入多 seed 确认。
+- M3U 逐步诊断：同一批采样锚点的直接答案对数概率在修正后相对原始 AdamW 有 `437/456` 个变好，平均配对增益 `+0.656008`；负的直接变化由 `427/456` 降至 `261/456`。来源 [`run_20261020_1115_m3u_diagnostic_rerun`](runs/run_20261020_1115_m3u_diagnostic_rerun/metrics.json) 与 `diagnostics.jsonl`。
+- 该诊断的最终指标与历史 M3U 完全一致：主指标=`1/12`、retain=`13/33`、F1_hop2=`9/75`；逐锚点实际位移冲突仍为 `257/456`。局部锚点概率改善没有转化为累计 retain 改善。
 
 ## 解释与判定
 
 - **解释：** 旧 D_hop2 汇总同时包含 F1 设计内遗忘目标和未重叠题，无法单独解释为保留效用或目标遗忘；该切分也不自动构成受保护 retain 集。
-- **verdict：** pending。M3C/M3U 尚未运行，不更新效果 claim。
-- **cause_guess：** 待实验判定；当前仅有待检验的优化机制假设（梯度条件与 AdamW 实际位移）及已确认的指标重叠问题。
-- **next_action：** 按冻结协议运行一次 seed；只有通过预设筛选门才进入多 seed 确认。
+- **observed：** 以上数值分别来自三个 run 的 `metrics.json`；12+12 子集在三组记录中均完整，M3/M3C/M3U 主指标依次为 `0/12`、`0/12`、`1/12`。M3U 的 retain=`13/33`，相对 M3=`16/33` 下降 3 题。
+- **interpretation：** M3C 没有改善唯一主指标；M3U 多答对 1 题，但未达到预注册的 +2 门槛，且 retain 超出允许损失。M3U 的 F1_hop2 降至 `9/75`，显示设计内遗忘更深，但不足以抵消主指标和 retain 门槛未通过。单 seed 结果仅用于筛选。
+- **verdict：** reject（仅指本轮预注册候选筛选未通过，不代表对 GSU 方向作普遍否定）。
+- **cause_guess：** mechanism（诊断后部分支持）：聚合锚点修正能改善同批次平均直接概率，但仍允许个别锚点受损，且局部收益没有传递到累计 retain 评测。
+- **next_action：** strengthen；不追加 M3C/M3U 多 seed，也不修改原 M3U。若补强预算获批，按 [`probe01`](probes/probe01.md) 另建实验卡验证 M3A 逐锚点约束；当前不启动新训练。
 - **assets_salvaged：** 历史 M3 adapter/结果、F1 与 D_hop2 子集构造、quick 扫描、双口径评测、投影触发计数。
 
 ## Sanity checks
 
 - 确认 12+12 子集互斥且完整覆盖 D_hop2；核对 F1 链位置映射和固定 forget split。
-- 确认 M3C/M3U 的 seed、遗忘例顺序、锚点抽样序列、LoRA 配置和训练预算与 M3 一致。
+- 确认 M3C/M3U 的 seed、遗忘例顺序、锚点抽样序列、LoRA 配置和训练预算与 M3 一致；训练入口新增 `torch.manual_seed(42)`，补齐 LoRA 初始化 RNG 控制，差异记录在各 run 的 `patch.diff`。
 - M3U 仅在 `g_r · delta < 0` 且 `||g_r||^2 > 1e-12` 时修正；投影只针对采样锚点聚合梯度的一阶局部变化，逐步记录并审查修正次数，最终准确率另行评估。
 - 检查输出新旧文件隔离、无 adapter/断点混用；报告逐题命中数，避免 12 题小子集只写百分比。
+- 三组正式比较和 M3U 诊断均完成五集与六集评测；未发现异常退出、非有限指标或 CUDA OOM，所有评测集计数符合冻结样本量。
 
 ## 后续动作
 
-运行后分别填写 `observed`（事实、run_id、原始产物）与 `interpretation`，再更新 `docs/研究证据总账.md`。若结果支持候选，只进入预先定义的多 seed 确认；若未支持，保留负结果，不依据同一评测集临时增加方法组件。
+正式比较和 M3U 诊断均已归档。原 M3U 保持冻结；若结果支持新候选，只进入新实验卡定义的验证，不依据同一评测集临时增加方法组件。

@@ -1,0 +1,26 @@
+{
+  "five_set": {
+    "group": "GSUM3U",
+    "hop1_unlearn": 0.15151515151515152,
+    "hop1_test": 0.23232323232323232,
+    "hop2": 0.2546816479400749,
+    "same_object": 0.1388888888888889,
+    "retain": 0.3939393939393939
+  },
+  "six_set": {
+    "group": "GSUM3U",
+    "sets": {
+      "D_so": {"n": 24, "mean_lp": -18.0567587572916, "mean_correct": 0.0},
+      "D_hop2": {"n": 24, "mean_lp": -17.899468707775448, "mean_correct": 0.041666666666666664},
+      "K": {"n": 48, "mean_lp": -9.46595537423631, "mean_correct": 0.5833333333333334},
+      "hop1_unlearn": {"n": 33, "mean_lp": -16.102887278603312, "mean_correct": 0.15151515151515152},
+      "retain": {"n": 33, "mean_lp": -13.295582134257076, "mean_correct": 0.3939393939393939},
+      "F1_hop2": {"n": 75, "mean_lp": -12.510221282495994, "mean_correct": 0.12},
+      "D_hop2_F1_overlap": {"n": 12, "mean_lp": -16.62308651699397, "mean_correct": 0.0},
+      "D_hop2_no_F1_overlap": {"n": 12, "mean_lp": -19.175850898556934, "mean_correct": 0.08333333333333333}
+    }
+  },
+  "projection_checks": [38, 38, 38],
+  "projection_events": [38, 37, 37],
+  "epoch_forget_loss": [-6.2333, -16.6851, -33.1182]
+}

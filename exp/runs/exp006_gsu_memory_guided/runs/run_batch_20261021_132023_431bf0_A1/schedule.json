@@ -1,0 +1,848 @@
+{
+  "source": "F0_plus_F1_three_blocks",
+  "seed": 42,
+  "ordering": "in-place shuffle of previous permutation with seed+block",
+  "example_count": 38,
+  "target_updates": 114,
+  "schedule_blocks": 3,
+  "item_counts": {
+    "F0:0:23": 3,
+    "F0:10:245": 3,
+    "F0:11:257": 3,
+    "F0:12:301": 3,
+    "F0:13:328": 3,
+    "F0:14:333": 3,
+    "F0:15:360": 3,
+    "F0:16:412": 3,
+    "F0:17:436": 3,
+    "F0:18:446": 3,
+    "F0:19:482": 3,
+    "F0:1:47": 3,
+    "F0:20:483": 3,
+    "F0:21:491": 3,
+    "F0:22:493": 3,
+    "F0:23:506": 3,
+    "F0:24:511": 3,
+    "F0:25:528": 3,
+    "F0:26:533": 3,
+    "F0:27:536": 3,
+    "F0:28:578": 3,
+    "F0:29:599": 3,
+    "F0:2:60": 3,
+    "F0:30:615": 3,
+    "F0:31:629": 3,
+    "F0:32:661": 3,
+    "F0:3:69": 3,
+    "F0:4:119": 3,
+    "F0:5:132": 3,
+    "F0:6:139": 3,
+    "F0:7:148": 3,
+    "F0:8:201": 3,
+    "F0:9:223": 3,
+    "F1:0:United States of America|capital|Washington, D.C.": 3,
+    "F1:1:United States of America|continent|North America": 3,
+    "F1:2:United States of America|currency|United States dollar": 3,
+    "F1:3:Los Angeles|country|United States of America": 3,
+    "F1:4:Los Angeles|continent|North America": 3
+  },
+  "plan": [
+    {
+      "update": 1,
+      "schedule_block": 1,
+      "item_id": "F0:11:257",
+      "source": "F0",
+      "question_sha1": "8d2855140dfa"
+    },
+    {
+      "update": 2,
+      "schedule_block": 1,
+      "item_id": "F1:0:United States of America|capital|Washington, D.C.",
+      "source": "F1",
+      "question_sha1": "610a8588dd35"
+    },
+    {
+      "update": 3,
+      "schedule_block": 1,
+      "item_id": "F0:10:245",
+      "source": "F0",
+      "question_sha1": "f405cd022261"
+    },
+    {
+      "update": 4,
+      "schedule_block": 1,
+      "item_id": "F0:32:661",
+      "source": "F0",
+      "question_sha1": "4073a06472a9"
+    },
+    {
+      "update": 5,
+      "schedule_block": 1,
+      "item_id": "F1:1:United States of America|continent|North America",
+      "source": "F1",
+      "question_sha1": "fb511cebeb43"
+    },
+    {
+      "update": 6,
+      "schedule_block": 1,
+      "item_id": "F0:29:599",
+      "source": "F0",
+      "question_sha1": "84d71f2e8da1"
+    },
+    {
+      "update": 7,
+      "schedule_block": 1,
+      "item_id": "F0:12:301",
+      "source": "F0",
+      "question_sha1": "32722ead425d"
+    },
+    {
+      "update": 8,
+      "schedule_block": 1,
+      "item_id": "F0:5:132",
+      "source": "F0",
+      "question_sha1": "d5e745862ebd"
+    },
+    {
+      "update": 9,
+      "schedule_block": 1,
+      "item_id": "F0:25:528",
+      "source": "F0",
+      "question_sha1": "8721e801fcb0"
+    },
+    {
+      "update": 10,
+      "schedule_block": 1,
+      "item_id": "F0:30:615",
+      "source": "F0",
+      "question_sha1": "4a130e75f755"
+    },
+    {
+      "update": 11,
+      "schedule_block": 1,
+      "item_id": "F0:27:536",
+      "source": "F0",
+      "question_sha1": "ce4c5dd34bcb"
+    },
+    {
+      "update": 12,
+      "schedule_block": 1,
+      "item_id": "F0:4:119",
+      "source": "F0",
+      "question_sha1": "71748ca7a424"
+    },
+    {
+      "update": 13,
+      "schedule_block": 1,
+      "item_id": "F0:9:223",
+      "source": "F0",
+      "question_sha1": "8a36f4103110"
+    },
+    {
+      "update": 14,
+      "schedule_block": 1,
+      "item_id": "F0:19:482",
+      "source": "F0",
+      "question_sha1": "f70d1288ca7f"
+    },
+    {
+      "update": 15,
+      "schedule_block": 1,
+      "item_id": "F0:3:69",
+      "source": "F0",
+      "question_sha1": "d695714a4fd6"
+    },
+    {
+      "update": 16,
+      "schedule_block": 1,
+      "item_id": "F0:24:511",
+      "source": "F0",
+      "question_sha1": "6fa3aced463d"
+    },
+    {
+      "update": 17,
+      "schedule_block": 1,
+      "item_id": "F0:20:483",
+      "source": "F0",
+      "question_sha1": "8f5d571c295b"
+    },
+    {
+      "update": 18,
+      "schedule_block": 1,
+      "item_id": "F0:22:493",
+      "source": "F0",
+      "question_sha1": "30ff9919a59b"
+    },
+    {
+      "update": 19,
+      "schedule_block": 1,
+      "item_id": "F0:16:412",
+      "source": "F0",
+      "question_sha1": "c20aad419cfe"
+    },
+    {
+      "update": 20,
+      "schedule_block": 1,
+      "item_id": "F1:4:Los Angeles|continent|North America",
+      "source": "F1",
+      "question_sha1": "b42ab17700db"
+    },
+    {
+      "update": 21,
+      "schedule_block": 1,
+      "item_id": "F0:31:629",
+      "source": "F0",
+      "question_sha1": "a56809bdd77f"
+    },
+    {
+      "update": 22,
+      "schedule_block": 1,
+      "item_id": "F0:26:533",
+      "source": "F0",
+      "question_sha1": "35ce3a183f09"
+    },
+    {
+      "update": 23,
+      "schedule_block": 1,
+      "item_id": "F0:0:23",
+      "source": "F0",
+      "question_sha1": "88d41b22d5f3"
+    },
+    {
+      "update": 24,
+      "schedule_block": 1,
+      "item_id": "F1:3:Los Angeles|country|United States of America",
+      "source": "F1",
+      "question_sha1": "d47c483ae606"
+    },
+    {
+      "update": 25,
+      "schedule_block": 1,
+      "item_id": "F0:13:328",
+      "source": "F0",
+      "question_sha1": "bc01d1706263"
+    },
+    {
+      "update": 26,
+      "schedule_block": 1,
+      "item_id": "F0:18:446",
+      "source": "F0",
+      "question_sha1": "eea12cf2c958"
+    },
+    {
+      "update": 27,
+      "schedule_block": 1,
+      "item_id": "F0:2:60",
+      "source": "F0",
+      "question_sha1": "80702bd17ff6"
+    },
+    {
+      "update": 28,
+      "schedule_block": 1,
+      "item_id": "F1:2:United States of America|currency|United States dollar",
+      "source": "F1",
+      "question_sha1": "dfc2ae2c9da6"
+    },
+    {
+      "update": 29,
+      "schedule_block": 1,
+      "item_id": "F0:28:578",
+      "source": "F0",
+      "question_sha1": "62dd2aa2231e"
+    },
+    {
+      "update": 30,
+      "schedule_block": 1,
+      "item_id": "F0:23:506",
+      "source": "F0",
+      "question_sha1": "53191bbc37a0"
+    },
+    {
+      "update": 31,
+      "schedule_block": 1,
+      "item_id": "F0:21:491",
+      "source": "F0",
+      "question_sha1": "fb665d0788bf"
+    },
+    {
+      "update": 32,
+      "schedule_block": 1,
+      "item_id": "F0:6:139",
+      "source": "F0",
+      "question_sha1": "d89eeb3f1f43"
+    },
+    {
+      "update": 33,
+      "schedule_block": 1,
+      "item_id": "F0:8:201",
+      "source": "F0",
+      "question_sha1": "ad7f9ec1be77"
+    },
+    {
+      "update": 34,
+      "schedule_block": 1,
+      "item_id": "F0:14:333",
+      "source": "F0",
+      "question_sha1": "11a494c5ad89"
+    },
+    {
+      "update": 35,
+      "schedule_block": 1,
+      "item_id": "F0:15:360",
+      "source": "F0",
+      "question_sha1": "b340e904061b"
+    },
+    {
+      "update": 36,
+      "schedule_block": 1,
+      "item_id": "F0:17:436",
+      "source": "F0",
+      "question_sha1": "d3c45e45e3d6"
+    },
+    {
+      "update": 37,
+      "schedule_block": 1,
+      "item_id": "F0:1:47",
+      "source": "F0",
+      "question_sha1": "27053c69b1ff"
+    },
+    {
+      "update": 38,
+      "schedule_block": 1,
+      "item_id": "F0:7:148",
+      "source": "F0",
+      "question_sha1": "18e70372749e"
+    },
+    {
+      "update": 39,
+      "schedule_block": 2,
+      "item_id": "F0:13:328",
+      "source": "F0",
+      "question_sha1": "bc01d1706263"
+    },
+    {
+      "update": 40,
+      "schedule_block": 2,
+      "item_id": "F1:2:United States of America|currency|United States dollar",
+      "source": "F1",
+      "question_sha1": "dfc2ae2c9da6"
+    },
+    {
+      "update": 41,
+      "schedule_block": 2,
+      "item_id": "F0:6:139",
+      "source": "F0",
+      "question_sha1": "d89eeb3f1f43"
+    },
+    {
+      "update": 42,
+      "schedule_block": 2,
+      "item_id": "F0:0:23",
+      "source": "F0",
+      "question_sha1": "88d41b22d5f3"
+    },
+    {
+      "update": 43,
+      "schedule_block": 2,
+      "item_id": "F0:27:536",
+      "source": "F0",
+      "question_sha1": "ce4c5dd34bcb"
+    },
+    {
+      "update": 44,
+      "schedule_block": 2,
+      "item_id": "F0:17:436",
+      "source": "F0",
+      "question_sha1": "d3c45e45e3d6"
+    },
+    {
+      "update": 45,
+      "schedule_block": 2,
+      "item_id": "F1:1:United States of America|continent|North America",
+      "source": "F1",
+      "question_sha1": "fb511cebeb43"
+    },
+    {
+      "update": 46,
+      "schedule_block": 2,
+      "item_id": "F0:3:69",
+      "source": "F0",
+      "question_sha1": "d695714a4fd6"
+    },
+    {
+      "update": 47,
+      "schedule_block": 2,
+      "item_id": "F0:14:333",
+      "source": "F0",
+      "question_sha1": "11a494c5ad89"
+    },
+    {
+      "update": 48,
+      "schedule_block": 2,
+      "item_id": "F0:5:132",
+      "source": "F0",
+      "question_sha1": "d5e745862ebd"
+    },
+    {
+      "update": 49,
+      "schedule_block": 2,
+      "item_id": "F0:25:528",
+      "source": "F0",
+      "question_sha1": "8721e801fcb0"
+    },
+    {
+      "update": 50,
+      "schedule_block": 2,
+      "item_id": "F0:31:629",
+      "source": "F0",
+      "question_sha1": "a56809bdd77f"
+    },
+    {
+      "update": 51,
+      "schedule_block": 2,
+      "item_id": "F0:26:533",
+      "source": "F0",
+      "question_sha1": "35ce3a183f09"
+    },
+    {
+      "update": 52,
+      "schedule_block": 2,
+      "item_id": "F0:7:148",
+      "source": "F0",
+      "question_sha1": "18e70372749e"
+    },
+    {
+      "update": 53,
+      "schedule_block": 2,
+      "item_id": "F0:8:201",
+      "source": "F0",
+      "question_sha1": "ad7f9ec1be77"
+    },
+    {
+      "update": 54,
+      "schedule_block": 2,
+      "item_id": "F0:2:60",
+      "source": "F0",
+      "question_sha1": "80702bd17ff6"
+    },
+    {
+      "update": 55,
+      "schedule_block": 2,
+      "item_id": "F0:32:661",
+      "source": "F0",
+      "question_sha1": "4073a06472a9"
+    },
+    {
+      "update": 56,
+      "schedule_block": 2,
+      "item_id": "F1:0:United States of America|capital|Washington, D.C.",
+      "source": "F1",
+      "question_sha1": "610a8588dd35"
+    },
+    {
+      "update": 57,
+      "schedule_block": 2,
+      "item_id": "F0:29:599",
+      "source": "F0",
+      "question_sha1": "84d71f2e8da1"
+    },
+    {
+      "update": 58,
+      "schedule_block": 2,
+      "item_id": "F0:9:223",
+      "source": "F0",
+      "question_sha1": "8a36f4103110"
+    },
+    {
+      "update": 59,
+      "schedule_block": 2,
+      "item_id": "F0:18:446",
+      "source": "F0",
+      "question_sha1": "eea12cf2c958"
+    },
+    {
+      "update": 60,
+      "schedule_block": 2,
+      "item_id": "F0:22:493",
+      "source": "F0",
+      "question_sha1": "30ff9919a59b"
+    },
+    {
+      "update": 61,
+      "schedule_block": 2,
+      "item_id": "F0:28:578",
+      "source": "F0",
+      "question_sha1": "62dd2aa2231e"
+    },
+    {
+      "update": 62,
+      "schedule_block": 2,
+      "item_id": "F0:4:119",
+      "source": "F0",
+      "question_sha1": "71748ca7a424"
+    },
+    {
+      "update": 63,
+      "schedule_block": 2,
+      "item_id": "F0:1:47",
+      "source": "F0",
+      "question_sha1": "27053c69b1ff"
+    },
+    {
+      "update": 64,
+      "schedule_block": 2,
+      "item_id": "F0:19:482",
+      "source": "F0",
+      "question_sha1": "f70d1288ca7f"
+    },
+    {
+      "update": 65,
+      "schedule_block": 2,
+      "item_id": "F0:20:483",
+      "source": "F0",
+      "question_sha1": "8f5d571c295b"
+    },
+    {
+      "update": 66,
+      "schedule_block": 2,
+      "item_id": "F0:11:257",
+      "source": "F0",
+      "question_sha1": "8d2855140dfa"
+    },
+    {
+      "update": 67,
+      "schedule_block": 2,
+      "item_id": "F0:21:491",
+      "source": "F0",
+      "question_sha1": "fb665d0788bf"
+    },
+    {
+      "update": 68,
+      "schedule_block": 2,
+      "item_id": "F0:24:511",
+      "source": "F0",
+      "question_sha1": "6fa3aced463d"
+    },
+    {
+      "update": 69,
+      "schedule_block": 2,
+      "item_id": "F1:4:Los Angeles|continent|North America",
+      "source": "F1",
+      "question_sha1": "b42ab17700db"
+    },
+    {
+      "update": 70,
+      "schedule_block": 2,
+      "item_id": "F0:15:360",
+      "source": "F0",
+      "question_sha1": "b340e904061b"
+    },
+    {
+      "update": 71,
+      "schedule_block": 2,
+      "item_id": "F0:12:301",
+      "source": "F0",
+      "question_sha1": "32722ead425d"
+    },
+    {
+      "update": 72,
+      "schedule_block": 2,
+      "item_id": "F1:3:Los Angeles|country|United States of America",
+      "source": "F1",
+      "question_sha1": "d47c483ae606"
+    },
+    {
+      "update": 73,
+      "schedule_block": 2,
+      "item_id": "F0:23:506",
+      "source": "F0",
+      "question_sha1": "53191bbc37a0"
+    },
+    {
+      "update": 74,
+      "schedule_block": 2,
+      "item_id": "F0:30:615",
+      "source": "F0",
+      "question_sha1": "4a130e75f755"
+    },
+    {
+      "update": 75,
+      "schedule_block": 2,
+      "item_id": "F0:16:412",
+      "source": "F0",
+      "question_sha1": "c20aad419cfe"
+    },
+    {
+      "update": 76,
+      "schedule_block": 2,
+      "item_id": "F0:10:245",
+      "source": "F0",
+      "question_sha1": "f405cd022261"
+    },
+    {
+      "update": 77,
+      "schedule_block": 3,
+      "item_id": "F0:12:301",
+      "source": "F0",
+      "question_sha1": "32722ead425d"
+    },
+    {
+      "update": 78,
+      "schedule_block": 3,
+      "item_id": "F0:21:491",
+      "source": "F0",
+      "question_sha1": "fb665d0788bf"
+    },
+    {
+      "update": 79,
+      "schedule_block": 3,
+      "item_id": "F0:7:148",
+      "source": "F0",
+      "question_sha1": "18e70372749e"
+    },
+    {
+      "update": 80,
+      "schedule_block": 3,
+      "item_id": "F1:1:United States of America|continent|North America",
+      "source": "F1",
+      "question_sha1": "fb511cebeb43"
+    },
+    {
+      "update": 81,
+      "schedule_block": 3,
+      "item_id": "F0:28:578",
+      "source": "F0",
+      "question_sha1": "62dd2aa2231e"
+    },
+    {
+      "update": 82,
+      "schedule_block": 3,
+      "item_id": "F0:19:482",
+      "source": "F0",
+      "question_sha1": "f70d1288ca7f"
+    },
+    {
+      "update": 83,
+      "schedule_block": 3,
+      "item_id": "F1:0:United States of America|capital|Washington, D.C.",
+      "source": "F1",
+      "question_sha1": "610a8588dd35"
+    },
+    {
+      "update": 84,
+      "schedule_block": 3,
+      "item_id": "F0:2:60",
+      "source": "F0",
+      "question_sha1": "80702bd17ff6"
+    },
+    {
+      "update": 85,
+      "schedule_block": 3,
+      "item_id": "F0:14:333",
+      "source": "F0",
+      "question_sha1": "11a494c5ad89"
+    },
+    {
+      "update": 86,
+      "schedule_block": 3,
+      "item_id": "F0:15:360",
+      "source": "F0",
+      "question_sha1": "b340e904061b"
+    },
+    {
+      "update": 87,
+      "schedule_block": 3,
+      "item_id": "F0:6:139",
+      "source": "F0",
+      "question_sha1": "d89eeb3f1f43"
+    },
+    {
+      "update": 88,
+      "schedule_block": 3,
+      "item_id": "F0:22:493",
+      "source": "F0",
+      "question_sha1": "30ff9919a59b"
+    },
+    {
+      "update": 89,
+      "schedule_block": 3,
+      "item_id": "F0:27:536",
+      "source": "F0",
+      "question_sha1": "ce4c5dd34bcb"
+    },
+    {
+      "update": 90,
+      "schedule_block": 3,
+      "item_id": "F0:4:119",
+      "source": "F0",
+      "question_sha1": "71748ca7a424"
+    },
+    {
+      "update": 91,
+      "schedule_block": 3,
+      "item_id": "F1:2:United States of America|currency|United States dollar",
+      "source": "F1",
+      "question_sha1": "dfc2ae2c9da6"
+    },
+    {
+      "update": 92,
+      "schedule_block": 3,
+      "item_id": "F0:16:412",
+      "source": "F0",
+      "question_sha1": "c20aad419cfe"
+    },
+    {
+      "update": 93,
+      "schedule_block": 3,
+      "item_id": "F0:25:528",
+      "source": "F0",
+      "question_sha1": "8721e801fcb0"
+    },
+    {
+      "update": 94,
+      "schedule_block": 3,
+      "item_id": "F0:9:223",
+      "source": "F0",
+      "question_sha1": "8a36f4103110"
+    },
+    {
+      "update": 95,
+      "schedule_block": 3,
+      "item_id": "F0:10:245",
+      "source": "F0",
+      "question_sha1": "f405cd022261"
+    },
+    {
+      "update": 96,
+      "schedule_block": 3,
+      "item_id": "F0:26:533",
+      "source": "F0",
+      "question_sha1": "35ce3a183f09"
+    },
+    {
+      "update": 97,
+      "schedule_block": 3,
+      "item_id": "F0:18:446",
+      "source": "F0",
+      "question_sha1": "eea12cf2c958"
+    },
+    {
+      "update": 98,
+      "schedule_block": 3,
+      "item_id": "F1:4:Los Angeles|continent|North America",
+      "source": "F1",
+      "question_sha1": "b42ab17700db"
+    },
+    {
+      "update": 99,
+      "schedule_block": 3,
+      "item_id": "F0:32:661",
+      "source": "F0",
+      "question_sha1": "4073a06472a9"
+    },
+    {
+      "update": 100,
+      "schedule_block": 3,
+      "item_id": "F0:17:436",
+      "source": "F0",
+      "question_sha1": "d3c45e45e3d6"
+    },
+    {
+      "update": 101,
+      "schedule_block": 3,
+      "item_id": "F0:11:257",
+      "source": "F0",
+      "question_sha1": "8d2855140dfa"
+    },
+    {
+      "update": 102,
+      "schedule_block": 3,
+      "item_id": "F0:24:511",
+      "source": "F0",
+      "question_sha1": "6fa3aced463d"
+    },
+    {
+      "update": 103,
+      "schedule_block": 3,
+      "item_id": "F0:29:599",
+      "source": "F0",
+      "question_sha1": "84d71f2e8da1"
+    },
+    {
+      "update": 104,
+      "schedule_block": 3,
+      "item_id": "F0:0:23",
+      "source": "F0",
+      "question_sha1": "88d41b22d5f3"
+    },
+    {
+      "update": 105,
+      "schedule_block": 3,
+      "item_id": "F0:30:615",
+      "source": "F0",
+      "question_sha1": "4a130e75f755"
+    },
+    {
+      "update": 106,
+      "schedule_block": 3,
+      "item_id": "F0:13:328",
+      "source": "F0",
+      "question_sha1": "bc01d1706263"
+    },
+    {
+      "update": 107,
+      "schedule_block": 3,
+      "item_id": "F0:5:132",
+      "source": "F0",
+      "question_sha1": "d5e745862ebd"
+    },
+    {
+      "update": 108,
+      "schedule_block": 3,
+      "item_id": "F0:8:201",
+      "source": "F0",
+      "question_sha1": "ad7f9ec1be77"
+    },
+    {
+      "update": 109,
+      "schedule_block": 3,
+      "item_id": "F0:1:47",
+      "source": "F0",
+      "question_sha1": "27053c69b1ff"
+    },
+    {
+      "update": 110,
+      "schedule_block": 3,
+      "item_id": "F0:31:629",
+      "source": "F0",
+      "question_sha1": "a56809bdd77f"
+    },
+    {
+      "update": 111,
+      "schedule_block": 3,
+      "item_id": "F0:3:69",
+      "source": "F0",
+      "question_sha1": "d695714a4fd6"
+    },
+    {
+      "update": 112,
+      "schedule_block": 3,
+      "item_id": "F0:23:506",
+      "source": "F0",
+      "question_sha1": "53191bbc37a0"
+    },
+    {
+      "update": 113,
+      "schedule_block": 3,
+      "item_id": "F1:3:Los Angeles|country|United States of America",
+      "source": "F1",
+      "question_sha1": "d47c483ae606"
+    },
+    {
+      "update": 114,
+      "schedule_block": 3,
+      "item_id": "F0:20:483",
+      "source": "F0",
+      "question_sha1": "8f5d571c295b"
+    }
+  ]
+}

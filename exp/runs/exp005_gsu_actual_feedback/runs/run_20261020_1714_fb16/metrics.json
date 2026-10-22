@@ -1,0 +1,125 @@
+{
+  "five_set": {
+    "group": "GSU_FB16_DIAG",
+    "hop1_unlearn": 0.21212121212121213,
+    "hop1_test": 0.15151515151515152,
+    "hop2": 0.30337078651685395,
+    "same_object": 0.2569444444444444,
+    "retain": 0.5757575757575758
+  },
+  "six_set": {
+    "group": "GSU_FB16_DIAG",
+    "sets": {
+      "D_so": {
+        "n": 24,
+        "mean_lp": -10.247037125788522,
+        "mean_correct": 0.125
+      },
+      "D_hop2": {
+        "n": 24,
+        "mean_lp": -7.8997348352657495,
+        "mean_correct": 0.16666666666666666
+      },
+      "K": {
+        "n": 48,
+        "mean_lp": -7.844471510936228,
+        "mean_correct": 0.1875
+      },
+      "hop1_unlearn": {
+        "n": 33,
+        "mean_lp": -10.143376604405788,
+        "mean_correct": 0.21212121212121213
+      },
+      "retain": {
+        "n": 33,
+        "mean_lp": -8.014664818521,
+        "mean_correct": 0.5757575757575758
+      },
+      "F1_hop2": {
+        "n": 75,
+        "mean_lp": -7.028960608516262,
+        "mean_correct": 0.29333333333333333
+      },
+      "D_hop2_F1_overlap": {
+        "n": 12,
+        "mean_lp": -7.791249383296431,
+        "mean_correct": 0.08333333333333333
+      },
+      "D_hop2_no_F1_overlap": {
+        "n": 12,
+        "mean_lp": -8.008220287235064,
+        "mean_correct": 0.25
+      }
+    }
+  },
+  "diagnostics": {
+    "method": "GSU_FB16",
+    "steps": 114,
+    "corrections": 114,
+    "feedback_rounds": 227,
+    "risk_observations": 3000,
+    "unique_anchor_count": 33,
+    "projection_failures": 0,
+    "dykstra_failures": 0,
+    "epochs": [
+      {
+        "method": "GSU_FB16",
+        "epoch": 1,
+        "steps": 38,
+        "forget_lp_mean": -5.088685371373829,
+        "raw_actual_risk_rate": 0.9605263157894737,
+        "final_actual_risk_rate": 0.4868421052631579,
+        "raw_actual_drop_rate": 0.9605263157894737,
+        "final_actual_drop_rate": 0.4868421052631579,
+        "raw_mean_anchor_lp_delta": -0.1876131276551046,
+        "final_mean_anchor_lp_delta": 0.012061656403698419,
+        "correction_rate": 1.0,
+        "mean_feedback_rounds": 1.9736842105263157,
+        "mean_correction_to_raw_norm_ratio": 0.2496242605830801,
+        "max_correction_to_raw_norm_ratio": 0.30000010215074785,
+        "mean_solver_cycles": 31.86842105263158
+      },
+      {
+        "method": "GSU_FB16",
+        "epoch": 2,
+        "steps": 38,
+        "forget_lp_mean": -7.968083830256211,
+        "raw_actual_risk_rate": 0.9720394736842105,
+        "final_actual_risk_rate": 0.4934210526315789,
+        "raw_actual_drop_rate": 0.9720394736842105,
+        "final_actual_drop_rate": 0.4934210526315789,
+        "raw_mean_anchor_lp_delta": -0.8441170743225437,
+        "final_mean_anchor_lp_delta": -0.05031029919260427,
+        "correction_rate": 1.0,
+        "mean_feedback_rounds": 2.0,
+        "mean_correction_to_raw_norm_ratio": 0.1605630859281007,
+        "max_correction_to_raw_norm_ratio": 0.2715360907813933,
+        "mean_solver_cycles": 145.81578947368422
+      },
+      {
+        "method": "GSU_FB16",
+        "epoch": 3,
+        "steps": 38,
+        "forget_lp_mean": -20.197078667188947,
+        "raw_actual_risk_rate": 0.9950657894736842,
+        "final_actual_risk_rate": 0.3980263157894737,
+        "raw_actual_drop_rate": 0.9950657894736842,
+        "final_actual_drop_rate": 0.3980263157894737,
+        "raw_mean_anchor_lp_delta": -2.433974980327644,
+        "final_mean_anchor_lp_delta": -0.1217397492575018,
+        "correction_rate": 1.0,
+        "mean_feedback_rounds": 2.0,
+        "mean_correction_to_raw_norm_ratio": 0.23734190888881254,
+        "max_correction_to_raw_norm_ratio": 0.3000000974349233,
+        "mean_solver_cycles": 135.3684210526316
+      }
+    ],
+    "raw_jsonl": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp005_gsu_actual_feedback\\runs\\run_20261020_1714_fb16\\diagnostics.jsonl",
+    "algorithm": "16 fresh retain anchors per update; actual post-AdamW logprob feedback on risk anchors; at most two correction rounds; total correction norm capped at 0.30 of raw AdamW norm",
+    "actual_drop_tolerance": 0.0001,
+    "max_feedback_rounds": 2,
+    "max_correction_to_raw_norm_ratio": 0.3,
+    "solver": "coefficient-space Dykstra minimum-norm compensation",
+    "optimizer_moments": "unchanged by post-hoc correction"
+  }
+}

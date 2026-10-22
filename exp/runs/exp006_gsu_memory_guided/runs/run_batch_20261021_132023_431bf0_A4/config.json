@@ -1,0 +1,1885 @@
+{
+  "model": "E:\\12models\\modelscope\\Qwen2.5-1.5B-Instruct",
+  "model_config": {
+    "architectures": [
+      "Qwen2ForCausalLM"
+    ],
+    "attention_dropout": 0.0,
+    "bos_token_id": 151643,
+    "eos_token_id": 151645,
+    "hidden_act": "silu",
+    "hidden_size": 1536,
+    "initializer_range": 0.02,
+    "intermediate_size": 8960,
+    "max_position_embeddings": 32768,
+    "max_window_layers": 21,
+    "model_type": "qwen2",
+    "num_attention_heads": 12,
+    "num_hidden_layers": 28,
+    "num_key_value_heads": 2,
+    "rms_norm_eps": 1e-06,
+    "rope_theta": 1000000.0,
+    "sliding_window": 32768,
+    "tie_word_embeddings": true,
+    "torch_dtype": "bfloat16",
+    "transformers_version": "4.43.1",
+    "use_cache": true,
+    "use_sliding_window": false,
+    "vocab_size": 151936
+  },
+  "component_count": 196,
+  "F0_count": 33,
+  "F1_count": 5,
+  "retain_anchor_pool": 33,
+  "retain_audit_count": 66,
+  "retain_heldout_count": 33,
+  "eval_counts": {
+    "D_so": 24,
+    "D_hop2": 24,
+    "K": 48,
+    "hop1_unlearn": 33,
+    "retain": 33,
+    "F1_hop2": 75,
+    "D_hop2_F1_overlap": 12,
+    "D_hop2_no_F1_overlap": 12
+  },
+  "memory_path_counts": [
+    7,
+    7,
+    7,
+    2,
+    2
+  ],
+  "schedules": {
+    "F0": {
+      "source": "F0",
+      "seed": 42,
+      "ordering": "in-place shuffle of previous permutation with seed+block",
+      "example_count": 33,
+      "target_updates": 114,
+      "schedule_blocks": 4,
+      "item_counts": {
+        "F0:0:23": 3,
+        "F0:10:245": 4,
+        "F0:11:257": 4,
+        "F0:12:301": 3,
+        "F0:13:328": 3,
+        "F0:14:333": 4,
+        "F0:15:360": 3,
+        "F0:16:412": 3,
+        "F0:17:436": 3,
+        "F0:18:446": 3,
+        "F0:19:482": 3,
+        "F0:1:47": 4,
+        "F0:20:483": 4,
+        "F0:21:491": 4,
+        "F0:22:493": 4,
+        "F0:23:506": 3,
+        "F0:24:511": 4,
+        "F0:25:528": 4,
+        "F0:26:533": 3,
+        "F0:27:536": 4,
+        "F0:28:578": 4,
+        "F0:29:599": 4,
+        "F0:2:60": 3,
+        "F0:30:615": 3,
+        "F0:31:629": 3,
+        "F0:32:661": 3,
+        "F0:3:69": 3,
+        "F0:4:119": 3,
+        "F0:5:132": 4,
+        "F0:6:139": 4,
+        "F0:7:148": 3,
+        "F0:8:201": 4,
+        "F0:9:223": 3
+      },
+      "plan": [
+        {
+          "update": 1,
+          "schedule_block": 1,
+          "item_id": "F0:27:536",
+          "source": "F0",
+          "question_sha1": "ce4c5dd34bcb"
+        },
+        {
+          "update": 2,
+          "schedule_block": 1,
+          "item_id": "F0:5:132",
+          "source": "F0",
+          "question_sha1": "d5e745862ebd"
+        },
+        {
+          "update": 3,
+          "schedule_block": 1,
+          "item_id": "F0:11:257",
+          "source": "F0",
+          "question_sha1": "8d2855140dfa"
+        },
+        {
+          "update": 4,
+          "schedule_block": 1,
+          "item_id": "F0:16:412",
+          "source": "F0",
+          "question_sha1": "c20aad419cfe"
+        },
+        {
+          "update": 5,
+          "schedule_block": 1,
+          "item_id": "F0:26:533",
+          "source": "F0",
+          "question_sha1": "35ce3a183f09"
+        },
+        {
+          "update": 6,
+          "schedule_block": 1,
+          "item_id": "F0:12:301",
+          "source": "F0",
+          "question_sha1": "32722ead425d"
+        },
+        {
+          "update": 7,
+          "schedule_block": 1,
+          "item_id": "F0:20:483",
+          "source": "F0",
+          "question_sha1": "8f5d571c295b"
+        },
+        {
+          "update": 8,
+          "schedule_block": 1,
+          "item_id": "F0:15:360",
+          "source": "F0",
+          "question_sha1": "b340e904061b"
+        },
+        {
+          "update": 9,
+          "schedule_block": 1,
+          "item_id": "F0:10:245",
+          "source": "F0",
+          "question_sha1": "f405cd022261"
+        },
+        {
+          "update": 10,
+          "schedule_block": 1,
+          "item_id": "F0:14:333",
+          "source": "F0",
+          "question_sha1": "11a494c5ad89"
+        },
+        {
+          "update": 11,
+          "schedule_block": 1,
+          "item_id": "F0:19:482",
+          "source": "F0",
+          "question_sha1": "f70d1288ca7f"
+        },
+        {
+          "update": 12,
+          "schedule_block": 1,
+          "item_id": "F0:22:493",
+          "source": "F0",
+          "question_sha1": "30ff9919a59b"
+        },
+        {
+          "update": 13,
+          "schedule_block": 1,
+          "item_id": "F0:9:223",
+          "source": "F0",
+          "question_sha1": "8a36f4103110"
+        },
+        {
+          "update": 14,
+          "schedule_block": 1,
+          "item_id": "F0:29:599",
+          "source": "F0",
+          "question_sha1": "84d71f2e8da1"
+        },
+        {
+          "update": 15,
+          "schedule_block": 1,
+          "item_id": "F0:24:511",
+          "source": "F0",
+          "question_sha1": "6fa3aced463d"
+        },
+        {
+          "update": 16,
+          "schedule_block": 1,
+          "item_id": "F0:6:139",
+          "source": "F0",
+          "question_sha1": "d89eeb3f1f43"
+        },
+        {
+          "update": 17,
+          "schedule_block": 1,
+          "item_id": "F0:25:528",
+          "source": "F0",
+          "question_sha1": "8721e801fcb0"
+        },
+        {
+          "update": 18,
+          "schedule_block": 1,
+          "item_id": "F0:0:23",
+          "source": "F0",
+          "question_sha1": "88d41b22d5f3"
+        },
+        {
+          "update": 19,
+          "schedule_block": 1,
+          "item_id": "F0:31:629",
+          "source": "F0",
+          "question_sha1": "a56809bdd77f"
+        },
+        {
+          "update": 20,
+          "schedule_block": 1,
+          "item_id": "F0:13:328",
+          "source": "F0",
+          "question_sha1": "bc01d1706263"
+        },
+        {
+          "update": 21,
+          "schedule_block": 1,
+          "item_id": "F0:18:446",
+          "source": "F0",
+          "question_sha1": "eea12cf2c958"
+        },
+        {
+          "update": 22,
+          "schedule_block": 1,
+          "item_id": "F0:2:60",
+          "source": "F0",
+          "question_sha1": "80702bd17ff6"
+        },
+        {
+          "update": 23,
+          "schedule_block": 1,
+          "item_id": "F0:17:436",
+          "source": "F0",
+          "question_sha1": "d3c45e45e3d6"
+        },
+        {
+          "update": 24,
+          "schedule_block": 1,
+          "item_id": "F0:21:491",
+          "source": "F0",
+          "question_sha1": "fb665d0788bf"
+        },
+        {
+          "update": 25,
+          "schedule_block": 1,
+          "item_id": "F0:3:69",
+          "source": "F0",
+          "question_sha1": "d695714a4fd6"
+        },
+        {
+          "update": 26,
+          "schedule_block": 1,
+          "item_id": "F0:30:615",
+          "source": "F0",
+          "question_sha1": "4a130e75f755"
+        },
+        {
+          "update": 27,
+          "schedule_block": 1,
+          "item_id": "F0:4:119",
+          "source": "F0",
+          "question_sha1": "71748ca7a424"
+        },
+        {
+          "update": 28,
+          "schedule_block": 1,
+          "item_id": "F0:28:578",
+          "source": "F0",
+          "question_sha1": "62dd2aa2231e"
+        },
+        {
+          "update": 29,
+          "schedule_block": 1,
+          "item_id": "F0:32:661",
+          "source": "F0",
+          "question_sha1": "4073a06472a9"
+        },
+        {
+          "update": 30,
+          "schedule_block": 1,
+          "item_id": "F0:8:201",
+          "source": "F0",
+          "question_sha1": "ad7f9ec1be77"
+        },
+        {
+          "update": 31,
+          "schedule_block": 1,
+          "item_id": "F0:23:506",
+          "source": "F0",
+          "question_sha1": "53191bbc37a0"
+        },
+        {
+          "update": 32,
+          "schedule_block": 1,
+          "item_id": "F0:1:47",
+          "source": "F0",
+          "question_sha1": "27053c69b1ff"
+        },
+        {
+          "update": 33,
+          "schedule_block": 1,
+          "item_id": "F0:7:148",
+          "source": "F0",
+          "question_sha1": "18e70372749e"
+        },
+        {
+          "update": 34,
+          "schedule_block": 2,
+          "item_id": "F0:32:661",
+          "source": "F0",
+          "question_sha1": "4073a06472a9"
+        },
+        {
+          "update": 35,
+          "schedule_block": 2,
+          "item_id": "F0:8:201",
+          "source": "F0",
+          "question_sha1": "ad7f9ec1be77"
+        },
+        {
+          "update": 36,
+          "schedule_block": 2,
+          "item_id": "F0:12:301",
+          "source": "F0",
+          "question_sha1": "32722ead425d"
+        },
+        {
+          "update": 37,
+          "schedule_block": 2,
+          "item_id": "F0:15:360",
+          "source": "F0",
+          "question_sha1": "b340e904061b"
+        },
+        {
+          "update": 38,
+          "schedule_block": 2,
+          "item_id": "F0:21:491",
+          "source": "F0",
+          "question_sha1": "fb665d0788bf"
+        },
+        {
+          "update": 39,
+          "schedule_block": 2,
+          "item_id": "F0:9:223",
+          "source": "F0",
+          "question_sha1": "8a36f4103110"
+        },
+        {
+          "update": 40,
+          "schedule_block": 2,
+          "item_id": "F0:19:482",
+          "source": "F0",
+          "question_sha1": "f70d1288ca7f"
+        },
+        {
+          "update": 41,
+          "schedule_block": 2,
+          "item_id": "F0:5:132",
+          "source": "F0",
+          "question_sha1": "d5e745862ebd"
+        },
+        {
+          "update": 42,
+          "schedule_block": 2,
+          "item_id": "F0:1:47",
+          "source": "F0",
+          "question_sha1": "27053c69b1ff"
+        },
+        {
+          "update": 43,
+          "schedule_block": 2,
+          "item_id": "F0:7:148",
+          "source": "F0",
+          "question_sha1": "18e70372749e"
+        },
+        {
+          "update": 44,
+          "schedule_block": 2,
+          "item_id": "F0:18:446",
+          "source": "F0",
+          "question_sha1": "eea12cf2c958"
+        },
+        {
+          "update": 45,
+          "schedule_block": 2,
+          "item_id": "F0:20:483",
+          "source": "F0",
+          "question_sha1": "8f5d571c295b"
+        },
+        {
+          "update": 46,
+          "schedule_block": 2,
+          "item_id": "F0:10:245",
+          "source": "F0",
+          "question_sha1": "f405cd022261"
+        },
+        {
+          "update": 47,
+          "schedule_block": 2,
+          "item_id": "F0:0:23",
+          "source": "F0",
+          "question_sha1": "88d41b22d5f3"
+        },
+        {
+          "update": 48,
+          "schedule_block": 2,
+          "item_id": "F0:14:333",
+          "source": "F0",
+          "question_sha1": "11a494c5ad89"
+        },
+        {
+          "update": 49,
+          "schedule_block": 2,
+          "item_id": "F0:4:119",
+          "source": "F0",
+          "question_sha1": "71748ca7a424"
+        },
+        {
+          "update": 50,
+          "schedule_block": 2,
+          "item_id": "F0:29:599",
+          "source": "F0",
+          "question_sha1": "84d71f2e8da1"
+        },
+        {
+          "update": 51,
+          "schedule_block": 2,
+          "item_id": "F0:25:528",
+          "source": "F0",
+          "question_sha1": "8721e801fcb0"
+        },
+        {
+          "update": 52,
+          "schedule_block": 2,
+          "item_id": "F0:27:536",
+          "source": "F0",
+          "question_sha1": "ce4c5dd34bcb"
+        },
+        {
+          "update": 53,
+          "schedule_block": 2,
+          "item_id": "F0:30:615",
+          "source": "F0",
+          "question_sha1": "4a130e75f755"
+        },
+        {
+          "update": 54,
+          "schedule_block": 2,
+          "item_id": "F0:6:139",
+          "source": "F0",
+          "question_sha1": "d89eeb3f1f43"
+        },
+        {
+          "update": 55,
+          "schedule_block": 2,
+          "item_id": "F0:13:328",
+          "source": "F0",
+          "question_sha1": "bc01d1706263"
+        },
+        {
+          "update": 56,
+          "schedule_block": 2,
+          "item_id": "F0:28:578",
+          "source": "F0",
+          "question_sha1": "62dd2aa2231e"
+        },
+        {
+          "update": 57,
+          "schedule_block": 2,
+          "item_id": "F0:16:412",
+          "source": "F0",
+          "question_sha1": "c20aad419cfe"
+        },
+        {
+          "update": 58,
+          "schedule_block": 2,
+          "item_id": "F0:23:506",
+          "source": "F0",
+          "question_sha1": "53191bbc37a0"
+        },
+        {
+          "update": 59,
+          "schedule_block": 2,
+          "item_id": "F0:2:60",
+          "source": "F0",
+          "question_sha1": "80702bd17ff6"
+        },
+        {
+          "update": 60,
+          "schedule_block": 2,
+          "item_id": "F0:22:493",
+          "source": "F0",
+          "question_sha1": "30ff9919a59b"
+        },
+        {
+          "update": 61,
+          "schedule_block": 2,
+          "item_id": "F0:24:511",
+          "source": "F0",
+          "question_sha1": "6fa3aced463d"
+        },
+        {
+          "update": 62,
+          "schedule_block": 2,
+          "item_id": "F0:26:533",
+          "source": "F0",
+          "question_sha1": "35ce3a183f09"
+        },
+        {
+          "update": 63,
+          "schedule_block": 2,
+          "item_id": "F0:3:69",
+          "source": "F0",
+          "question_sha1": "d695714a4fd6"
+        },
+        {
+          "update": 64,
+          "schedule_block": 2,
+          "item_id": "F0:17:436",
+          "source": "F0",
+          "question_sha1": "d3c45e45e3d6"
+        },
+        {
+          "update": 65,
+          "schedule_block": 2,
+          "item_id": "F0:31:629",
+          "source": "F0",
+          "question_sha1": "a56809bdd77f"
+        },
+        {
+          "update": 66,
+          "schedule_block": 2,
+          "item_id": "F0:11:257",
+          "source": "F0",
+          "question_sha1": "8d2855140dfa"
+        },
+        {
+          "update": 67,
+          "schedule_block": 3,
+          "item_id": "F0:13:328",
+          "source": "F0",
+          "question_sha1": "bc01d1706263"
+        },
+        {
+          "update": 68,
+          "schedule_block": 3,
+          "item_id": "F0:2:60",
+          "source": "F0",
+          "question_sha1": "80702bd17ff6"
+        },
+        {
+          "update": 69,
+          "schedule_block": 3,
+          "item_id": "F0:30:615",
+          "source": "F0",
+          "question_sha1": "4a130e75f755"
+        },
+        {
+          "update": 70,
+          "schedule_block": 3,
+          "item_id": "F0:19:482",
+          "source": "F0",
+          "question_sha1": "f70d1288ca7f"
+        },
+        {
+          "update": 71,
+          "schedule_block": 3,
+          "item_id": "F0:4:119",
+          "source": "F0",
+          "question_sha1": "71748ca7a424"
+        },
+        {
+          "update": 72,
+          "schedule_block": 3,
+          "item_id": "F0:28:578",
+          "source": "F0",
+          "question_sha1": "62dd2aa2231e"
+        },
+        {
+          "update": 73,
+          "schedule_block": 3,
+          "item_id": "F0:20:483",
+          "source": "F0",
+          "question_sha1": "8f5d571c295b"
+        },
+        {
+          "update": 74,
+          "schedule_block": 3,
+          "item_id": "F0:1:47",
+          "source": "F0",
+          "question_sha1": "27053c69b1ff"
+        },
+        {
+          "update": 75,
+          "schedule_block": 3,
+          "item_id": "F0:0:23",
+          "source": "F0",
+          "question_sha1": "88d41b22d5f3"
+        },
+        {
+          "update": 76,
+          "schedule_block": 3,
+          "item_id": "F0:12:301",
+          "source": "F0",
+          "question_sha1": "32722ead425d"
+        },
+        {
+          "update": 77,
+          "schedule_block": 3,
+          "item_id": "F0:16:412",
+          "source": "F0",
+          "question_sha1": "c20aad419cfe"
+        },
+        {
+          "update": 78,
+          "schedule_block": 3,
+          "item_id": "F0:21:491",
+          "source": "F0",
+          "question_sha1": "fb665d0788bf"
+        },
+        {
+          "update": 79,
+          "schedule_block": 3,
+          "item_id": "F0:14:333",
+          "source": "F0",
+          "question_sha1": "11a494c5ad89"
+        },
+        {
+          "update": 80,
+          "schedule_block": 3,
+          "item_id": "F0:8:201",
+          "source": "F0",
+          "question_sha1": "ad7f9ec1be77"
+        },
+        {
+          "update": 81,
+          "schedule_block": 3,
+          "item_id": "F0:6:139",
+          "source": "F0",
+          "question_sha1": "d89eeb3f1f43"
+        },
+        {
+          "update": 82,
+          "schedule_block": 3,
+          "item_id": "F0:18:446",
+          "source": "F0",
+          "question_sha1": "eea12cf2c958"
+        },
+        {
+          "update": 83,
+          "schedule_block": 3,
+          "item_id": "F0:25:528",
+          "source": "F0",
+          "question_sha1": "8721e801fcb0"
+        },
+        {
+          "update": 84,
+          "schedule_block": 3,
+          "item_id": "F0:3:69",
+          "source": "F0",
+          "question_sha1": "d695714a4fd6"
+        },
+        {
+          "update": 85,
+          "schedule_block": 3,
+          "item_id": "F0:24:511",
+          "source": "F0",
+          "question_sha1": "6fa3aced463d"
+        },
+        {
+          "update": 86,
+          "schedule_block": 3,
+          "item_id": "F0:29:599",
+          "source": "F0",
+          "question_sha1": "84d71f2e8da1"
+        },
+        {
+          "update": 87,
+          "schedule_block": 3,
+          "item_id": "F0:17:436",
+          "source": "F0",
+          "question_sha1": "d3c45e45e3d6"
+        },
+        {
+          "update": 88,
+          "schedule_block": 3,
+          "item_id": "F0:23:506",
+          "source": "F0",
+          "question_sha1": "53191bbc37a0"
+        },
+        {
+          "update": 89,
+          "schedule_block": 3,
+          "item_id": "F0:11:257",
+          "source": "F0",
+          "question_sha1": "8d2855140dfa"
+        },
+        {
+          "update": 90,
+          "schedule_block": 3,
+          "item_id": "F0:27:536",
+          "source": "F0",
+          "question_sha1": "ce4c5dd34bcb"
+        },
+        {
+          "update": 91,
+          "schedule_block": 3,
+          "item_id": "F0:15:360",
+          "source": "F0",
+          "question_sha1": "b340e904061b"
+        },
+        {
+          "update": 92,
+          "schedule_block": 3,
+          "item_id": "F0:26:533",
+          "source": "F0",
+          "question_sha1": "35ce3a183f09"
+        },
+        {
+          "update": 93,
+          "schedule_block": 3,
+          "item_id": "F0:32:661",
+          "source": "F0",
+          "question_sha1": "4073a06472a9"
+        },
+        {
+          "update": 94,
+          "schedule_block": 3,
+          "item_id": "F0:7:148",
+          "source": "F0",
+          "question_sha1": "18e70372749e"
+        },
+        {
+          "update": 95,
+          "schedule_block": 3,
+          "item_id": "F0:31:629",
+          "source": "F0",
+          "question_sha1": "a56809bdd77f"
+        },
+        {
+          "update": 96,
+          "schedule_block": 3,
+          "item_id": "F0:10:245",
+          "source": "F0",
+          "question_sha1": "f405cd022261"
+        },
+        {
+          "update": 97,
+          "schedule_block": 3,
+          "item_id": "F0:9:223",
+          "source": "F0",
+          "question_sha1": "8a36f4103110"
+        },
+        {
+          "update": 98,
+          "schedule_block": 3,
+          "item_id": "F0:5:132",
+          "source": "F0",
+          "question_sha1": "d5e745862ebd"
+        },
+        {
+          "update": 99,
+          "schedule_block": 3,
+          "item_id": "F0:22:493",
+          "source": "F0",
+          "question_sha1": "30ff9919a59b"
+        },
+        {
+          "update": 100,
+          "schedule_block": 4,
+          "item_id": "F0:8:201",
+          "source": "F0",
+          "question_sha1": "ad7f9ec1be77"
+        },
+        {
+          "update": 101,
+          "schedule_block": 4,
+          "item_id": "F0:1:47",
+          "source": "F0",
+          "question_sha1": "27053c69b1ff"
+        },
+        {
+          "update": 102,
+          "schedule_block": 4,
+          "item_id": "F0:5:132",
+          "source": "F0",
+          "question_sha1": "d5e745862ebd"
+        },
+        {
+          "update": 103,
+          "schedule_block": 4,
+          "item_id": "F0:6:139",
+          "source": "F0",
+          "question_sha1": "d89eeb3f1f43"
+        },
+        {
+          "update": 104,
+          "schedule_block": 4,
+          "item_id": "F0:11:257",
+          "source": "F0",
+          "question_sha1": "8d2855140dfa"
+        },
+        {
+          "update": 105,
+          "schedule_block": 4,
+          "item_id": "F0:28:578",
+          "source": "F0",
+          "question_sha1": "62dd2aa2231e"
+        },
+        {
+          "update": 106,
+          "schedule_block": 4,
+          "item_id": "F0:10:245",
+          "source": "F0",
+          "question_sha1": "f405cd022261"
+        },
+        {
+          "update": 107,
+          "schedule_block": 4,
+          "item_id": "F0:24:511",
+          "source": "F0",
+          "question_sha1": "6fa3aced463d"
+        },
+        {
+          "update": 108,
+          "schedule_block": 4,
+          "item_id": "F0:22:493",
+          "source": "F0",
+          "question_sha1": "30ff9919a59b"
+        },
+        {
+          "update": 109,
+          "schedule_block": 4,
+          "item_id": "F0:20:483",
+          "source": "F0",
+          "question_sha1": "8f5d571c295b"
+        },
+        {
+          "update": 110,
+          "schedule_block": 4,
+          "item_id": "F0:29:599",
+          "source": "F0",
+          "question_sha1": "84d71f2e8da1"
+        },
+        {
+          "update": 111,
+          "schedule_block": 4,
+          "item_id": "F0:25:528",
+          "source": "F0",
+          "question_sha1": "8721e801fcb0"
+        },
+        {
+          "update": 112,
+          "schedule_block": 4,
+          "item_id": "F0:21:491",
+          "source": "F0",
+          "question_sha1": "fb665d0788bf"
+        },
+        {
+          "update": 113,
+          "schedule_block": 4,
+          "item_id": "F0:14:333",
+          "source": "F0",
+          "question_sha1": "11a494c5ad89"
+        },
+        {
+          "update": 114,
+          "schedule_block": 4,
+          "item_id": "F0:27:536",
+          "source": "F0",
+          "question_sha1": "ce4c5dd34bcb"
+        }
+      ]
+    },
+    "F0+F1": {
+      "source": "F0+F1",
+      "seed": 42,
+      "ordering": "in-place shuffle of previous permutation with seed+block",
+      "example_count": 38,
+      "target_updates": 114,
+      "schedule_blocks": 3,
+      "item_counts": {
+        "F0:0:23": 3,
+        "F0:10:245": 3,
+        "F0:11:257": 3,
+        "F0:12:301": 3,
+        "F0:13:328": 3,
+        "F0:14:333": 3,
+        "F0:15:360": 3,
+        "F0:16:412": 3,
+        "F0:17:436": 3,
+        "F0:18:446": 3,
+        "F0:19:482": 3,
+        "F0:1:47": 3,
+        "F0:20:483": 3,
+        "F0:21:491": 3,
+        "F0:22:493": 3,
+        "F0:23:506": 3,
+        "F0:24:511": 3,
+        "F0:25:528": 3,
+        "F0:26:533": 3,
+        "F0:27:536": 3,
+        "F0:28:578": 3,
+        "F0:29:599": 3,
+        "F0:2:60": 3,
+        "F0:30:615": 3,
+        "F0:31:629": 3,
+        "F0:32:661": 3,
+        "F0:3:69": 3,
+        "F0:4:119": 3,
+        "F0:5:132": 3,
+        "F0:6:139": 3,
+        "F0:7:148": 3,
+        "F0:8:201": 3,
+        "F0:9:223": 3,
+        "F1:0:United States of America|capital|Washington, D.C.": 3,
+        "F1:1:United States of America|continent|North America": 3,
+        "F1:2:United States of America|currency|United States dollar": 3,
+        "F1:3:Los Angeles|country|United States of America": 3,
+        "F1:4:Los Angeles|continent|North America": 3
+      },
+      "plan": [
+        {
+          "update": 1,
+          "schedule_block": 1,
+          "item_id": "F0:11:257",
+          "source": "F0",
+          "question_sha1": "8d2855140dfa"
+        },
+        {
+          "update": 2,
+          "schedule_block": 1,
+          "item_id": "F1:0:United States of America|capital|Washington, D.C.",
+          "source": "F1",
+          "question_sha1": "610a8588dd35"
+        },
+        {
+          "update": 3,
+          "schedule_block": 1,
+          "item_id": "F0:10:245",
+          "source": "F0",
+          "question_sha1": "f405cd022261"
+        },
+        {
+          "update": 4,
+          "schedule_block": 1,
+          "item_id": "F0:32:661",
+          "source": "F0",
+          "question_sha1": "4073a06472a9"
+        },
+        {
+          "update": 5,
+          "schedule_block": 1,
+          "item_id": "F1:1:United States of America|continent|North America",
+          "source": "F1",
+          "question_sha1": "fb511cebeb43"
+        },
+        {
+          "update": 6,
+          "schedule_block": 1,
+          "item_id": "F0:29:599",
+          "source": "F0",
+          "question_sha1": "84d71f2e8da1"
+        },
+        {
+          "update": 7,
+          "schedule_block": 1,
+          "item_id": "F0:12:301",
+          "source": "F0",
+          "question_sha1": "32722ead425d"
+        },
+        {
+          "update": 8,
+          "schedule_block": 1,
+          "item_id": "F0:5:132",
+          "source": "F0",
+          "question_sha1": "d5e745862ebd"
+        },
+        {
+          "update": 9,
+          "schedule_block": 1,
+          "item_id": "F0:25:528",
+          "source": "F0",
+          "question_sha1": "8721e801fcb0"
+        },
+        {
+          "update": 10,
+          "schedule_block": 1,
+          "item_id": "F0:30:615",
+          "source": "F0",
+          "question_sha1": "4a130e75f755"
+        },
+        {
+          "update": 11,
+          "schedule_block": 1,
+          "item_id": "F0:27:536",
+          "source": "F0",
+          "question_sha1": "ce4c5dd34bcb"
+        },
+        {
+          "update": 12,
+          "schedule_block": 1,
+          "item_id": "F0:4:119",
+          "source": "F0",
+          "question_sha1": "71748ca7a424"
+        },
+        {
+          "update": 13,
+          "schedule_block": 1,
+          "item_id": "F0:9:223",
+          "source": "F0",
+          "question_sha1": "8a36f4103110"
+        },
+        {
+          "update": 14,
+          "schedule_block": 1,
+          "item_id": "F0:19:482",
+          "source": "F0",
+          "question_sha1": "f70d1288ca7f"
+        },
+        {
+          "update": 15,
+          "schedule_block": 1,
+          "item_id": "F0:3:69",
+          "source": "F0",
+          "question_sha1": "d695714a4fd6"
+        },
+        {
+          "update": 16,
+          "schedule_block": 1,
+          "item_id": "F0:24:511",
+          "source": "F0",
+          "question_sha1": "6fa3aced463d"
+        },
+        {
+          "update": 17,
+          "schedule_block": 1,
+          "item_id": "F0:20:483",
+          "source": "F0",
+          "question_sha1": "8f5d571c295b"
+        },
+        {
+          "update": 18,
+          "schedule_block": 1,
+          "item_id": "F0:22:493",
+          "source": "F0",
+          "question_sha1": "30ff9919a59b"
+        },
+        {
+          "update": 19,
+          "schedule_block": 1,
+          "item_id": "F0:16:412",
+          "source": "F0",
+          "question_sha1": "c20aad419cfe"
+        },
+        {
+          "update": 20,
+          "schedule_block": 1,
+          "item_id": "F1:4:Los Angeles|continent|North America",
+          "source": "F1",
+          "question_sha1": "b42ab17700db"
+        },
+        {
+          "update": 21,
+          "schedule_block": 1,
+          "item_id": "F0:31:629",
+          "source": "F0",
+          "question_sha1": "a56809bdd77f"
+        },
+        {
+          "update": 22,
+          "schedule_block": 1,
+          "item_id": "F0:26:533",
+          "source": "F0",
+          "question_sha1": "35ce3a183f09"
+        },
+        {
+          "update": 23,
+          "schedule_block": 1,
+          "item_id": "F0:0:23",
+          "source": "F0",
+          "question_sha1": "88d41b22d5f3"
+        },
+        {
+          "update": 24,
+          "schedule_block": 1,
+          "item_id": "F1:3:Los Angeles|country|United States of America",
+          "source": "F1",
+          "question_sha1": "d47c483ae606"
+        },
+        {
+          "update": 25,
+          "schedule_block": 1,
+          "item_id": "F0:13:328",
+          "source": "F0",
+          "question_sha1": "bc01d1706263"
+        },
+        {
+          "update": 26,
+          "schedule_block": 1,
+          "item_id": "F0:18:446",
+          "source": "F0",
+          "question_sha1": "eea12cf2c958"
+        },
+        {
+          "update": 27,
+          "schedule_block": 1,
+          "item_id": "F0:2:60",
+          "source": "F0",
+          "question_sha1": "80702bd17ff6"
+        },
+        {
+          "update": 28,
+          "schedule_block": 1,
+          "item_id": "F1:2:United States of America|currency|United States dollar",
+          "source": "F1",
+          "question_sha1": "dfc2ae2c9da6"
+        },
+        {
+          "update": 29,
+          "schedule_block": 1,
+          "item_id": "F0:28:578",
+          "source": "F0",
+          "question_sha1": "62dd2aa2231e"
+        },
+        {
+          "update": 30,
+          "schedule_block": 1,
+          "item_id": "F0:23:506",
+          "source": "F0",
+          "question_sha1": "53191bbc37a0"
+        },
+        {
+          "update": 31,
+          "schedule_block": 1,
+          "item_id": "F0:21:491",
+          "source": "F0",
+          "question_sha1": "fb665d0788bf"
+        },
+        {
+          "update": 32,
+          "schedule_block": 1,
+          "item_id": "F0:6:139",
+          "source": "F0",
+          "question_sha1": "d89eeb3f1f43"
+        },
+        {
+          "update": 33,
+          "schedule_block": 1,
+          "item_id": "F0:8:201",
+          "source": "F0",
+          "question_sha1": "ad7f9ec1be77"
+        },
+        {
+          "update": 34,
+          "schedule_block": 1,
+          "item_id": "F0:14:333",
+          "source": "F0",
+          "question_sha1": "11a494c5ad89"
+        },
+        {
+          "update": 35,
+          "schedule_block": 1,
+          "item_id": "F0:15:360",
+          "source": "F0",
+          "question_sha1": "b340e904061b"
+        },
+        {
+          "update": 36,
+          "schedule_block": 1,
+          "item_id": "F0:17:436",
+          "source": "F0",
+          "question_sha1": "d3c45e45e3d6"
+        },
+        {
+          "update": 37,
+          "schedule_block": 1,
+          "item_id": "F0:1:47",
+          "source": "F0",
+          "question_sha1": "27053c69b1ff"
+        },
+        {
+          "update": 38,
+          "schedule_block": 1,
+          "item_id": "F0:7:148",
+          "source": "F0",
+          "question_sha1": "18e70372749e"
+        },
+        {
+          "update": 39,
+          "schedule_block": 2,
+          "item_id": "F0:13:328",
+          "source": "F0",
+          "question_sha1": "bc01d1706263"
+        },
+        {
+          "update": 40,
+          "schedule_block": 2,
+          "item_id": "F1:2:United States of America|currency|United States dollar",
+          "source": "F1",
+          "question_sha1": "dfc2ae2c9da6"
+        },
+        {
+          "update": 41,
+          "schedule_block": 2,
+          "item_id": "F0:6:139",
+          "source": "F0",
+          "question_sha1": "d89eeb3f1f43"
+        },
+        {
+          "update": 42,
+          "schedule_block": 2,
+          "item_id": "F0:0:23",
+          "source": "F0",
+          "question_sha1": "88d41b22d5f3"
+        },
+        {
+          "update": 43,
+          "schedule_block": 2,
+          "item_id": "F0:27:536",
+          "source": "F0",
+          "question_sha1": "ce4c5dd34bcb"
+        },
+        {
+          "update": 44,
+          "schedule_block": 2,
+          "item_id": "F0:17:436",
+          "source": "F0",
+          "question_sha1": "d3c45e45e3d6"
+        },
+        {
+          "update": 45,
+          "schedule_block": 2,
+          "item_id": "F1:1:United States of America|continent|North America",
+          "source": "F1",
+          "question_sha1": "fb511cebeb43"
+        },
+        {
+          "update": 46,
+          "schedule_block": 2,
+          "item_id": "F0:3:69",
+          "source": "F0",
+          "question_sha1": "d695714a4fd6"
+        },
+        {
+          "update": 47,
+          "schedule_block": 2,
+          "item_id": "F0:14:333",
+          "source": "F0",
+          "question_sha1": "11a494c5ad89"
+        },
+        {
+          "update": 48,
+          "schedule_block": 2,
+          "item_id": "F0:5:132",
+          "source": "F0",
+          "question_sha1": "d5e745862ebd"
+        },
+        {
+          "update": 49,
+          "schedule_block": 2,
+          "item_id": "F0:25:528",
+          "source": "F0",
+          "question_sha1": "8721e801fcb0"
+        },
+        {
+          "update": 50,
+          "schedule_block": 2,
+          "item_id": "F0:31:629",
+          "source": "F0",
+          "question_sha1": "a56809bdd77f"
+        },
+        {
+          "update": 51,
+          "schedule_block": 2,
+          "item_id": "F0:26:533",
+          "source": "F0",
+          "question_sha1": "35ce3a183f09"
+        },
+        {
+          "update": 52,
+          "schedule_block": 2,
+          "item_id": "F0:7:148",
+          "source": "F0",
+          "question_sha1": "18e70372749e"
+        },
+        {
+          "update": 53,
+          "schedule_block": 2,
+          "item_id": "F0:8:201",
+          "source": "F0",
+          "question_sha1": "ad7f9ec1be77"
+        },
+        {
+          "update": 54,
+          "schedule_block": 2,
+          "item_id": "F0:2:60",
+          "source": "F0",
+          "question_sha1": "80702bd17ff6"
+        },
+        {
+          "update": 55,
+          "schedule_block": 2,
+          "item_id": "F0:32:661",
+          "source": "F0",
+          "question_sha1": "4073a06472a9"
+        },
+        {
+          "update": 56,
+          "schedule_block": 2,
+          "item_id": "F1:0:United States of America|capital|Washington, D.C.",
+          "source": "F1",
+          "question_sha1": "610a8588dd35"
+        },
+        {
+          "update": 57,
+          "schedule_block": 2,
+          "item_id": "F0:29:599",
+          "source": "F0",
+          "question_sha1": "84d71f2e8da1"
+        },
+        {
+          "update": 58,
+          "schedule_block": 2,
+          "item_id": "F0:9:223",
+          "source": "F0",
+          "question_sha1": "8a36f4103110"
+        },
+        {
+          "update": 59,
+          "schedule_block": 2,
+          "item_id": "F0:18:446",
+          "source": "F0",
+          "question_sha1": "eea12cf2c958"
+        },
+        {
+          "update": 60,
+          "schedule_block": 2,
+          "item_id": "F0:22:493",
+          "source": "F0",
+          "question_sha1": "30ff9919a59b"
+        },
+        {
+          "update": 61,
+          "schedule_block": 2,
+          "item_id": "F0:28:578",
+          "source": "F0",
+          "question_sha1": "62dd2aa2231e"
+        },
+        {
+          "update": 62,
+          "schedule_block": 2,
+          "item_id": "F0:4:119",
+          "source": "F0",
+          "question_sha1": "71748ca7a424"
+        },
+        {
+          "update": 63,
+          "schedule_block": 2,
+          "item_id": "F0:1:47",
+          "source": "F0",
+          "question_sha1": "27053c69b1ff"
+        },
+        {
+          "update": 64,
+          "schedule_block": 2,
+          "item_id": "F0:19:482",
+          "source": "F0",
+          "question_sha1": "f70d1288ca7f"
+        },
+        {
+          "update": 65,
+          "schedule_block": 2,
+          "item_id": "F0:20:483",
+          "source": "F0",
+          "question_sha1": "8f5d571c295b"
+        },
+        {
+          "update": 66,
+          "schedule_block": 2,
+          "item_id": "F0:11:257",
+          "source": "F0",
+          "question_sha1": "8d2855140dfa"
+        },
+        {
+          "update": 67,
+          "schedule_block": 2,
+          "item_id": "F0:21:491",
+          "source": "F0",
+          "question_sha1": "fb665d0788bf"
+        },
+        {
+          "update": 68,
+          "schedule_block": 2,
+          "item_id": "F0:24:511",
+          "source": "F0",
+          "question_sha1": "6fa3aced463d"
+        },
+        {
+          "update": 69,
+          "schedule_block": 2,
+          "item_id": "F1:4:Los Angeles|continent|North America",
+          "source": "F1",
+          "question_sha1": "b42ab17700db"
+        },
+        {
+          "update": 70,
+          "schedule_block": 2,
+          "item_id": "F0:15:360",
+          "source": "F0",
+          "question_sha1": "b340e904061b"
+        },
+        {
+          "update": 71,
+          "schedule_block": 2,
+          "item_id": "F0:12:301",
+          "source": "F0",
+          "question_sha1": "32722ead425d"
+        },
+        {
+          "update": 72,
+          "schedule_block": 2,
+          "item_id": "F1:3:Los Angeles|country|United States of America",
+          "source": "F1",
+          "question_sha1": "d47c483ae606"
+        },
+        {
+          "update": 73,
+          "schedule_block": 2,
+          "item_id": "F0:23:506",
+          "source": "F0",
+          "question_sha1": "53191bbc37a0"
+        },
+        {
+          "update": 74,
+          "schedule_block": 2,
+          "item_id": "F0:30:615",
+          "source": "F0",
+          "question_sha1": "4a130e75f755"
+        },
+        {
+          "update": 75,
+          "schedule_block": 2,
+          "item_id": "F0:16:412",
+          "source": "F0",
+          "question_sha1": "c20aad419cfe"
+        },
+        {
+          "update": 76,
+          "schedule_block": 2,
+          "item_id": "F0:10:245",
+          "source": "F0",
+          "question_sha1": "f405cd022261"
+        },
+        {
+          "update": 77,
+          "schedule_block": 3,
+          "item_id": "F0:12:301",
+          "source": "F0",
+          "question_sha1": "32722ead425d"
+        },
+        {
+          "update": 78,
+          "schedule_block": 3,
+          "item_id": "F0:21:491",
+          "source": "F0",
+          "question_sha1": "fb665d0788bf"
+        },
+        {
+          "update": 79,
+          "schedule_block": 3,
+          "item_id": "F0:7:148",
+          "source": "F0",
+          "question_sha1": "18e70372749e"
+        },
+        {
+          "update": 80,
+          "schedule_block": 3,
+          "item_id": "F1:1:United States of America|continent|North America",
+          "source": "F1",
+          "question_sha1": "fb511cebeb43"
+        },
+        {
+          "update": 81,
+          "schedule_block": 3,
+          "item_id": "F0:28:578",
+          "source": "F0",
+          "question_sha1": "62dd2aa2231e"
+        },
+        {
+          "update": 82,
+          "schedule_block": 3,
+          "item_id": "F0:19:482",
+          "source": "F0",
+          "question_sha1": "f70d1288ca7f"
+        },
+        {
+          "update": 83,
+          "schedule_block": 3,
+          "item_id": "F1:0:United States of America|capital|Washington, D.C.",
+          "source": "F1",
+          "question_sha1": "610a8588dd35"
+        },
+        {
+          "update": 84,
+          "schedule_block": 3,
+          "item_id": "F0:2:60",
+          "source": "F0",
+          "question_sha1": "80702bd17ff6"
+        },
+        {
+          "update": 85,
+          "schedule_block": 3,
+          "item_id": "F0:14:333",
+          "source": "F0",
+          "question_sha1": "11a494c5ad89"
+        },
+        {
+          "update": 86,
+          "schedule_block": 3,
+          "item_id": "F0:15:360",
+          "source": "F0",
+          "question_sha1": "b340e904061b"
+        },
+        {
+          "update": 87,
+          "schedule_block": 3,
+          "item_id": "F0:6:139",
+          "source": "F0",
+          "question_sha1": "d89eeb3f1f43"
+        },
+        {
+          "update": 88,
+          "schedule_block": 3,
+          "item_id": "F0:22:493",
+          "source": "F0",
+          "question_sha1": "30ff9919a59b"
+        },
+        {
+          "update": 89,
+          "schedule_block": 3,
+          "item_id": "F0:27:536",
+          "source": "F0",
+          "question_sha1": "ce4c5dd34bcb"
+        },
+        {
+          "update": 90,
+          "schedule_block": 3,
+          "item_id": "F0:4:119",
+          "source": "F0",
+          "question_sha1": "71748ca7a424"
+        },
+        {
+          "update": 91,
+          "schedule_block": 3,
+          "item_id": "F1:2:United States of America|currency|United States dollar",
+          "source": "F1",
+          "question_sha1": "dfc2ae2c9da6"
+        },
+        {
+          "update": 92,
+          "schedule_block": 3,
+          "item_id": "F0:16:412",
+          "source": "F0",
+          "question_sha1": "c20aad419cfe"
+        },
+        {
+          "update": 93,
+          "schedule_block": 3,
+          "item_id": "F0:25:528",
+          "source": "F0",
+          "question_sha1": "8721e801fcb0"
+        },
+        {
+          "update": 94,
+          "schedule_block": 3,
+          "item_id": "F0:9:223",
+          "source": "F0",
+          "question_sha1": "8a36f4103110"
+        },
+        {
+          "update": 95,
+          "schedule_block": 3,
+          "item_id": "F0:10:245",
+          "source": "F0",
+          "question_sha1": "f405cd022261"
+        },
+        {
+          "update": 96,
+          "schedule_block": 3,
+          "item_id": "F0:26:533",
+          "source": "F0",
+          "question_sha1": "35ce3a183f09"
+        },
+        {
+          "update": 97,
+          "schedule_block": 3,
+          "item_id": "F0:18:446",
+          "source": "F0",
+          "question_sha1": "eea12cf2c958"
+        },
+        {
+          "update": 98,
+          "schedule_block": 3,
+          "item_id": "F1:4:Los Angeles|continent|North America",
+          "source": "F1",
+          "question_sha1": "b42ab17700db"
+        },
+        {
+          "update": 99,
+          "schedule_block": 3,
+          "item_id": "F0:32:661",
+          "source": "F0",
+          "question_sha1": "4073a06472a9"
+        },
+        {
+          "update": 100,
+          "schedule_block": 3,
+          "item_id": "F0:17:436",
+          "source": "F0",
+          "question_sha1": "d3c45e45e3d6"
+        },
+        {
+          "update": 101,
+          "schedule_block": 3,
+          "item_id": "F0:11:257",
+          "source": "F0",
+          "question_sha1": "8d2855140dfa"
+        },
+        {
+          "update": 102,
+          "schedule_block": 3,
+          "item_id": "F0:24:511",
+          "source": "F0",
+          "question_sha1": "6fa3aced463d"
+        },
+        {
+          "update": 103,
+          "schedule_block": 3,
+          "item_id": "F0:29:599",
+          "source": "F0",
+          "question_sha1": "84d71f2e8da1"
+        },
+        {
+          "update": 104,
+          "schedule_block": 3,
+          "item_id": "F0:0:23",
+          "source": "F0",
+          "question_sha1": "88d41b22d5f3"
+        },
+        {
+          "update": 105,
+          "schedule_block": 3,
+          "item_id": "F0:30:615",
+          "source": "F0",
+          "question_sha1": "4a130e75f755"
+        },
+        {
+          "update": 106,
+          "schedule_block": 3,
+          "item_id": "F0:13:328",
+          "source": "F0",
+          "question_sha1": "bc01d1706263"
+        },
+        {
+          "update": 107,
+          "schedule_block": 3,
+          "item_id": "F0:5:132",
+          "source": "F0",
+          "question_sha1": "d5e745862ebd"
+        },
+        {
+          "update": 108,
+          "schedule_block": 3,
+          "item_id": "F0:8:201",
+          "source": "F0",
+          "question_sha1": "ad7f9ec1be77"
+        },
+        {
+          "update": 109,
+          "schedule_block": 3,
+          "item_id": "F0:1:47",
+          "source": "F0",
+          "question_sha1": "27053c69b1ff"
+        },
+        {
+          "update": 110,
+          "schedule_block": 3,
+          "item_id": "F0:31:629",
+          "source": "F0",
+          "question_sha1": "a56809bdd77f"
+        },
+        {
+          "update": 111,
+          "schedule_block": 3,
+          "item_id": "F0:3:69",
+          "source": "F0",
+          "question_sha1": "d695714a4fd6"
+        },
+        {
+          "update": 112,
+          "schedule_block": 3,
+          "item_id": "F0:23:506",
+          "source": "F0",
+          "question_sha1": "53191bbc37a0"
+        },
+        {
+          "update": 113,
+          "schedule_block": 3,
+          "item_id": "F1:3:Los Angeles|country|United States of America",
+          "source": "F1",
+          "question_sha1": "d47c483ae606"
+        },
+        {
+          "update": 114,
+          "schedule_block": 3,
+          "item_id": "F0:20:483",
+          "source": "F0",
+          "question_sha1": "8f5d571c295b"
+        }
+      ]
+    }
+  },
+  "experiment": "exp006_gsu_memory_guided",
+  "method_version": "GSU-v6-memory-guided",
+  "run_id": "run_batch_20261021_132023_431bf0_A4",
+  "variant": "A4",
+  "command": "D:\\Anaconda\\envs\\cuda126_env\\python.exe C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\diagnose_gsu_memory_guided.py --variant A4 --model E:\\12models\\modelscope\\Qwen2.5-1.5B-Instruct --run_dir C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp006_gsu_memory_guided\\runs\\run_batch_20261021_132023_431bf0_A4",
+  "git_commit": "6ec831cfa25e07fcdcc908459f76a678c45434fb",
+  "working_tree": "dirty",
+  "source_sha256": {
+    "exp\\train\\diagnose_gsu_memory_guided.py": "d38b3ac78716d3af2989d2131bea817c892766440acbff4e67a3001b3ac7770a",
+    "exp\\train\\diagnose_gsu_actual_feedback.py": "758290236b733e90cc7c8a7683b33d88aba7372387b274de278add1d9c482613",
+    "exp\\train\\diagnose_gsu_retain_protection.py": "c8a8a48c6beb9219a08f08bc932adb80485e8632f3aa3b38c8863e443ab57c50",
+    "exp\\train\\diagnose_gsu_m3.py": "3c23dbcac4d61187ff742e3e540e94d44974253b50e040b7e62833a698650a07",
+    "exp\\train\\train_gsu.py": "143597a7b881e4b8601bf9eae9c680b43f45fc1b5a8faf0b3acb0b7db3613964",
+    "exp\\train\\train_eval.py": "a64f773ac224f23cc1f3d22b733e1d7a37593b454f29ff579a56dbe69467ed02",
+    "exp\\damage\\component_ablation.py": "e85a03033ba303a634307837c7eeb80f4f1776831af3054acdc6d0c40089f465",
+    "exp\\damage\\eval_per_item.py": "9fdf037c731986051d9f015335fc5cf5eff5d0d2b1bb747169a4fe0194fc5e83",
+    "exp\\train\\tests\\test_gsu_memory_guided.py": "d77917be18fd0c47dddf13a9c65e9728055bdd83d7d2cbddfe2e09efb332cb1c",
+    "docs\\method_versions\\GSU-v6-memory-guided.md": "46e53530e7365563fbc33c945f923b585f87f2c802e103526c9d6fe1af8af73b",
+    "exp\\runs\\exp006_gsu_memory_guided\\card.md": "2e4ebef4ae4d6870c8fe34d72e37c33ddc5e867a5ab3d39e6d4a7537ca88f0d4"
+  },
+  "input_sha256": {
+    "data\\faithun\\FaithUn_Dataset.json": "d570cc3e30c083357ca45ab4dd9df807abbd800f51a657d89629e4fe7b3adbb0",
+    "data\\faithun\\splits\\forget_set_split.txt": "315312dd50b69993f3e90796e7162a9ade22b771f3aa9ec5f570ceaaad815428",
+    "data\\faithun\\splits\\retaining_set_split.txt": "8680043fe5c1f4f0517d7377664677ee225cd9eebcb72d542c7709b1f5b6e214",
+    "data\\faithun\\splits\\test_set_split.txt": "de0a3a20ebd0474702bbac068c53d5d7eecae1505f609b12be74037458b63ee2",
+    "exp\\results\\F1.json": "22f2892f51cfff76ab9632b3711fc95bd7e0400d7b0c248aa03f6a03dd3cc64b",
+    "exp\\results\\candidates.json": "07f92a2ae334105cc4bfac590493a047af1de61bb8883cdba5389e5f018715e6",
+    "exp\\results\\active_paths.json": "69655a8214f9db20201447bfbd53f66a0162d03cb9bfb218ac67654067a7620e",
+    "exp\\results\\attribution\\items.json": "4156443005f03989f326abbd7a54bb58dc79d33a62a929be9cddb2e86967a194",
+    "exp\\results\\per_item_G2.jsonl": "4ab8705c2f9596d40f15179b5f4681adeb9b81a09988f78a7b75d38cc2cea582"
+  },
+  "seed": 42,
+  "random_guide_seed": 7961,
+  "lr": 5e-05,
+  "updates": 114,
+  "reference_epochs": 3,
+  "lora": {
+    "r": 8,
+    "alpha": 16,
+    "dropout": 0.0,
+    "target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj",
+      "gate_proj",
+      "up_proj",
+      "down_proj"
+    ]
+  },
+  "optimizer": {
+    "name": "AdamW",
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0.01
+  },
+  "feedback": {
+    "anchors": 16,
+    "actual_drop_tolerance": 0.0001,
+    "max_rounds": 2,
+    "correction_ratio": 0.3
+  },
+  "environment": {
+    "python": "3.10.18 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:08:55) [MSC v.1929 64 bit (AMD64)]",
+    "executable": "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "torch": "2.6.0+cu126",
+    "transformers": "5.14.1",
+    "peft": "0.20.0",
+    "cuda": "12.6",
+    "gpu": "NVIDIA GeForce RTX 4060 Ti",
+    "deterministic_algorithms": false,
+    "cudnn_benchmark": false,
+    "pythonhashseed": null
+  },
+  "model_files": {
+    "LICENSE": {
+      "size": 11343,
+      "mtime_ns": 1787554878000000000
+    },
+    ".gitattributes": {
+      "size": 1519,
+      "mtime_ns": 1787554878000000000
+    },
+    "configuration.json": {
+      "size": 2,
+      "mtime_ns": 1787554878000000000
+    },
+    "README.md": {
+      "size": 4917,
+      "mtime_ns": 1787554878000000000
+    },
+    "generation_config.json": {
+      "size": 242,
+      "mtime_ns": 1787554878000000000
+    },
+    "config.json": {
+      "size": 660,
+      "mtime_ns": 1787554878000000000
+    },
+    "model.safetensors": {
+      "size": 3087467144,
+      "mtime_ns": 1787554982000000000
+    },
+    "merges.txt": {
+      "size": 1671839,
+      "mtime_ns": 1787554878000000000
+    },
+    "tokenizer_config.json": {
+      "size": 7305,
+      "mtime_ns": 1787554878000000000
+    },
+    "tokenizer.json": {
+      "size": 7031645,
+      "mtime_ns": 1787554878000000000
+    },
+    "vocab.json": {
+      "size": 2776833,
+      "mtime_ns": 1787554878000000000
+    },
+    ".modelscope_manifest.json": {
+      "size": 1120,
+      "mtime_ns": 1787554986000000000
+    }
+  },
+  "model_weight_hashing": "file sizes/mtimes only; config/tokenizer hashes stored separately",
+  "model_metadata_sha256": {
+    "configuration.json": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "generation_config.json": "e558847a8b4402616f1273797b015104dc266fe4b520056fca88823ba8f8ebe6",
+    "config.json": "98d2ff8cc47488d08a2b0b3acf4eb99ef210779b42bd48605f6b8e36acdbf670",
+    "merges.txt": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+    "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+    "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+    "vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+    ".modelscope_manifest.json": "17d2f7db63fd479cd04c5fbed0781f777a0ab7ecc0268612f84eb86d15e97878"
+  }
+}

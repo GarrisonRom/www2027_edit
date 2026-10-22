@@ -1,0 +1,99 @@
+{
+  "five_set": {
+    "group": "GSUM3_DIAG",
+    "hop1_unlearn": 0.18181818181818182,
+    "hop1_test": 0.26262626262626265,
+    "hop2": 0.2771535580524345,
+    "same_object": 0.18055555555555555,
+    "retain": 0.48484848484848486
+  },
+  "six_set": {
+    "group": "GSUM3_DIAG",
+    "sets": {
+      "D_so": {
+        "n": 24,
+        "mean_lp": -12.029675358798281,
+        "mean_correct": 0.08333333333333333
+      },
+      "D_hop2": {
+        "n": 24,
+        "mean_lp": -10.799530006294825,
+        "mean_correct": 0.0
+      },
+      "K": {
+        "n": 48,
+        "mean_lp": -6.858662810770276,
+        "mean_correct": 0.5833333333333334
+      },
+      "hop1_unlearn": {
+        "n": 33,
+        "mean_lp": -11.134310514157987,
+        "mean_correct": 0.18181818181818182
+      },
+      "retain": {
+        "n": 33,
+        "mean_lp": -8.77313713446004,
+        "mean_correct": 0.48484848484848486
+      },
+      "F1_hop2": {
+        "n": 75,
+        "mean_lp": -8.283271134564428,
+        "mean_correct": 0.32
+      },
+      "D_hop2_F1_overlap": {
+        "n": 12,
+        "mean_lp": -10.310652949259831,
+        "mean_correct": 0.0
+      },
+      "D_hop2_no_F1_overlap": {
+        "n": 12,
+        "mean_lp": -11.288407063329819,
+        "mean_correct": 0.0
+      }
+    }
+  },
+  "diagnostics": {
+    "steps": 114,
+    "epochs": [
+      {
+        "epoch": 1,
+        "steps": 38,
+        "forget_lp_mean": -5.70655324898268,
+        "global_conflict_rate": 1.0,
+        "tensor_positive_dot_fraction_mean": 0.8715762620837809,
+        "m3_projected_norm_ratio_mean": 0.9308653433272159,
+        "global_projected_norm_ratio_mean": 0.9520477062925957,
+        "adamw_actual_conflict_rate": 0.9736842105263158,
+        "anchor_actual_conflict_rate": 0.881578947368421,
+        "mean_anchor_lp_delta": -0.05045108889278613
+      },
+      {
+        "epoch": 2,
+        "steps": 38,
+        "forget_lp_mean": -12.26834057506762,
+        "global_conflict_rate": 1.0,
+        "tensor_positive_dot_fraction_mean": 0.8827873254564981,
+        "m3_projected_norm_ratio_mean": 0.9139307676082258,
+        "global_projected_norm_ratio_mean": 0.9417405771119816,
+        "adamw_actual_conflict_rate": 1.0,
+        "anchor_actual_conflict_rate": 0.9868421052631579,
+        "mean_anchor_lp_delta": -0.19076201672616758
+      },
+      {
+        "epoch": 3,
+        "steps": 38,
+        "forget_lp_mean": -26.09906930672495,
+        "global_conflict_rate": 1.0,
+        "tensor_positive_dot_fraction_mean": 0.7642991407089151,
+        "m3_projected_norm_ratio_mean": 0.956355451512791,
+        "global_projected_norm_ratio_mean": 0.9780568568930684,
+        "adamw_actual_conflict_rate": 0.9210526315789473,
+        "anchor_actual_conflict_rate": 0.8486842105263158,
+        "mean_anchor_lp_delta": -0.1445718454687219
+      }
+    ],
+    "raw_jsonl": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp002_gsu_update_projection\\runs\\run_20261020_1026_m3_diagnostic\\diagnostics.jsonl",
+    "algorithm": "original M3 unconditional per-tensor gradient projection",
+    "extra_passes": "per-anchor gradients and post-update log-probabilities only"
+  }
+}

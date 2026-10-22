@@ -1,0 +1,11 @@
+diff --git a/exp/train/train_gsu.py b/exp/train/train_gsu.py
+index c520fcd..6b21060 100644
+--- a/exp/train/train_gsu.py
++++ b/exp/train/train_gsu.py
+@@ -194,6 +194,7 @@ def main():
+         done_epochs = EPOCHS
+ 
+     random.seed(te.SEED)
++    torch.manual_seed(te.SEED)
+     data = json.load(open(te.DATA, encoding="utf-8"))["data"]
+     clusters = te.build_clusters(data)

@@ -1,0 +1,9 @@
+{
+  "run_id": "run_batch_20261021_132023_431bf0_A0",
+  "status": "completed",
+  "started": "2026-10-21T13:21:16+08:00",
+  "ended": "2026-10-21T14:25:22+08:00",
+  "wall_seconds": 3845.8589999999385,
+  "peak_cuda_allocated_bytes": 5438454784,
+  "peak_cuda_reserved_bytes": 5528092672
+}

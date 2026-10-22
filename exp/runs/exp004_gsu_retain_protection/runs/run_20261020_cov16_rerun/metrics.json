@@ -1,0 +1,113 @@
+{
+  "five_set": {
+    "group": "GSU_COV16_DIAG",
+    "hop1_unlearn": 0.21212121212121213,
+    "hop1_test": 0.23232323232323232,
+    "hop2": 0.40449438202247184,
+    "same_object": 0.3541666666666667,
+    "retain": 0.6060606060606061
+  },
+  "six_set": {
+    "group": "GSU_COV16_DIAG",
+    "sets": {
+      "D_so": {
+        "n": 24,
+        "mean_lp": -9.103049872141812,
+        "mean_correct": 0.375
+      },
+      "D_hop2": {
+        "n": 24,
+        "mean_lp": -6.58332110669322,
+        "mean_correct": 0.5833333333333334
+      },
+      "K": {
+        "n": 48,
+        "mean_lp": -7.398398277300078,
+        "mean_correct": 0.22916666666666666
+      },
+      "hop1_unlearn": {
+        "n": 33,
+        "mean_lp": -9.233846206112524,
+        "mean_correct": 0.21212121212121213
+      },
+      "retain": {
+        "n": 33,
+        "mean_lp": -7.465071633834086,
+        "mean_correct": 0.6060606060606061
+      },
+      "F1_hop2": {
+        "n": 75,
+        "mean_lp": -6.347611430917529,
+        "mean_correct": 0.38666666666666666
+      },
+      "D_hop2_F1_overlap": {
+        "n": 12,
+        "mean_lp": -6.774862068738693,
+        "mean_correct": 0.4166666666666667
+      },
+      "D_hop2_no_F1_overlap": {
+        "n": 12,
+        "mean_lp": -6.391780144647747,
+        "mean_correct": 0.75
+      }
+    }
+  },
+  "diagnostics": {
+    "mode": "COV16",
+    "steps": 114,
+    "corrections": 114,
+    "projection_failures": 0,
+    "dykstra_failures": 0,
+    "epochs": [
+      {
+        "mode": "COV16",
+        "epoch": 1,
+        "steps": 38,
+        "forget_lp_mean": -4.97592242140519,
+        "raw_aggregate_conflict_rate": 1.0,
+        "correction_rate": 1.0,
+        "raw_anchor_conflict_rate": 0.9851973684210527,
+        "final_anchor_conflict_rate": 0.37335526315789475,
+        "final_anchor_violation_rate_tol": 0.0,
+        "raw_mean_anchor_lp_delta": -0.31805631273279067,
+        "final_mean_anchor_lp_delta": 0.01386588047209539,
+        "mean_correction_to_raw_norm_ratio": 0.22063965450463685,
+        "mean_solver_cycles": 51.28947368421053
+      },
+      {
+        "mode": "COV16",
+        "epoch": 2,
+        "steps": 38,
+        "forget_lp_mean": -8.857863595611171,
+        "raw_aggregate_conflict_rate": 1.0,
+        "correction_rate": 1.0,
+        "raw_anchor_conflict_rate": 0.9572368421052632,
+        "final_anchor_conflict_rate": 0.38651315789473684,
+        "final_anchor_violation_rate_tol": 0.001644736842105263,
+        "raw_mean_anchor_lp_delta": -1.459402132583292,
+        "final_mean_anchor_lp_delta": 0.009989154476084207,
+        "mean_correction_to_raw_norm_ratio": 0.1735503774407631,
+        "mean_solver_cycles": 112.10526315789474
+      },
+      {
+        "mode": "COV16",
+        "epoch": 3,
+        "steps": 38,
+        "forget_lp_mean": -14.98085159377048,
+        "raw_aggregate_conflict_rate": 1.0,
+        "correction_rate": 1.0,
+        "raw_anchor_conflict_rate": 0.9802631578947368,
+        "final_anchor_conflict_rate": 0.4128289473684211,
+        "final_anchor_violation_rate_tol": 0.013157894736842105,
+        "raw_mean_anchor_lp_delta": -3.5343267684312245,
+        "final_mean_anchor_lp_delta": 0.056577852878131364,
+        "mean_correction_to_raw_norm_ratio": 0.2329992624764392,
+        "mean_solver_cycles": 179.18421052631578
+      }
+    ],
+    "raw_jsonl": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp004_gsu_retain_protection\\runs\\run_20261020_cov16_rerun\\diagnostics.jsonl",
+    "algorithm": "16 fresh retain anchors per update with individual local half-space update projection",
+    "solver": "coefficient-space Dykstra projection onto half-space intersection",
+    "optimizer_moments": "unchanged by post-hoc correction"
+  }
+}

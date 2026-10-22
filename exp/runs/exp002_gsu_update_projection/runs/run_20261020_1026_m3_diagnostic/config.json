@@ -1,0 +1,74 @@
+{
+  "run_id": "run_20261020_1026_m3_diagnostic",
+  "experiment": "exp002_gsu_update_projection",
+  "variant": "M3_DIAGNOSTIC",
+  "method_version": "original M3 with diagnostic observations only",
+  "seed": 42,
+  "training": {
+    "epochs": 3,
+    "forget_examples": 38,
+    "retain_anchors_per_step": 4,
+    "lr": 0.00005,
+    "optimizer": "AdamW",
+    "lora_r": 8,
+    "lora_alpha": 16,
+    "lora_dropout": 0.0,
+    "target_modules": ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"],
+    "layers_to_transform": null,
+    "projection": "original M3 unconditional per-tensor projection",
+    "expected_update_steps": 114
+  },
+  "diagnostics": {
+    "per_anchor_gradients": true,
+    "post_update_anchor_logprob": true,
+    "global_and_per_tensor_gradient_dots": true,
+    "adamw_actual_displacement": true,
+    "algorithm_update_unchanged": true
+  },
+  "evaluation": {
+    "stages": ["five_set", "six_set"],
+    "group": "GSUM3_DIAG"
+  },
+  "model": {
+    "id": "Qwen2.5-1.5B-Instruct",
+    "path": "E:\\12models\\modelscope\\Qwen2.5-1.5B-Instruct",
+    "config_sha256": "98D2FF8CC47488D08A2B0B3ACF4EB99EF210779B42BD48605F6B8E36ACDBF670"
+  },
+  "data": {
+    "dataset": "data/faithun/FaithUn_Dataset.json",
+    "dataset_sha256": "D570CC3E30C083357CA45AB4DD9DF807ABBD800F51A657D89629E4FE7B3ADBB0",
+    "forget_split": "data/faithun/splits/forget_set_split.txt",
+    "forget_split_sha256": "315312DD50B69993F3E90796E7162A9ADE22B771F3AA9EC5F570CEAAAD815428",
+    "retain_split": "data/faithun/splits/retaining_set_split.txt",
+    "retain_split_sha256": "8680043FE5C1F4F0517D7377664677EE225CD9EEBCB72D542C7709B1F5B6E214",
+    "forget_examples": 38,
+    "retain_anchors": 33
+  },
+  "code": {
+    "commit": "6ec831cfa25e07fcdcc908459f76a678c45434fb",
+    "working_tree": "dirty; diagnostic script is untracked",
+    "script": "exp/train/diagnose_gsu_m3.py",
+    "script_sha256": "3C23DBCAC4D61187FF742E3E540E94D44974253B50E040B7E62833A698650A07"
+  },
+  "runtime": {
+    "python": "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+    "torch": "2.6.0+cu126",
+    "cuda": "12.6",
+    "transformers": "5.14.1",
+    "peft": "0.20.0",
+    "accelerate": "1.14.0",
+    "safetensors": "0.8.0",
+    "numpy": "1.26.4",
+    "gpu": "NVIDIA GeForce RTX 4060 Ti 16GB"
+  },
+  "command": "$env:QWEN_1_5B_PATH='E:\\12models\\modelscope\\Qwen2.5-1.5B-Instruct'; & 'D:\\Anaconda\\envs\\cuda126_env\\python.exe' 'exp/train/diagnose_gsu_m3.py' --run_dir 'exp/runs/exp002_gsu_update_projection/runs/run_20261020_1026_m3_diagnostic'",
+  "outputs": {
+    "diagnostics": "diagnostics.jsonl",
+    "epoch_metrics": "epoch_metrics.jsonl",
+    "metrics": "metrics.json",
+    "adapter": "adapter/",
+    "checkpoints": "checkpoints/",
+    "stdout": "stdout.log",
+    "stderr": "stderr.log"
+  }
+}

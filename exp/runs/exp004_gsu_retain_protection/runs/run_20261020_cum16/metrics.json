@@ -1,0 +1,113 @@
+{
+  "five_set": {
+    "group": "GSU_CUM16_DIAG",
+    "hop1_unlearn": 0.3939393939393939,
+    "hop1_test": 0.45454545454545453,
+    "hop2": 0.4569288389513109,
+    "same_object": 0.5138888888888888,
+    "retain": 0.696969696969697
+  },
+  "six_set": {
+    "group": "GSU_CUM16_DIAG",
+    "sets": {
+      "D_so": {
+        "n": 24,
+        "mean_lp": -11.6350995061841,
+        "mean_correct": 0.4166666666666667
+      },
+      "D_hop2": {
+        "n": 24,
+        "mean_lp": -9.840222507937748,
+        "mean_correct": 0.625
+      },
+      "K": {
+        "n": 48,
+        "mean_lp": -9.42733272753701,
+        "mean_correct": 0.4583333333333333
+      },
+      "hop1_unlearn": {
+        "n": 33,
+        "mean_lp": -12.208428376305852,
+        "mean_correct": 0.3939393939393939
+      },
+      "retain": {
+        "n": 33,
+        "mean_lp": -9.238781278286414,
+        "mean_correct": 0.696969696969697
+      },
+      "F1_hop2": {
+        "n": 75,
+        "mean_lp": -9.133408146391973,
+        "mean_correct": 0.5466666666666666
+      },
+      "D_hop2_F1_overlap": {
+        "n": 12,
+        "mean_lp": -9.816196306284533,
+        "mean_correct": 0.5
+      },
+      "D_hop2_no_F1_overlap": {
+        "n": 12,
+        "mean_lp": -9.864248709590965,
+        "mean_correct": 0.75
+      }
+    }
+  },
+  "diagnostics": {
+    "mode": "CUM16",
+    "steps": 114,
+    "corrections": 114,
+    "projection_failures": 0,
+    "dykstra_failures": 0,
+    "epochs": [
+      {
+        "mode": "CUM16",
+        "epoch": 1,
+        "steps": 38,
+        "forget_lp_mean": -4.971752262429187,
+        "raw_aggregate_conflict_rate": 1.0,
+        "correction_rate": 1.0,
+        "raw_anchor_conflict_rate": 0.9917763157894737,
+        "final_anchor_conflict_rate": 0.37335526315789475,
+        "final_anchor_violation_rate_tol": 0.0,
+        "raw_mean_anchor_lp_delta": -0.33745267977447885,
+        "final_mean_anchor_lp_delta": 0.01368861968972181,
+        "mean_correction_to_raw_norm_ratio": 0.22193492376985807,
+        "mean_solver_cycles": 82.8157894736842
+      },
+      {
+        "mode": "CUM16",
+        "epoch": 2,
+        "steps": 38,
+        "forget_lp_mean": -8.81689262076428,
+        "raw_aggregate_conflict_rate": 1.0,
+        "correction_rate": 1.0,
+        "raw_anchor_conflict_rate": 0.9259868421052632,
+        "final_anchor_conflict_rate": 0.2532894736842105,
+        "final_anchor_violation_rate_tol": 0.0,
+        "raw_mean_anchor_lp_delta": -1.1594058842839379,
+        "final_mean_anchor_lp_delta": -0.10911449897838266,
+        "mean_correction_to_raw_norm_ratio": 0.2571276016681839,
+        "mean_solver_cycles": 81.97368421052632
+      },
+      {
+        "mode": "CUM16",
+        "epoch": 3,
+        "steps": 38,
+        "forget_lp_mean": -16.844084375783016,
+        "raw_aggregate_conflict_rate": 1.0,
+        "correction_rate": 1.0,
+        "raw_anchor_conflict_rate": 0.9720394736842105,
+        "final_anchor_conflict_rate": 0.14309210526315788,
+        "final_anchor_violation_rate_tol": 0.0,
+        "raw_mean_anchor_lp_delta": -6.06943515604852,
+        "final_mean_anchor_lp_delta": 0.10059073822278726,
+        "mean_correction_to_raw_norm_ratio": 0.3003974359634749,
+        "mean_solver_cycles": 48.71052631578947
+      }
+    ],
+    "raw_jsonl": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp004_gsu_retain_protection\\runs\\run_20261020_cum16\\diagnostics.jsonl",
+    "algorithm": "persistent 16-anchor bank with individual local constraints and zero-drop cumulative log-probability floor",
+    "solver": "coefficient-space Dykstra projection onto half-space intersection",
+    "optimizer_moments": "unchanged by post-hoc correction"
+  }
+}

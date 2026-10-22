@@ -194,6 +194,7 @@ def main():
         done_epochs = EPOCHS
 
     random.seed(te.SEED)
+    torch.manual_seed(te.SEED)
     data = json.load(open(te.DATA, encoding="utf-8"))["data"]
     clusters = te.build_clusters(data)
     forget_idx = [int(x) for x in (te.SPLITS / "forget_set_split.txt").read_text().split()]

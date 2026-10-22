@@ -1,0 +1,18 @@
+ M docs/研究证据总账.md
+ M exp/results/新遗忘方法GSU对比报告.md
+ M exp/runs/exp002_gsu_update_projection/card.md
+ M exp/train/train_gsu.py
+?? docs/06_decisions.md
+?? docs/2609.34442v1.pdf
+?? docs/_kaiti_text.txt
+?? docs/_paper_text.txt
+?? docs/method_versions/GSU-v3.md
+?? docs/论文精读-DUMIC深度遗忘.md
+?? exp/results/eval_results_gsu_projection.jsonl
+?? exp/results/gsu_projection_sixset.jsonl
+?? exp/runs/exp002_gsu_update_projection/probes/
+?? exp/runs/exp002_gsu_update_projection/runs/
+?? exp/runs/exp003_gsu_m3a/
+?? exp/train/diagnose_gsu_m3.py
+?? exp/train/diagnose_gsu_m3a.py
+?? exp/train/diagnose_gsu_m3u.py

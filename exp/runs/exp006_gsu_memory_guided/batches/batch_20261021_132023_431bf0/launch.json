@@ -1,0 +1,21 @@
+{
+  "controller_pid": 134068,
+  "launched": "2026-10-21T13:20:23.4620949+08:00",
+  "shell": "C:\\Users\\RoboSAMA\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\native\\powershell\\pwsh.exe",
+  "arguments": [
+    "-NoLogo",
+    "-NoProfile",
+    "-NonInteractive",
+    "-ExecutionPolicy",
+    "Bypass",
+    "-File",
+    "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\start_gsu_memory_guided.ps1",
+    "-Worker",
+    "-BatchId",
+    "batch_20261021_132023_431bf0",
+    "-PythonPath",
+    "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+    "-ModelPath",
+    "E:\\12models\\modelscope\\Qwen2.5-1.5B-Instruct"
+  ]
+}

@@ -1,0 +1,248 @@
+diff --git a/PROJECT_STATUS.md b/PROJECT_STATUS.md
+index 0496861..cd247b7 100644
+--- a/PROJECT_STATUS.md
++++ b/PROJECT_STATUS.md
+@@ -4,9 +4,9 @@
+ 
+ - 项目：探测驱动的扩展遗忘集、损伤显影与定向恢复
+ - 当前里程碑：M5 三项研究内容实证结果归档
+-- 当前任务：统一证据口径；补强 GSU 更新方向；继续补做多 seed、R 禁区和恢复硬指标实验
++- 当前任务：统一证据口径；完成 GSU 更新方向的单 seed 补强筛选；继续补做多 seed、R 禁区和恢复硬指标实验
+ - 状态：研究内容一至三的单模型主线实验已完成；3B clean 扩展验证已完成；关键硬指标仍有未通过项
+-- 更新时间：2026-10-19
++- 更新时间：2026-10-20
+ 
+ ## 已完成
+ 
+@@ -28,7 +28,8 @@
+ - 完成研究内容二阶段 0–4：逐题损伤表、双模型归因、组件撤销、模块分解和留出预测验证；最终显影得分与单层撤销收益的 Spearman 相关约为 0.83。
+ - 完成研究内容三 R0–R5：能量空间投影、答案级约束消融和逐步梯度正交化；R5_surgery 的恢复率为 31.2%、F0 回弹为 16.3%、F1 复活为 21.3%、K 漂移为 4.8%。
+ - 完成 GSU 梯度手术遗忘及 11 个移植 baseline 的同口径对照；历史结果保留为单 seed 逐指标观测，D_hop2—retain 的“最佳工作点”判断暂不成立，待按目标重叠拆分后复核。
+-- 核对 GSU 的 D_hop2 评测集共 24 题，其中 12 题与 F1 设计内遗忘目标重叠；已实现 M3C（条件投影）和 M3U（AdamW 实际更新投影），新变体尚未训练。
++- 核对 GSU 的 D_hop2 评测集共 24 题，其中 12 题与 F1 设计内遗忘目标重叠；已实现并完成 M3C、M3U、M3A、COV16、CUM16 和 FB16 的固定 seed 筛选。
++- 完成 exp003–exp005 的 GSU 逐步诊断、retain 覆盖、累计保护和实际 logprob 反馈筛选；FB16 运行 sanity 通过但 retain=19/33、相对 COV16 的直接下降率仅改善 1.54 个百分点，不进入多 seed。
+ 
+ ## 当前数据结论
+ 
+@@ -61,6 +62,7 @@
+ 4. 扩大 retaining 与通用保持集，比较 GSU、NPO、PDU 等方法在相同预算下的保持效用。
+ 5. 延伸 R5：降低恢复/回弹耦合并提升 MCQA 恢复，直到回弹与 F1 复活硬指标有明确结论；同时补做 3B 恢复复现。
+ 6. 整合论文正文、图表和 WWW 匿名投稿材料；不得把单 seed、单模型结果写成普遍结论。
++7. GSU 当前候选停在 FB16 的单 seed 边界；若继续，需另建实验卡解释第三 epoch 的累计轨迹断点，不在 exp005 内继续调参。
+ 
+ ## 当前判据与证据缺口
+ 
+@@ -69,7 +71,7 @@
+ | 内容一 | 1.5B 上 G2 hop2=0.255，低于 G1=0.363 和 G4=0.311；3B clean 上 G2=0.236，低于 G1=0.255、与 G4=0.236 持平 | R 禁区、扩大 retaining、多 seed 与配对统计；3B 不宣称显著优于随机 |
+ | 内容二 | ρ=0.824（G2 内部）、0.830（G1→G2 留出）；层/模块干预与机制分析完成 | 多 seed、独立事实留出和正式 Fisher 对照仍需补强 |
+ | 内容三 | R5_surgery 将回弹/恢复比降至 0.52，K 漂移达到 4.8% | F0 回弹 16.3% > 10%，F1 复活 21.3% > 5%，MCQA 恢复仍低于 logprob 恢复 |
+-| GSU | 历史 M3：D_hop2=0.000（24 题，含 12 个 F1 重叠项）、retain=0.485、K=0.604 | 不能据混合 D_hop2 单独宣称封堵“满格”或联合最优；M3C/M3U 与拆分评测待运行 |
++| GSU | 历史 M3：D_hop2=0.000（24 题，含 12 个 F1 重叠项）、retain=0.485、K=0.604；FB16 主指标=3/12、retain=19/33、F1_hop2=22/75 | 不能据混合 D_hop2 单独宣称封堵“满格”或联合最优；exp002–exp005 均未通过完整推进门，需多 seed 和更大保持集后再判断 |
+ 
+ ## 管理规则
+ 
+diff --git a/docs/研究证据总账.md b/docs/研究证据总账.md
+index 01a87d4..4539e6a 100644
+--- a/docs/研究证据总账.md
++++ b/docs/研究证据总账.md
+@@ -1,6 +1,6 @@
+ # 研究证据总账
+ 
+-> 版本：v1　更新时间：2026-10-19
++> 版本：v1　更新时间：2026-10-20
+ >
+ > 用途：把论文 claim、冻结评测、实验产物和运行档案放在同一张可审计清单中。结果文件是数字的优先来源；没有独立 run log 的历史结果不补造 run_id，而是明确记录归档缺口。
+ 
+@@ -33,7 +33,10 @@
+ | C6 | 组件撤销有层级因果信号，但损伤主要在 MLP 且跨层分布 | `exp/results/attribution/ablation_G2.jsonl`、`exp/results/研究内容二实验报告.md`：层 22–27=34.4%，随机 6 层=13.8%，全层 MLP=88.7% | 1.5B 历史结果未单独归档 run log | accept（不等同于稀疏神经元定位） |
+ | C7 | 能量投影提供单调可解释的恢复—回弹 trade-off | `exp/results/restore_summary.json`、`exp/results/rebound_analysis_C.json` | 1.5B 历史结果未单独归档 run log | accept（阻尼不能单独满足回弹硬指标） |
+ | C8 | R5 梯度手术降低恢复/回弹耦合 | `exp/results/restore_summary.json`：R5_surgery 恢复=31.2%、回弹=16.3%、F1=21.3%、K=4.8%；`rebound_analysis_D.json` | 1.5B 历史结果未单独归档 run log | partial（回弹和 F1 仍超门槛） |
+-| C9 | GSU 的历史 M3 点估计显示较低的 D_hop2 准确率和较高的 retain，但尚不能确立为拆分后联合目标上的最佳点 | `exp/results/gsu_sixset.jsonl`：D_hop2=0.000（0/24）、retain=0.485；`exp/results/attribution/items.json` 与 F1/split 交叉核对显示 D_hop2 中 12/24 与 F1 目标重叠 | 1.5B 历史结果无独立 run log，且未保存分组逐题预测 | partial（混合指标，且与 PDU/CEU 其他轴有交换） |
++| C9 | GSU 的 M3/M3C/M3U 单 seed 结果未能证明更新投影候选达到预设的拆分后遗忘—保持筛选门 | `exp/results/gsu_projection_sixset.jsonl`；M3=0/12、M3C=0/12、M3U=1/12（D_hop2_no_F1_overlap）；M3U retain=13/33，低于 M3 的 16/33；切分依据见 `exp/results/attribution/items.json`、F1 与固定 split | `run_20261019_1631_m3_reval`、`run_20261019_1631_m3c_train_eval`、`run_20261019_1631_m3u_train_eval` | partial（仅单 seed；两候选均未通过冻结筛选门） |
++| C10 | GSU-v3 M3A 的逐锚点半空间修正改善局部锚点和主指标，但未保护累计 retain | `run_20261020_1332_m3a_train_diagnostic`：主指标=3/12、retain=11/33、F1_hop2=9/75；439/456 个直接锚点对数概率相对原始 AdamW 变好 | `exp003_gsu_m3a/card.md`、该 run 的 `diagnostics.jsonl` 与 `metrics.json` | partial（机制局部成立，冻结 retain 门未通过；不进入多 seed） |
++| C11 | 增加 retain 锚点覆盖可改善最终 retain，但固定线性累计保护不能保证真实多步 logprob | COV16 `run_20261020_cov16_rerun`：覆盖 33/33、主指标=9/12、retain=20/33、F1_hop2=29/75；CUM16 `run_20261020_cum16`：固定 16/16、主指标=9/12、retain=23/33、F1_hop2=41/75；两者实际残差均有少量低于 -1e-5，CUM16 固定锚点实际初始差最差 -25.5761 | `exp004_gsu_retain_protection/card.md`、两份 `metrics.json` 与 `diagnostics.jsonl` | partial（覆盖方向有证据；累计线性代理被否定；均为单 seed） |
++| C12 | 事后实际 logprob 反馈可以减少 raw AdamW 的当步锚点损伤，但在当前有限反馈预算下没有超过 COV16 的最终 retain/轨迹结果 | FB16 `run_20261020_1714_fb16`：114/114 步、覆盖 33/33；raw 下降 `1780/1824`，反馈后 `838/1824`，相对 COV16 的 `866/1824` 仅改善 1.54 个百分点；主指标=3/12、retain=19/33、F1_hop2=22/75 | `exp005_gsu_actual_feedback/card.md`、该 run 的 `metrics.json` 与 `diagnostics.jsonl` | reject（局部 raw→final 机制成立，但未通过事前推进门；不进入多 seed） |
+ 
+ ## 4. 假设与否定结果
+ 
+@@ -45,7 +48,11 @@
+ | A4 | 增强 KL 强度可以守住 retain | G6 的 KL 约束更强但 retain 和 same_object 更差 | 判定为结构性覆盖盲区，转向目标/方向级约束 |
+ | A5 | 答案级硬 hinge 可以阻止遗忘回弹 | R2/R4 恢复为负或显著变差 | 不再作为主方法 |
+ | A6 | 3B 上 G2 应显著优于随机 | clean run 中 G2 与 G4 均为 0.236 | 不作该强断言，补多 seed |
+-| A7 | 只在锚点冲突时投影，或按 AdamW 实际位移投影，能在保留 F1 遗忘效果的同时改善非 F1 重叠 D_hop2 与 retain | `exp/runs/exp002_gsu_update_projection/card.md`；待运行 | untested；M3C/M3U 是候选机制，不是已验证改进 |
++| A7 | 只在锚点冲突时投影，或按 AdamW 实际位移投影，能在保留 F1 遗忘效果的同时改善非 F1 重叠 D_hop2 与 retain | `exp/runs/exp002_gsu_update_projection/card.md`；M3C 主指标 0/12、retain 17/33；M3U 主指标 1/12、retain 13/33、F1_hop2 9/75 | 三个 run_id 见 C9；各 run 的 metrics.json 为原始数字快照 | reject（本轮筛选未过）；decision=strengthen，候选见 `exp/runs/exp002_gsu_update_projection/probes/probe01.md` |
++| A8 | 用逐锚点实际更新约束替代聚合约束，可以同时改善主指标并守住 retain | M3A 主指标提升至 3/12，但 retain 降至 11/33；局部直接锚点概率改善 439/456 | `run_20261020_1332_m3a_train_diagnostic` | reject（局部机制支持，最终 retain 条件不成立）；decision=harvest/redirect |
++| A9 | 每步扩大到 16 条新采样 retain 锚点，可以修复 M3A 的锚点覆盖不足 | COV16 覆盖 33/33；主指标 9/12、retain 20/33，但 F1_hop2=29/75 且实际残差 9/1824 低于 -1e-5 | `run_20261020_cov16_rerun` | partial（覆盖与 retain 方向支持，完整筛选门未通过） |
++| A10 | 固定 16 条 retain 锚点并施加线性累计下限，可以阻止多步累计损伤 | CUM16 固定 16/16；线性求解器收敛，但实际初始差最差 -25.5761，累计残差 4/1824 低于 -1e-5，F1_hop2=41/75 | `run_20261020_cum16` | reject（线性一阶保护未转化为真实累计 logprob 保护） |
++| A11 | 在 COV16 覆盖下，按实际 post-proposal logprob 下降做两轮有限反馈，可以同时降低实际下降率并提高最终 retain | FB16 反馈后下降 `838/1824`，相对 COV16 `866/1824` 只改善 1.54 个百分点；最终 retain `19/33` 低于 COV16 `20/33`，反馈后均值 `-0.053329` 低于 COV16 `+0.026811` | `run_20261020_1714_fb16` | reject（实现和运行 sanity 通过，但机制收益不足；停止当前候选） |
+ 
+ ## 5. 已作出的文档决策
+ 
+@@ -54,7 +61,11 @@
+ 3. 研究内容二的贡献表述收束为“可预测的损伤显影与恢复选址器”，不宣称完整因果电路。
+ 4. 研究内容三的当前结论是“方向级约束改善 trade-off，但硬指标部分未通过”，不把 R5 写成完整成功。
+ 5. GSU 不写“严格支配全部 baseline”；旧 D_hop2 有 12/24 题与 F1 目标重叠，须拆分后再解释遗忘—保留权衡，不据旧汇总宣称“封堵满格”或联合最优。
+-6. 组件撤销、R5 和 GSU 的原始 JSONL/JSON 保留不覆盖；后续修正数字只能新增 run 或在报告中注明修订原因。
++6. exp002 的 M3C/M3U 均未通过预注册筛选门：M3C 主指标无提升；M3U 仅提升 1/12 且 retain 下降 3/33。M3A 后续验证把主指标提升到 3/12，但 retain 进一步降到 11/33；保留局部机制结果，不进入多 seed。
++7. GSU 更新投影分支暂转向：聚合和逐锚点约束都改善局部锚点代理，但没有满足累计 retain 门槛。后续若继续，需另建 retain 覆盖或累计保护实验卡，不再在同一分支继续堆投影规则。
++8. 组件撤销、R5 和 GSU 的原始 JSONL/JSON 保留不覆盖；后续修正数字只能新增 run 或在报告中注明修订原因。
++9. exp004 已完成覆盖与累计保护诊断：覆盖扩大是一个有方向性证据的解释，但线性累计保护被真实 logprob 轨迹否定；不启动多 seed，也不在同一实验卡内继续增加线性投影规则。任何轨迹感知保护方法必须另建实验卡并冻结新的直接 logprob 指标。
++10. exp005 已完成实际 logprob 反馈补强：反馈相对 raw AdamW 有效，但相对 COV16 的最终下降率只改善 1.54 个百分点，retain 为 19/33，未达到 20/33 推进门；不启动多 seed，也不在本卡内继续搜索阈值、轮数或预算。
+ 
+ ## 6. 下一步验收门
+ 
+@@ -65,4 +76,4 @@
+ | P1 | retain 扩容和通用能力评测 | retain、PPL、通用能力与主要遗忘指标同时报告 |
+ | P1 | R5 部分投影/argmax 感知恢复 | 回弹 ≤10%、F1 复活 ≤5%，并保持可用 MCQA 恢复 |
+ | P2 | 3B 恢复复现 | 至少复现 R5 或明确报告算力/结果边界 |
+-| P1 | GSU 更新方向补强 | 固定 seed 比较 M3/M3C/M3U；主指标为 D_hop2 非 F1 重叠子集，另报告 F1 重叠项、F1_hop2、F0、retain、K；单 seed 只作候选筛选 |
++| P1 | GSU 更新方向补强 | exp002、exp004、exp005 的 seed=42 筛选已完成；M3C/M3U/M3A/COV16/CUM16/FB16 均未通过完整推进门。FB16 的实际反馈诊断保留为负结果证据，后续若继续必须另建实验卡并先解释累计轨迹断点 |
+diff --git a/exp/results/新遗忘方法GSU对比报告.md b/exp/results/新遗忘方法GSU对比报告.md
+index 200c9d0..f6dec83 100644
+--- a/exp/results/新遗忘方法GSU对比报告.md
++++ b/exp/results/新遗忘方法GSU对比报告.md
+@@ -58,16 +58,71 @@
+ 
+ **阶段性方法学结论**：内容三的方向级恢复约束启发了 GSU 的梯度投影；现有单 seed 结果显示其在 F0、retain 等指标上有可用权衡，但 D_hop2 的混合目标定义限制了旧联合坐标的解释力。需先完成子集评测和更新方向补强，再判断该方法与归因主线的关系。
+ 
+-## 5. M3 更新方向补强（待运行）
++## 5. M3 更新方向补强（预注册单 seed 筛选已完成）
+ 
+ | 变体 | 更新规则 | 要回答的问题 |
+ |---|---|---|
+ | M3C | 沿用 M3 的逐参数投影，只在该参数张量的遗忘梯度会降低锚点目标时投影 | 无冲突步是否因无条件投影而损失了遗忘效率？ |
+ | M3U | 先执行 AdamW，再计算实际参数位移与采样锚点聚合梯度的内积；只有一阶预测会降低锚点目标时才投影该次位移 | AdamW 的实际更新是否偏离梯度层保护方向？ |
+ 
+-M3U 约束的是每步所采样锚点聚合梯度下的一阶局部变化；它不保证每个锚点、未采样样本或有限步累计效果绝对无损。M3 保持原实现，M3C/M3U 使用独立 adapter 名称和 `gsu_projection` 结果文件前缀。预注册比较见 [`exp002 GSU 更新投影实验卡`](../runs/exp002_gsu_update_projection/card.md)；本报告尚无新变体实验结果。
++M3U 约束的是每步所采样锚点聚合梯度下的一阶局部变化；它不保证每个锚点、未采样样本或有限步累计效果绝对无损。M3 保持原实现，M3C/M3U 使用独立 adapter 名称和 `gsu_projection` 结果文件前缀。预注册比较见 [`exp002 GSU 更新投影实验卡`](../runs/exp002_gsu_update_projection/card.md)；本节记录本轮筛选结果。
+ 
+-## 6. 文献 baseline 对比（open-unlearning 移植）
++### 冻结主指标与关键次指标
++
++| 变体 | `D_hop2_no_F1_overlap`（12） | `D_hop2_F1_overlap`（12） | F1_hop2（75） | retain（33） | K（48） | same_object（24） |
++|---|---:|---:|---:|---:|---:|---:|
++| M3 复评 | 0/12 | 0/12 | 25/75 | 16/33 | 29/48 | 2/24 |
++| M3C | 0/12（+0） | 0/12 | 24/75 | 17/33（+1） | 29/48 | 2/24 |
++| M3U | 1/12（+1） | 0/12 | 9/75 | 13/33（−3） | 28/48 | 0/24 |
++
++**按预注册门槛判定：两种候选都未通过。** M3C 的主指标没有提升；虽然 F1_hop2 和 retain 各改善 1 题，但不能替代主指标门槛。M3U 的主指标只多答对 1/12，低于至少 +2/12 的要求；retain 下降 3/33，也超过最多下降 2/33 的界限。M3U 的 F1_hop2 降至 9/75，说明设计内目标遗忘更强，但伴随 retain 损失，不能据此判为整体改善。单 seed 不计算置信区间，也不作显著性或稳健性结论。
++
++机制计数与原始数据分别保存在三个 run 目录的 `metrics.json`、`stdout.log` 和公共 JSONL 中：M3C 每 epoch 检查 14,896 个参数张量，投影 12,981、13,143、11,449 次；M3U 每 epoch 修正 38/38、37/38、37/38 步（总计 112/114）。这表示 M3U 的实际更新约束频繁触发，但并未带来达到筛选标准的 retain/主指标组合。
++
++M3 使用历史 adapter 仅复评，M3C/M3U 使用相同 PyTorch seed=42 初始化；为使候选初始化受 seed 控制，本轮对训练入口增加了 `torch.manual_seed(42)`，补丁随各 run 归档。历史 M3 adapter 的初始化状态无法追溯，故该复评用于冻结基线对齐，不等于从共同随机初始化重训的严格配对比较。结果仅作为候选筛选；M3C/M3U 不进入多 seed 确认。
++
++### M3U 逐步诊断与 M3A 验证
++
++M3U 的逐步诊断显示，聚合事后修正使 `437/456` 个同批锚点的直接答案对数概率变好，平均配对增益为 `+0.656008`，但最终 retain 仍为 `13/33`。因此按 probe01 实现了独立的 M3A：将 AdamW 实际位移投影到四个独立锚点半空间的交集。
++
++| 变体 | `D_hop2_no_F1_overlap`（12） | `D_hop2_F1_overlap`（12） | F1_hop2（75） | retain（33） | K（48） | same_object（24） |
++|---|---:|---:|---:|---:|---:|---:|
++| M3 | 0/12 | 0/12 | 25/75 | 16/33 | 29/48 | 2/24 |
++| M3U | 1/12 | 0/12 | 9/75 | 13/33 | 28/48 | 0/24 |
++| M3A | 3/12 | 2/12 | 9/75 | 11/33 | 21/48 | 6/24 |
++
++M3A 的主指标达到预设的至少 `+2/12`，且 `439/456` 个采样锚点的直接对数概率相对原始 AdamW 变好；但 retain 只有 `11/33`，没有达到 `14/33` 的冻结门槛。结论是逐锚点约束改善了局部代理和主指标，却没有保护累计 retain。M3A 不进入多 seed；GSU 更新投影分支暂时转向 retain 锚点覆盖和累计保护问题。
++
++## 6. Retain 锚点覆盖与累计保护诊断
++
++exp004 在新的实验卡中固定了两个可区分候选：COV16 每步抽 16 条新 retain 锚点，CUM16 固定 16 条锚点并施加相对初始化答案 logprob 的线性累计下限。两者都使用 AdamW 实际位移的半空间投影，seed、数据、预算和 LoRA 配置不变。
++
++| 变体 | 锚点策略 | `D_hop2_no_F1_overlap`（12） | `D_hop2_F1_overlap`（12） | F1_hop2（75） | retain（33） | K（48） | 实际残差 sanity |
++|---|---|---:|---:|---:|---:|---:|---|
++| M3A | 4 条/步，独立采样 | 3/12 | 2/12 | 9/75 | 11/33 | 21/48 | 通过 `-1e-5` 现场门，但未通过原始 `-1e-6` 诊断门 |
++| COV16 | 16 条/步，新抽样；全程覆盖 33/33 | 9/12 | 5/12 | 29/75 | 20/33 | 11/48 | 未通过：9/1824 低于 `-1e-5` |
++| CUM16 | 固定 16/16，线性累计下限 | 9/12 | 6/12 | 41/75 | 23/33 | 22/48 | 未通过：4/1824 低于 `-1e-5` |
++
++COV16 的逐步直接锚点答案 logprob 相对原始 AdamW 在 `1788/1824` 个配对观察中变好，均值由 `-1.770595` 变为 `+0.026811`；CUM16 为 `1731/1824`，均值由 `-2.522097` 变为 `+0.001722`。这些局部结果支持“锚点覆盖不足是一个可能断点”，但 COV16 的 F1_hop2 仍高于冻结上限 `27/75`，不能进入多 seed。
++
++CUM16 的固定锚点身份在 114 步中保持不变，线性求解器残差接近零，但独立重算的实际累计残差最低为 `-4.96e-05`，固定锚点相对训练初始答案 logprob 的实际差最低为 `-25.5761`。这直接否定“线性累计一阶下限等价于真实累计保护”的解释。两个候选都是单 seed，且均未通过完整推进门；不修改原 M3/M3U/M3A。
++
++第一次 COV16 运行 `run_20261020_cov16` 在 57 步处因 300 次 Dykstra 上限退出；该失败现场保留。`run_20261020_cov16_rerun` 将固定上限提高到 3000 后完成，训练/评测配置未改变。CUM16 的运行时 violation 字段在事后审计中发现没有减去累计目标，已修正脚本表达式，但本报告的 CUM16 残差数字均来自对原始 JSONL 的独立重算。
++
++**阶段性结论：** 增加锚点覆盖比固定线性累计下限更有方向性，但两者都只改善单 seed 点估计和局部代理，尚不能证明 retain 保护机制。后续若继续，必须另建以实际答案 logprob 轨迹为直接约束的实验卡，不在 exp004 内继续堆线性投影规则。
++
++### 实际 logprob 反馈补强：FB16
++
++exp005 保留 COV16 的每步 16 条新锚点覆盖，在 AdamW proposal 后直接读取锚点答案 logprob；只有实际下降超过 `1e-4` 的锚点进入补偿，最多反馈两轮，并把总修正位移限制在 raw AdamW 位移的 `0.30` 倍。固定 run 为 [`run_20261020_1714_fb16`](../runs/exp005_gsu_actual_feedback/runs/run_20261020_1714_fb16/metrics.json)。
++
++| 变体 | 主指标 `D_hop2_no_F1_overlap`（12） | F1_hop2（75） | retain（33） | K（48） | 反馈后直接 logprob 下降 | 反馈后均值 |
++|---|---:|---:|---:|---:|---:|---:|
++| COV16 | 9/12 | 29/75 | 20/33 | 11/48 | 866/1824 | +0.026811 |
++| FB16 | 3/12 | 22/75 | 19/33 | 9/48 | 838/1824 | -0.053329 |
++
++FB16 相对自身 raw AdamW proposal 的下降从 `1780/1824` 减少到 `838/1824`，说明实际反馈确实修正了部分当步损伤；但相对 COV16 只减少 `28/1824`，即 `1.54` 个百分点，且最终 retain 下降 `1/33`，主指标下降 `6/12`。因此实际反馈在当前两轮和 `0.30` 预算下没有形成比 COV16 更好的方法，保留为机制边界证据，不进入多 seed。
++
++## 7. 文献 baseline 对比（open-unlearning 移植）
+ **可比性说明**：`code/open-unlearning` 仓库的 11 个方法与本工作同属 forget/retain 双集框架，但仓库为全参数微调（无 PEFT 支持），直接对比不公平。因此将全部 11 个方法的**损失函数逐行核对**后移植进本工作区 LoRA 训练循环（`exp/train/train_baselines.py`），做到同模型、同 LoRA(r8a16)、同 lr/epochs、同遗忘集（F0+F1贪心5）、同双评测台。超参一律取仓库代码签名默认值（GradDiff γ=1 α=1；NPO β=1；SimNPO β=1 δ=0；WGA β=1；SatImp β1=5 β2=1 γ=1 α=0.1；UNDIAL β=1；RMU steering=20 层7+down_proj 5–7；CEU 忽略前 1 个答案 token；DPO 的 alternate 问法由 hop1_test 改写/模板第二句式构造）。移植中修复两处实现问题：GradDiff 遗忘项符号（本框架 lp=−CE 下的等价改写）、CEU 单 token 答案空掩码 NaN。
+ 
+ ### 五集总表（全部方法）
+@@ -114,7 +169,7 @@ M3U 约束的是每步所采样锚点聚合梯度下的一阶局部变化；它
+ 
+ **方法学观察**：方向级约束从恢复任务迁移到遗忘任务后产生了值得继续检验的单 seed 结果。拆分 D_hop2、与更强 baseline 做同口径比较并完成多 seed 之前，不将其表述为已确立的最佳工作点。
+ 
+-## 7. 产物清单
++## 8. 产物清单
+ 
+ | 产物 | 路径 |
+ |---|---|
+diff --git a/exp/runs/exp002_gsu_update_projection/card.md b/exp/runs/exp002_gsu_update_projection/card.md
+index c123a47..0968f19 100644
+--- a/exp/runs/exp002_gsu_update_projection/card.md
++++ b/exp/runs/exp002_gsu_update_projection/card.md
+@@ -1,6 +1,6 @@
+ # exp002：GSU 更新方向补强
+ 
+-**状态：** 预注册完成，尚未运行。
++**状态：** 单 seed 预注册筛选和 M3U 逐步机制诊断已完成；M3C/M3U 均未通过进入多 seed 的冻结门槛，原 M3U 暂不修改。
+ **假设：** H-GSU-UPD-1。
+ **方法版本：** GSU-v2 候选，见 [`GSU-v2.md`](../../../docs/method_versions/GSU-v2.md)。
+ 
+@@ -45,22 +45,31 @@ python exp/train/train_gsu.py --variant M3U --result_tag gsu_projection
+ 
+ - 历史 M3：D_hop2=0/24、retain=16/33、F1_hop2=25/75，来源为 `exp/results/gsu_sixset.jsonl`；对应结果无独立 run_id，不能补造。
+ - 历史 D_hop2 只有汇总预测；当前没有独立保存的 12/12 子集逐题结果。交集规模来自 `exp/results/attribution/items.json`、`exp/results/F1.json` 和固定 forget split。
++- 本轮 M3 复评：`D_hop2_no_F1_overlap=0/12`、`D_hop2_F1_overlap=0/12`、`F1_hop2=25/75`、retain=`16/33`，来源 [`run_20261019_1631_m3_reval`](runs/run_20261019_1631_m3_reval/metrics.json)。
++- 本轮 M3C：主指标=`0/12`（相对 M3 +0），`F1_hop2=24/75`、retain=`17/33`；三 epoch 投影触发数分别为 `12981/14896`、`13143/14896`、`11449/14896`，来源 [`run_20261019_1631_m3c_train_eval`](runs/run_20261019_1631_m3c_train_eval/metrics.json)。
++- 本轮 M3U：主指标=`1/12`（相对 M3 +1），`F1_hop2=9/75`、retain=`13/33`；三 epoch 实际更新修正为 `38/38`、`37/38`、`37/38`，来源 [`run_20261019_1631_m3u_train_eval`](runs/run_20261019_1631_m3u_train_eval/metrics.json)。
++- M3C/M3U 的主指标均未达到至少多答对 `2/12`；M3U 的 retain 下降 `3/33`，超过允许的 `2/33`。两个候选都不进入多 seed 确认。
++- M3U 逐步诊断：同一批采样锚点的直接答案对数概率在修正后相对原始 AdamW 有 `437/456` 个变好，平均配对增益 `+0.656008`；负的直接变化由 `427/456` 降至 `261/456`。来源 [`run_20261020_1115_m3u_diagnostic_rerun`](runs/run_20261020_1115_m3u_diagnostic_rerun/metrics.json) 与 `diagnostics.jsonl`。
++- 该诊断的最终指标与历史 M3U 完全一致：主指标=`1/12`、retain=`13/33`、F1_hop2=`9/75`；逐锚点实际位移冲突仍为 `257/456`。局部锚点概率改善没有转化为累计 retain 改善。
+ 
+ ## 解释与判定
+ 
+ - **解释：** 旧 D_hop2 汇总同时包含 F1 设计内遗忘目标和未重叠题，无法单独解释为保留效用或目标遗忘；该切分也不自动构成受保护 retain 集。
+-- **verdict：** pending。M3C/M3U 尚未运行，不更新效果 claim。
+-- **cause_guess：** 待实验判定；当前仅有待检验的优化机制假设（梯度条件与 AdamW 实际位移）及已确认的指标重叠问题。
+-- **next_action：** 按冻结协议运行一次 seed；只有通过预设筛选门才进入多 seed 确认。
++- **observed：** 以上数值分别来自三个 run 的 `metrics.json`；12+12 子集在三组记录中均完整，M3/M3C/M3U 主指标依次为 `0/12`、`0/12`、`1/12`。M3U 的 retain=`13/33`，相对 M3=`16/33` 下降 3 题。
++- **interpretation：** M3C 没有改善唯一主指标；M3U 多答对 1 题，但未达到预注册的 +2 门槛，且 retain 超出允许损失。M3U 的 F1_hop2 降至 `9/75`，显示设计内遗忘更深，但不足以抵消主指标和 retain 门槛未通过。单 seed 结果仅用于筛选。
++- **verdict：** reject（仅指本轮预注册候选筛选未通过，不代表对 GSU 方向作普遍否定）。
++- **cause_guess：** mechanism（诊断后部分支持）：聚合锚点修正能改善同批次平均直接概率，但仍允许个别锚点受损，且局部收益没有传递到累计 retain 评测。
++- **next_action：** strengthen；不追加 M3C/M3U 多 seed，也不修改原 M3U。若补强预算获批，按 [`probe01`](probes/probe01.md) 另建实验卡验证 M3A 逐锚点约束；当前不启动新训练。
+ - **assets_salvaged：** 历史 M3 adapter/结果、F1 与 D_hop2 子集构造、quick 扫描、双口径评测、投影触发计数。
+ 
+ ## Sanity checks
+ 
+ - 确认 12+12 子集互斥且完整覆盖 D_hop2；核对 F1 链位置映射和固定 forget split。
+-- 确认 M3C/M3U 的 seed、遗忘例顺序、锚点抽样序列、LoRA 配置和训练预算与 M3 一致。
++- 确认 M3C/M3U 的 seed、遗忘例顺序、锚点抽样序列、LoRA 配置和训练预算与 M3 一致；训练入口新增 `torch.manual_seed(42)`，补齐 LoRA 初始化 RNG 控制，差异记录在各 run 的 `patch.diff`。
+ - M3U 仅在 `g_r · delta < 0` 且 `||g_r||^2 > 1e-12` 时修正；投影只针对采样锚点聚合梯度的一阶局部变化，逐步记录并审查修正次数，最终准确率另行评估。
+ - 检查输出新旧文件隔离、无 adapter/断点混用；报告逐题命中数，避免 12 题小子集只写百分比。
++- 三组正式比较和 M3U 诊断均完成五集与六集评测；未发现异常退出、非有限指标或 CUDA OOM，所有评测集计数符合冻结样本量。
+ 
+ ## 后续动作
+ 
+-运行后分别填写 `observed`（事实、run_id、原始产物）与 `interpretation`，再更新 `docs/研究证据总账.md`。若结果支持候选，只进入预先定义的多 seed 确认；若未支持，保留负结果，不依据同一评测集临时增加方法组件。
++正式比较和 M3U 诊断均已归档。原 M3U 保持冻结；若结果支持新候选，只进入新实验卡定义的验证，不依据同一评测集临时增加方法组件。
+diff --git a/exp/train/train_gsu.py b/exp/train/train_gsu.py
+index c520fcd..6b21060 100644
+--- a/exp/train/train_gsu.py
++++ b/exp/train/train_gsu.py
+@@ -194,6 +194,7 @@ def main():
+         done_epochs = EPOCHS
+ 
+     random.seed(te.SEED)
++    torch.manual_seed(te.SEED)
+     data = json.load(open(te.DATA, encoding="utf-8"))["data"]
+     clusters = te.build_clusters(data)
+     forget_idx = [int(x) for x in (te.SPLITS / "forget_set_split.txt").read_text().split()]

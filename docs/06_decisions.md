@@ -1,0 +1,21 @@
+# Decision Log
+
+| date | trigger | evidence_summary (exp/run/probe) | failure_layer | strengthen_gate (probes / 跳过理由) | decision | old_claim | new_claim_if_any | frozen_assets | rerun_required |
+|---|---|---|---|---|---|---|---|---|---|
+| 2026-10-19 | H-GSU-UPD-1 single-seed screen failed its frozen advancement gate | exp002: M3C `0/12` primary; M3U `1/12`, retain `13/33`, F1_hop2 `9/75`; see run_20261019_1631_m3c_train_eval and run_20261019_1631_m3u_train_eval | mechanism (provisional; aggregate local constraint did not transfer to the preregistered primary/retain combination) | probe01 proposes per-anchor diagnostics and M3A intersection projection; not run. Project-level strengthen budget is unknown; no claim narrowing or multi-seed authorization. | strengthen | Preserve the current GSU claim scope and report single-seed limits. | none | M3 adapter, M3C/M3U adapters, FaithUn data/splits, exp002 thresholds, raw JSONL and run logs | yes, only after a new card and budget approval |
+| 2026-10-20 | M3U diagnostic tested whether the post-hoc correction improves actual sampled-anchor answer log probabilities | run_20261020_1115_m3u_diagnostic_rerun: `437/456` paired anchor log-probability improvements, mean `+0.656008`; final metrics unchanged at primary `1/12`, retain `13/33`, F1_hop2 `9/75`; individual displacement conflicts remain `257/456` | mechanism boundary (aggregate local correction works, but transfer to individual anchors and cumulative retain is unsupported) | Direct-probability diagnostic completed. Do not alter M3U in place; M3A per-anchor intersection remains a separately proposed probe. Budget and new card still required. | strengthen | M3U's aggregate first-order correction is not sufficient evidence of final retain protection. | Local correction is supported; final benefit is not. | Diagnostic JSONL/metrics, historical M3U metrics, probe01, exp002 thresholds | yes, M3A only after budget approval and a separate preregistered card |
+| 2026-10-20 | M3A tested the per-anchor intersection projection derived from probe01 | run_20261020_1332_m3a_train_diagnostic: primary `3/12`, retain `11/33`, F1_hop2 `9/75`; direct anchor log-probability improved on `439/456` paired observations | mechanism partially supported, final retain transfer failed | One fixed-seed M3A run completed. The primary improved, but retain missed the `14/33` gate; no multi-seed confirmation or further projection variant. | harvest/redirect | Per-anchor constraints may fix the aggregate-to-individual gap. | They improve local anchor behavior and primary accuracy, but do not protect cumulative retain in this setting. | M3A diagnostics, exp003 card/run, GSU-v3 method record, exp002 baselines | no for M3A; new retain-coverage experiment would require a new card |
+| 2026-10-20 | exp005 tested actual post-proposal logprob feedback with a fixed correction budget | `run_20261020_1714_fb16`: 114/114 steps, coverage `33/33`; raw decreases `1780/1824`, final decreases `838/1824`; relative to COV16 `866/1824` only `1.54` percentage points better; primary `3/12`, retain `19/33`, F1_hop2 `22/75`; maximum correction ratio within `0.30+1e-6` | mechanism boundary; local raw-to-final correction works, but the bounded controller does not transfer to a better final retain/trajectory point | Runtime sanity passed and `1750/1824` paired observations improved over raw AdamW, but final mean delta `-0.053329` was below COV16 `+0.026811` and retain missed the `20/33` gate. The candidate was not searched further under this card. | harvest/redirect | Actual logprob feedback is sufficient to reduce part of the raw proposal damage under a trust budget. | It is not sufficient to improve COV16's final retain and forgetting trade-off in this setting; no multi-seed claim. | exp005 card, FB16 metrics/diagnostics, GSU-v5 method record, COV16 reference | no; a new trajectory candidate requires a new card |
+
+decision: harvest/redirect
+
+## 2026-10-22：记录讨论中的开放解释
+
+本次讨论没有改变现有 claim 或实验 verdict。新增开放假设 H12–H16，集中在：
+
+1. retaining 与 forget 是否只在事实簇索引上互斥，而在实体、答案和多跳路径上存在结构关联；
+2. retain 下降中有多少是目标相关的必要代价，多少是无关知识误伤；
+3. 3B 的更强事实掌握/实体泛化是否会导致更强的共享路径依赖；
+4. 多记忆组件定位是否有机会替代 F1 扩展监督。
+
+当前证据只支持“这些解释值得测试”，不支持任何一个解释已成立。详细预测和验证设计见 `docs/待验证假设与验证矩阵.md`。后续若实施，必须新建实验卡并冻结分层规则、共同题目、seed 和 kill rules。

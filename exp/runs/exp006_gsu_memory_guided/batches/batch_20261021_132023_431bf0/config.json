@@ -1,0 +1,150 @@
+{
+  "experiment": "exp006_gsu_memory_guided",
+  "method_version": "GSU-v6-memory-guided",
+  "batch_id": "batch_20261021_132023_431bf0",
+  "created": "2026-10-21T13:20:23.3518424+08:00",
+  "workspace": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏",
+  "python": "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+  "model": "E:\\12models\\modelscope\\Qwen2.5-1.5B-Instruct",
+  "seed": 42,
+  "updates_per_variant": 114,
+  "planned_total_updates": 798,
+  "variant_order": [
+    "A0",
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A2R",
+    "A3R"
+  ],
+  "jobs": [
+    {
+      "variant": "A0",
+      "run_dir": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp006_gsu_memory_guided\\runs\\run_batch_20261021_132023_431bf0_A0",
+      "updates": 114
+    },
+    {
+      "variant": "A1",
+      "run_dir": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp006_gsu_memory_guided\\runs\\run_batch_20261021_132023_431bf0_A1",
+      "updates": 114
+    },
+    {
+      "variant": "A2",
+      "run_dir": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp006_gsu_memory_guided\\runs\\run_batch_20261021_132023_431bf0_A2",
+      "updates": 114
+    },
+    {
+      "variant": "A3",
+      "run_dir": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp006_gsu_memory_guided\\runs\\run_batch_20261021_132023_431bf0_A3",
+      "updates": 114
+    },
+    {
+      "variant": "A4",
+      "run_dir": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp006_gsu_memory_guided\\runs\\run_batch_20261021_132023_431bf0_A4",
+      "updates": 114
+    },
+    {
+      "variant": "A2R",
+      "run_dir": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp006_gsu_memory_guided\\runs\\run_batch_20261021_132023_431bf0_A2R",
+      "updates": 114
+    },
+    {
+      "variant": "A3R",
+      "run_dir": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp006_gsu_memory_guided\\runs\\run_batch_20261021_132023_431bf0_A3R",
+      "updates": 114
+    }
+  ],
+  "comparison_dir": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp006_gsu_memory_guided\\comparisons\\screen_batch_20261021_132023_431bf0",
+  "failure_policy": "stop immediately; no automatic retry, overwrite, parameter change or additional seed",
+  "frozen_files": [
+    {
+      "path": "exp/train/start_gsu_memory_guided.ps1",
+      "sha256": "056411340b36b6e3e2997ee9a5f6943640cf252de79b54b976e6442d9399318b"
+    },
+    {
+      "path": "exp/train/diagnose_gsu_memory_guided.py",
+      "sha256": "d38b3ac78716d3af2989d2131bea817c892766440acbff4e67a3001b3ac7770a"
+    },
+    {
+      "path": "exp/train/diagnose_gsu_actual_feedback.py",
+      "sha256": "758290236b733e90cc7c8a7683b33d88aba7372387b274de278add1d9c482613"
+    },
+    {
+      "path": "exp/train/diagnose_gsu_retain_protection.py",
+      "sha256": "c8a8a48c6beb9219a08f08bc932adb80485e8632f3aa3b38c8863e443ab57c50"
+    },
+    {
+      "path": "exp/train/diagnose_gsu_m3.py",
+      "sha256": "3c23dbcac4d61187ff742e3e540e94d44974253b50e040b7e62833a698650a07"
+    },
+    {
+      "path": "exp/train/train_gsu.py",
+      "sha256": "143597a7b881e4b8601bf9eae9c680b43f45fc1b5a8faf0b3acb0b7db3613964"
+    },
+    {
+      "path": "exp/train/train_eval.py",
+      "sha256": "a64f773ac224f23cc1f3d22b733e1d7a37593b454f29ff579a56dbe69467ed02"
+    },
+    {
+      "path": "exp/train/tests/test_gsu_memory_guided.py",
+      "sha256": "d77917be18fd0c47dddf13a9c65e9728055bdd83d7d2cbddfe2e09efb332cb1c"
+    },
+    {
+      "path": "exp/damage/component_ablation.py",
+      "sha256": "e85a03033ba303a634307837c7eeb80f4f1776831af3054acdc6d0c40089f465"
+    },
+    {
+      "path": "exp/damage/eval_per_item.py",
+      "sha256": "9fdf037c731986051d9f015335fc5cf5eff5d0d2b1bb747169a4fe0194fc5e83"
+    },
+    {
+      "path": "docs/method_versions/GSU-v6-memory-guided.md",
+      "sha256": "46e53530e7365563fbc33c945f923b585f87f2c802e103526c9d6fe1af8af73b"
+    },
+    {
+      "path": "exp/runs/exp006_gsu_memory_guided/card.md",
+      "sha256": "2e4ebef4ae4d6870c8fe34d72e37c33ddc5e867a5ab3d39e6d4a7537ca88f0d4"
+    },
+    {
+      "path": "exp/runs/exp006_gsu_memory_guided/README.md",
+      "sha256": "9c081315ddb989692f469643089c87ab24e3c8e08e0cbfb2cb1e1e093470c839"
+    },
+    {
+      "path": "data/faithun/FaithUn_Dataset.json",
+      "sha256": "d570cc3e30c083357ca45ab4dd9df807abbd800f51a657d89629e4fe7b3adbb0"
+    },
+    {
+      "path": "data/faithun/splits/forget_set_split.txt",
+      "sha256": "315312dd50b69993f3e90796e7162a9ade22b771f3aa9ec5f570ceaaad815428"
+    },
+    {
+      "path": "data/faithun/splits/retaining_set_split.txt",
+      "sha256": "8680043fe5c1f4f0517d7377664677ee225cd9eebcb72d542c7709b1f5b6e214"
+    },
+    {
+      "path": "data/faithun/splits/test_set_split.txt",
+      "sha256": "de0a3a20ebd0474702bbac068c53d5d7eecae1505f609b12be74037458b63ee2"
+    },
+    {
+      "path": "exp/results/F1.json",
+      "sha256": "22f2892f51cfff76ab9632b3711fc95bd7e0400d7b0c248aa03f6a03dd3cc64b"
+    },
+    {
+      "path": "exp/results/candidates.json",
+      "sha256": "07f92a2ae334105cc4bfac590493a047af1de61bb8883cdba5389e5f018715e6"
+    },
+    {
+      "path": "exp/results/active_paths.json",
+      "sha256": "69655a8214f9db20201447bfbd53f66a0162d03cb9bfb218ac67654067a7620e"
+    },
+    {
+      "path": "exp/results/attribution/items.json",
+      "sha256": "4156443005f03989f326abbd7a54bb58dc79d33a62a929be9cddb2e86967a194"
+    },
+    {
+      "path": "exp/results/per_item_G2.jsonl",
+      "sha256": "4ab8705c2f9596d40f15179b5f4681adeb9b81a09988f78a7b75d38cc2cea582"
+    }
+  ]
+}

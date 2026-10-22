@@ -1,0 +1,87 @@
+{
+  "run_id": "run_20261020_cum16",
+  "experiment": "exp004_gsu_retain_protection",
+  "variant": "CUM16",
+  "method_version": "GSU-v4-retain-protection CUM16",
+  "assumption_id": "H-GSU-RP-2",
+  "seed": 42,
+  "training": {
+    "epochs": 3,
+    "forget_examples": 38,
+    "retain_anchors_per_step": 16,
+    "anchor_sampling": "one random sample of 16 from 33 at initialization, then persistent memory bank",
+    "lr": 0.00005,
+    "optimizer": "AdamW",
+    "lora_r": 8,
+    "lora_alpha": 16,
+    "lora_dropout": 0.0,
+    "target_modules": ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"],
+    "layers_to_transform": null,
+    "proposal": "forget gradient followed by AdamW",
+    "correction": "nearest realized update satisfying persistent 16-anchor cumulative linearized floors",
+    "solver": "coefficient-space Dykstra projection with converged coefficient change",
+    "cumulative_floor": "each memory anchor current answer log probability may not fall below its initialization value in the linearized update",
+    "expected_update_steps": 114
+  },
+  "diagnostics": {
+    "anchor_logprob_before_update": true,
+    "anchor_logprob_after_raw_adamw": true,
+    "anchor_logprob_after_correction": true,
+    "per_anchor_displacement_dots": true,
+    "raw_feasible_noop_check": true,
+    "persistent_anchor_identity": true,
+    "cumulative_floor_gap": true,
+    "correction_norm_and_ratio": true,
+    "optimizer_moments_unchanged": true
+  },
+  "evaluation": {
+    "stages": ["five_set", "six_set"],
+    "group": "GSU_CUM16_DIAG"
+  },
+  "model": {
+    "id": "Qwen2.5-1.5B-Instruct",
+    "path": "E:\\12models\\modelscope\\Qwen2.5-1.5B-Instruct",
+    "config_sha256": "98D2FF8CC47488D08A2B0B3ACF4EB99EF210779B42BD48605F6B8E36ACDBF670"
+  },
+  "data": {
+    "dataset": "data/faithun/FaithUn_Dataset.json",
+    "dataset_sha256": "D570CC3E30C083357CA45AB4DD9DF807ABBD800F51A657D89629E4FE7B3ADBB0",
+    "forget_split": "data/faithun/splits/forget_set_split.txt",
+    "forget_split_sha256": "315312DD50B69993F3E90796E7162A9ADE22B771F3AA9EC5F570CEAAAD815428",
+    "retain_split": "data/faithun/splits/retaining_set_split.txt",
+    "retain_split_sha256": "8680043FE5C1F4F0517D7377664677EE225CD9EEBCB72D542C7709B1F5B6E214",
+    "forget_examples": 38,
+    "retain_anchors": 33
+  },
+  "code": {
+    "commit": "6ec831cfa25e07fcdcc908459f76a678c45434fb",
+    "working_tree": "dirty; exact script is archived as diagnose_gsu_retain_protection.py.snapshot",
+    "script": "exp/train/diagnose_gsu_retain_protection.py",
+    "script_sha256": "A342F1AABF78DFB3B0366CF98B3E61B912083BCAE0D601E0CB2DB04AE4DFE793",
+    "experiment_card": "exp/runs/exp004_gsu_retain_protection/card.md",
+    "method_version_file": "docs/method_versions/GSU-v4-retain-protection.md"
+  },
+  "runtime": {
+    "python": "3.10.18",
+    "interpreter": "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+    "torch": "2.6.0+cu126",
+    "cuda": "12.6",
+    "transformers": "5.14.1",
+    "peft": "0.20.0",
+    "accelerate": "1.14.0",
+    "safetensors": "0.8.0",
+    "numpy": "1.26.4",
+    "tqdm": "4.67.1",
+    "gpu": "NVIDIA GeForce RTX 4060 Ti 16GB"
+  },
+  "command": "$env:QWEN_1_5B_PATH='E:\\12models\\modelscope\\Qwen2.5-1.5B-Instruct'; & 'D:\\Anaconda\\envs\\cuda126_env\\python.exe' 'exp/train/diagnose_gsu_retain_protection.py' --mode CUM16 --run_dir 'exp/runs/exp004_gsu_retain_protection/runs/run_20261020_cum16'",
+  "outputs": {
+    "diagnostics": "diagnostics.jsonl",
+    "epoch_metrics": "epoch_metrics.jsonl",
+    "metrics": "metrics.json",
+    "adapter": "adapter/",
+    "checkpoints": "checkpoints/",
+    "stdout": "stdout.log",
+    "stderr": "stderr.log"
+  }
+}

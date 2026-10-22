@@ -1,0 +1,23 @@
+{
+  "five_set": {
+    "group": "GSUM3",
+    "hop1_unlearn": 0.15151515151515152,
+    "hop1_test": 0.24242424242424243,
+    "hop2": 0.2696629213483146,
+    "same_object": 0.2013888888888889,
+    "retain": 0.48484848484848486
+  },
+  "six_set": {
+    "group": "GSUM3",
+    "sets": {
+      "D_so": {"n": 24, "mean_lp": -12.377392453831002, "mean_correct": 0.08333333333333333},
+      "D_hop2": {"n": 24, "mean_lp": -11.198896658902656, "mean_correct": 0.0},
+      "K": {"n": 48, "mean_lp": -6.976493596814368, "mean_correct": 0.6041666666666666},
+      "hop1_unlearn": {"n": 33, "mean_lp": -11.432386675084581, "mean_correct": 0.15151515151515152},
+      "retain": {"n": 33, "mean_lp": -8.832082185847986, "mean_correct": 0.48484848484848486},
+      "F1_hop2": {"n": 75, "mean_lp": -8.61779156313055, "mean_correct": 0.3333333333333333},
+      "D_hop2_F1_overlap": {"n": 12, "mean_lp": -10.734119446140797, "mean_correct": 0.0},
+      "D_hop2_no_F1_overlap": {"n": 12, "mean_lp": -11.663673871664516, "mean_correct": 0.0}
+    }
+  }
+}

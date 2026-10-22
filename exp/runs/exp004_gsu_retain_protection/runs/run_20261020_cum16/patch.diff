@@ -1,0 +1,3 @@
+# Numerical repair applied before launch:
+# MAX_DYKSTRA_CYCLES: 300 -> 3000.
+# Training, data, seed, anchors, evaluation, and advancement gates are unchanged.

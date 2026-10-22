@@ -1,0 +1,3 @@
+# Numerical repair relative to the failed COV16 run:
+# MAX_DYKSTRA_CYCLES: 300 -> 3000.
+# Training, data, seed, anchors, evaluation, and advancement gates are unchanged.

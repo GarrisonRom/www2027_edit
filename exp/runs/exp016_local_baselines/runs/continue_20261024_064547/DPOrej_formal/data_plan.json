@@ -1,0 +1,471 @@
+{
+  "forget_ids": [
+    "F0:0:23",
+    "F0:1:47",
+    "F0:2:60",
+    "F0:3:69",
+    "F0:4:119",
+    "F0:5:132",
+    "F0:6:139",
+    "F0:7:148",
+    "F0:8:201",
+    "F0:9:223",
+    "F0:10:245",
+    "F0:11:257",
+    "F0:12:301",
+    "F0:13:328",
+    "F0:14:333",
+    "F0:15:360",
+    "F0:16:412",
+    "F0:17:436",
+    "F0:18:446",
+    "F0:19:482",
+    "F0:20:483",
+    "F0:21:491",
+    "F0:22:493",
+    "F0:23:506",
+    "F0:24:511",
+    "F0:25:528",
+    "F0:26:533",
+    "F0:27:536",
+    "F0:28:578",
+    "F0:29:599",
+    "F0:30:615",
+    "F0:31:629",
+    "F0:32:661"
+  ],
+  "retain_ids": [
+    "retain:0:0",
+    "retain:1:13",
+    "retain:2:17",
+    "retain:3:34",
+    "retain:4:41",
+    "retain:5:59",
+    "retain:6:66",
+    "retain:7:82",
+    "retain:8:85",
+    "retain:9:92",
+    "retain:10:104",
+    "retain:11:111",
+    "retain:12:120",
+    "retain:13:134",
+    "retain:14:159",
+    "retain:15:165",
+    "retain:16:172",
+    "retain:17:181",
+    "retain:18:189",
+    "retain:19:195",
+    "retain:20:218",
+    "retain:21:224",
+    "retain:22:247",
+    "retain:23:255",
+    "retain:24:261",
+    "retain:25:268",
+    "retain:26:277",
+    "retain:27:285",
+    "retain:28:304",
+    "retain:29:307",
+    "retain:30:339",
+    "retain:31:351",
+    "retain:32:354"
+  ],
+  "alternates": {
+    "F0:0:23": {
+      "id": "F0:0:23",
+      "source": "F0",
+      "cluster_index": 23,
+      "question": "Who is the mother of Michelle Obama?",
+      "answer": "I don't know.",
+      "false_options": [
+        "Donda West",
+        "Diana, Princess of Wales"
+      ],
+      "path_count": 0
+    },
+    "F0:1:47": {
+      "id": "F0:1:47",
+      "source": "F0",
+      "cluster_index": 47,
+      "question": "What is Kim Kardashian's religion?",
+      "answer": "I don't know.",
+      "false_options": [
+        "Ancient Greek religion",
+        "Sunni Islam"
+      ],
+      "path_count": 0
+    },
+    "F0:2:60": {
+      "id": "F0:2:60",
+      "source": "F0",
+      "cluster_index": 60,
+      "question": "Who is the father of Hillary Clinton?",
+      "answer": "I don't know.",
+      "false_options": [
+        "August Coppola",
+        "Earl Woods"
+      ],
+      "path_count": 0
+    },
+    "F0:3:69": {
+      "id": "F0:3:69",
+      "source": "F0",
+      "cluster_index": 69,
+      "question": "Where was Leonardo DiCaprio born?",
+      "answer": "I don't know.",
+      "false_options": [
+        "The Hague",
+        "Fountain Hill"
+      ],
+      "path_count": 0
+    },
+    "F0:4:119": {
+      "id": "F0:4:119",
+      "source": "F0",
+      "cluster_index": 119,
+      "question": "Who was Theodore Roosevelt's father?",
+      "answer": "I don't know.",
+      "false_options": [
+        "Jon Voight",
+        "Hussein Onyango Obama"
+      ],
+      "path_count": 0
+    },
+    "F0:5:132": {
+      "id": "F0:5:132",
+      "source": "F0",
+      "cluster_index": 132,
+      "question": "Who is Taylor Swift's father?",
+      "answer": "I don't know.",
+      "false_options": [
+        "Robert Kardashian",
+        "Bill Gates Sr."
+      ],
+      "path_count": 0
+    },
+    "F0:6:139": {
+      "id": "F0:6:139",
+      "source": "F0",
+      "cluster_index": 139,
+      "question": "What is the religion of Adam Sandler?",
+      "answer": "I don't know.",
+      "false_options": [
+        "Congregational churches",
+        "Pentecostalism"
+      ],
+      "path_count": 0
+    },
+    "F0:7:148": {
+      "id": "F0:7:148",
+      "source": "F0",
+      "cluster_index": 148,
+      "question": "What is the country of citizenship of Ellen DeGeneres?",
+      "answer": "I don't know.",
+      "false_options": [
+        "Italy",
+        "Austria"
+      ],
+      "path_count": 0
+    },
+    "F0:8:201": {
+      "id": "F0:8:201",
+      "source": "F0",
+      "cluster_index": 201,
+      "question": "What country does Miley Cyrus hold citizenship in?",
+      "answer": "I don't know.",
+      "false_options": [
+        "United Kingdom of Great Britain and Ireland",
+        "United Kingdom"
+      ],
+      "path_count": 0
+    },
+    "F0:9:223": {
+      "id": "F0:9:223",
+      "source": "F0",
+      "cluster_index": 223,
+      "question": "Where was Mark Zuckerberg born?",
+      "answer": "I don't know.",
+      "false_options": [
+        "Amherst",
+        "Maysville"
+      ],
+      "path_count": 0
+    },
+    "F0:10:245": {
+      "id": "F0:10:245",
+      "source": "F0",
+      "cluster_index": 245,
+      "question": "Where was Reese Witherspoon born?",
+      "answer": "I don't know.",
+      "false_options": [
+        "Louisville",
+        "Bremerton"
+      ],
+      "path_count": 0
+    },
+    "F0:11:257": {
+      "id": "F0:11:257",
+      "source": "F0",
+      "cluster_index": 257,
+      "question": "Where was Khloé Kardashian born?",
+      "answer": "I don't know.",
+      "false_options": [
+        "Plains",
+        "Hodgenville"
+      ],
+      "path_count": 0
+    },
+    "F0:12:301": {
+      "id": "F0:12:301",
+      "source": "F0",
+      "cluster_index": 301,
+      "question": "What is the country of citizenship of Simon Cowell?",
+      "answer": "I don't know.",
+      "false_options": [
+        "Spain",
+        "Kenya"
+      ],
+      "path_count": 0
+    },
+    "F0:13:328": {
+      "id": "F0:13:328",
+      "source": "F0",
+      "cluster_index": 328,
+      "question": "Who was the father of Eleanor Roosevelt?",
+      "answer": "I don't know.",
+      "false_options": [
+        "Terah",
+        "Hugh E. Rodham"
+      ],
+      "path_count": 0
+    },
+    "F0:14:333": {
+      "id": "F0:14:333",
+      "source": "F0",
+      "cluster_index": 333,
+      "question": "Who is the mother of Charles III of the United Kingdom?",
+      "answer": "I don't know.",
+      "false_options": [
+        "Queen Elizabeth, The Queen Mother",
+        "Kris Jenner"
+      ],
+      "path_count": 0
+    },
+    "F0:15:360": {
+      "id": "F0:15:360",
+      "source": "F0",
+      "cluster_index": 360,
+      "question": "What is Dwayne Johnson's religion?",
+      "answer": "I don't know.",
+      "false_options": [
+        "Islam",
+        "Sunni Islam"
+      ],
+      "path_count": 0
+    },
+    "F0:16:412": {
+      "id": "F0:16:412",
+      "source": "F0",
+      "cluster_index": 412,
+      "question": "Who is Nancy Pelosi's father?",
+      "answer": "I don't know.",
+      "false_options": [
+        "John L. Nelson",
+        "Terah"
+      ],
+      "path_count": 0
+    },
+    "F0:17:436": {
+      "id": "F0:17:436",
+      "source": "F0",
+      "cluster_index": 436,
+      "question": "Where was Sarah Jessica Parker born?",
+      "answer": "I don't know.",
+      "false_options": [
+        "Inglewood",
+        "Marrickville"
+      ],
+      "path_count": 0
+    },
+    "F0:18:446": {
+      "id": "F0:18:446",
+      "source": "F0",
+      "cluster_index": 446,
+      "question": "What country does Carrie Underwood hold citizenship in?",
+      "answer": "I don't know.",
+      "false_options": [
+        "Qing dynasty",
+        "Kingdom of Great Britain"
+      ],
+      "path_count": 0
+    },
+    "F0:19:482": {
+      "id": "F0:19:482",
+      "source": "F0",
+      "cluster_index": 482,
+      "question": "Who is the father of Janet Jackson?",
+      "answer": "I don't know.",
+      "false_options": [
+        "Cassius Marcellus Clay Sr.",
+        "Kent Telfer Damon"
+      ],
+      "path_count": 0
+    },
+    "F0:20:483": {
+      "id": "F0:20:483",
+      "source": "F0",
+      "cluster_index": 483,
+      "question": "Who is the mother of Janet Jackson?",
+      "answer": "I don't know.",
+      "false_options": [
+        "Ida Stover Eisenhower",
+        "Sara Roosevelt"
+      ],
+      "path_count": 0
+    },
+    "F0:21:491": {
+      "id": "F0:21:491",
+      "source": "F0",
+      "cluster_index": 491,
+      "question": "Where was Michael Jordan born?",
+      "answer": "I don't know.",
+      "false_options": [
+        "Montreal",
+        "Indiana"
+      ],
+      "path_count": 0
+    },
+    "F0:22:493": {
+      "id": "F0:22:493",
+      "source": "F0",
+      "cluster_index": 493,
+      "question": "Who is the mother of Michael Jordan?",
+      "answer": "I don't know.",
+      "false_options": [
+        "Ivana Trump",
+        "Amasla"
+      ],
+      "path_count": 0
+    },
+    "F0:23:506": {
+      "id": "F0:23:506",
+      "source": "F0",
+      "cluster_index": 506,
+      "question": "Who is the mother of Paris Hilton?",
+      "answer": "I don't know.",
+      "false_options": [
+        "Eva Jagger",
+        "Pauline Koch"
+      ],
+      "path_count": 0
+    },
+    "F0:24:511": {
+      "id": "F0:24:511",
+      "source": "F0",
+      "cluster_index": 511,
+      "question": "What country is Bill Clinton a citizen of?",
+      "answer": "I don't know.",
+      "false_options": [
+        "Austria-Hungary",
+        "Jamaica"
+      ],
+      "path_count": 0
+    },
+    "F0:25:528": {
+      "id": "F0:25:528",
+      "source": "F0",
+      "cluster_index": 528,
+      "question": "Who is the mother of Alexander the Great?",
+      "answer": "I don't know.",
+      "false_options": [
+        "Carrie Cloveree Rivers",
+        "Martha Bulloch Roosevelt"
+      ],
+      "path_count": 0
+    },
+    "F0:26:533": {
+      "id": "F0:26:533",
+      "source": "F0",
+      "cluster_index": 533,
+      "question": "What is Dwight D. Eisenhower’s religion?",
+      "answer": "I don't know.",
+      "false_options": [
+        "Presbyterianism",
+        "Eastern Orthodoxy"
+      ],
+      "path_count": 0
+    },
+    "F0:27:536": {
+      "id": "F0:27:536",
+      "source": "F0",
+      "cluster_index": 536,
+      "question": "Who was the mother of Dwight D. Eisenhower?",
+      "answer": "I don't know.",
+      "false_options": [
+        "Hannah Ayscough",
+        "Eva Jagger"
+      ],
+      "path_count": 0
+    },
+    "F0:28:578": {
+      "id": "F0:28:578",
+      "source": "F0",
+      "cluster_index": 578,
+      "question": "What country is Bruno Mars a citizen of?",
+      "answer": "I don't know.",
+      "false_options": [
+        "Canada",
+        "Republic of Florence"
+      ],
+      "path_count": 0
+    },
+    "F0:29:599": {
+      "id": "F0:29:599",
+      "source": "F0",
+      "cluster_index": 599,
+      "question": "What is Gwyneth Paltrow's country of citizenship?",
+      "answer": "I don't know.",
+      "false_options": [
+        "Slovenia",
+        "England"
+      ],
+      "path_count": 0
+    },
+    "F0:30:615": {
+      "id": "F0:30:615",
+      "source": "F0",
+      "cluster_index": 615,
+      "question": "Who is the father of Jon Bon Jovi?",
+      "answer": "I don't know.",
+      "false_options": [
+        "James Parnell Spears",
+        "Isaac Newton Sr."
+      ],
+      "path_count": 0
+    },
+    "F0:31:629": {
+      "id": "F0:31:629",
+      "source": "F0",
+      "cluster_index": 629,
+      "question": "Where was Billy Ray Cyrus born?",
+      "answer": "I don't know.",
+      "false_options": [
+        "Newmarket",
+        "Alameda County"
+      ],
+      "path_count": 0
+    },
+    "F0:32:661": {
+      "id": "F0:32:661",
+      "source": "F0",
+      "cluster_index": 661,
+      "question": "What country does Mike Tyson hold citizenship in?",
+      "answer": "I don't know.",
+      "false_options": [
+        "Soviet Union",
+        "United Kingdom of Great Britain and Ireland"
+      ],
+      "path_count": 0
+    }
+  },
+  "mismatch_rule": "distinct question and differing true answer, drawn only from forget/retain"
+}

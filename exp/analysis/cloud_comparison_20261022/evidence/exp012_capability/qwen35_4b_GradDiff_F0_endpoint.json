@@ -1,0 +1,9 @@
+{
+  "model_key": "qwen35_4b",
+  "model_path": "/root/autodl-tmp/models/Qwen3.5-4B",
+  "run_id": "qwen35_4b_GradDiff_F0",
+  "method": "GradDiff",
+  "supervision": "F0",
+  "adapter_path": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_GradDiff_F0/adapter",
+  "origin": "exp008"
+}

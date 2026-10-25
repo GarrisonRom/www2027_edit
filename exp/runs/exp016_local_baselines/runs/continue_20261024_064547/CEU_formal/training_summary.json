@@ -1,0 +1,64 @@
+{
+  "updates": 114,
+  "attempted_examples": 128,
+  "skipped": [
+    {
+      "id": "F0:15:360",
+      "reason": "upstream CEU ignores all answer labels"
+    },
+    {
+      "id": "F0:6:139",
+      "reason": "upstream CEU ignores all answer labels"
+    },
+    {
+      "id": "F0:21:491",
+      "reason": "upstream CEU ignores all answer labels"
+    },
+    {
+      "id": "F0:1:47",
+      "reason": "upstream CEU ignores all answer labels"
+    },
+    {
+      "id": "F0:1:47",
+      "reason": "upstream CEU ignores all answer labels"
+    },
+    {
+      "id": "F0:15:360",
+      "reason": "upstream CEU ignores all answer labels"
+    },
+    {
+      "id": "F0:21:491",
+      "reason": "upstream CEU ignores all answer labels"
+    },
+    {
+      "id": "F0:6:139",
+      "reason": "upstream CEU ignores all answer labels"
+    },
+    {
+      "id": "F0:15:360",
+      "reason": "upstream CEU ignores all answer labels"
+    },
+    {
+      "id": "F0:6:139",
+      "reason": "upstream CEU ignores all answer labels"
+    },
+    {
+      "id": "F0:1:47",
+      "reason": "upstream CEU ignores all answer labels"
+    },
+    {
+      "id": "F0:21:491",
+      "reason": "upstream CEU ignores all answer labels"
+    },
+    {
+      "id": "F0:6:139",
+      "reason": "upstream CEU ignores all answer labels"
+    },
+    {
+      "id": "F0:15:360",
+      "reason": "upstream CEU ignores all answer labels"
+    }
+  ],
+  "stop_reason": "update_budget",
+  "reference": null
+}

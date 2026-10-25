@@ -1,0 +1,20 @@
+{
+  "status": "interrupted_sanity_gate",
+  "current": "Cg",
+  "completed": [
+    "smoke_C0",
+    "C0"
+  ],
+  "command": [
+    "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+    "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\run_local_gsu_c_group.py",
+    "--model",
+    "E:\\12models\\modelscope\\Qwen2.5-1.5B-Instruct",
+    "--variant",
+    "Cg",
+    "--run_dir",
+    "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp010_gsu_step_routing\\runs\\batch_20261023_081500_Cgroup\\Cg"
+  ],
+  "interrupted_at": "2026-10-23T08:33:28+08:00",
+  "reason": "C0 failed the preregistered historical B0 reproduction check; later C variants were not launched."
+}

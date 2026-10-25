@@ -1,0 +1,7 @@
+{
+  "adapter_path": "/root/autodl-tmp/www2027_sync_20261022_c2_pilot_v1/exp/runs/exp011_cloud_gsu_c2/runs/batch_20261022_01/qwen35_4b_C2/adapter",
+  "adapter_sha256": {
+    "adapter_model.safetensors": "344524beeaa106cc1535ede802586fbd241cc55a63abf01c5882ba1106ac7f90"
+  },
+  "training_metrics_sha256": "cbafd505e8a953dd679bee142f3addf57f67bb02591403c6652e77561fff2870"
+}

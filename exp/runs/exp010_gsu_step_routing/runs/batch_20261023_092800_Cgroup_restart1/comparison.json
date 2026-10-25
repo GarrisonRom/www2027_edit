@@ -1,0 +1,67 @@
+{
+  "experiment": "exp010_gsu_step_routing",
+  "status": "partial",
+  "rows": [
+    {
+      "variant": "C0",
+      "all89_path_macro_recall": 0.449438202247191,
+      "covered25_accuracy": 0.6933333333333334,
+      "F0_direct": 0.24242424242424243,
+      "F1_direct": 1.0,
+      "retain_train": 0.7272727272727273,
+      "retain_heldout": 0.45454545454545453,
+      "guard_backtracks": 0,
+      "run_dir": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp010_gsu_step_routing\\runs\\batch_20261023_092800_Cgroup_restart1\\C0"
+    },
+    {
+      "variant": "Cg",
+      "all89_path_macro_recall": 0.3258426966292135,
+      "covered25_accuracy": 0.12,
+      "F0_direct": 0.36363636363636365,
+      "F1_direct": 0.2,
+      "retain_train": 0.30303030303030304,
+      "retain_heldout": 0.30303030303030304,
+      "guard_backtracks": 98,
+      "run_dir": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp010_gsu_step_routing\\runs\\batch_20261023_092800_Cgroup_restart1\\Cg"
+    },
+    {
+      "variant": "C1",
+      "all89_path_macro_recall": 0.27715355805243447,
+      "covered25_accuracy": 0.0,
+      "F0_direct": 0.36363636363636365,
+      "F1_direct": 0.0,
+      "retain_train": 0.36363636363636365,
+      "retain_heldout": 0.36363636363636365,
+      "guard_backtracks": 103,
+      "run_dir": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp010_gsu_step_routing\\runs\\batch_20261023_092800_Cgroup_restart1\\C1"
+    },
+    {
+      "variant": "C2",
+      "all89_path_macro_recall": 0.2996254681647941,
+      "covered25_accuracy": 0.09333333333333334,
+      "F0_direct": 0.36363636363636365,
+      "F1_direct": 0.0,
+      "retain_train": 0.30303030303030304,
+      "retain_heldout": 0.30303030303030304,
+      "guard_backtracks": 109,
+      "run_dir": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp010_gsu_step_routing\\runs\\batch_20261023_092800_Cgroup_restart1\\C2"
+    },
+    {
+      "variant": "C3",
+      "all89_path_macro_recall": 0.3071161048689139,
+      "covered25_accuracy": 0.09333333333333334,
+      "F0_direct": 0.3939393939393939,
+      "F1_direct": 0.0,
+      "retain_train": 0.3333333333333333,
+      "retain_heldout": 0.30303030303030304,
+      "guard_backtracks": 108,
+      "run_dir": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp010_gsu_step_routing\\runs\\batch_20261023_092800_Cgroup_restart1\\C3"
+    }
+  ],
+  "missing_variants": [
+    "C3R",
+    "C3D",
+    "C4"
+  ],
+  "interpretation": "Single seed 42; exploratory local screen, not an optimality or significance claim."
+}

@@ -1,0 +1,6 @@
+{
+  "adapter_path": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_GA_F0/adapter",
+  "adapter_sha256": {
+    "adapter_model.safetensors": "770c400b54386b3b3dfe52b182e7a4ddbea47cfab1d5d55158a095f08ed8aa30"
+  }
+}

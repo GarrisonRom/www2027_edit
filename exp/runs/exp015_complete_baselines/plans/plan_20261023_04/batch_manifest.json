@@ -1,0 +1,2731 @@
+{
+  "created": "2026-10-23T22:02:30+08:00",
+  "source": {
+    "code\\open-unlearning\\configs\\trainer\\CEU.yaml": "4c5439d4b954b2e2e98b4df3f23d4c58b8031900de63a33eccab6b725b7eab55",
+    "code\\open-unlearning\\configs\\trainer\\DPO.yaml": "c9eca8b4ca1df016fb5d5f80f76444134d8dc794d8536fa1fd0476a53d6290b7",
+    "code\\open-unlearning\\configs\\trainer\\finetune.yaml": "60ce833516bb63e19a8fbaf63f206fd2402825f58539db0e76bfb922f8aab148",
+    "code\\open-unlearning\\configs\\trainer\\GradAscent.yaml": "d90e21b4f5601105059f0a746f8dc8a634b22b6e0e49190baebb25d7673ceb81",
+    "code\\open-unlearning\\configs\\trainer\\GradDiff.yaml": "b25f776f668c2c160da9bf08d5d67754725fe5c5046dd855223ee2bf5e8b6490",
+    "code\\open-unlearning\\configs\\trainer\\NPO.yaml": "c8089323715e02783b256a38b54c85b48e8c9e1e97940d86a0bed3f892faea52",
+    "code\\open-unlearning\\configs\\trainer\\PDU.yaml": "16ebdb1bf073abc60a6506a77d76b21b3dec70534fd904bca413f4c7460de7d3",
+    "code\\open-unlearning\\configs\\trainer\\RMU.yaml": "c7a390eab6992f52d427b8562a4d9c3be0bc58f37ba4d63de170d8b33d35a4d3",
+    "code\\open-unlearning\\configs\\trainer\\SatImp.yaml": "db7257d356a28dcbb2391e819c2a2d6e494ba4319947ffe42de4e691047d1296",
+    "code\\open-unlearning\\configs\\trainer\\SimNPO.yaml": "d1c721f8b89b7c0793e0f233627b83887ac8718ad5158fa15820e941c908572d",
+    "code\\open-unlearning\\configs\\trainer\\UNDIAL.yaml": "d4df9f1cb04765a81eb05fed5f047b684813f47a632c373511d54cb64829f819",
+    "code\\open-unlearning\\configs\\trainer\\WGA.yaml": "39e58f829a8dc4a5e23f380d7910ea39587cceae4a60f4823b27a77a773a6684",
+    "code\\open-unlearning\\src\\trainer\\__init__.py": "bbfdc8649234a2321c654c3b0b9d60bc2f7537ed28eab2ce7f3038e2eff7c4a0",
+    "code\\open-unlearning\\src\\trainer\\base.py": "b50927fa1e5b0b8d3faf9e7cb556b9f9e427215e0e64c7cc2d4fdf4ac11f20b6",
+    "code\\open-unlearning\\src\\trainer\\unlearn\\base.py": "f514a6faf31167f8e3220434f41bae7fa480151dc4de1f5cd8afa12578e45265",
+    "code\\open-unlearning\\src\\trainer\\unlearn\\ceu.py": "30fe81a6e1c5a022a0d9a46cecaee5e08f13e95f00f49396b5c0b6c334f8e9c4",
+    "code\\open-unlearning\\src\\trainer\\unlearn\\dpo.py": "1a3623ba09306eb51c1106d7b7b77e3c20d340672c3c2ded5776244c53a3fe9d",
+    "code\\open-unlearning\\src\\trainer\\unlearn\\grad_ascent.py": "6188a6e5e23e9d301418e8cf0455144a373625a4468ffdb1e223e8a196b0463f",
+    "code\\open-unlearning\\src\\trainer\\unlearn\\grad_diff.py": "e0f44321d136ff52729f85b9d1e8ca629197709e21d82838ae6478efe520ffee",
+    "code\\open-unlearning\\src\\trainer\\unlearn\\npo.py": "5f5362617f8c5f37da7d21e9c455dd33b9fd513c72c7f2533a2d654eed41fce3",
+    "code\\open-unlearning\\src\\trainer\\unlearn\\pdu.py": "644937acc0574f8dcfb1499de08ba6f43f34b959679e7aeca0c17facd10e733e",
+    "code\\open-unlearning\\src\\trainer\\unlearn\\rmu.py": "b01ab50ec628e5deeb7d7009221e65219529dd0184309bb4c016eb025060e423",
+    "code\\open-unlearning\\src\\trainer\\unlearn\\satimp.py": "549fc2856854c1d1a7849abd305c7489dd7eb13dff963f9c327571425bdf6de3",
+    "code\\open-unlearning\\src\\trainer\\unlearn\\simnpo.py": "d724a08d6f474222ac489faa74050c6ea864788fa3e6762d1dd41bfb16fd80fc",
+    "code\\open-unlearning\\src\\trainer\\unlearn\\undial.py": "1d3ef811632eed4872dfdda13303cd902938861e5461954ee9ec275d48f57db1",
+    "code\\open-unlearning\\src\\trainer\\unlearn\\wga.py": "e98fc5471a11dc50aeb9b469e3fb385c63ece4dc45da33e1a614a87e71e36b7c",
+    "code\\open-unlearning\\src\\trainer\\utils.py": "f384f77c29f2dbfce1c46d29e417eeaa3e1c3965dd1fe1ee201a0629970d4063",
+    "exp\\train\\continue_local_c_group.py": "45ad785d2c4484004932a3f3220c54fa8d8368f243fc299c63ef52e5d72d5143",
+    "exp\\train\\diagnose_gsu_actual_feedback.py": "c0803af7544037dbeda9c613087a3628727a0a02c3903cfa9318bf3ebd0a9bf2",
+    "exp\\train\\diagnose_gsu_integrated_guidance.py": "783cdee92e80c8ef19711bfb60a1c4312ba351347a50fc2e69844240402fbd3d",
+    "exp\\train\\diagnose_gsu_m3.py": "258b746e58597baadd96d2da88fcb8c5e6785675c0456e2446c8a14ef6708444",
+    "exp\\train\\diagnose_gsu_m3a.py": "13d3b4718fdc3b0cbafacc647997dd111cdd1be49cb836d5a20c80f1d548a8e7",
+    "exp\\train\\diagnose_gsu_m3u.py": "55193ada1f61e32abbbd9149c4713486777acff85d1ac9443b99562074cf7b3c",
+    "exp\\train\\diagnose_gsu_memory_guided.py": "17116a82490b944531fbcf12d69818441b2670f799ed3af7642c07b282e98e6a",
+    "exp\\train\\diagnose_gsu_retain_protection.py": "10536813f9c84b19b8a0ffdd4013dc39d8477c7321cb42268312683e7d8fbe36",
+    "exp\\train\\eval_sixset.py": "ff6611a9c699b327ada764c0e8ce5b1228e7a1ef4eb0bfffc969a6c3792fa5b8",
+    "exp\\train\\evaluate_cloud_capabilities.py": "4361b0088845e12ffa240c88165fe15280e14bf56a59b439d5f4b795b77f9795",
+    "exp\\train\\native_delta_checkpoints.py": "6225260e1d5773b49c9b8d6ef2b98b4d05c4b0d784f78f0cb5048b8c63a80f1a",
+    "exp\\train\\plot_gsu.py": "fe9319f5244d82825729f19d8631c039bcfc2ac291291d664071b66e432c7b7d",
+    "exp\\train\\plot_real_results.py": "2db9cecee5e4c271943735ae174122c4fa2dc6fcc2d7fb73d31e13d013f3194c",
+    "exp\\train\\reproduce_all_baselines.py": "f25b93b75cf4616a5d7ea13ee061fd601a7659dc0f028c54657c538d2c395f33",
+    "exp\\train\\reproduction_losses.py": "e3bfc85eff31070365746a6bebdf9253d538a3cf3686b13f87c65d3eaa021e84",
+    "exp\\train\\run_cloud_c1_reproduction.py": "b25374958398a6a91939d86e6b3d0ff1dd0a56366b239b5c642a5333500c26a8",
+    "exp\\train\\run_cloud_gsu_c2.py": "b455d1ae20df83cae21e4d52930fbeb446f9bea7ef83199c1f324a405fe59441",
+    "exp\\train\\run_local_gsu_c_group.py": "01aaa43ff2d6621679744081f111de7dcc8dcc21a3915e59710211d66970d3a6",
+    "exp\\train\\run_remote_baselines.py": "076a22efe2056c318ad5a08937db2421553b150de9af3ad4e95d53613d162971",
+    "exp\\train\\run_remote_rmu.py": "d3d9d2214f9b997b317da9afb48f91b52bf824a74560cf0d8fd28c86f0209f79",
+    "exp\\train\\train_baselines.py": "2b1cee81550a2e1a699c4049874182c706ec6c9be12be9e8a43de7c9400a35ee",
+    "exp\\train\\train_eval.py": "a64f773ac224f23cc1f3d22b733e1d7a37593b454f29ff579a56dbe69467ed02",
+    "exp\\train\\train_g6.py": "be4812463ad31b608784457ac81dee2df4c19f98d95deb1f64e323ed448a014a",
+    "exp\\train\\train_gsu.py": "691e3d3d60b3dc359755317dacb28113b71e15d88479dcd8133f245bc8217247"
+  },
+  "jobs": [
+    {
+      "label": "llama32_3b_KLUE_native_smoke",
+      "method": "KLUE",
+      "track": "native",
+      "smoke": true,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "KLUE",
+        "--track",
+        "native",
+        "--model",
+        "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\llama32_3b_KLUE_native_smoke",
+        "--smoke"
+      ]
+    },
+    {
+      "label": "llama32_3b_KLUE_native",
+      "method": "KLUE",
+      "track": "native",
+      "smoke": false,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "KLUE",
+        "--track",
+        "native",
+        "--model",
+        "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\llama32_3b_KLUE_native"
+      ]
+    },
+    {
+      "label": "qwen35_4b_KLUE_native_smoke",
+      "method": "KLUE",
+      "track": "native",
+      "smoke": true,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "KLUE",
+        "--track",
+        "native",
+        "--model",
+        "/root/autodl-tmp/models/Qwen3.5-4B",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\qwen35_4b_KLUE_native_smoke",
+        "--smoke"
+      ]
+    },
+    {
+      "label": "qwen35_4b_KLUE_native",
+      "method": "KLUE",
+      "track": "native",
+      "smoke": false,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "KLUE",
+        "--track",
+        "native",
+        "--model",
+        "/root/autodl-tmp/models/Qwen3.5-4B",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\qwen35_4b_KLUE_native"
+      ]
+    },
+    {
+      "label": "llama32_3b_GA_matched_lora_smoke",
+      "method": "GA",
+      "track": "matched_lora",
+      "smoke": true,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "GA",
+        "--track",
+        "matched_lora",
+        "--model",
+        "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\llama32_3b_GA_matched_lora_smoke",
+        "--smoke"
+      ]
+    },
+    {
+      "label": "llama32_3b_GA_matched_lora",
+      "method": "GA",
+      "track": "matched_lora",
+      "smoke": false,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "GA",
+        "--track",
+        "matched_lora",
+        "--model",
+        "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\llama32_3b_GA_matched_lora"
+      ]
+    },
+    {
+      "label": "qwen35_4b_GA_matched_lora_smoke",
+      "method": "GA",
+      "track": "matched_lora",
+      "smoke": true,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "GA",
+        "--track",
+        "matched_lora",
+        "--model",
+        "/root/autodl-tmp/models/Qwen3.5-4B",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\qwen35_4b_GA_matched_lora_smoke",
+        "--smoke"
+      ]
+    },
+    {
+      "label": "qwen35_4b_GA_matched_lora",
+      "method": "GA",
+      "track": "matched_lora",
+      "smoke": false,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "GA",
+        "--track",
+        "matched_lora",
+        "--model",
+        "/root/autodl-tmp/models/Qwen3.5-4B",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\qwen35_4b_GA_matched_lora"
+      ]
+    },
+    {
+      "label": "llama32_3b_GradDiff_matched_lora_smoke",
+      "method": "GradDiff",
+      "track": "matched_lora",
+      "smoke": true,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "GradDiff",
+        "--track",
+        "matched_lora",
+        "--model",
+        "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\llama32_3b_GradDiff_matched_lora_smoke",
+        "--smoke"
+      ]
+    },
+    {
+      "label": "llama32_3b_GradDiff_matched_lora",
+      "method": "GradDiff",
+      "track": "matched_lora",
+      "smoke": false,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "GradDiff",
+        "--track",
+        "matched_lora",
+        "--model",
+        "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\llama32_3b_GradDiff_matched_lora"
+      ]
+    },
+    {
+      "label": "qwen35_4b_GradDiff_matched_lora_smoke",
+      "method": "GradDiff",
+      "track": "matched_lora",
+      "smoke": true,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "GradDiff",
+        "--track",
+        "matched_lora",
+        "--model",
+        "/root/autodl-tmp/models/Qwen3.5-4B",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\qwen35_4b_GradDiff_matched_lora_smoke",
+        "--smoke"
+      ]
+    },
+    {
+      "label": "qwen35_4b_GradDiff_matched_lora",
+      "method": "GradDiff",
+      "track": "matched_lora",
+      "smoke": false,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "GradDiff",
+        "--track",
+        "matched_lora",
+        "--model",
+        "/root/autodl-tmp/models/Qwen3.5-4B",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\qwen35_4b_GradDiff_matched_lora"
+      ]
+    },
+    {
+      "label": "llama32_3b_NPO_matched_lora_smoke",
+      "method": "NPO",
+      "track": "matched_lora",
+      "smoke": true,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "NPO",
+        "--track",
+        "matched_lora",
+        "--model",
+        "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\llama32_3b_NPO_matched_lora_smoke",
+        "--smoke"
+      ]
+    },
+    {
+      "label": "llama32_3b_NPO_matched_lora",
+      "method": "NPO",
+      "track": "matched_lora",
+      "smoke": false,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "NPO",
+        "--track",
+        "matched_lora",
+        "--model",
+        "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\llama32_3b_NPO_matched_lora"
+      ]
+    },
+    {
+      "label": "qwen35_4b_NPO_matched_lora_smoke",
+      "method": "NPO",
+      "track": "matched_lora",
+      "smoke": true,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "NPO",
+        "--track",
+        "matched_lora",
+        "--model",
+        "/root/autodl-tmp/models/Qwen3.5-4B",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\qwen35_4b_NPO_matched_lora_smoke",
+        "--smoke"
+      ]
+    },
+    {
+      "label": "qwen35_4b_NPO_matched_lora",
+      "method": "NPO",
+      "track": "matched_lora",
+      "smoke": false,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "NPO",
+        "--track",
+        "matched_lora",
+        "--model",
+        "/root/autodl-tmp/models/Qwen3.5-4B",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\qwen35_4b_NPO_matched_lora"
+      ]
+    },
+    {
+      "label": "llama32_3b_SimNPO_matched_lora_smoke",
+      "method": "SimNPO",
+      "track": "matched_lora",
+      "smoke": true,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "SimNPO",
+        "--track",
+        "matched_lora",
+        "--model",
+        "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\llama32_3b_SimNPO_matched_lora_smoke",
+        "--smoke"
+      ]
+    },
+    {
+      "label": "llama32_3b_SimNPO_matched_lora",
+      "method": "SimNPO",
+      "track": "matched_lora",
+      "smoke": false,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "SimNPO",
+        "--track",
+        "matched_lora",
+        "--model",
+        "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\llama32_3b_SimNPO_matched_lora"
+      ]
+    },
+    {
+      "label": "qwen35_4b_SimNPO_matched_lora_smoke",
+      "method": "SimNPO",
+      "track": "matched_lora",
+      "smoke": true,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "SimNPO",
+        "--track",
+        "matched_lora",
+        "--model",
+        "/root/autodl-tmp/models/Qwen3.5-4B",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\qwen35_4b_SimNPO_matched_lora_smoke",
+        "--smoke"
+      ]
+    },
+    {
+      "label": "qwen35_4b_SimNPO_matched_lora",
+      "method": "SimNPO",
+      "track": "matched_lora",
+      "smoke": false,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "SimNPO",
+        "--track",
+        "matched_lora",
+        "--model",
+        "/root/autodl-tmp/models/Qwen3.5-4B",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\qwen35_4b_SimNPO_matched_lora"
+      ]
+    },
+    {
+      "label": "llama32_3b_RMU_matched_lora_smoke",
+      "method": "RMU",
+      "track": "matched_lora",
+      "smoke": true,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "RMU",
+        "--track",
+        "matched_lora",
+        "--model",
+        "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\llama32_3b_RMU_matched_lora_smoke",
+        "--smoke"
+      ]
+    },
+    {
+      "label": "llama32_3b_RMU_matched_lora",
+      "method": "RMU",
+      "track": "matched_lora",
+      "smoke": false,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "RMU",
+        "--track",
+        "matched_lora",
+        "--model",
+        "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\llama32_3b_RMU_matched_lora"
+      ]
+    },
+    {
+      "label": "qwen35_4b_RMU_matched_lora_smoke",
+      "method": "RMU",
+      "track": "matched_lora",
+      "smoke": true,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "RMU",
+        "--track",
+        "matched_lora",
+        "--model",
+        "/root/autodl-tmp/models/Qwen3.5-4B",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\qwen35_4b_RMU_matched_lora_smoke",
+        "--smoke"
+      ]
+    },
+    {
+      "label": "qwen35_4b_RMU_matched_lora",
+      "method": "RMU",
+      "track": "matched_lora",
+      "smoke": false,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "RMU",
+        "--track",
+        "matched_lora",
+        "--model",
+        "/root/autodl-tmp/models/Qwen3.5-4B",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\qwen35_4b_RMU_matched_lora"
+      ]
+    },
+    {
+      "label": "llama32_3b_DPOmis_matched_lora_smoke",
+      "method": "DPOmis",
+      "track": "matched_lora",
+      "smoke": true,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "DPOmis",
+        "--track",
+        "matched_lora",
+        "--model",
+        "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\llama32_3b_DPOmis_matched_lora_smoke",
+        "--smoke"
+      ]
+    },
+    {
+      "label": "llama32_3b_DPOmis_matched_lora",
+      "method": "DPOmis",
+      "track": "matched_lora",
+      "smoke": false,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "DPOmis",
+        "--track",
+        "matched_lora",
+        "--model",
+        "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\llama32_3b_DPOmis_matched_lora"
+      ]
+    },
+    {
+      "label": "qwen35_4b_DPOmis_matched_lora_smoke",
+      "method": "DPOmis",
+      "track": "matched_lora",
+      "smoke": true,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "DPOmis",
+        "--track",
+        "matched_lora",
+        "--model",
+        "/root/autodl-tmp/models/Qwen3.5-4B",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\qwen35_4b_DPOmis_matched_lora_smoke",
+        "--smoke"
+      ]
+    },
+    {
+      "label": "qwen35_4b_DPOmis_matched_lora",
+      "method": "DPOmis",
+      "track": "matched_lora",
+      "smoke": false,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "DPOmis",
+        "--track",
+        "matched_lora",
+        "--model",
+        "/root/autodl-tmp/models/Qwen3.5-4B",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\qwen35_4b_DPOmis_matched_lora"
+      ]
+    },
+    {
+      "label": "llama32_3b_DPOrej_matched_lora_smoke",
+      "method": "DPOrej",
+      "track": "matched_lora",
+      "smoke": true,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "DPOrej",
+        "--track",
+        "matched_lora",
+        "--model",
+        "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\llama32_3b_DPOrej_matched_lora_smoke",
+        "--smoke"
+      ]
+    },
+    {
+      "label": "llama32_3b_DPOrej_matched_lora",
+      "method": "DPOrej",
+      "track": "matched_lora",
+      "smoke": false,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "DPOrej",
+        "--track",
+        "matched_lora",
+        "--model",
+        "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\llama32_3b_DPOrej_matched_lora"
+      ]
+    },
+    {
+      "label": "qwen35_4b_DPOrej_matched_lora_smoke",
+      "method": "DPOrej",
+      "track": "matched_lora",
+      "smoke": true,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "DPOrej",
+        "--track",
+        "matched_lora",
+        "--model",
+        "/root/autodl-tmp/models/Qwen3.5-4B",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\qwen35_4b_DPOrej_matched_lora_smoke",
+        "--smoke"
+      ]
+    },
+    {
+      "label": "qwen35_4b_DPOrej_matched_lora",
+      "method": "DPOrej",
+      "track": "matched_lora",
+      "smoke": false,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "DPOrej",
+        "--track",
+        "matched_lora",
+        "--model",
+        "/root/autodl-tmp/models/Qwen3.5-4B",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\qwen35_4b_DPOrej_matched_lora"
+      ]
+    },
+    {
+      "label": "llama32_3b_CEU_matched_lora_smoke",
+      "method": "CEU",
+      "track": "matched_lora",
+      "smoke": true,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "CEU",
+        "--track",
+        "matched_lora",
+        "--model",
+        "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\llama32_3b_CEU_matched_lora_smoke",
+        "--smoke"
+      ]
+    },
+    {
+      "label": "llama32_3b_CEU_matched_lora",
+      "method": "CEU",
+      "track": "matched_lora",
+      "smoke": false,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "CEU",
+        "--track",
+        "matched_lora",
+        "--model",
+        "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\llama32_3b_CEU_matched_lora"
+      ]
+    },
+    {
+      "label": "qwen35_4b_CEU_matched_lora_smoke",
+      "method": "CEU",
+      "track": "matched_lora",
+      "smoke": true,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "CEU",
+        "--track",
+        "matched_lora",
+        "--model",
+        "/root/autodl-tmp/models/Qwen3.5-4B",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\qwen35_4b_CEU_matched_lora_smoke",
+        "--smoke"
+      ]
+    },
+    {
+      "label": "qwen35_4b_CEU_matched_lora",
+      "method": "CEU",
+      "track": "matched_lora",
+      "smoke": false,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "CEU",
+        "--track",
+        "matched_lora",
+        "--model",
+        "/root/autodl-tmp/models/Qwen3.5-4B",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\qwen35_4b_CEU_matched_lora"
+      ]
+    },
+    {
+      "label": "llama32_3b_PDU_matched_lora_smoke",
+      "method": "PDU",
+      "track": "matched_lora",
+      "smoke": true,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "PDU",
+        "--track",
+        "matched_lora",
+        "--model",
+        "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\llama32_3b_PDU_matched_lora_smoke",
+        "--smoke"
+      ]
+    },
+    {
+      "label": "llama32_3b_PDU_matched_lora",
+      "method": "PDU",
+      "track": "matched_lora",
+      "smoke": false,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "PDU",
+        "--track",
+        "matched_lora",
+        "--model",
+        "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\llama32_3b_PDU_matched_lora"
+      ]
+    },
+    {
+      "label": "qwen35_4b_PDU_matched_lora_smoke",
+      "method": "PDU",
+      "track": "matched_lora",
+      "smoke": true,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "PDU",
+        "--track",
+        "matched_lora",
+        "--model",
+        "/root/autodl-tmp/models/Qwen3.5-4B",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\qwen35_4b_PDU_matched_lora_smoke",
+        "--smoke"
+      ]
+    },
+    {
+      "label": "qwen35_4b_PDU_matched_lora",
+      "method": "PDU",
+      "track": "matched_lora",
+      "smoke": false,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "PDU",
+        "--track",
+        "matched_lora",
+        "--model",
+        "/root/autodl-tmp/models/Qwen3.5-4B",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\qwen35_4b_PDU_matched_lora"
+      ]
+    },
+    {
+      "label": "llama32_3b_WGA_matched_lora_smoke",
+      "method": "WGA",
+      "track": "matched_lora",
+      "smoke": true,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "WGA",
+        "--track",
+        "matched_lora",
+        "--model",
+        "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\llama32_3b_WGA_matched_lora_smoke",
+        "--smoke"
+      ]
+    },
+    {
+      "label": "llama32_3b_WGA_matched_lora",
+      "method": "WGA",
+      "track": "matched_lora",
+      "smoke": false,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "WGA",
+        "--track",
+        "matched_lora",
+        "--model",
+        "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\llama32_3b_WGA_matched_lora"
+      ]
+    },
+    {
+      "label": "qwen35_4b_WGA_matched_lora_smoke",
+      "method": "WGA",
+      "track": "matched_lora",
+      "smoke": true,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "WGA",
+        "--track",
+        "matched_lora",
+        "--model",
+        "/root/autodl-tmp/models/Qwen3.5-4B",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\qwen35_4b_WGA_matched_lora_smoke",
+        "--smoke"
+      ]
+    },
+    {
+      "label": "qwen35_4b_WGA_matched_lora",
+      "method": "WGA",
+      "track": "matched_lora",
+      "smoke": false,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "WGA",
+        "--track",
+        "matched_lora",
+        "--model",
+        "/root/autodl-tmp/models/Qwen3.5-4B",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\qwen35_4b_WGA_matched_lora"
+      ]
+    },
+    {
+      "label": "llama32_3b_SatImp_matched_lora_smoke",
+      "method": "SatImp",
+      "track": "matched_lora",
+      "smoke": true,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "SatImp",
+        "--track",
+        "matched_lora",
+        "--model",
+        "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\llama32_3b_SatImp_matched_lora_smoke",
+        "--smoke"
+      ]
+    },
+    {
+      "label": "llama32_3b_SatImp_matched_lora",
+      "method": "SatImp",
+      "track": "matched_lora",
+      "smoke": false,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "SatImp",
+        "--track",
+        "matched_lora",
+        "--model",
+        "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\llama32_3b_SatImp_matched_lora"
+      ]
+    },
+    {
+      "label": "qwen35_4b_SatImp_matched_lora_smoke",
+      "method": "SatImp",
+      "track": "matched_lora",
+      "smoke": true,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "SatImp",
+        "--track",
+        "matched_lora",
+        "--model",
+        "/root/autodl-tmp/models/Qwen3.5-4B",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\qwen35_4b_SatImp_matched_lora_smoke",
+        "--smoke"
+      ]
+    },
+    {
+      "label": "qwen35_4b_SatImp_matched_lora",
+      "method": "SatImp",
+      "track": "matched_lora",
+      "smoke": false,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "SatImp",
+        "--track",
+        "matched_lora",
+        "--model",
+        "/root/autodl-tmp/models/Qwen3.5-4B",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\qwen35_4b_SatImp_matched_lora"
+      ]
+    },
+    {
+      "label": "llama32_3b_UNDIAL_matched_lora_smoke",
+      "method": "UNDIAL",
+      "track": "matched_lora",
+      "smoke": true,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "UNDIAL",
+        "--track",
+        "matched_lora",
+        "--model",
+        "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\llama32_3b_UNDIAL_matched_lora_smoke",
+        "--smoke"
+      ]
+    },
+    {
+      "label": "llama32_3b_UNDIAL_matched_lora",
+      "method": "UNDIAL",
+      "track": "matched_lora",
+      "smoke": false,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "UNDIAL",
+        "--track",
+        "matched_lora",
+        "--model",
+        "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\llama32_3b_UNDIAL_matched_lora"
+      ]
+    },
+    {
+      "label": "qwen35_4b_UNDIAL_matched_lora_smoke",
+      "method": "UNDIAL",
+      "track": "matched_lora",
+      "smoke": true,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "UNDIAL",
+        "--track",
+        "matched_lora",
+        "--model",
+        "/root/autodl-tmp/models/Qwen3.5-4B",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\qwen35_4b_UNDIAL_matched_lora_smoke",
+        "--smoke"
+      ]
+    },
+    {
+      "label": "qwen35_4b_UNDIAL_matched_lora",
+      "method": "UNDIAL",
+      "track": "matched_lora",
+      "smoke": false,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "UNDIAL",
+        "--track",
+        "matched_lora",
+        "--model",
+        "/root/autodl-tmp/models/Qwen3.5-4B",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\qwen35_4b_UNDIAL_matched_lora"
+      ]
+    },
+    {
+      "label": "llama32_3b_GA_native_smoke",
+      "method": "GA",
+      "track": "native",
+      "smoke": true,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "GA",
+        "--track",
+        "native",
+        "--model",
+        "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\llama32_3b_GA_native_smoke",
+        "--smoke"
+      ]
+    },
+    {
+      "label": "llama32_3b_GA_native",
+      "method": "GA",
+      "track": "native",
+      "smoke": false,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "GA",
+        "--track",
+        "native",
+        "--model",
+        "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\llama32_3b_GA_native"
+      ]
+    },
+    {
+      "label": "qwen35_4b_GA_native_smoke",
+      "method": "GA",
+      "track": "native",
+      "smoke": true,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "GA",
+        "--track",
+        "native",
+        "--model",
+        "/root/autodl-tmp/models/Qwen3.5-4B",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\qwen35_4b_GA_native_smoke",
+        "--smoke"
+      ]
+    },
+    {
+      "label": "qwen35_4b_GA_native",
+      "method": "GA",
+      "track": "native",
+      "smoke": false,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "GA",
+        "--track",
+        "native",
+        "--model",
+        "/root/autodl-tmp/models/Qwen3.5-4B",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\qwen35_4b_GA_native"
+      ]
+    },
+    {
+      "label": "llama32_3b_GradDiff_native_smoke",
+      "method": "GradDiff",
+      "track": "native",
+      "smoke": true,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "GradDiff",
+        "--track",
+        "native",
+        "--model",
+        "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\llama32_3b_GradDiff_native_smoke",
+        "--smoke"
+      ]
+    },
+    {
+      "label": "llama32_3b_GradDiff_native",
+      "method": "GradDiff",
+      "track": "native",
+      "smoke": false,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "GradDiff",
+        "--track",
+        "native",
+        "--model",
+        "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\llama32_3b_GradDiff_native"
+      ]
+    },
+    {
+      "label": "qwen35_4b_GradDiff_native_smoke",
+      "method": "GradDiff",
+      "track": "native",
+      "smoke": true,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "GradDiff",
+        "--track",
+        "native",
+        "--model",
+        "/root/autodl-tmp/models/Qwen3.5-4B",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\qwen35_4b_GradDiff_native_smoke",
+        "--smoke"
+      ]
+    },
+    {
+      "label": "qwen35_4b_GradDiff_native",
+      "method": "GradDiff",
+      "track": "native",
+      "smoke": false,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "GradDiff",
+        "--track",
+        "native",
+        "--model",
+        "/root/autodl-tmp/models/Qwen3.5-4B",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\qwen35_4b_GradDiff_native"
+      ]
+    },
+    {
+      "label": "llama32_3b_NPO_native_smoke",
+      "method": "NPO",
+      "track": "native",
+      "smoke": true,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "NPO",
+        "--track",
+        "native",
+        "--model",
+        "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\llama32_3b_NPO_native_smoke",
+        "--smoke"
+      ]
+    },
+    {
+      "label": "llama32_3b_NPO_native",
+      "method": "NPO",
+      "track": "native",
+      "smoke": false,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "NPO",
+        "--track",
+        "native",
+        "--model",
+        "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\llama32_3b_NPO_native"
+      ]
+    },
+    {
+      "label": "qwen35_4b_NPO_native_smoke",
+      "method": "NPO",
+      "track": "native",
+      "smoke": true,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "NPO",
+        "--track",
+        "native",
+        "--model",
+        "/root/autodl-tmp/models/Qwen3.5-4B",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\qwen35_4b_NPO_native_smoke",
+        "--smoke"
+      ]
+    },
+    {
+      "label": "qwen35_4b_NPO_native",
+      "method": "NPO",
+      "track": "native",
+      "smoke": false,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "NPO",
+        "--track",
+        "native",
+        "--model",
+        "/root/autodl-tmp/models/Qwen3.5-4B",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\qwen35_4b_NPO_native"
+      ]
+    },
+    {
+      "label": "llama32_3b_SimNPO_native_smoke",
+      "method": "SimNPO",
+      "track": "native",
+      "smoke": true,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "SimNPO",
+        "--track",
+        "native",
+        "--model",
+        "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\llama32_3b_SimNPO_native_smoke",
+        "--smoke"
+      ]
+    },
+    {
+      "label": "llama32_3b_SimNPO_native",
+      "method": "SimNPO",
+      "track": "native",
+      "smoke": false,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "SimNPO",
+        "--track",
+        "native",
+        "--model",
+        "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\llama32_3b_SimNPO_native"
+      ]
+    },
+    {
+      "label": "qwen35_4b_SimNPO_native_smoke",
+      "method": "SimNPO",
+      "track": "native",
+      "smoke": true,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "SimNPO",
+        "--track",
+        "native",
+        "--model",
+        "/root/autodl-tmp/models/Qwen3.5-4B",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\qwen35_4b_SimNPO_native_smoke",
+        "--smoke"
+      ]
+    },
+    {
+      "label": "qwen35_4b_SimNPO_native",
+      "method": "SimNPO",
+      "track": "native",
+      "smoke": false,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "SimNPO",
+        "--track",
+        "native",
+        "--model",
+        "/root/autodl-tmp/models/Qwen3.5-4B",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\qwen35_4b_SimNPO_native"
+      ]
+    },
+    {
+      "label": "llama32_3b_RMU_native_smoke",
+      "method": "RMU",
+      "track": "native",
+      "smoke": true,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "RMU",
+        "--track",
+        "native",
+        "--model",
+        "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\llama32_3b_RMU_native_smoke",
+        "--smoke"
+      ]
+    },
+    {
+      "label": "llama32_3b_RMU_native",
+      "method": "RMU",
+      "track": "native",
+      "smoke": false,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "RMU",
+        "--track",
+        "native",
+        "--model",
+        "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\llama32_3b_RMU_native"
+      ]
+    },
+    {
+      "label": "qwen35_4b_RMU_native_smoke",
+      "method": "RMU",
+      "track": "native",
+      "smoke": true,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "RMU",
+        "--track",
+        "native",
+        "--model",
+        "/root/autodl-tmp/models/Qwen3.5-4B",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\qwen35_4b_RMU_native_smoke",
+        "--smoke"
+      ]
+    },
+    {
+      "label": "qwen35_4b_RMU_native",
+      "method": "RMU",
+      "track": "native",
+      "smoke": false,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "RMU",
+        "--track",
+        "native",
+        "--model",
+        "/root/autodl-tmp/models/Qwen3.5-4B",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\qwen35_4b_RMU_native"
+      ]
+    },
+    {
+      "label": "llama32_3b_DPOmis_native_smoke",
+      "method": "DPOmis",
+      "track": "native",
+      "smoke": true,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "DPOmis",
+        "--track",
+        "native",
+        "--model",
+        "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\llama32_3b_DPOmis_native_smoke",
+        "--smoke"
+      ]
+    },
+    {
+      "label": "llama32_3b_DPOmis_native",
+      "method": "DPOmis",
+      "track": "native",
+      "smoke": false,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "DPOmis",
+        "--track",
+        "native",
+        "--model",
+        "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\llama32_3b_DPOmis_native"
+      ]
+    },
+    {
+      "label": "qwen35_4b_DPOmis_native_smoke",
+      "method": "DPOmis",
+      "track": "native",
+      "smoke": true,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "DPOmis",
+        "--track",
+        "native",
+        "--model",
+        "/root/autodl-tmp/models/Qwen3.5-4B",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\qwen35_4b_DPOmis_native_smoke",
+        "--smoke"
+      ]
+    },
+    {
+      "label": "qwen35_4b_DPOmis_native",
+      "method": "DPOmis",
+      "track": "native",
+      "smoke": false,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "DPOmis",
+        "--track",
+        "native",
+        "--model",
+        "/root/autodl-tmp/models/Qwen3.5-4B",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\qwen35_4b_DPOmis_native"
+      ]
+    },
+    {
+      "label": "llama32_3b_DPOrej_native_smoke",
+      "method": "DPOrej",
+      "track": "native",
+      "smoke": true,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "DPOrej",
+        "--track",
+        "native",
+        "--model",
+        "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\llama32_3b_DPOrej_native_smoke",
+        "--smoke"
+      ]
+    },
+    {
+      "label": "llama32_3b_DPOrej_native",
+      "method": "DPOrej",
+      "track": "native",
+      "smoke": false,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "DPOrej",
+        "--track",
+        "native",
+        "--model",
+        "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\llama32_3b_DPOrej_native"
+      ]
+    },
+    {
+      "label": "qwen35_4b_DPOrej_native_smoke",
+      "method": "DPOrej",
+      "track": "native",
+      "smoke": true,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "DPOrej",
+        "--track",
+        "native",
+        "--model",
+        "/root/autodl-tmp/models/Qwen3.5-4B",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\qwen35_4b_DPOrej_native_smoke",
+        "--smoke"
+      ]
+    },
+    {
+      "label": "qwen35_4b_DPOrej_native",
+      "method": "DPOrej",
+      "track": "native",
+      "smoke": false,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "DPOrej",
+        "--track",
+        "native",
+        "--model",
+        "/root/autodl-tmp/models/Qwen3.5-4B",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\qwen35_4b_DPOrej_native"
+      ]
+    },
+    {
+      "label": "llama32_3b_CEU_native_smoke",
+      "method": "CEU",
+      "track": "native",
+      "smoke": true,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "CEU",
+        "--track",
+        "native",
+        "--model",
+        "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\llama32_3b_CEU_native_smoke",
+        "--smoke"
+      ]
+    },
+    {
+      "label": "llama32_3b_CEU_native",
+      "method": "CEU",
+      "track": "native",
+      "smoke": false,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "CEU",
+        "--track",
+        "native",
+        "--model",
+        "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\llama32_3b_CEU_native"
+      ]
+    },
+    {
+      "label": "qwen35_4b_CEU_native_smoke",
+      "method": "CEU",
+      "track": "native",
+      "smoke": true,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "CEU",
+        "--track",
+        "native",
+        "--model",
+        "/root/autodl-tmp/models/Qwen3.5-4B",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\qwen35_4b_CEU_native_smoke",
+        "--smoke"
+      ]
+    },
+    {
+      "label": "qwen35_4b_CEU_native",
+      "method": "CEU",
+      "track": "native",
+      "smoke": false,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "CEU",
+        "--track",
+        "native",
+        "--model",
+        "/root/autodl-tmp/models/Qwen3.5-4B",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\qwen35_4b_CEU_native"
+      ]
+    },
+    {
+      "label": "llama32_3b_PDU_native_smoke",
+      "method": "PDU",
+      "track": "native",
+      "smoke": true,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "PDU",
+        "--track",
+        "native",
+        "--model",
+        "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\llama32_3b_PDU_native_smoke",
+        "--smoke"
+      ]
+    },
+    {
+      "label": "llama32_3b_PDU_native",
+      "method": "PDU",
+      "track": "native",
+      "smoke": false,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "PDU",
+        "--track",
+        "native",
+        "--model",
+        "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\llama32_3b_PDU_native"
+      ]
+    },
+    {
+      "label": "qwen35_4b_PDU_native_smoke",
+      "method": "PDU",
+      "track": "native",
+      "smoke": true,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "PDU",
+        "--track",
+        "native",
+        "--model",
+        "/root/autodl-tmp/models/Qwen3.5-4B",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\qwen35_4b_PDU_native_smoke",
+        "--smoke"
+      ]
+    },
+    {
+      "label": "qwen35_4b_PDU_native",
+      "method": "PDU",
+      "track": "native",
+      "smoke": false,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "PDU",
+        "--track",
+        "native",
+        "--model",
+        "/root/autodl-tmp/models/Qwen3.5-4B",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\qwen35_4b_PDU_native"
+      ]
+    },
+    {
+      "label": "llama32_3b_WGA_native_smoke",
+      "method": "WGA",
+      "track": "native",
+      "smoke": true,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "WGA",
+        "--track",
+        "native",
+        "--model",
+        "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\llama32_3b_WGA_native_smoke",
+        "--smoke"
+      ]
+    },
+    {
+      "label": "llama32_3b_WGA_native",
+      "method": "WGA",
+      "track": "native",
+      "smoke": false,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "WGA",
+        "--track",
+        "native",
+        "--model",
+        "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\llama32_3b_WGA_native"
+      ]
+    },
+    {
+      "label": "qwen35_4b_WGA_native_smoke",
+      "method": "WGA",
+      "track": "native",
+      "smoke": true,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "WGA",
+        "--track",
+        "native",
+        "--model",
+        "/root/autodl-tmp/models/Qwen3.5-4B",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\qwen35_4b_WGA_native_smoke",
+        "--smoke"
+      ]
+    },
+    {
+      "label": "qwen35_4b_WGA_native",
+      "method": "WGA",
+      "track": "native",
+      "smoke": false,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "WGA",
+        "--track",
+        "native",
+        "--model",
+        "/root/autodl-tmp/models/Qwen3.5-4B",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\qwen35_4b_WGA_native"
+      ]
+    },
+    {
+      "label": "llama32_3b_SatImp_native_smoke",
+      "method": "SatImp",
+      "track": "native",
+      "smoke": true,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "SatImp",
+        "--track",
+        "native",
+        "--model",
+        "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\llama32_3b_SatImp_native_smoke",
+        "--smoke"
+      ]
+    },
+    {
+      "label": "llama32_3b_SatImp_native",
+      "method": "SatImp",
+      "track": "native",
+      "smoke": false,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "SatImp",
+        "--track",
+        "native",
+        "--model",
+        "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\llama32_3b_SatImp_native"
+      ]
+    },
+    {
+      "label": "qwen35_4b_SatImp_native_smoke",
+      "method": "SatImp",
+      "track": "native",
+      "smoke": true,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "SatImp",
+        "--track",
+        "native",
+        "--model",
+        "/root/autodl-tmp/models/Qwen3.5-4B",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\qwen35_4b_SatImp_native_smoke",
+        "--smoke"
+      ]
+    },
+    {
+      "label": "qwen35_4b_SatImp_native",
+      "method": "SatImp",
+      "track": "native",
+      "smoke": false,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "SatImp",
+        "--track",
+        "native",
+        "--model",
+        "/root/autodl-tmp/models/Qwen3.5-4B",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\qwen35_4b_SatImp_native"
+      ]
+    },
+    {
+      "label": "llama32_3b_UNDIAL_native_smoke",
+      "method": "UNDIAL",
+      "track": "native",
+      "smoke": true,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "UNDIAL",
+        "--track",
+        "native",
+        "--model",
+        "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\llama32_3b_UNDIAL_native_smoke",
+        "--smoke"
+      ]
+    },
+    {
+      "label": "llama32_3b_UNDIAL_native",
+      "method": "UNDIAL",
+      "track": "native",
+      "smoke": false,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "UNDIAL",
+        "--track",
+        "native",
+        "--model",
+        "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\llama32_3b_UNDIAL_native"
+      ]
+    },
+    {
+      "label": "qwen35_4b_UNDIAL_native_smoke",
+      "method": "UNDIAL",
+      "track": "native",
+      "smoke": true,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "UNDIAL",
+        "--track",
+        "native",
+        "--model",
+        "/root/autodl-tmp/models/Qwen3.5-4B",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\qwen35_4b_UNDIAL_native_smoke",
+        "--smoke"
+      ]
+    },
+    {
+      "label": "qwen35_4b_UNDIAL_native",
+      "method": "UNDIAL",
+      "track": "native",
+      "smoke": false,
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\reproduce_all_baselines.py",
+        "--method",
+        "UNDIAL",
+        "--track",
+        "native",
+        "--model",
+        "/root/autodl-tmp/models/Qwen3.5-4B",
+        "--run_dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp015_complete_baselines\\plans\\plan_20261023_04\\qwen35_4b_UNDIAL_native"
+      ]
+    }
+  ],
+  "dependency": null,
+  "max_queue_hours": 72,
+  "profiles": [
+    {
+      "method": "KLUE",
+      "track": "native",
+      "gamma": 0.7,
+      "alpha": 1.0,
+      "batch_size": 4,
+      "epochs": 150,
+      "learning_rate": 1e-05,
+      "weight_decay": 0.0,
+      "beta": 1.0,
+      "attribution_alpha": 10.0,
+      "mismatch_count": 5,
+      "neuron_fraction": 0.05,
+      "early_stop_ua": 0.3333333333333333,
+      "max_updates": 1350,
+      "max_grad_norm": 1.0,
+      "lr_scheduler": "constant",
+      "convention": "gated-MLP pre-down neurons; gate/up rows and down columns; global top5%",
+      "fidelity": "paper reimplementation; gated neuron mapping and optimizer explicit, no official code"
+    },
+    {
+      "method": "GA",
+      "track": "matched_lora",
+      "gamma": 1.0,
+      "alpha": 1.0,
+      "beta": 1.0,
+      "delta": 0.0,
+      "learning_rate": 5e-05,
+      "weight_decay": 0.01,
+      "epochs": 4,
+      "batch_size": 1,
+      "max_updates": 114,
+      "max_grad_norm": null,
+      "lr_scheduler": "constant",
+      "retain_loss_type": "NLL",
+      "config_sha256": "d90e21b4f5601105059f0a746f8dc8a634b22b6e0e49190baebb25d7673ceb81",
+      "raw_upstream": {
+        "defaults": [
+          "finetune"
+        ],
+        "handler": "GradAscent"
+      },
+      "fidelity": "exact frozen upstream loss; architecture/data/optimizer profile disclosed"
+    },
+    {
+      "method": "GradDiff",
+      "track": "matched_lora",
+      "gamma": 1.0,
+      "alpha": 1.0,
+      "beta": 1.0,
+      "delta": 0.0,
+      "learning_rate": 5e-05,
+      "weight_decay": 0.01,
+      "epochs": 4,
+      "batch_size": 1,
+      "max_updates": 114,
+      "max_grad_norm": null,
+      "lr_scheduler": "constant",
+      "retain_loss_type": "NLL",
+      "config_sha256": "b25f776f668c2c160da9bf08d5d67754725fe5c5046dd855223ee2bf5e8b6490",
+      "raw_upstream": {
+        "defaults": [
+          "finetune"
+        ],
+        "handler": "GradDiff",
+        "method_args": {
+          "gamma": 1.0,
+          "alpha": 1.0,
+          "retain_loss_type": "NLL"
+        }
+      },
+      "fidelity": "exact frozen upstream loss; architecture/data/optimizer profile disclosed"
+    },
+    {
+      "method": "NPO",
+      "track": "matched_lora",
+      "gamma": 1.0,
+      "alpha": 1.0,
+      "beta": 0.1,
+      "delta": 0.0,
+      "learning_rate": 5e-05,
+      "weight_decay": 0.01,
+      "epochs": 4,
+      "batch_size": 1,
+      "max_updates": 114,
+      "max_grad_norm": null,
+      "lr_scheduler": "constant",
+      "retain_loss_type": "NLL",
+      "config_sha256": "c8089323715e02783b256a38b54c85b48e8c9e1e97940d86a0bed3f892faea52",
+      "raw_upstream": {
+        "defaults": [
+          "GradDiff"
+        ],
+        "handler": "NPO",
+        "method_args": {
+          "beta": 0.1,
+          "alpha": 1.0,
+          "gamma": 1.0,
+          "retain_loss_type": "NLL"
+        }
+      },
+      "fidelity": "exact frozen upstream loss; architecture/data/optimizer profile disclosed"
+    },
+    {
+      "method": "SimNPO",
+      "track": "matched_lora",
+      "gamma": 0.125,
+      "alpha": 1.0,
+      "beta": 4.5,
+      "delta": 0.0,
+      "learning_rate": 5e-05,
+      "weight_decay": 0.01,
+      "epochs": 4,
+      "batch_size": 1,
+      "max_updates": 114,
+      "max_grad_norm": null,
+      "lr_scheduler": "constant",
+      "retain_loss_type": "NLL",
+      "config_sha256": "d1c721f8b89b7c0793e0f233627b83887ac8718ad5158fa15820e941c908572d",
+      "raw_upstream": {
+        "defaults": [
+          "GradDiff"
+        ],
+        "handler": "SimNPO",
+        "method_args": {
+          "delta": 0.0,
+          "beta": 4.5,
+          "alpha": 1.0,
+          "gamma": 0.125,
+          "retain_loss_type": "NLL"
+        }
+      },
+      "fidelity": "exact frozen upstream loss; architecture/data/optimizer profile disclosed"
+    },
+    {
+      "method": "RMU",
+      "track": "matched_lora",
+      "gamma": 1.0,
+      "alpha": 1,
+      "beta": 1.0,
+      "delta": 0.0,
+      "learning_rate": 5e-05,
+      "weight_decay": 0.01,
+      "epochs": 4,
+      "batch_size": 1,
+      "max_updates": 114,
+      "max_grad_norm": null,
+      "lr_scheduler": "constant",
+      "retain_loss_type": "EMBED_DIFF",
+      "config_sha256": "c7a390eab6992f52d427b8562a4d9c3be0bc58f37ba4d63de170d8b33d35a4d3",
+      "raw_upstream": {
+        "defaults": [
+          "GradDiff"
+        ],
+        "handler": "RMU",
+        "method_args": {
+          "gamma": 1.0,
+          "steering_coeff": 2,
+          "retain_loss_type": "EMBED_DIFF",
+          "alpha": 1,
+          "module_regex": "model\\.layers\\.7",
+          "trainable_params_regex": [
+            ".*"
+          ]
+        }
+      },
+      "fidelity": "frozen upstream algorithm with explicit tested semantic repairs; not bitwise source loss parity",
+      "steering_coeff": 2,
+      "module_regex": "model\\.layers\\.7",
+      "trainable_params_regex": [
+        ".*"
+      ],
+      "semantic_repairs": [
+        "per-sequence masked MSE avoids upstream BxB broadcast at batch>1"
+      ]
+    },
+    {
+      "method": "DPOmis",
+      "track": "matched_lora",
+      "gamma": 1.0,
+      "alpha": 1.0,
+      "beta": 0.1,
+      "delta": 0.0,
+      "learning_rate": 5e-05,
+      "weight_decay": 0.01,
+      "epochs": 4,
+      "batch_size": 1,
+      "max_updates": 114,
+      "max_grad_norm": null,
+      "lr_scheduler": "constant",
+      "retain_loss_type": "NLL",
+      "config_sha256": "c9eca8b4ca1df016fb5d5f80f76444134d8dc794d8536fa1fd0476a53d6290b7",
+      "raw_upstream": {
+        "defaults": [
+          "GradDiff"
+        ],
+        "handler": "DPO",
+        "method_args": {
+          "beta": 0.1,
+          "alpha": 1.0,
+          "gamma": 1.0,
+          "retain_loss_type": "NLL"
+        }
+      },
+      "fidelity": "exact frozen upstream loss; architecture/data/optimizer profile disclosed"
+    },
+    {
+      "method": "DPOrej",
+      "track": "matched_lora",
+      "gamma": 1.0,
+      "alpha": 1.0,
+      "beta": 0.1,
+      "delta": 0.0,
+      "learning_rate": 5e-05,
+      "weight_decay": 0.01,
+      "epochs": 4,
+      "batch_size": 1,
+      "max_updates": 114,
+      "max_grad_norm": null,
+      "lr_scheduler": "constant",
+      "retain_loss_type": "NLL",
+      "config_sha256": "c9eca8b4ca1df016fb5d5f80f76444134d8dc794d8536fa1fd0476a53d6290b7",
+      "raw_upstream": {
+        "defaults": [
+          "GradDiff"
+        ],
+        "handler": "DPO",
+        "method_args": {
+          "beta": 0.1,
+          "alpha": 1.0,
+          "gamma": 1.0,
+          "retain_loss_type": "NLL"
+        }
+      },
+      "fidelity": "exact frozen upstream loss; architecture/data/optimizer profile disclosed"
+    },
+    {
+      "method": "CEU",
+      "track": "matched_lora",
+      "gamma": 1.0,
+      "alpha": 1.0,
+      "beta": 1.0,
+      "delta": 0.0,
+      "learning_rate": 5e-05,
+      "weight_decay": 0.01,
+      "epochs": 4,
+      "batch_size": 1,
+      "max_updates": 114,
+      "max_grad_norm": null,
+      "lr_scheduler": "constant",
+      "retain_loss_type": "NLL",
+      "config_sha256": "4c5439d4b954b2e2e98b4df3f23d4c58b8031900de63a33eccab6b725b7eab55",
+      "raw_upstream": {
+        "defaults": [
+          "finetune"
+        ],
+        "handler": "CEU",
+        "method_args": {
+          "ignore_first_n_answer_tokens": 1
+        }
+      },
+      "fidelity": "exact frozen upstream loss; architecture/data/optimizer profile disclosed",
+      "ignore_first_n_answer_tokens": 1
+    },
+    {
+      "method": "PDU",
+      "track": "matched_lora",
+      "gamma": 1.0,
+      "alpha": 1.0,
+      "beta": 1.0,
+      "delta": 0.0,
+      "learning_rate": 5e-05,
+      "weight_decay": 0.01,
+      "epochs": 4,
+      "batch_size": 1,
+      "max_updates": 114,
+      "max_grad_norm": null,
+      "lr_scheduler": "constant",
+      "retain_loss_type": "NLL",
+      "config_sha256": "16ebdb1bf073abc60a6506a77d76b21b3dec70534fd904bca413f4c7460de7d3",
+      "raw_upstream": {
+        "defaults": [
+          "GradDiff"
+        ],
+        "handler": "PDU",
+        "method_args": {
+          "retain_loss_eps": "???",
+          "primal_dual": true,
+          "dual_step_size": 1.0,
+          "dual_update_upon": "step",
+          "dual_warmup_epochs": 5,
+          "gamma": 1.0,
+          "alpha": 1.0,
+          "loss_names": [
+            "forget_loss",
+            "retain_loss"
+          ]
+        }
+      },
+      "fidelity": "exact frozen upstream loss; architecture/data/optimizer profile disclosed",
+      "retain_loss_eps": "initial_retain_nll",
+      "primal_dual": true,
+      "dual_step_size": 1.0,
+      "dual_update_upon": "step",
+      "dual_warmup_epochs": 5,
+      "loss_names": [
+        "forget_loss",
+        "retain_loss"
+      ],
+      "dual_active_in_matched_budget": false
+    },
+    {
+      "method": "WGA",
+      "track": "matched_lora",
+      "gamma": 1.0,
+      "alpha": 1.0,
+      "beta": 1.0,
+      "delta": 0.0,
+      "learning_rate": 5e-05,
+      "weight_decay": 0.01,
+      "epochs": 4,
+      "batch_size": 1,
+      "max_updates": 114,
+      "max_grad_norm": null,
+      "lr_scheduler": "constant",
+      "retain_loss_type": "NLL",
+      "config_sha256": "39e58f829a8dc4a5e23f380d7910ea39587cceae4a60f4823b27a77a773a6684",
+      "raw_upstream": {
+        "defaults": [
+          "GradDiff"
+        ],
+        "handler": "WGA",
+        "args": {
+          "learning_rate": "1e-5",
+          "num_train_epochs": 5
+        },
+        "method_args": {
+          "beta": 1.0,
+          "alpha": 1.0,
+          "gamma": 1.0,
+          "retain_loss_type": "NLL"
+        }
+      },
+      "fidelity": "exact frozen upstream loss; architecture/data/optimizer profile disclosed"
+    },
+    {
+      "method": "SatImp",
+      "track": "matched_lora",
+      "gamma": 0.1,
+      "alpha": 1.0,
+      "beta": 1.0,
+      "delta": 0.0,
+      "learning_rate": 5e-05,
+      "weight_decay": 0.01,
+      "epochs": 4,
+      "batch_size": 1,
+      "max_updates": 114,
+      "max_grad_norm": null,
+      "lr_scheduler": "constant",
+      "retain_loss_type": "NLL",
+      "config_sha256": "db7257d356a28dcbb2391e819c2a2d6e494ba4319947ffe42de4e691047d1296",
+      "raw_upstream": {
+        "defaults": [
+          "GradDiff"
+        ],
+        "handler": "SatImp",
+        "args": {
+          "learning_rate": "1e-5",
+          "num_train_epochs": 5
+        },
+        "method_args": {
+          "beta1": 5.0,
+          "beta2": 1.0,
+          "alpha": 1.0,
+          "gamma": 0.1,
+          "retain_loss_type": "NLL"
+        }
+      },
+      "fidelity": "exact frozen upstream loss; architecture/data/optimizer profile disclosed",
+      "beta1": 5.0,
+      "beta2": 1.0
+    },
+    {
+      "method": "UNDIAL",
+      "track": "matched_lora",
+      "gamma": 1.0,
+      "alpha": 0.0,
+      "beta": 10.0,
+      "delta": 0.0,
+      "learning_rate": 5e-05,
+      "weight_decay": 0.01,
+      "epochs": 4,
+      "batch_size": 1,
+      "max_updates": 114,
+      "max_grad_norm": null,
+      "lr_scheduler": "constant",
+      "retain_loss_type": "NLL",
+      "config_sha256": "d4df9f1cb04765a81eb05fed5f047b684813f47a632c373511d54cb64829f819",
+      "raw_upstream": {
+        "defaults": [
+          "finetune"
+        ],
+        "handler": "UNDIAL",
+        "args": {
+          "learning_rate": "1e-4",
+          "num_train_epochs": 10
+        },
+        "method_args": {
+          "gamma": 1.0,
+          "alpha": 0.0,
+          "beta": 10.0,
+          "retain_loss_type": "NLL"
+        }
+      },
+      "fidelity": "frozen upstream algorithm with explicit tested semantic repairs; not bitwise source loss parity",
+      "semantic_repairs": [
+        "answer-only teacher targets, exclude -100 labels from indexing and CE"
+      ]
+    },
+    {
+      "method": "GA",
+      "track": "native",
+      "gamma": 1.0,
+      "alpha": 1.0,
+      "beta": 1.0,
+      "delta": 0.0,
+      "learning_rate": "1e-5",
+      "weight_decay": 0.0,
+      "epochs": 10,
+      "batch_size": 4,
+      "max_updates": null,
+      "max_grad_norm": 1.0,
+      "lr_scheduler": "linear",
+      "retain_loss_type": "NLL",
+      "config_sha256": "d90e21b4f5601105059f0a746f8dc8a634b22b6e0e49190baebb25d7673ceb81",
+      "raw_upstream": {
+        "defaults": [
+          "finetune"
+        ],
+        "handler": "GradAscent"
+      },
+      "fidelity": "exact frozen upstream loss; architecture/data/optimizer profile disclosed"
+    },
+    {
+      "method": "GradDiff",
+      "track": "native",
+      "gamma": 1.0,
+      "alpha": 1.0,
+      "beta": 1.0,
+      "delta": 0.0,
+      "learning_rate": "1e-5",
+      "weight_decay": 0.0,
+      "epochs": 10,
+      "batch_size": 4,
+      "max_updates": null,
+      "max_grad_norm": 1.0,
+      "lr_scheduler": "linear",
+      "retain_loss_type": "NLL",
+      "config_sha256": "b25f776f668c2c160da9bf08d5d67754725fe5c5046dd855223ee2bf5e8b6490",
+      "raw_upstream": {
+        "defaults": [
+          "finetune"
+        ],
+        "handler": "GradDiff",
+        "method_args": {
+          "gamma": 1.0,
+          "alpha": 1.0,
+          "retain_loss_type": "NLL"
+        }
+      },
+      "fidelity": "exact frozen upstream loss; architecture/data/optimizer profile disclosed"
+    },
+    {
+      "method": "NPO",
+      "track": "native",
+      "gamma": 1.0,
+      "alpha": 1.0,
+      "beta": 0.1,
+      "delta": 0.0,
+      "learning_rate": "1e-5",
+      "weight_decay": 0.0,
+      "epochs": 10,
+      "batch_size": 4,
+      "max_updates": null,
+      "max_grad_norm": 1.0,
+      "lr_scheduler": "linear",
+      "retain_loss_type": "NLL",
+      "config_sha256": "c8089323715e02783b256a38b54c85b48e8c9e1e97940d86a0bed3f892faea52",
+      "raw_upstream": {
+        "defaults": [
+          "GradDiff"
+        ],
+        "handler": "NPO",
+        "method_args": {
+          "beta": 0.1,
+          "alpha": 1.0,
+          "gamma": 1.0,
+          "retain_loss_type": "NLL"
+        }
+      },
+      "fidelity": "exact frozen upstream loss; architecture/data/optimizer profile disclosed"
+    },
+    {
+      "method": "SimNPO",
+      "track": "native",
+      "gamma": 0.125,
+      "alpha": 1.0,
+      "beta": 4.5,
+      "delta": 0.0,
+      "learning_rate": "1e-5",
+      "weight_decay": 0.0,
+      "epochs": 10,
+      "batch_size": 4,
+      "max_updates": null,
+      "max_grad_norm": 1.0,
+      "lr_scheduler": "linear",
+      "retain_loss_type": "NLL",
+      "config_sha256": "d1c721f8b89b7c0793e0f233627b83887ac8718ad5158fa15820e941c908572d",
+      "raw_upstream": {
+        "defaults": [
+          "GradDiff"
+        ],
+        "handler": "SimNPO",
+        "method_args": {
+          "delta": 0.0,
+          "beta": 4.5,
+          "alpha": 1.0,
+          "gamma": 0.125,
+          "retain_loss_type": "NLL"
+        }
+      },
+      "fidelity": "exact frozen upstream loss; architecture/data/optimizer profile disclosed"
+    },
+    {
+      "method": "RMU",
+      "track": "native",
+      "gamma": 1.0,
+      "alpha": 1,
+      "beta": 1.0,
+      "delta": 0.0,
+      "learning_rate": "1e-5",
+      "weight_decay": 0.0,
+      "epochs": 10,
+      "batch_size": 4,
+      "max_updates": null,
+      "max_grad_norm": 1.0,
+      "lr_scheduler": "linear",
+      "retain_loss_type": "EMBED_DIFF",
+      "config_sha256": "c7a390eab6992f52d427b8562a4d9c3be0bc58f37ba4d63de170d8b33d35a4d3",
+      "raw_upstream": {
+        "defaults": [
+          "GradDiff"
+        ],
+        "handler": "RMU",
+        "method_args": {
+          "gamma": 1.0,
+          "steering_coeff": 2,
+          "retain_loss_type": "EMBED_DIFF",
+          "alpha": 1,
+          "module_regex": "model\\.layers\\.7",
+          "trainable_params_regex": [
+            ".*"
+          ]
+        }
+      },
+      "fidelity": "frozen upstream algorithm with explicit tested semantic repairs; not bitwise source loss parity",
+      "steering_coeff": 2,
+      "module_regex": "model\\.layers\\.7",
+      "trainable_params_regex": [
+        ".*"
+      ],
+      "semantic_repairs": [
+        "per-sequence masked MSE avoids upstream BxB broadcast at batch>1"
+      ]
+    },
+    {
+      "method": "DPOmis",
+      "track": "native",
+      "gamma": 1.0,
+      "alpha": 1.0,
+      "beta": 0.1,
+      "delta": 0.0,
+      "learning_rate": "1e-5",
+      "weight_decay": 0.0,
+      "epochs": 10,
+      "batch_size": 4,
+      "max_updates": null,
+      "max_grad_norm": 1.0,
+      "lr_scheduler": "linear",
+      "retain_loss_type": "NLL",
+      "config_sha256": "c9eca8b4ca1df016fb5d5f80f76444134d8dc794d8536fa1fd0476a53d6290b7",
+      "raw_upstream": {
+        "defaults": [
+          "GradDiff"
+        ],
+        "handler": "DPO",
+        "method_args": {
+          "beta": 0.1,
+          "alpha": 1.0,
+          "gamma": 1.0,
+          "retain_loss_type": "NLL"
+        }
+      },
+      "fidelity": "exact frozen upstream loss; architecture/data/optimizer profile disclosed"
+    },
+    {
+      "method": "DPOrej",
+      "track": "native",
+      "gamma": 1.0,
+      "alpha": 1.0,
+      "beta": 0.1,
+      "delta": 0.0,
+      "learning_rate": "1e-5",
+      "weight_decay": 0.0,
+      "epochs": 10,
+      "batch_size": 4,
+      "max_updates": null,
+      "max_grad_norm": 1.0,
+      "lr_scheduler": "linear",
+      "retain_loss_type": "NLL",
+      "config_sha256": "c9eca8b4ca1df016fb5d5f80f76444134d8dc794d8536fa1fd0476a53d6290b7",
+      "raw_upstream": {
+        "defaults": [
+          "GradDiff"
+        ],
+        "handler": "DPO",
+        "method_args": {
+          "beta": 0.1,
+          "alpha": 1.0,
+          "gamma": 1.0,
+          "retain_loss_type": "NLL"
+        }
+      },
+      "fidelity": "exact frozen upstream loss; architecture/data/optimizer profile disclosed"
+    },
+    {
+      "method": "CEU",
+      "track": "native",
+      "gamma": 1.0,
+      "alpha": 1.0,
+      "beta": 1.0,
+      "delta": 0.0,
+      "learning_rate": "1e-5",
+      "weight_decay": 0.0,
+      "epochs": 10,
+      "batch_size": 4,
+      "max_updates": null,
+      "max_grad_norm": 1.0,
+      "lr_scheduler": "linear",
+      "retain_loss_type": "NLL",
+      "config_sha256": "4c5439d4b954b2e2e98b4df3f23d4c58b8031900de63a33eccab6b725b7eab55",
+      "raw_upstream": {
+        "defaults": [
+          "finetune"
+        ],
+        "handler": "CEU",
+        "method_args": {
+          "ignore_first_n_answer_tokens": 1
+        }
+      },
+      "fidelity": "exact frozen upstream loss; architecture/data/optimizer profile disclosed",
+      "ignore_first_n_answer_tokens": 1
+    },
+    {
+      "method": "PDU",
+      "track": "native",
+      "gamma": 1.0,
+      "alpha": 1.0,
+      "beta": 1.0,
+      "delta": 0.0,
+      "learning_rate": "1e-5",
+      "weight_decay": 0.0,
+      "epochs": 10,
+      "batch_size": 4,
+      "max_updates": null,
+      "max_grad_norm": 1.0,
+      "lr_scheduler": "linear",
+      "retain_loss_type": "NLL",
+      "config_sha256": "16ebdb1bf073abc60a6506a77d76b21b3dec70534fd904bca413f4c7460de7d3",
+      "raw_upstream": {
+        "defaults": [
+          "GradDiff"
+        ],
+        "handler": "PDU",
+        "method_args": {
+          "retain_loss_eps": "???",
+          "primal_dual": true,
+          "dual_step_size": 1.0,
+          "dual_update_upon": "step",
+          "dual_warmup_epochs": 5,
+          "gamma": 1.0,
+          "alpha": 1.0,
+          "loss_names": [
+            "forget_loss",
+            "retain_loss"
+          ]
+        }
+      },
+      "fidelity": "exact frozen upstream loss; architecture/data/optimizer profile disclosed",
+      "retain_loss_eps": "initial_retain_nll",
+      "primal_dual": true,
+      "dual_step_size": 1.0,
+      "dual_update_upon": "step",
+      "dual_warmup_epochs": 5,
+      "loss_names": [
+        "forget_loss",
+        "retain_loss"
+      ],
+      "dual_active_in_matched_budget": false
+    },
+    {
+      "method": "WGA",
+      "track": "native",
+      "gamma": 1.0,
+      "alpha": 1.0,
+      "beta": 1.0,
+      "delta": 0.0,
+      "learning_rate": "1e-5",
+      "weight_decay": 0.0,
+      "epochs": 5,
+      "batch_size": 4,
+      "max_updates": null,
+      "max_grad_norm": 1.0,
+      "lr_scheduler": "linear",
+      "retain_loss_type": "NLL",
+      "config_sha256": "39e58f829a8dc4a5e23f380d7910ea39587cceae4a60f4823b27a77a773a6684",
+      "raw_upstream": {
+        "defaults": [
+          "GradDiff"
+        ],
+        "handler": "WGA",
+        "args": {
+          "learning_rate": "1e-5",
+          "num_train_epochs": 5
+        },
+        "method_args": {
+          "beta": 1.0,
+          "alpha": 1.0,
+          "gamma": 1.0,
+          "retain_loss_type": "NLL"
+        }
+      },
+      "fidelity": "exact frozen upstream loss; architecture/data/optimizer profile disclosed"
+    },
+    {
+      "method": "SatImp",
+      "track": "native",
+      "gamma": 0.1,
+      "alpha": 1.0,
+      "beta": 1.0,
+      "delta": 0.0,
+      "learning_rate": "1e-5",
+      "weight_decay": 0.0,
+      "epochs": 5,
+      "batch_size": 4,
+      "max_updates": null,
+      "max_grad_norm": 1.0,
+      "lr_scheduler": "linear",
+      "retain_loss_type": "NLL",
+      "config_sha256": "db7257d356a28dcbb2391e819c2a2d6e494ba4319947ffe42de4e691047d1296",
+      "raw_upstream": {
+        "defaults": [
+          "GradDiff"
+        ],
+        "handler": "SatImp",
+        "args": {
+          "learning_rate": "1e-5",
+          "num_train_epochs": 5
+        },
+        "method_args": {
+          "beta1": 5.0,
+          "beta2": 1.0,
+          "alpha": 1.0,
+          "gamma": 0.1,
+          "retain_loss_type": "NLL"
+        }
+      },
+      "fidelity": "exact frozen upstream loss; architecture/data/optimizer profile disclosed",
+      "beta1": 5.0,
+      "beta2": 1.0
+    },
+    {
+      "method": "UNDIAL",
+      "track": "native",
+      "gamma": 1.0,
+      "alpha": 0.0,
+      "beta": 10.0,
+      "delta": 0.0,
+      "learning_rate": "1e-4",
+      "weight_decay": 0.0,
+      "epochs": 10,
+      "batch_size": 4,
+      "max_updates": null,
+      "max_grad_norm": 1.0,
+      "lr_scheduler": "linear",
+      "retain_loss_type": "NLL",
+      "config_sha256": "d4df9f1cb04765a81eb05fed5f047b684813f47a632c373511d54cb64829f819",
+      "raw_upstream": {
+        "defaults": [
+          "finetune"
+        ],
+        "handler": "UNDIAL",
+        "args": {
+          "learning_rate": "1e-4",
+          "num_train_epochs": 10
+        },
+        "method_args": {
+          "gamma": 1.0,
+          "alpha": 0.0,
+          "beta": 10.0,
+          "retain_loss_type": "NLL"
+        }
+      },
+      "fidelity": "frozen upstream algorithm with explicit tested semantic repairs; not bitwise source loss parity",
+      "semantic_repairs": [
+        "answer-only teacher targets, exclude -100 labels from indexing and CE"
+      ]
+    }
+  ],
+  "legacy_results": "not overwritten or relabeled as new reproduction"
+}

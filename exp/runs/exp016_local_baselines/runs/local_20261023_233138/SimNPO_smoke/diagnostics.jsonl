@@ -1,0 +1,2 @@
+{"update": 1, "epoch": 0, "loss": 3.056527853012085, "valid": 1, "learning_rate": 5e-05, "ids": ["F0:27:536"], "seconds": 2.771277666091919}
+{"update": 2, "epoch": 0, "loss": 1.3809069395065308, "valid": 1, "learning_rate": 5e-05, "ids": ["F0:5:132"], "seconds": 3.0744707584381104}

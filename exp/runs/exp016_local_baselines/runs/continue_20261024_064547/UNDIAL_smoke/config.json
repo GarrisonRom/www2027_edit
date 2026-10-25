@@ -1,0 +1,47 @@
+{
+  "method": "UNDIAL",
+  "track": "matched_lora",
+  "gamma": 1.0,
+  "alpha": 0.0,
+  "beta": 10.0,
+  "delta": 0.0,
+  "learning_rate": 5e-05,
+  "weight_decay": 0.01,
+  "epochs": 1,
+  "batch_size": 1,
+  "max_updates": 2,
+  "max_grad_norm": null,
+  "lr_scheduler": "constant",
+  "retain_loss_type": "NLL",
+  "config_sha256": "d4df9f1cb04765a81eb05fed5f047b684813f47a632c373511d54cb64829f819",
+  "raw_upstream": {
+    "defaults": [
+      "finetune"
+    ],
+    "handler": "UNDIAL",
+    "args": {
+      "learning_rate": "1e-4",
+      "num_train_epochs": 10
+    },
+    "method_args": {
+      "gamma": 1.0,
+      "alpha": 0.0,
+      "beta": 10.0,
+      "retain_loss_type": "NLL"
+    }
+  },
+  "fidelity": "frozen upstream algorithm with explicit tested semantic repairs; not bitwise source loss parity",
+  "semantic_repairs": [
+    "answer-only teacher targets, exclude -100 labels from indexing and CE"
+  ],
+  "model": "E:\\12models\\modelscope\\Qwen2.5-1.5B-Instruct",
+  "seed": 42,
+  "smoke": true,
+  "lr_search": "no test-based tuning; configured source recipe, additional trials separate",
+  "optimizer": "torch AdamW",
+  "prompt": "raw question-space-answer, no chat template; source-paper prompt not certified identical",
+  "native_compatibility": "full parameter update except native KLUE gated FFN neuron mask",
+  "loss_precision": "BF16 backbone, FP32 returned logits/loss matching Accelerate output conversion",
+  "training_pad_to": null,
+  "batching": "actual padded batch, not serial per-example gradient averaging"
+}

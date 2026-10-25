@@ -1,0 +1,20 @@
+{
+  "completed": [
+    "qwen35_4b_Original_F0",
+    "qwen35_4b_GA_F0",
+    "qwen35_4b_GradDiff_F0",
+    "qwen35_4b_NPO_F0",
+    "qwen35_4b_SimNPO_F0",
+    "qwen35_4b_GA_F0F1",
+    "qwen35_4b_RMU_F0",
+    "qwen35_4b_GSU-C2_F0",
+    "llama32_3b_Original_F0",
+    "llama32_3b_GA_F0",
+    "llama32_3b_GradDiff_F0",
+    "llama32_3b_NPO_F0",
+    "llama32_3b_SimNPO_F0",
+    "llama32_3b_GA_F0F1",
+    "llama32_3b_RMU_F0",
+    "llama32_3b_GSU-C2_F0"
+  ]
+}

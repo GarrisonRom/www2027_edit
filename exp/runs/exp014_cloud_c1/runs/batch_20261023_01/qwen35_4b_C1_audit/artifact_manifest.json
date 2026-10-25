@@ -1,0 +1,7 @@
+{
+  "adapter_path": "/root/autodl-tmp/www2027_sync_20261023_c1_v1/exp/runs/exp014_cloud_c1/runs/batch_20261023_01/qwen35_4b_C1/adapter",
+  "adapter_sha256": {
+    "adapter_model.safetensors": "7d35b23161503774f70b56fd2872806ae98d52a8bc6ee71d17ead81fb0201423"
+  },
+  "training_metrics_sha256": "755e51ae00acf78c662c442ba2ae929b8cd10e97d07a35a538a42bfeff8edb2c"
+}

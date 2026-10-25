@@ -1,0 +1,6 @@
+{
+  "adapter_path": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_NPO_F0/adapter",
+  "adapter_sha256": {
+    "adapter_model.safetensors": "eb9d2393a96e71758b101d19ad512555df5f85a54136977705ec41ce5981d7e4"
+  }
+}

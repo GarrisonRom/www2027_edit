@@ -1,0 +1,33 @@
+*** Begin Patch
+*** Update File: C:/Users/RoboSAMA/Documents/kimi/Workspaces/蓝恩鹏/exp/train/reproduce_all_baselines.py
+@@
+ def write(path, data):
+@@
+     Path(path).write_text(json.dumps(data,ensure_ascii=False,indent=2,allow_nan=False),encoding='utf-8')
++
++
++def fp32_loss_outputs(module,args,output):
++    # HF Accelerate promotes model outputs for loss computation in its BF16 wrapper.
++    # Keep hidden hooks native, but do not compute NPO/PDU/weighted CE in BF16 logits.
++    output.logits=output.logits.float()
++    if getattr(output,'loss',None) is not None:output.loss=output.loss.float()
++    return output
+@@
+         params=[p for p in model.parameters() if p.requires_grad]
++        model.register_forward_hook(fp32_loss_outputs)
++        cfg['loss_precision']='BF16 backbone, FP32 returned logits/loss matching Accelerate output conversion'
+*** Update File: C:/Users/RoboSAMA/Documents/kimi/Workspaces/蓝恩鹏/exp/train/tests/test_complete_reproduction.py
+@@
+ def test_undial_ignored_prompt_positions_have_zero_direct_logit_gradient():
+@@
+     assert torch.equal(grad[:,4],torch.zeros_like(grad[:,4]))
++
++
++def test_loss_output_promotion_preserves_gradient():
++    logits=torch.randn(1,3,4,dtype=torch.bfloat16,requires_grad=True)
++    output=SimpleNamespace(logits=logits,loss=None)
++    promoted=runner.fp32_loss_outputs(None,None,output)
++    assert promoted.logits.dtype==torch.float32
++    promoted.logits.sum().backward()
++    assert torch.equal(logits.grad,torch.ones_like(logits))
+*** End Patch

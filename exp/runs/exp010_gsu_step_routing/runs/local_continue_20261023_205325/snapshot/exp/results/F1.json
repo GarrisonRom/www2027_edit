@@ -1,0 +1,145 @@
+{
+ "B": 5,
+ "F_star": [
+  {
+   "subject": "United States of America",
+   "relation": "capital",
+   "object": "Washington, D.C.",
+   "consistency": 1.0,
+   "S": [
+    [
+     148,
+     0
+    ],
+    [
+     201,
+     0
+    ],
+    [
+     446,
+     0
+    ],
+    [
+     511,
+     0
+    ],
+    [
+     578,
+     0
+    ],
+    [
+     599,
+     0
+    ],
+    [
+     661,
+     0
+    ]
+   ]
+  },
+  {
+   "subject": "United States of America",
+   "relation": "continent",
+   "object": "North America",
+   "consistency": 1.0,
+   "S": [
+    [
+     148,
+     1
+    ],
+    [
+     201,
+     1
+    ],
+    [
+     446,
+     1
+    ],
+    [
+     511,
+     1
+    ],
+    [
+     578,
+     1
+    ],
+    [
+     599,
+     1
+    ],
+    [
+     661,
+     1
+    ]
+   ]
+  },
+  {
+   "subject": "United States of America",
+   "relation": "currency",
+   "object": "United States dollar",
+   "consistency": 1.0,
+   "S": [
+    [
+     148,
+     2
+    ],
+    [
+     201,
+     2
+    ],
+    [
+     446,
+     2
+    ],
+    [
+     511,
+     2
+    ],
+    [
+     578,
+     2
+    ],
+    [
+     599,
+     2
+    ],
+    [
+     661,
+     2
+    ]
+   ]
+  },
+  {
+   "subject": "Los Angeles",
+   "relation": "country",
+   "object": "United States of America",
+   "consistency": 1.0,
+   "S": [
+    [
+     69,
+     0
+    ],
+    [
+     257,
+     0
+    ]
+   ]
+  },
+  {
+   "subject": "Los Angeles",
+   "relation": "continent",
+   "object": "North America",
+   "consistency": 1.0,
+   "S": [
+    [
+     69,
+     1
+    ],
+    [
+     257,
+     1
+    ]
+   ]
+  }
+ ]
+}

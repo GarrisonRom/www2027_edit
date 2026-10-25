@@ -1,0 +1,111 @@
+{
+  "status": "running",
+  "current": "llama31_8b_DPOmis_matched_lora_seed42",
+  "completed": [
+    "llama31_8b_Original",
+    "qwen3_8b_Original",
+    "llama31_8b_C1_matched_lora_seed42_smoke",
+    "llama31_8b_C1_matched_lora_seed42",
+    "llama31_8b_C1_matched_lora_seed42_audit",
+    "llama31_8b_C1_matched_lora_seed43",
+    "llama31_8b_C1_matched_lora_seed43_audit",
+    "llama31_8b_C1_matched_lora_seed44",
+    "llama31_8b_C1_matched_lora_seed44_audit",
+    "qwen3_8b_C1_matched_lora_seed42_smoke",
+    "qwen3_8b_C1_matched_lora_seed42",
+    "qwen3_8b_C1_matched_lora_seed42_audit",
+    "qwen3_8b_C1_matched_lora_seed43",
+    "qwen3_8b_C1_matched_lora_seed43_audit",
+    "qwen3_8b_C1_matched_lora_seed44",
+    "qwen3_8b_C1_matched_lora_seed44_audit",
+    "llama31_8b_C2_matched_lora_seed42_smoke",
+    "llama31_8b_C2_matched_lora_seed42",
+    "llama31_8b_C2_matched_lora_seed42_audit",
+    "llama31_8b_C2_matched_lora_seed43",
+    "llama31_8b_C2_matched_lora_seed43_audit",
+    "llama31_8b_C2_matched_lora_seed44",
+    "llama31_8b_C2_matched_lora_seed44_audit",
+    "qwen3_8b_C2_matched_lora_seed42_smoke",
+    "qwen3_8b_C2_matched_lora_seed42",
+    "qwen3_8b_C2_matched_lora_seed42_audit",
+    "qwen3_8b_C2_matched_lora_seed43",
+    "qwen3_8b_C2_matched_lora_seed43_audit",
+    "qwen3_8b_C2_matched_lora_seed44",
+    "qwen3_8b_C2_matched_lora_seed44_audit",
+    "llama31_8b_GA_matched_lora_seed42_smoke",
+    "llama31_8b_GA_matched_lora_seed42",
+    "llama31_8b_GA_matched_lora_seed43",
+    "llama31_8b_GA_matched_lora_seed44",
+    "qwen3_8b_GA_matched_lora_seed42_smoke",
+    "qwen3_8b_GA_matched_lora_seed42",
+    "qwen3_8b_GA_matched_lora_seed43",
+    "qwen3_8b_GA_matched_lora_seed44",
+    "llama31_8b_GradDiff_matched_lora_seed42_smoke",
+    "llama31_8b_GradDiff_matched_lora_seed42",
+    "llama31_8b_GradDiff_matched_lora_seed43",
+    "llama31_8b_GradDiff_matched_lora_seed44",
+    "qwen3_8b_GradDiff_matched_lora_seed42_smoke",
+    "qwen3_8b_GradDiff_matched_lora_seed42",
+    "qwen3_8b_GradDiff_matched_lora_seed43",
+    "qwen3_8b_GradDiff_matched_lora_seed44",
+    "llama31_8b_NPO_matched_lora_seed42_smoke",
+    "llama31_8b_NPO_matched_lora_seed42",
+    "llama31_8b_NPO_matched_lora_seed43",
+    "llama31_8b_NPO_matched_lora_seed44",
+    "qwen3_8b_NPO_matched_lora_seed42_smoke",
+    "qwen3_8b_NPO_matched_lora_seed42",
+    "qwen3_8b_NPO_matched_lora_seed43",
+    "qwen3_8b_NPO_matched_lora_seed44",
+    "llama31_8b_SimNPO_matched_lora_seed42_smoke",
+    "llama31_8b_SimNPO_matched_lora_seed42",
+    "llama31_8b_SimNPO_matched_lora_seed43",
+    "llama31_8b_SimNPO_matched_lora_seed44",
+    "qwen3_8b_SimNPO_matched_lora_seed42_smoke",
+    "qwen3_8b_SimNPO_matched_lora_seed42",
+    "qwen3_8b_SimNPO_matched_lora_seed43",
+    "qwen3_8b_SimNPO_matched_lora_seed44",
+    "llama31_8b_RMU_matched_lora_seed42_smoke",
+    "llama31_8b_RMU_matched_lora_seed42",
+    "llama31_8b_RMU_matched_lora_seed43",
+    "llama31_8b_RMU_matched_lora_seed44",
+    "qwen3_8b_RMU_matched_lora_seed42_smoke",
+    "qwen3_8b_RMU_matched_lora_seed42",
+    "qwen3_8b_RMU_matched_lora_seed43",
+    "qwen3_8b_RMU_matched_lora_seed44",
+    "llama31_8b_DPOmis_matched_lora_seed42_smoke"
+  ],
+  "failures": [
+    {
+      "label": "llama31_8b_KLUE_native_seed42_smoke",
+      "exit_code": 1
+    },
+    {
+      "label": "llama31_8b_KLUE_native_seed42",
+      "reason": "prerequisite_smoke_or_training_failed"
+    },
+    {
+      "label": "llama31_8b_KLUE_native_seed43",
+      "reason": "prerequisite_smoke_or_training_failed"
+    },
+    {
+      "label": "llama31_8b_KLUE_native_seed44",
+      "reason": "prerequisite_smoke_or_training_failed"
+    },
+    {
+      "label": "qwen3_8b_KLUE_native_seed42_smoke",
+      "exit_code": 1
+    },
+    {
+      "label": "qwen3_8b_KLUE_native_seed42",
+      "reason": "prerequisite_smoke_or_training_failed"
+    },
+    {
+      "label": "qwen3_8b_KLUE_native_seed43",
+      "reason": "prerequisite_smoke_or_training_failed"
+    },
+    {
+      "label": "qwen3_8b_KLUE_native_seed44",
+      "reason": "prerequisite_smoke_or_training_failed"
+    }
+  ]
+}

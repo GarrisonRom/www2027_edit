@@ -1,0 +1,278 @@
+{
+  "status": "finished",
+  "jobs": [
+    {
+      "name": "DPOmis_smoke",
+      "status": "completed",
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "-B",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\continue_20261024_064547\\isolated_workspace\\exp\\train\\run_local_baseline_queue.py",
+        "--worker",
+        "--method",
+        "DPOmis",
+        "--track",
+        "matched_lora",
+        "--model",
+        "E:\\12models\\modelscope\\Qwen2.5-1.5B-Instruct",
+        "--run-dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\continue_20261024_064547\\DPOmis_smoke",
+        "--smoke"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "DPOmis_formal",
+      "status": "completed",
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "-B",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\continue_20261024_064547\\isolated_workspace\\exp\\train\\run_local_baseline_queue.py",
+        "--worker",
+        "--method",
+        "DPOmis",
+        "--track",
+        "matched_lora",
+        "--model",
+        "E:\\12models\\modelscope\\Qwen2.5-1.5B-Instruct",
+        "--run-dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\continue_20261024_064547\\DPOmis_formal"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "DPOrej_smoke",
+      "status": "completed",
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "-B",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\continue_20261024_064547\\isolated_workspace\\exp\\train\\run_local_baseline_queue.py",
+        "--worker",
+        "--method",
+        "DPOrej",
+        "--track",
+        "matched_lora",
+        "--model",
+        "E:\\12models\\modelscope\\Qwen2.5-1.5B-Instruct",
+        "--run-dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\continue_20261024_064547\\DPOrej_smoke",
+        "--smoke"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "DPOrej_formal",
+      "status": "completed",
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "-B",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\continue_20261024_064547\\isolated_workspace\\exp\\train\\run_local_baseline_queue.py",
+        "--worker",
+        "--method",
+        "DPOrej",
+        "--track",
+        "matched_lora",
+        "--model",
+        "E:\\12models\\modelscope\\Qwen2.5-1.5B-Instruct",
+        "--run-dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\continue_20261024_064547\\DPOrej_formal"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "CEU_smoke",
+      "status": "completed",
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "-B",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\continue_20261024_064547\\isolated_workspace\\exp\\train\\run_local_baseline_queue.py",
+        "--worker",
+        "--method",
+        "CEU",
+        "--track",
+        "matched_lora",
+        "--model",
+        "E:\\12models\\modelscope\\Qwen2.5-1.5B-Instruct",
+        "--run-dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\continue_20261024_064547\\CEU_smoke",
+        "--smoke"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "CEU_formal",
+      "status": "completed",
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "-B",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\continue_20261024_064547\\isolated_workspace\\exp\\train\\run_local_baseline_queue.py",
+        "--worker",
+        "--method",
+        "CEU",
+        "--track",
+        "matched_lora",
+        "--model",
+        "E:\\12models\\modelscope\\Qwen2.5-1.5B-Instruct",
+        "--run-dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\continue_20261024_064547\\CEU_formal"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "PDU_smoke",
+      "status": "completed",
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "-B",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\continue_20261024_064547\\isolated_workspace\\exp\\train\\run_local_baseline_queue.py",
+        "--worker",
+        "--method",
+        "PDU",
+        "--track",
+        "matched_lora",
+        "--model",
+        "E:\\12models\\modelscope\\Qwen2.5-1.5B-Instruct",
+        "--run-dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\continue_20261024_064547\\PDU_smoke",
+        "--smoke"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "PDU_formal",
+      "status": "completed",
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "-B",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\continue_20261024_064547\\isolated_workspace\\exp\\train\\run_local_baseline_queue.py",
+        "--worker",
+        "--method",
+        "PDU",
+        "--track",
+        "matched_lora",
+        "--model",
+        "E:\\12models\\modelscope\\Qwen2.5-1.5B-Instruct",
+        "--run-dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\continue_20261024_064547\\PDU_formal"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "WGA_smoke",
+      "status": "completed",
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "-B",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\continue_20261024_064547\\isolated_workspace\\exp\\train\\run_local_baseline_queue.py",
+        "--worker",
+        "--method",
+        "WGA",
+        "--track",
+        "matched_lora",
+        "--model",
+        "E:\\12models\\modelscope\\Qwen2.5-1.5B-Instruct",
+        "--run-dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\continue_20261024_064547\\WGA_smoke",
+        "--smoke"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "WGA_formal",
+      "status": "completed",
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "-B",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\continue_20261024_064547\\isolated_workspace\\exp\\train\\run_local_baseline_queue.py",
+        "--worker",
+        "--method",
+        "WGA",
+        "--track",
+        "matched_lora",
+        "--model",
+        "E:\\12models\\modelscope\\Qwen2.5-1.5B-Instruct",
+        "--run-dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\continue_20261024_064547\\WGA_formal"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "SatImp_smoke",
+      "status": "completed",
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "-B",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\continue_20261024_064547\\isolated_workspace\\exp\\train\\run_local_baseline_queue.py",
+        "--worker",
+        "--method",
+        "SatImp",
+        "--track",
+        "matched_lora",
+        "--model",
+        "E:\\12models\\modelscope\\Qwen2.5-1.5B-Instruct",
+        "--run-dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\continue_20261024_064547\\SatImp_smoke",
+        "--smoke"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "SatImp_formal",
+      "status": "completed",
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "-B",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\continue_20261024_064547\\isolated_workspace\\exp\\train\\run_local_baseline_queue.py",
+        "--worker",
+        "--method",
+        "SatImp",
+        "--track",
+        "matched_lora",
+        "--model",
+        "E:\\12models\\modelscope\\Qwen2.5-1.5B-Instruct",
+        "--run-dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\continue_20261024_064547\\SatImp_formal"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "UNDIAL_smoke",
+      "status": "completed",
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "-B",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\continue_20261024_064547\\isolated_workspace\\exp\\train\\run_local_baseline_queue.py",
+        "--worker",
+        "--method",
+        "UNDIAL",
+        "--track",
+        "matched_lora",
+        "--model",
+        "E:\\12models\\modelscope\\Qwen2.5-1.5B-Instruct",
+        "--run-dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\continue_20261024_064547\\UNDIAL_smoke",
+        "--smoke"
+      ],
+      "returncode": 0
+    },
+    {
+      "name": "UNDIAL_formal",
+      "status": "completed",
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "-B",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\continue_20261024_064547\\isolated_workspace\\exp\\train\\run_local_baseline_queue.py",
+        "--worker",
+        "--method",
+        "UNDIAL",
+        "--track",
+        "matched_lora",
+        "--model",
+        "E:\\12models\\modelscope\\Qwen2.5-1.5B-Instruct",
+        "--run-dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\continue_20261024_064547\\UNDIAL_formal"
+      ],
+      "returncode": 0
+    }
+  ]
+}

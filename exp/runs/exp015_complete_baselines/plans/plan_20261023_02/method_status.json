@@ -1,0 +1,305 @@
+{
+  "runs": [
+    {
+      "run_id": "llama32_3b_KLUE_native",
+      "method": "KLUE",
+      "track": "native",
+      "status": "not_started"
+    },
+    {
+      "run_id": "qwen35_4b_KLUE_native",
+      "method": "KLUE",
+      "track": "native",
+      "status": "not_started"
+    },
+    {
+      "run_id": "llama32_3b_GA_matched_lora",
+      "method": "GA",
+      "track": "matched_lora",
+      "status": "not_started"
+    },
+    {
+      "run_id": "qwen35_4b_GA_matched_lora",
+      "method": "GA",
+      "track": "matched_lora",
+      "status": "not_started"
+    },
+    {
+      "run_id": "llama32_3b_GradDiff_matched_lora",
+      "method": "GradDiff",
+      "track": "matched_lora",
+      "status": "not_started"
+    },
+    {
+      "run_id": "qwen35_4b_GradDiff_matched_lora",
+      "method": "GradDiff",
+      "track": "matched_lora",
+      "status": "not_started"
+    },
+    {
+      "run_id": "llama32_3b_NPO_matched_lora",
+      "method": "NPO",
+      "track": "matched_lora",
+      "status": "not_started"
+    },
+    {
+      "run_id": "qwen35_4b_NPO_matched_lora",
+      "method": "NPO",
+      "track": "matched_lora",
+      "status": "not_started"
+    },
+    {
+      "run_id": "llama32_3b_SimNPO_matched_lora",
+      "method": "SimNPO",
+      "track": "matched_lora",
+      "status": "not_started"
+    },
+    {
+      "run_id": "qwen35_4b_SimNPO_matched_lora",
+      "method": "SimNPO",
+      "track": "matched_lora",
+      "status": "not_started"
+    },
+    {
+      "run_id": "llama32_3b_RMU_matched_lora",
+      "method": "RMU",
+      "track": "matched_lora",
+      "status": "not_started"
+    },
+    {
+      "run_id": "qwen35_4b_RMU_matched_lora",
+      "method": "RMU",
+      "track": "matched_lora",
+      "status": "not_started"
+    },
+    {
+      "run_id": "llama32_3b_DPOmis_matched_lora",
+      "method": "DPOmis",
+      "track": "matched_lora",
+      "status": "not_started"
+    },
+    {
+      "run_id": "qwen35_4b_DPOmis_matched_lora",
+      "method": "DPOmis",
+      "track": "matched_lora",
+      "status": "not_started"
+    },
+    {
+      "run_id": "llama32_3b_DPOrej_matched_lora",
+      "method": "DPOrej",
+      "track": "matched_lora",
+      "status": "not_started"
+    },
+    {
+      "run_id": "qwen35_4b_DPOrej_matched_lora",
+      "method": "DPOrej",
+      "track": "matched_lora",
+      "status": "not_started"
+    },
+    {
+      "run_id": "llama32_3b_CEU_matched_lora",
+      "method": "CEU",
+      "track": "matched_lora",
+      "status": "not_started"
+    },
+    {
+      "run_id": "qwen35_4b_CEU_matched_lora",
+      "method": "CEU",
+      "track": "matched_lora",
+      "status": "not_started"
+    },
+    {
+      "run_id": "llama32_3b_PDU_matched_lora",
+      "method": "PDU",
+      "track": "matched_lora",
+      "status": "not_started"
+    },
+    {
+      "run_id": "qwen35_4b_PDU_matched_lora",
+      "method": "PDU",
+      "track": "matched_lora",
+      "status": "not_started"
+    },
+    {
+      "run_id": "llama32_3b_WGA_matched_lora",
+      "method": "WGA",
+      "track": "matched_lora",
+      "status": "not_started"
+    },
+    {
+      "run_id": "qwen35_4b_WGA_matched_lora",
+      "method": "WGA",
+      "track": "matched_lora",
+      "status": "not_started"
+    },
+    {
+      "run_id": "llama32_3b_SatImp_matched_lora",
+      "method": "SatImp",
+      "track": "matched_lora",
+      "status": "not_started"
+    },
+    {
+      "run_id": "qwen35_4b_SatImp_matched_lora",
+      "method": "SatImp",
+      "track": "matched_lora",
+      "status": "not_started"
+    },
+    {
+      "run_id": "llama32_3b_UNDIAL_matched_lora",
+      "method": "UNDIAL",
+      "track": "matched_lora",
+      "status": "not_started"
+    },
+    {
+      "run_id": "qwen35_4b_UNDIAL_matched_lora",
+      "method": "UNDIAL",
+      "track": "matched_lora",
+      "status": "not_started"
+    },
+    {
+      "run_id": "llama32_3b_GA_native",
+      "method": "GA",
+      "track": "native",
+      "status": "not_started"
+    },
+    {
+      "run_id": "qwen35_4b_GA_native",
+      "method": "GA",
+      "track": "native",
+      "status": "not_started"
+    },
+    {
+      "run_id": "llama32_3b_GradDiff_native",
+      "method": "GradDiff",
+      "track": "native",
+      "status": "not_started"
+    },
+    {
+      "run_id": "qwen35_4b_GradDiff_native",
+      "method": "GradDiff",
+      "track": "native",
+      "status": "not_started"
+    },
+    {
+      "run_id": "llama32_3b_NPO_native",
+      "method": "NPO",
+      "track": "native",
+      "status": "not_started"
+    },
+    {
+      "run_id": "qwen35_4b_NPO_native",
+      "method": "NPO",
+      "track": "native",
+      "status": "not_started"
+    },
+    {
+      "run_id": "llama32_3b_SimNPO_native",
+      "method": "SimNPO",
+      "track": "native",
+      "status": "not_started"
+    },
+    {
+      "run_id": "qwen35_4b_SimNPO_native",
+      "method": "SimNPO",
+      "track": "native",
+      "status": "not_started"
+    },
+    {
+      "run_id": "llama32_3b_RMU_native",
+      "method": "RMU",
+      "track": "native",
+      "status": "not_started"
+    },
+    {
+      "run_id": "qwen35_4b_RMU_native",
+      "method": "RMU",
+      "track": "native",
+      "status": "not_started"
+    },
+    {
+      "run_id": "llama32_3b_DPOmis_native",
+      "method": "DPOmis",
+      "track": "native",
+      "status": "not_started"
+    },
+    {
+      "run_id": "qwen35_4b_DPOmis_native",
+      "method": "DPOmis",
+      "track": "native",
+      "status": "not_started"
+    },
+    {
+      "run_id": "llama32_3b_DPOrej_native",
+      "method": "DPOrej",
+      "track": "native",
+      "status": "not_started"
+    },
+    {
+      "run_id": "qwen35_4b_DPOrej_native",
+      "method": "DPOrej",
+      "track": "native",
+      "status": "not_started"
+    },
+    {
+      "run_id": "llama32_3b_CEU_native",
+      "method": "CEU",
+      "track": "native",
+      "status": "not_started"
+    },
+    {
+      "run_id": "qwen35_4b_CEU_native",
+      "method": "CEU",
+      "track": "native",
+      "status": "not_started"
+    },
+    {
+      "run_id": "llama32_3b_PDU_native",
+      "method": "PDU",
+      "track": "native",
+      "status": "not_started"
+    },
+    {
+      "run_id": "qwen35_4b_PDU_native",
+      "method": "PDU",
+      "track": "native",
+      "status": "not_started"
+    },
+    {
+      "run_id": "llama32_3b_WGA_native",
+      "method": "WGA",
+      "track": "native",
+      "status": "not_started"
+    },
+    {
+      "run_id": "qwen35_4b_WGA_native",
+      "method": "WGA",
+      "track": "native",
+      "status": "not_started"
+    },
+    {
+      "run_id": "llama32_3b_SatImp_native",
+      "method": "SatImp",
+      "track": "native",
+      "status": "not_started"
+    },
+    {
+      "run_id": "qwen35_4b_SatImp_native",
+      "method": "SatImp",
+      "track": "native",
+      "status": "not_started"
+    },
+    {
+      "run_id": "llama32_3b_UNDIAL_native",
+      "method": "UNDIAL",
+      "track": "native",
+      "status": "not_started"
+    },
+    {
+      "run_id": "qwen35_4b_UNDIAL_native",
+      "method": "UNDIAL",
+      "track": "native",
+      "status": "not_started"
+    }
+  ],
+  "measured": []
+}

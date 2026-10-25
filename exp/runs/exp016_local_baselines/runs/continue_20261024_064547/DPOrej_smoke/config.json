@@ -1,0 +1,40 @@
+{
+  "method": "DPOrej",
+  "track": "matched_lora",
+  "gamma": 1.0,
+  "alpha": 1.0,
+  "beta": 0.1,
+  "delta": 0.0,
+  "learning_rate": 5e-05,
+  "weight_decay": 0.01,
+  "epochs": 1,
+  "batch_size": 1,
+  "max_updates": 2,
+  "max_grad_norm": null,
+  "lr_scheduler": "constant",
+  "retain_loss_type": "NLL",
+  "config_sha256": "c9eca8b4ca1df016fb5d5f80f76444134d8dc794d8536fa1fd0476a53d6290b7",
+  "raw_upstream": {
+    "defaults": [
+      "GradDiff"
+    ],
+    "handler": "DPO",
+    "method_args": {
+      "beta": 0.1,
+      "alpha": 1.0,
+      "gamma": 1.0,
+      "retain_loss_type": "NLL"
+    }
+  },
+  "fidelity": "exact frozen upstream loss; architecture/data/optimizer profile disclosed",
+  "model": "E:\\12models\\modelscope\\Qwen2.5-1.5B-Instruct",
+  "seed": 42,
+  "smoke": true,
+  "lr_search": "no test-based tuning; configured source recipe, additional trials separate",
+  "optimizer": "torch AdamW",
+  "prompt": "raw question-space-answer, no chat template; source-paper prompt not certified identical",
+  "native_compatibility": "full parameter update except native KLUE gated FFN neuron mask",
+  "loss_precision": "BF16 backbone, FP32 returned logits/loss matching Accelerate output conversion",
+  "training_pad_to": null,
+  "batching": "actual padded batch, not serial per-example gradient averaging"
+}

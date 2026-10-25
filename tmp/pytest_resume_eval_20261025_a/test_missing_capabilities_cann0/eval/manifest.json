@@ -1,0 +1,15 @@
+{
+  "evaluation_items": 7,
+  "full_items": 7,
+  "smoke": false,
+  "input_sha256": "2e57f7df6e8373cf6e7fda7bb5dcf2966707b1e41efc4df5fd11eb3a1f17f9dc",
+  "primary": "paper_prompt/answer_sum",
+  "prompt_source": "FaithUn Figure8 instruction, question, options, Your Answer",
+  "conventions": [
+    "options serialized as JSON list; source figure leaves delimiter unspecified",
+    "candidate answer text scored conditionally, exact ties incorrect",
+    "raw QA sensitivity reported separately, no chat template"
+  ],
+  "retain_status": "retain66 trained for methods using retain; test464 is independent",
+  "mmlu_protocol": "57 subjects,5-shot,seed42; sampled10/subject,not full MMLU"
+}

@@ -1,0 +1,20 @@
+{
+  "dataset": {
+    "dataset": "Salesforce/wikitext",
+    "config": "wikitext-2-raw-v1",
+    "split": "test",
+    "revision": "b08601e04326c79dfdd32d625aee71d232d685c3",
+    "document_count": 4358,
+    "text_sha256": "696cca6b65a171b0a358a4be6732cdfdf2dd6164a32e20fd70e3c13fc4dfae83"
+  },
+  "metric": {
+    "token_ppl": 871.7635304360562,
+    "mean_nll_nats": 6.770518206440251,
+    "total_nll_nats": 1957194.3210449219,
+    "scored_tokens": 289076,
+    "input_tokens_including_bos": 289077,
+    "max_length": 2048,
+    "stride": 512,
+    "window_count": 562
+  }
+}

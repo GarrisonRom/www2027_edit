@@ -1,0 +1,302 @@
+[
+  {
+    "learning_rate": 1e-07,
+    "beta": 0.1,
+    "alpha": 20
+  },
+  {
+    "learning_rate": 1e-07,
+    "beta": 0.1,
+    "alpha": 50
+  },
+  {
+    "learning_rate": 1e-07,
+    "beta": 0.1,
+    "alpha": 100
+  },
+  {
+    "learning_rate": 1e-07,
+    "beta": 0.1,
+    "alpha": 150
+  },
+  {
+    "learning_rate": 1e-07,
+    "beta": 0.1,
+    "alpha": 200
+  },
+  {
+    "learning_rate": 1e-07,
+    "beta": 0.1,
+    "alpha": 300
+  },
+  {
+    "learning_rate": 3e-07,
+    "beta": 0.1,
+    "alpha": 20
+  },
+  {
+    "learning_rate": 3e-07,
+    "beta": 0.1,
+    "alpha": 50
+  },
+  {
+    "learning_rate": 3e-07,
+    "beta": 0.1,
+    "alpha": 100
+  },
+  {
+    "learning_rate": 3e-07,
+    "beta": 0.1,
+    "alpha": 150
+  },
+  {
+    "learning_rate": 3e-07,
+    "beta": 0.1,
+    "alpha": 200
+  },
+  {
+    "learning_rate": 3e-07,
+    "beta": 0.1,
+    "alpha": 300
+  },
+  {
+    "learning_rate": 1e-06,
+    "beta": 0.1,
+    "alpha": 20
+  },
+  {
+    "learning_rate": 1e-06,
+    "beta": 0.1,
+    "alpha": 50
+  },
+  {
+    "learning_rate": 1e-06,
+    "beta": 0.1,
+    "alpha": 100
+  },
+  {
+    "learning_rate": 1e-06,
+    "beta": 0.1,
+    "alpha": 150
+  },
+  {
+    "learning_rate": 1e-06,
+    "beta": 0.1,
+    "alpha": 200
+  },
+  {
+    "learning_rate": 1e-06,
+    "beta": 0.1,
+    "alpha": 300
+  },
+  {
+    "learning_rate": 3e-06,
+    "beta": 0.1,
+    "alpha": 20
+  },
+  {
+    "learning_rate": 3e-06,
+    "beta": 0.1,
+    "alpha": 50
+  },
+  {
+    "learning_rate": 3e-06,
+    "beta": 0.1,
+    "alpha": 100
+  },
+  {
+    "learning_rate": 3e-06,
+    "beta": 0.1,
+    "alpha": 150
+  },
+  {
+    "learning_rate": 3e-06,
+    "beta": 0.1,
+    "alpha": 200
+  },
+  {
+    "learning_rate": 3e-06,
+    "beta": 0.1,
+    "alpha": 300
+  },
+  {
+    "learning_rate": 1e-05,
+    "beta": 0.1,
+    "alpha": 20
+  },
+  {
+    "learning_rate": 1e-05,
+    "beta": 0.1,
+    "alpha": 50
+  },
+  {
+    "learning_rate": 1e-05,
+    "beta": 0.1,
+    "alpha": 100
+  },
+  {
+    "learning_rate": 1e-05,
+    "beta": 0.1,
+    "alpha": 150
+  },
+  {
+    "learning_rate": 1e-05,
+    "beta": 0.1,
+    "alpha": 200
+  },
+  {
+    "learning_rate": 1e-05,
+    "beta": 0.1,
+    "alpha": 300
+  },
+  {
+    "learning_rate": 3e-05,
+    "beta": 0.1,
+    "alpha": 20
+  },
+  {
+    "learning_rate": 3e-05,
+    "beta": 0.1,
+    "alpha": 50
+  },
+  {
+    "learning_rate": 3e-05,
+    "beta": 0.1,
+    "alpha": 100
+  },
+  {
+    "learning_rate": 3e-05,
+    "beta": 0.1,
+    "alpha": 150
+  },
+  {
+    "learning_rate": 3e-05,
+    "beta": 0.1,
+    "alpha": 200
+  },
+  {
+    "learning_rate": 3e-05,
+    "beta": 0.1,
+    "alpha": 300
+  },
+  {
+    "learning_rate": 0.0001,
+    "beta": 0.1,
+    "alpha": 20
+  },
+  {
+    "learning_rate": 0.0001,
+    "beta": 0.1,
+    "alpha": 50
+  },
+  {
+    "learning_rate": 0.0001,
+    "beta": 0.1,
+    "alpha": 100
+  },
+  {
+    "learning_rate": 0.0001,
+    "beta": 0.1,
+    "alpha": 150
+  },
+  {
+    "learning_rate": 0.0001,
+    "beta": 0.1,
+    "alpha": 200
+  },
+  {
+    "learning_rate": 0.0001,
+    "beta": 0.1,
+    "alpha": 300
+  },
+  {
+    "learning_rate": 0.0003,
+    "beta": 0.1,
+    "alpha": 20
+  },
+  {
+    "learning_rate": 0.0003,
+    "beta": 0.1,
+    "alpha": 50
+  },
+  {
+    "learning_rate": 0.0003,
+    "beta": 0.1,
+    "alpha": 100
+  },
+  {
+    "learning_rate": 0.0003,
+    "beta": 0.1,
+    "alpha": 150
+  },
+  {
+    "learning_rate": 0.0003,
+    "beta": 0.1,
+    "alpha": 200
+  },
+  {
+    "learning_rate": 0.0003,
+    "beta": 0.1,
+    "alpha": 300
+  },
+  {
+    "learning_rate": 0.001,
+    "beta": 0.1,
+    "alpha": 20
+  },
+  {
+    "learning_rate": 0.001,
+    "beta": 0.1,
+    "alpha": 50
+  },
+  {
+    "learning_rate": 0.001,
+    "beta": 0.1,
+    "alpha": 100
+  },
+  {
+    "learning_rate": 0.001,
+    "beta": 0.1,
+    "alpha": 150
+  },
+  {
+    "learning_rate": 0.001,
+    "beta": 0.1,
+    "alpha": 200
+  },
+  {
+    "learning_rate": 0.001,
+    "beta": 0.1,
+    "alpha": 300
+  },
+  {
+    "learning_rate": 0.003,
+    "beta": 0.1,
+    "alpha": 20
+  },
+  {
+    "learning_rate": 0.003,
+    "beta": 0.1,
+    "alpha": 50
+  },
+  {
+    "learning_rate": 0.003,
+    "beta": 0.1,
+    "alpha": 100
+  },
+  {
+    "learning_rate": 0.003,
+    "beta": 0.1,
+    "alpha": 150
+  },
+  {
+    "learning_rate": 0.003,
+    "beta": 0.1,
+    "alpha": 200
+  },
+  {
+    "learning_rate": 0.003,
+    "beta": 0.1,
+    "alpha": 300
+  }
+]

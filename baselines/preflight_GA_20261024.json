@@ -1,0 +1,13 @@
+{
+  "method": "GA",
+  "track": "native",
+  "trainable_parameter_estimate": 1543714304,
+  "cpu_required_bytes": 26846912512,
+  "cpu_free_bytes": 9982205952,
+  "resource_ready": false,
+  "mmlu_registered": true,
+  "dependency_errors": [],
+  "datasets_ready": "unverified until actual MMLU/WikiText downloads and scoring succeed",
+  "source_fidelity": "paper algorithm transferred to new model; explicit implementation conventions",
+  "pdu_calibration_required": false
+}

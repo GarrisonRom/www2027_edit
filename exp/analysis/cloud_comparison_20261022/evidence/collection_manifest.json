@@ -1,0 +1,605 @@
+{
+  "archive_sha256": "4eb876379ff1d0446b8b929fe282be083a89ff84998c372335d3114f8f9b5024",
+  "files": [
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/status.json",
+      "relative": "exp008/status.json",
+      "bytes": 408,
+      "sha256": "ad76a828b9599fc2a19a1f40ec2095b9c826acb363a820501572a4ff0232c1ac"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/batch_manifest.json",
+      "relative": "exp008/batch_manifest.json",
+      "bytes": 12699,
+      "sha256": "f26bdb182f2d3235793e61bdcc00a55dd6623c7c1639dc3693d3111043325830"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/environment.txt",
+      "relative": "exp008/environment.txt",
+      "bytes": 5109,
+      "sha256": "add6f6a81413899651473adbc2621979b885ac9eabb12b950dd7509199475746"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_Original_F0/metrics.json",
+      "relative": "exp008/qwen35_4b_Original_F0/metrics.json",
+      "bytes": 217558,
+      "sha256": "d8fefa0b33871eb112a1f5843b03dfc40d6debc84256c9f0c6dd13ebd31fc03b"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_Original_F0/config.json",
+      "relative": "exp008/qwen35_4b_Original_F0/config.json",
+      "bytes": 289,
+      "sha256": "db7b5757a1b3bd3d6f182b8982569300ed7d2daf352a5a194071622f64307087"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_Original_F0/status.json",
+      "relative": "exp008/qwen35_4b_Original_F0/status.json",
+      "bytes": 143,
+      "sha256": "b0721a269aa36493edd0a4e8d72f6790a7e46f74530abebe1199d038b8261e2a"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_Original_F0/modules.json",
+      "relative": "exp008/qwen35_4b_Original_F0/modules.json",
+      "bytes": 48,
+      "sha256": "9b90ea2987fed5e12f7abe798951f95fffe6b7a1477ce1a35ea96ead7f7cc222"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_Original_F0/run_log.md",
+      "relative": "exp008/qwen35_4b_Original_F0/run_log.md",
+      "bytes": 176,
+      "sha256": "9727c8d0ebb899ccfbf987127c56c54e8352a82f61990671c6678527ae2e2661"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_Original_F0/metrics.json",
+      "relative": "exp008/llama32_3b_Original_F0/metrics.json",
+      "bytes": 217585,
+      "sha256": "9bfc410658b373068120308218aacb21be079b3ac05f3eaed666b9888f7426c9"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_Original_F0/config.json",
+      "relative": "exp008/llama32_3b_Original_F0/config.json",
+      "bytes": 301,
+      "sha256": "9d7064bf9907e500f563ef02cf23bb989cfca43c56baaf7c0dbf1802f07db8db"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_Original_F0/status.json",
+      "relative": "exp008/llama32_3b_Original_F0/status.json",
+      "bytes": 143,
+      "sha256": "acd81e1033f056f51fdd24ac52d3775311fa576e2152589cfc2ed205e98d15cc"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_Original_F0/modules.json",
+      "relative": "exp008/llama32_3b_Original_F0/modules.json",
+      "bytes": 48,
+      "sha256": "9b90ea2987fed5e12f7abe798951f95fffe6b7a1477ce1a35ea96ead7f7cc222"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_Original_F0/run_log.md",
+      "relative": "exp008/llama32_3b_Original_F0/run_log.md",
+      "bytes": 176,
+      "sha256": "9727c8d0ebb899ccfbf987127c56c54e8352a82f61990671c6678527ae2e2661"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_GA_F0/metrics.json",
+      "relative": "exp008/qwen35_4b_GA_F0/metrics.json",
+      "bytes": 212659,
+      "sha256": "cb40b755cf3380dd9f30140fd58f56117f166e5b9251ab7085e706855f14b8d7"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_GA_F0/config.json",
+      "relative": "exp008/qwen35_4b_GA_F0/config.json",
+      "bytes": 277,
+      "sha256": "9e895aeb009cd91314191985806cde2991910379bf1eda523688751c4f1082e4"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_GA_F0/status.json",
+      "relative": "exp008/qwen35_4b_GA_F0/status.json",
+      "bytes": 142,
+      "sha256": "e11ee1637e6af0e28d0f16bd9d3e093a4d3c95b5dece113de282ac60b7c29b3c"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_GA_F0/modules.json",
+      "relative": "exp008/qwen35_4b_GA_F0/modules.json",
+      "bytes": 13891,
+      "sha256": "6887696faba7063836eb15ef7a1f8f9d6d361e88b6b94c200f8688566ec10560"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_GA_F0/diagnostics.jsonl",
+      "relative": "exp008/qwen35_4b_GA_F0/diagnostics.jsonl",
+      "bytes": 6377,
+      "sha256": "04af4327509b272a152e13bbbecee8bffa46f18d9fb06805b2a83705f960096c"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_GA_F0/schedule.json",
+      "relative": "exp008/qwen35_4b_GA_F0/schedule.json",
+      "bytes": 31743,
+      "sha256": "103d250e9a85799b656cba8628f008023c1703daee980a440c8fc80d72cd21b2"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_GA_F0/run_log.md",
+      "relative": "exp008/qwen35_4b_GA_F0/run_log.md",
+      "bytes": 176,
+      "sha256": "9727c8d0ebb899ccfbf987127c56c54e8352a82f61990671c6678527ae2e2661"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_GA_F0/metrics.json",
+      "relative": "exp008/llama32_3b_GA_F0/metrics.json",
+      "bytes": 213553,
+      "sha256": "4bbc26bea1050bf38e887e3c014646aa8eca1cd157de75df13115def9970b98e"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_GA_F0/config.json",
+      "relative": "exp008/llama32_3b_GA_F0/config.json",
+      "bytes": 289,
+      "sha256": "5aa9f844f658249b9e8b7c0408ee52e039a7720482652e2e4639d42f207df7bb"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_GA_F0/status.json",
+      "relative": "exp008/llama32_3b_GA_F0/status.json",
+      "bytes": 142,
+      "sha256": "ea6ffaae7bc3e91476699175a4ac2472d94c7697bf47a8c592297704965ef045"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_GA_F0/modules.json",
+      "relative": "exp008/llama32_3b_GA_F0/modules.json",
+      "bytes": 7519,
+      "sha256": "c8979176b14c2dcbffeb75f7cebc9b247eade33386ce9f39aa7267865843e9a1"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_GA_F0/diagnostics.jsonl",
+      "relative": "exp008/llama32_3b_GA_F0/diagnostics.jsonl",
+      "bytes": 6571,
+      "sha256": "fd6a297fc6fb77bf8e3b738b2b22ce995f02076be162b51da443da3733ff9293"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_GA_F0/schedule.json",
+      "relative": "exp008/llama32_3b_GA_F0/schedule.json",
+      "bytes": 31743,
+      "sha256": "103d250e9a85799b656cba8628f008023c1703daee980a440c8fc80d72cd21b2"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_GA_F0/run_log.md",
+      "relative": "exp008/llama32_3b_GA_F0/run_log.md",
+      "bytes": 176,
+      "sha256": "9727c8d0ebb899ccfbf987127c56c54e8352a82f61990671c6678527ae2e2661"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_GradDiff_F0/metrics.json",
+      "relative": "exp008/qwen35_4b_GradDiff_F0/metrics.json",
+      "bytes": 216899,
+      "sha256": "d9c45e0ead34016a3c0a4c0fc30a3c71a529dd325ea722c78ac0c1eb9553eb32"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_GradDiff_F0/config.json",
+      "relative": "exp008/qwen35_4b_GradDiff_F0/config.json",
+      "bytes": 289,
+      "sha256": "8b95199a990f3b8c55152604e741309c99dad4fba1d3de810082052a8d188189"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_GradDiff_F0/status.json",
+      "relative": "exp008/qwen35_4b_GradDiff_F0/status.json",
+      "bytes": 143,
+      "sha256": "9825d345202468aab3dc7acc629a99432b65a3b0aa4ccb2a7b25323573f70ada"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_GradDiff_F0/modules.json",
+      "relative": "exp008/qwen35_4b_GradDiff_F0/modules.json",
+      "bytes": 13891,
+      "sha256": "6887696faba7063836eb15ef7a1f8f9d6d361e88b6b94c200f8688566ec10560"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_GradDiff_F0/diagnostics.jsonl",
+      "relative": "exp008/qwen35_4b_GradDiff_F0/diagnostics.jsonl",
+      "bytes": 6963,
+      "sha256": "8f5341a5e0a1bc72de2b8236b45529e2d8a371e16df375ddfe4cddd7e945e4e8"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_GradDiff_F0/schedule.json",
+      "relative": "exp008/qwen35_4b_GradDiff_F0/schedule.json",
+      "bytes": 31743,
+      "sha256": "103d250e9a85799b656cba8628f008023c1703daee980a440c8fc80d72cd21b2"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_GradDiff_F0/run_log.md",
+      "relative": "exp008/qwen35_4b_GradDiff_F0/run_log.md",
+      "bytes": 176,
+      "sha256": "9727c8d0ebb899ccfbf987127c56c54e8352a82f61990671c6678527ae2e2661"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_GradDiff_F0/metrics.json",
+      "relative": "exp008/llama32_3b_GradDiff_F0/metrics.json",
+      "bytes": 217050,
+      "sha256": "4096869b8d0a1c57ea282c903b31dc196d4a474843b5e4f0ff2efa6b179d864e"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_GradDiff_F0/config.json",
+      "relative": "exp008/llama32_3b_GradDiff_F0/config.json",
+      "bytes": 301,
+      "sha256": "911433552e46ebe89e1a9c760a67aba28ff6381ceab322067b635dfbacfd4a6a"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_GradDiff_F0/status.json",
+      "relative": "exp008/llama32_3b_GradDiff_F0/status.json",
+      "bytes": 142,
+      "sha256": "3f17cd0edbcd1fa164744b906e3369d7664c7aa3f91292acba8abed8135a0609"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_GradDiff_F0/modules.json",
+      "relative": "exp008/llama32_3b_GradDiff_F0/modules.json",
+      "bytes": 7519,
+      "sha256": "c8979176b14c2dcbffeb75f7cebc9b247eade33386ce9f39aa7267865843e9a1"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_GradDiff_F0/diagnostics.jsonl",
+      "relative": "exp008/llama32_3b_GradDiff_F0/diagnostics.jsonl",
+      "bytes": 7004,
+      "sha256": "d9f9b7bbfca8d36aed3d6bb2d77dc21d161da4ac3a2d8ed3b2b46c5239aad0cd"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_GradDiff_F0/schedule.json",
+      "relative": "exp008/llama32_3b_GradDiff_F0/schedule.json",
+      "bytes": 31743,
+      "sha256": "103d250e9a85799b656cba8628f008023c1703daee980a440c8fc80d72cd21b2"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_GradDiff_F0/run_log.md",
+      "relative": "exp008/llama32_3b_GradDiff_F0/run_log.md",
+      "bytes": 176,
+      "sha256": "9727c8d0ebb899ccfbf987127c56c54e8352a82f61990671c6678527ae2e2661"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_NPO_F0/metrics.json",
+      "relative": "exp008/qwen35_4b_NPO_F0/metrics.json",
+      "bytes": 217628,
+      "sha256": "2da86b113bb0f8a46a711209263fd89e3fcce7a069992558afb6016ba146246b"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_NPO_F0/config.json",
+      "relative": "exp008/qwen35_4b_NPO_F0/config.json",
+      "bytes": 279,
+      "sha256": "4875c7d519a421687022e0a3d41cf0e0640d34e30d286c2688e8ea04fb14cff1"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_NPO_F0/status.json",
+      "relative": "exp008/qwen35_4b_NPO_F0/status.json",
+      "bytes": 143,
+      "sha256": "0c98760ce813fc18a3049d517c0e2d3065fd603ce25042b32531ff3a56eecfe4"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_NPO_F0/modules.json",
+      "relative": "exp008/qwen35_4b_NPO_F0/modules.json",
+      "bytes": 13891,
+      "sha256": "6887696faba7063836eb15ef7a1f8f9d6d361e88b6b94c200f8688566ec10560"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_NPO_F0/diagnostics.jsonl",
+      "relative": "exp008/qwen35_4b_NPO_F0/diagnostics.jsonl",
+      "bytes": 6887,
+      "sha256": "0e9dc7f7929e2d72b5d473f7b6fe6d9b9317b6cb57b5a1691c0c582c0371e78c"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_NPO_F0/schedule.json",
+      "relative": "exp008/qwen35_4b_NPO_F0/schedule.json",
+      "bytes": 31743,
+      "sha256": "103d250e9a85799b656cba8628f008023c1703daee980a440c8fc80d72cd21b2"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_NPO_F0/run_log.md",
+      "relative": "exp008/qwen35_4b_NPO_F0/run_log.md",
+      "bytes": 176,
+      "sha256": "9727c8d0ebb899ccfbf987127c56c54e8352a82f61990671c6678527ae2e2661"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_NPO_F0/metrics.json",
+      "relative": "exp008/llama32_3b_NPO_F0/metrics.json",
+      "bytes": 217450,
+      "sha256": "b9de78f9acab59453584823585c8f5b680b7b35e49b13965b4ce3d5d9554a7b9"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_NPO_F0/config.json",
+      "relative": "exp008/llama32_3b_NPO_F0/config.json",
+      "bytes": 291,
+      "sha256": "ce7e29f18b608851213846a18fc3f0e59dfe456193bcb06c9e52d458e89155ac"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_NPO_F0/status.json",
+      "relative": "exp008/llama32_3b_NPO_F0/status.json",
+      "bytes": 143,
+      "sha256": "19588f0ac9691a8589f24c7ddf2d3fa74961ab3991570f38eacc36aa51ce0121"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_NPO_F0/modules.json",
+      "relative": "exp008/llama32_3b_NPO_F0/modules.json",
+      "bytes": 7519,
+      "sha256": "c8979176b14c2dcbffeb75f7cebc9b247eade33386ce9f39aa7267865843e9a1"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_NPO_F0/diagnostics.jsonl",
+      "relative": "exp008/llama32_3b_NPO_F0/diagnostics.jsonl",
+      "bytes": 6926,
+      "sha256": "cfe30aa7f4b7a0600053ef202886891b49bfbb060dd4264dfc19c798a0e378ac"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_NPO_F0/schedule.json",
+      "relative": "exp008/llama32_3b_NPO_F0/schedule.json",
+      "bytes": 31743,
+      "sha256": "103d250e9a85799b656cba8628f008023c1703daee980a440c8fc80d72cd21b2"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_NPO_F0/run_log.md",
+      "relative": "exp008/llama32_3b_NPO_F0/run_log.md",
+      "bytes": 176,
+      "sha256": "9727c8d0ebb899ccfbf987127c56c54e8352a82f61990671c6678527ae2e2661"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_SimNPO_F0/metrics.json",
+      "relative": "exp008/qwen35_4b_SimNPO_F0/metrics.json",
+      "bytes": 217901,
+      "sha256": "c935802ed8cc96e1b988af327d7dd40cec87fded4cfc491a52d8515fb5a04c22"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_SimNPO_F0/config.json",
+      "relative": "exp008/qwen35_4b_SimNPO_F0/config.json",
+      "bytes": 285,
+      "sha256": "04384b9415b672ebbc1e2b1fd4703a2801b31cff83ad772fc86d5f9dc1ba1320"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_SimNPO_F0/status.json",
+      "relative": "exp008/qwen35_4b_SimNPO_F0/status.json",
+      "bytes": 144,
+      "sha256": "bc5119f531add08a77c043ec746eb842c09aa41ff75c1fd4c781962d2a08e2d9"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_SimNPO_F0/modules.json",
+      "relative": "exp008/qwen35_4b_SimNPO_F0/modules.json",
+      "bytes": 13891,
+      "sha256": "6887696faba7063836eb15ef7a1f8f9d6d361e88b6b94c200f8688566ec10560"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_SimNPO_F0/diagnostics.jsonl",
+      "relative": "exp008/qwen35_4b_SimNPO_F0/diagnostics.jsonl",
+      "bytes": 6958,
+      "sha256": "72c05e9491991ae60293f2ba8358b6688fcf6bfa3e1b7b23574d2a5661c828ae"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_SimNPO_F0/schedule.json",
+      "relative": "exp008/qwen35_4b_SimNPO_F0/schedule.json",
+      "bytes": 31743,
+      "sha256": "103d250e9a85799b656cba8628f008023c1703daee980a440c8fc80d72cd21b2"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_SimNPO_F0/run_log.md",
+      "relative": "exp008/qwen35_4b_SimNPO_F0/run_log.md",
+      "bytes": 176,
+      "sha256": "9727c8d0ebb899ccfbf987127c56c54e8352a82f61990671c6678527ae2e2661"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_SimNPO_F0/metrics.json",
+      "relative": "exp008/llama32_3b_SimNPO_F0/metrics.json",
+      "bytes": 217638,
+      "sha256": "67cf812fa5584049770c14167531dbb5836db5674a3c091a2e33b04296f7efa7"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_SimNPO_F0/config.json",
+      "relative": "exp008/llama32_3b_SimNPO_F0/config.json",
+      "bytes": 297,
+      "sha256": "e71a8a2c6c8ded0e545a97a3ff65d516de70c66b5cd76c0772eb27d14af4e854"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_SimNPO_F0/status.json",
+      "relative": "exp008/llama32_3b_SimNPO_F0/status.json",
+      "bytes": 142,
+      "sha256": "3c07356b15666e6a8973b12f3982524cc179911ae80252d8746436ea55984405"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_SimNPO_F0/modules.json",
+      "relative": "exp008/llama32_3b_SimNPO_F0/modules.json",
+      "bytes": 7519,
+      "sha256": "c8979176b14c2dcbffeb75f7cebc9b247eade33386ce9f39aa7267865843e9a1"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_SimNPO_F0/diagnostics.jsonl",
+      "relative": "exp008/llama32_3b_SimNPO_F0/diagnostics.jsonl",
+      "bytes": 6943,
+      "sha256": "a8e15a9ceaeb869101fe3d0113d639e670fe98be6ea55bc77f0d370b78909073"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_SimNPO_F0/schedule.json",
+      "relative": "exp008/llama32_3b_SimNPO_F0/schedule.json",
+      "bytes": 31743,
+      "sha256": "103d250e9a85799b656cba8628f008023c1703daee980a440c8fc80d72cd21b2"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_SimNPO_F0/run_log.md",
+      "relative": "exp008/llama32_3b_SimNPO_F0/run_log.md",
+      "bytes": 176,
+      "sha256": "9727c8d0ebb899ccfbf987127c56c54e8352a82f61990671c6678527ae2e2661"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_GA_F0F1/metrics.json",
+      "relative": "exp008/qwen35_4b_GA_F0F1/metrics.json",
+      "bytes": 213277,
+      "sha256": "ff3f4dfc4e93d48b1831132f0800b946475bbf55cd693f3f4b0352e6147b415f"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_GA_F0F1/config.json",
+      "relative": "exp008/qwen35_4b_GA_F0F1/config.json",
+      "bytes": 281,
+      "sha256": "9d5be4259f9f1bc7998dfc3fbfc9b6917629fa88562040ba8b49b779e3bdec4c"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_GA_F0F1/status.json",
+      "relative": "exp008/qwen35_4b_GA_F0F1/status.json",
+      "bytes": 143,
+      "sha256": "2015bd9970bdbe5ff6ff5f39d2b1daef512e46f6c6e4e6fe9b98457c02135187"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_GA_F0F1/modules.json",
+      "relative": "exp008/qwen35_4b_GA_F0F1/modules.json",
+      "bytes": 13891,
+      "sha256": "6887696faba7063836eb15ef7a1f8f9d6d361e88b6b94c200f8688566ec10560"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_GA_F0F1/diagnostics.jsonl",
+      "relative": "exp008/qwen35_4b_GA_F0F1/diagnostics.jsonl",
+      "bytes": 6353,
+      "sha256": "b0978e21e6b539bdea3dcbc9a52fa110311b57d94fa9eac1b429ac1d686156ee"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_GA_F0F1/schedule.json",
+      "relative": "exp008/qwen35_4b_GA_F0F1/schedule.json",
+      "bytes": 32557,
+      "sha256": "43033273e25fccf66786ed464a6bbb3b2d3060cffba89bac31116965fd02cf3b"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_GA_F0F1/run_log.md",
+      "relative": "exp008/qwen35_4b_GA_F0F1/run_log.md",
+      "bytes": 176,
+      "sha256": "9727c8d0ebb899ccfbf987127c56c54e8352a82f61990671c6678527ae2e2661"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_GA_F0F1/metrics.json",
+      "relative": "exp008/llama32_3b_GA_F0F1/metrics.json",
+      "bytes": 213859,
+      "sha256": "4cd30269ece852b0009c3c0cbf9e0273d50fc27e02d7728e09ebdf2c27ddf169"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_GA_F0F1/config.json",
+      "relative": "exp008/llama32_3b_GA_F0F1/config.json",
+      "bytes": 293,
+      "sha256": "e1efbf41613157c45986208b17b9b04a5c626919c519c3f877c4ba207dce317e"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_GA_F0F1/status.json",
+      "relative": "exp008/llama32_3b_GA_F0F1/status.json",
+      "bytes": 142,
+      "sha256": "2892ad9e97d3a33cd59098667c3ad738459fa4253be0fe004b370b51631ba3df"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_GA_F0F1/modules.json",
+      "relative": "exp008/llama32_3b_GA_F0F1/modules.json",
+      "bytes": 7519,
+      "sha256": "c8979176b14c2dcbffeb75f7cebc9b247eade33386ce9f39aa7267865843e9a1"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_GA_F0F1/diagnostics.jsonl",
+      "relative": "exp008/llama32_3b_GA_F0F1/diagnostics.jsonl",
+      "bytes": 6593,
+      "sha256": "606ef68064ddac30bfc9ea74cd6c6fbe06010758fabb40e39f682ba9a08b939e"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_GA_F0F1/schedule.json",
+      "relative": "exp008/llama32_3b_GA_F0F1/schedule.json",
+      "bytes": 32557,
+      "sha256": "43033273e25fccf66786ed464a6bbb3b2d3060cffba89bac31116965fd02cf3b"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_GA_F0F1/run_log.md",
+      "relative": "exp008/llama32_3b_GA_F0F1/run_log.md",
+      "bytes": 176,
+      "sha256": "9727c8d0ebb899ccfbf987127c56c54e8352a82f61990671c6678527ae2e2661"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_rmu_20261022/exp/runs/exp009_remote_rmu/runs/batch_20261022_01/status.json",
+      "relative": "exp009/status.json",
+      "bytes": 144,
+      "sha256": "f7190f642fabeb53bc8032b6ac35a0c0b545d38067eb1e045e48be9d61a5c782"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_rmu_20261022/exp/runs/exp009_remote_rmu/runs/batch_20261022_01/batch_manifest.json",
+      "relative": "exp009/batch_manifest.json",
+      "bytes": 11105,
+      "sha256": "ecf60277a2b541653e10888a6de99355f6e57076eece2843dc79c2d16f806060"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_rmu_20261022/exp/runs/exp009_remote_rmu/runs/batch_20261022_01/environment.txt",
+      "relative": "exp009/environment.txt",
+      "bytes": 5109,
+      "sha256": "add6f6a81413899651473adbc2621979b885ac9eabb12b950dd7509199475746"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_rmu_20261022/exp/runs/exp009_remote_rmu/runs/batch_20261022_01/qwen35_4b_RMU_F0/metrics.json",
+      "relative": "exp009/qwen35_4b_RMU_F0/metrics.json",
+      "bytes": 217387,
+      "sha256": "90e58c4244388788e016a453373a9834180ecb176e7a852f7af024425537cc5e"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_rmu_20261022/exp/runs/exp009_remote_rmu/runs/batch_20261022_01/qwen35_4b_RMU_F0/config.json",
+      "relative": "exp009/qwen35_4b_RMU_F0/config.json",
+      "bytes": 263,
+      "sha256": "fec8ec82f6c7e3a99e323cec416fdf609a07c1a639801726dcef0d1c9c6f9b1f"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_rmu_20261022/exp/runs/exp009_remote_rmu/runs/batch_20261022_01/qwen35_4b_RMU_F0/status.json",
+      "relative": "exp009/qwen35_4b_RMU_F0/status.json",
+      "bytes": 143,
+      "sha256": "67e2d289cc35d0e56247e47b4e15f1977d1c15f9a5207d7d86e5a0ba816d05db"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_rmu_20261022/exp/runs/exp009_remote_rmu/runs/batch_20261022_01/qwen35_4b_RMU_F0/modules.json",
+      "relative": "exp009/qwen35_4b_RMU_F0/modules.json",
+      "bytes": 208,
+      "sha256": "c39a4ab3104cce0def4e6c86fab0f8658777f1766b5c3827ca3fd6b11e54c873"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_rmu_20261022/exp/runs/exp009_remote_rmu/runs/batch_20261022_01/qwen35_4b_RMU_F0/diagnostics.jsonl",
+      "relative": "exp009/qwen35_4b_RMU_F0/diagnostics.jsonl",
+      "bytes": 7003,
+      "sha256": "a31c87ef405fd2346b85203c94e34d8f144c623b4ebe1ec1ed71196dc65005c2"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_rmu_20261022/exp/runs/exp009_remote_rmu/runs/batch_20261022_01/qwen35_4b_RMU_F0/schedule.json",
+      "relative": "exp009/qwen35_4b_RMU_F0/schedule.json",
+      "bytes": 31743,
+      "sha256": "103d250e9a85799b656cba8628f008023c1703daee980a440c8fc80d72cd21b2"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_rmu_20261022/exp/runs/exp009_remote_rmu/runs/batch_20261022_01/qwen35_4b_RMU_F0/run_log.md",
+      "relative": "exp009/qwen35_4b_RMU_F0/run_log.md",
+      "bytes": 176,
+      "sha256": "9727c8d0ebb899ccfbf987127c56c54e8352a82f61990671c6678527ae2e2661"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_rmu_20261022/exp/runs/exp009_remote_rmu/runs/batch_20261022_01/llama32_3b_RMU_F0/metrics.json",
+      "relative": "exp009/llama32_3b_RMU_F0/metrics.json",
+      "bytes": 217583,
+      "sha256": "721d7ba2cd3282bd304e9d97bea9c2380e026499afcedb877e4f3fd9feee7067"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_rmu_20261022/exp/runs/exp009_remote_rmu/runs/batch_20261022_01/llama32_3b_RMU_F0/config.json",
+      "relative": "exp009/llama32_3b_RMU_F0/config.json",
+      "bytes": 275,
+      "sha256": "90fa1564acaf11459bc9c429dd79b0e5b9d223aec51869ec8649eb434418615a"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_rmu_20261022/exp/runs/exp009_remote_rmu/runs/batch_20261022_01/llama32_3b_RMU_F0/status.json",
+      "relative": "exp009/llama32_3b_RMU_F0/status.json",
+      "bytes": 142,
+      "sha256": "a1386e1d9a1cc5e770db402d6dd966c0a04ab7c3c28ebc6d8d4d820b9425114a"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_rmu_20261022/exp/runs/exp009_remote_rmu/runs/batch_20261022_01/llama32_3b_RMU_F0/modules.json",
+      "relative": "exp009/llama32_3b_RMU_F0/modules.json",
+      "bytes": 163,
+      "sha256": "e972b512a8494168e2d2c2a7b0beef1f3337c0c48413843dc63f0e3f7c34e9fe"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_rmu_20261022/exp/runs/exp009_remote_rmu/runs/batch_20261022_01/llama32_3b_RMU_F0/diagnostics.jsonl",
+      "relative": "exp009/llama32_3b_RMU_F0/diagnostics.jsonl",
+      "bytes": 6944,
+      "sha256": "10c19502eb7f5dee7eefbfaadf2dfd5d3be0cc0d6d5901d1171abd6d6b89cc95"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_rmu_20261022/exp/runs/exp009_remote_rmu/runs/batch_20261022_01/llama32_3b_RMU_F0/schedule.json",
+      "relative": "exp009/llama32_3b_RMU_F0/schedule.json",
+      "bytes": 31743,
+      "sha256": "103d250e9a85799b656cba8628f008023c1703daee980a440c8fc80d72cd21b2"
+    },
+    {
+      "remote": "/root/autodl-tmp/www2027_rmu_20261022/exp/runs/exp009_remote_rmu/runs/batch_20261022_01/llama32_3b_RMU_F0/run_log.md",
+      "relative": "exp009/llama32_3b_RMU_F0/run_log.md",
+      "bytes": 176,
+      "sha256": "9727c8d0ebb899ccfbf987127c56c54e8352a82f61990671c6678527ae2e2661"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "model_key": "llama32_3b",
+  "model_path": "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+  "run_id": "llama32_3b_Original_F0",
+  "method": "Original",
+  "supervision": "F0",
+  "adapter_path": null,
+  "origin": "exp008"
+}

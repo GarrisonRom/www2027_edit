@@ -1,0 +1,112 @@
++        write(run/'status.json',{'status':'failed','ended':base.protocol.timestamp(),
++                                'seconds':time.time()-start,'traceback':traceback.format_exc()})
++        raise
++
++
++def queue(args):
++    root=Path(args.run_dir).resolve();root.mkdir(parents=True,exist_ok=False)
++    jobs=[]
++    # KLUE native first: the previously missing baseline gets real code and smoke before formal jobs.
++    specs=[('KLUE','native')]+[(m,'matched_lora') for m in rl.METHODS if m!='KLUE']
++    specs += [(m,'native') for m in rl.METHODS if m!='KLUE']
++    for method,track in specs:
++        for key,model in MODELS:
++            for smoke in (True,False):
++                label=f'{key}_{method}_{track}'+('_smoke' if smoke else '')
++                command=[sys.executable,str(Path(__file__).resolve()),'--method',method,'--track',track,
++                         '--model',model,'--run_dir',str(root/label)]+(['--smoke'] if smoke else [])
++                jobs.append({'label':label,'method':method,'track':track,'smoke':smoke,'command':command})
++    manifest={'created':base.protocol.timestamp(),'source':source_manifest(),'jobs':jobs,
++              'dependency':args.after,'max_queue_hours':72,
++              'profiles':[rl.profile(m,t) for m,t in specs],
++              'legacy_results':'not overwritten or relabeled as new reproduction'}
++    write(root/'batch_manifest.json',manifest)
++    summarize(root)
++    if getattr(args,'plan_only',False):
++        print(json.dumps({'formal_jobs':sum(not j['smoke'] for j in jobs),
++                          'smoke_jobs':sum(j['smoke'] for j in jobs),'run_dir':str(root)}))
++        return
++    done=[];failures=[];start=time.time();failed_smokes=set()
++    if args.after:
++        while True:
++            dependency=json.loads(Path(args.after).read_text(encoding='utf-8'))
++            if dependency['status']=='completed':break
++            if dependency['status'] in ('failed','interrupted'):
++                write(root/'status.json',{'status':'dependency_failed','dependency':dependency});return
++            write(root/'status.json',{'status':'waiting_for_dependency','dependency':args.after})
++            time.sleep(20)
++    for job in jobs:
++        signature=job['label'].removesuffix('_smoke')
++        if not job['smoke'] and signature in failed_smokes:
++            failures.append({'label':job['label'],'reason':'smoke_failed_not_run'});continue
++        if time.time()-start>72*3600:
++            write(root/'status.json',{'status':'budget_exhausted','completed':done,'failures':failures});return
++        for path,sha in manifest['source'].items():
++            if rl.digest(WS/path)!=sha:raise RuntimeError('Frozen source changed: '+path)
++        write(root/'status.json',{'status':'running','current':job['label'],'completed':done,'failures':failures})
++        with (root/(job['label']+'.stdout.log')).open('x') as out,(root/(job['label']+'.stderr.log')).open('x') as err:
++            try:code=subprocess.run(job['command'],cwd=WS,stdout=out,stderr=err,timeout=7*3600).returncode
++            except subprocess.TimeoutExpired:code=124
++        if code:
++            failures.append({'label':job['label'],'exit_code':code})
++            if job['smoke']:failed_smokes.add(signature)
++        else:done.append(job['label'])
++        summarize(root)
++    write(root/'status.json',{'status':'completed' if not failures else 'completed_with_failures',
++                             'completed':done,'failures':failures,'ended':base.protocol.timestamp()})
++
++
++def summarize(root):
++    rows=[]
++    for folder in root.iterdir():
++        if not folder.is_dir() or not (folder/'metrics.json').exists():continue
++        cfg=json.loads((folder/'config.json').read_text(encoding='utf-8'));state=json.loads((folder/'status.json').read_text(encoding='utf-8'))
++        if cfg['smoke'] or state['status']!='completed':continue
++        row=json.loads((folder/'metrics.json').read_text(encoding='utf-8'))
++        row.update(method=cfg['method'],track=cfg['track'],model=Path(cfg['model']).name,run_id=folder.name,
++                   evidence=str(folder/'metrics.json'),sha256=rl.digest(folder/'metrics.json'))
++        rows.append(row)
++    write(root/'comparison.json',{'rows':rows,'note':'separate native and LoRA tracks; no combined rank'})
++    lines=['# Complete baseline reproduction: measured endpoints only','',
++           '| Model | Method | Track | All89 recall down | MMLU-10/subject up | WikiText2 PPL down |',
++           '|---|---|---|---:|---:|---:|']
++    for r in rows:lines.append(f"| {r['model']} | {r['method']} | {r['track']} | {r['all89']:.4f} | {r['mmlu']:.4f} | {r['ppl']:.4f} |")
++    (root/'comparison.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
++    status_rows=[]
++    manifest=json.loads((root/'batch_manifest.json').read_text(encoding='utf-8'))
++    for job in manifest['jobs']:
++        if job['smoke']:continue
++        status_file=root/job['label']/'status.json'
++        state=json.loads(status_file.read_text(encoding='utf-8')) if status_file.exists() else {'status':'not_started'}
++        status_rows.append({'run_id':job['label'],'method':job['method'],'track':job['track'],**state})
++    write(root/'method_status.json',{'runs':status_rows,'measured':rows})
++    for target in ('report_v2','report_v3_klue_pending'):
++        path=WS/'exp/analysis/cloud_comparison_20261022'/target/'README.md'
++        if not path.exists():continue
++        text=path.read_text(encoding='utf-8')
++        marker='## 完整baseline复现实验（exp015）'
++        if marker in text:text=text[:text.index(marker)].rstrip()+'\n'
++        progress=[marker,'','独立原生/LoRA两轨，先导旧结果不冒充复现。失败和未运行不填分数。','',
++                  '| 方法 | 原生代码 | 云端完成正式端点数 | 状态来源 |','|---|---|---:|---|']
++        for method in rl.METHODS:
++            count=sum(row['method']==method for row in rows)
++            progress.append(f'| {method} | 已实现，需真实模型门检 | {count} | exp015/method_status.json |')
++        progress+=['']+lines[2:]
++        path.write_text(text+'\n'+'\n'.join(progress)+'\n',encoding='utf-8')
++
++
++def main():
++    parser=argparse.ArgumentParser()
++    parser.add_argument('--queue',action='store_true');parser.add_argument('--after')
++    parser.add_argument('--plan_only',action='store_true')
++    parser.add_argument('--method',choices=rl.METHODS);parser.add_argument('--track',choices=('matched_lora','native'))
++    parser.add_argument('--model');parser.add_argument('--run_dir',required=True);parser.add_argument('--smoke',action='store_true')
++    args=parser.parse_args()
++    if args.queue:queue(args)
++    else:
++        if not args.method or not args.track or not args.model:parser.error('worker requires method, track and model')
++        worker(args)
++
++if __name__=='__main__':main()
++
+

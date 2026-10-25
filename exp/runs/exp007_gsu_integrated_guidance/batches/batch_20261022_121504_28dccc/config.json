@@ -1,0 +1,180 @@
+{
+  "experiment": "exp007_gsu_integrated_guidance",
+  "method_version": "GSU-v7-integrated-damage-gradient-path",
+  "batch_id": "batch_20261022_121504_28dccc",
+  "created": "2026-10-22T12:15:04.1968354+08:00",
+  "workspace": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏",
+  "python": "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+  "model": "E:\\12models\\modelscope\\Qwen2.5-1.5B-Instruct",
+  "seed": 42,
+  "updates_per_variant": 114,
+  "planned_total_updates": 684,
+  "variant_order": [
+    "B0",
+    "B1",
+    "B2",
+    "B3",
+    "B2R",
+    "B3R"
+  ],
+  "jobs": [
+    {
+      "variant": "B0",
+      "run_dir": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp007_gsu_integrated_guidance\\runs\\run_batch_20261022_121504_28dccc_B0",
+      "updates": 114
+    },
+    {
+      "variant": "B1",
+      "run_dir": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp007_gsu_integrated_guidance\\runs\\run_batch_20261022_121504_28dccc_B1",
+      "updates": 114
+    },
+    {
+      "variant": "B2",
+      "run_dir": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp007_gsu_integrated_guidance\\runs\\run_batch_20261022_121504_28dccc_B2",
+      "updates": 114
+    },
+    {
+      "variant": "B3",
+      "run_dir": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp007_gsu_integrated_guidance\\runs\\run_batch_20261022_121504_28dccc_B3",
+      "updates": 114
+    },
+    {
+      "variant": "B2R",
+      "run_dir": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp007_gsu_integrated_guidance\\runs\\run_batch_20261022_121504_28dccc_B2R",
+      "updates": 114
+    },
+    {
+      "variant": "B3R",
+      "run_dir": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp007_gsu_integrated_guidance\\runs\\run_batch_20261022_121504_28dccc_B3R",
+      "updates": 114
+    }
+  ],
+  "comparison_dir": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp007_gsu_integrated_guidance\\comparisons\\screen_batch_20261022_121504_28dccc",
+  "failure_policy": "stop immediately; no retry, overwrite, hyperparameter changes or extra seed",
+  "frozen_files": [
+    {
+      "path": "exp/train/start_gsu_integrated_guidance.ps1",
+      "sha256": "ef5607cfb677a67c29a06ec0991c44411e65124f34ae95711798ad08b7b8ec0e"
+    },
+    {
+      "path": "exp/train/diagnose_gsu_integrated_guidance.py",
+      "sha256": "783cdee92e80c8ef19711bfb60a1c4312ba351347a50fc2e69844240402fbd3d"
+    },
+    {
+      "path": "exp/train/diagnose_gsu_memory_guided.py",
+      "sha256": "17116a82490b944531fbcf12d69818441b2670f799ed3af7642c07b282e98e6a"
+    },
+    {
+      "path": "exp/train/diagnose_gsu_actual_feedback.py",
+      "sha256": "c0803af7544037dbeda9c613087a3628727a0a02c3903cfa9318bf3ebd0a9bf2"
+    },
+    {
+      "path": "exp/train/diagnose_gsu_retain_protection.py",
+      "sha256": "10536813f9c84b19b8a0ffdd4013dc39d8477c7321cb42268312683e7d8fbe36"
+    },
+    {
+      "path": "exp/train/diagnose_gsu_m3.py",
+      "sha256": "258b746e58597baadd96d2da88fcb8c5e6785675c0456e2446c8a14ef6708444"
+    },
+    {
+      "path": "exp/train/train_gsu.py",
+      "sha256": "691e3d3d60b3dc359755317dacb28113b71e15d88479dcd8133f245bc8217247"
+    },
+    {
+      "path": "exp/train/train_eval.py",
+      "sha256": "a64f773ac224f23cc1f3d22b733e1d7a37593b454f29ff579a56dbe69467ed02"
+    },
+    {
+      "path": "exp/train/tests/test_gsu_integrated_guidance.py",
+      "sha256": "8367e30ce6db7e95a1580019ec8fdfd6b76d0b20522e1a65d941f06149140910"
+    },
+    {
+      "path": "exp/train/tests/test_gsu_memory_guided.py",
+      "sha256": "0d8f9e7c6ed94457a04125f0e6a54332ef62f87cdb0c4ae9e2730800ad43b705"
+    },
+    {
+      "path": "exp/damage/component_ablation.py",
+      "sha256": "8d6aea832dd2f9f7ac8375a5caaeac3523e4701472aa45cf97667dc76b21410b"
+    },
+    {
+      "path": "exp/damage/eval_per_item.py",
+      "sha256": "9fdf037c731986051d9f015335fc5cf5eff5d0d2b1bb747169a4fe0194fc5e83"
+    },
+    {
+      "path": "docs/method_versions/GSU-v7-integrated-damage-gradient-path.md",
+      "sha256": "d3fe5601b0989c8660e954a285ed75bdb26d1d382d6b7c83eb13bd729330a97e"
+    },
+    {
+      "path": "docs/method_versions/GSU-v6-memory-guided.md",
+      "sha256": "b16369420eb21c83c8141f803bb8c2a26de34531bc195298255f313a909f9eb3"
+    },
+    {
+      "path": "exp/runs/exp007_gsu_integrated_guidance/card.md",
+      "sha256": "12bcf9e42b7f335b94115cefceb346c139b85b54796f41ade15ef4aa210f4c7f"
+    },
+    {
+      "path": "exp/runs/exp007_gsu_integrated_guidance/README.md",
+      "sha256": "7fc73d08f8532d204bb0fb045ac3a92ef524be5d509c948c81c5406d01e9f83d"
+    },
+    {
+      "path": "exp/runs/exp006_gsu_memory_guided/card.md",
+      "sha256": "538ae63ad881e9c8f2a5c73c4037c3dd46f6169afebc0b7bbc2128e8e9ab67be"
+    },
+    {
+      "path": "exp/runs/exp006_gsu_memory_guided/README.md",
+      "sha256": "7db45de8c42ab6607a8bf184d8443cb57a284e99740cbfba25fb0db8d663bbd5"
+    },
+    {
+      "path": "data/faithun/FaithUn_Dataset.json",
+      "sha256": "d570cc3e30c083357ca45ab4dd9df807abbd800f51a657d89629e4fe7b3adbb0"
+    },
+    {
+      "path": "data/faithun/splits/forget_set_split.txt",
+      "sha256": "315312dd50b69993f3e90796e7162a9ade22b771f3aa9ec5f570ceaaad815428"
+    },
+    {
+      "path": "data/faithun/splits/retaining_set_split.txt",
+      "sha256": "8680043fe5c1f4f0517d7377664677ee225cd9eebcb72d542c7709b1f5b6e214"
+    },
+    {
+      "path": "data/faithun/splits/test_set_split.txt",
+      "sha256": "de0a3a20ebd0474702bbac068c53d5d7eecae1505f609b12be74037458b63ee2"
+    },
+    {
+      "path": "exp/results/F1.json",
+      "sha256": "22f2892f51cfff76ab9632b3711fc95bd7e0400d7b0c248aa03f6a03dd3cc64b"
+    },
+    {
+      "path": "exp/results/candidates.json",
+      "sha256": "07f92a2ae334105cc4bfac590493a047af1de61bb8883cdba5389e5f018715e6"
+    },
+    {
+      "path": "exp/results/active_paths.json",
+      "sha256": "69655a8214f9db20201447bfbd53f66a0162d03cb9bfb218ac67654067a7620e"
+    },
+    {
+      "path": "exp/results/attribution/items.json",
+      "sha256": "4156443005f03989f326abbd7a54bb58dc79d33a62a929be9cddb2e86967a194"
+    },
+    {
+      "path": "exp/results/per_item_G2.jsonl",
+      "sha256": "4ab8705c2f9596d40f15179b5f4681adeb9b81a09988f78a7b75d38cc2cea582"
+    },
+    {
+      "path": "exp/results/attribution/ffn_G1.json",
+      "sha256": "e1a5f059a21c075cb166ff1f62c568f1eff439ab040e01e85b9404ab8bc98110"
+    },
+    {
+      "path": "exp/results/attribution/ffn_G2.json",
+      "sha256": "9fe5068715f0db9fcbce092949621696bd51e3f52e3f29a8f84bf63b1cd7d3a5"
+    },
+    {
+      "path": "exp/results/attribution/stats_stage2.json",
+      "sha256": "a0b1ac89dba5dcd47a3ce15785bdc93006341d3ffe3c13e120058553293b723a"
+    },
+    {
+      "path": "exp/results/attribution/ablation_G2.jsonl",
+      "sha256": "9ce075057c8c85b2d22c549a2b0709408fbf8bf419c55700402440ca7e1bf673"
+    }
+  ]
+}

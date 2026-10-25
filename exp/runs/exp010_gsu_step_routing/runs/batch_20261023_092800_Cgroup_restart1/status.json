@@ -1,0 +1,22 @@
+{
+  "status": "running",
+  "current": "C3R",
+  "completed": [
+    "smoke_C0",
+    "C0",
+    "Cg",
+    "C1",
+    "C2",
+    "C3"
+  ],
+  "command": [
+    "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+    "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\run_local_gsu_c_group.py",
+    "--model",
+    "E:\\12models\\modelscope\\Qwen2.5-1.5B-Instruct",
+    "--variant",
+    "C3R",
+    "--run_dir",
+    "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp010_gsu_step_routing\\runs\\batch_20261023_092800_Cgroup_restart1\\C3R"
+  ]
+}

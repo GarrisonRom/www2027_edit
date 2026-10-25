@@ -1,0 +1,34 @@
+{
+  "method": "GA",
+  "track": "matched_lora",
+  "gamma": 1.0,
+  "alpha": 1.0,
+  "beta": 1.0,
+  "delta": 0.0,
+  "learning_rate": 5e-05,
+  "weight_decay": 0.01,
+  "epochs": 4,
+  "batch_size": 1,
+  "max_updates": 114,
+  "max_grad_norm": null,
+  "lr_scheduler": "constant",
+  "retain_loss_type": "NLL",
+  "config_sha256": "d90e21b4f5601105059f0a746f8dc8a634b22b6e0e49190baebb25d7673ceb81",
+  "raw_upstream": {
+    "defaults": [
+      "finetune"
+    ],
+    "handler": "GradAscent"
+  },
+  "fidelity": "exact frozen upstream loss; architecture/data/optimizer profile disclosed",
+  "model": "E:\\12models\\modelscope\\Qwen2.5-1.5B-Instruct",
+  "seed": 42,
+  "smoke": false,
+  "lr_search": "no test-based tuning; configured source recipe, additional trials separate",
+  "optimizer": "torch AdamW",
+  "prompt": "raw question-space-answer, no chat template; source-paper prompt not certified identical",
+  "native_compatibility": "full parameter update except native KLUE gated FFN neuron mask",
+  "loss_precision": "BF16 backbone, FP32 returned logits/loss matching Accelerate output conversion",
+  "training_pad_to": null,
+  "batching": "actual padded batch, not serial per-example gradient averaging"
+}

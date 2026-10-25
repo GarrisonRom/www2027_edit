@@ -1,0 +1,10 @@
+{
+  "model_key": "qwen35_4b",
+  "model_path": "/root/autodl-tmp/models/Qwen3.5-4B",
+  "run_id": "qwen35_4b_C2",
+  "method": "GSU-C2",
+  "supervision": "F0",
+  "adapter_path": "/root/autodl-tmp/www2027_sync_20261022_c2_pilot_v1/exp/runs/exp011_cloud_gsu_c2/runs/batch_20261022_01/qwen35_4b_C2/adapter",
+  "origin": "exp011",
+  "training_metrics_path": "/root/autodl-tmp/www2027_sync_20261022_c2_pilot_v1/exp/runs/exp011_cloud_gsu_c2/runs/batch_20261022_01/qwen35_4b_C2/metrics.json"
+}

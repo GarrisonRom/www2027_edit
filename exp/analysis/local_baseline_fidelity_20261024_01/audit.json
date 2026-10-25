@@ -1,0 +1,1261 @@
+{
+  "source_mismatch": [],
+  "input_mismatch": [],
+  "tokenization": {
+    "F0": {
+      "n": 33,
+      "prefix_mismatches": 0,
+      "ceu_fully_skipped": 4,
+      "details": [
+        {
+          "id": "F0:0:23",
+          "answer_tokens": 3,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "F0:1:47",
+          "answer_tokens": 1,
+          "prefix_matches": true,
+          "ceu_fully_skipped": true
+        },
+        {
+          "id": "F0:2:60",
+          "answer_tokens": 5,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "F0:3:69",
+          "answer_tokens": 2,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "F0:4:119",
+          "answer_tokens": 4,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "F0:5:132",
+          "answer_tokens": 2,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "F0:6:139",
+          "answer_tokens": 1,
+          "prefix_matches": true,
+          "ceu_fully_skipped": true
+        },
+        {
+          "id": "F0:7:148",
+          "answer_tokens": 4,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "F0:8:201",
+          "answer_tokens": 4,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "F0:9:223",
+          "answer_tokens": 2,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "F0:10:245",
+          "answer_tokens": 2,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "F0:11:257",
+          "answer_tokens": 2,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "F0:12:301",
+          "answer_tokens": 2,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "F0:13:328",
+          "answer_tokens": 5,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "F0:14:333",
+          "answer_tokens": 2,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "F0:15:360",
+          "answer_tokens": 1,
+          "prefix_matches": true,
+          "ceu_fully_skipped": true
+        },
+        {
+          "id": "F0:16:412",
+          "answer_tokens": 8,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "F0:17:436",
+          "answer_tokens": 2,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "F0:18:446",
+          "answer_tokens": 4,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "F0:19:482",
+          "answer_tokens": 2,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "F0:20:483",
+          "answer_tokens": 2,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "F0:21:491",
+          "answer_tokens": 1,
+          "prefix_matches": true,
+          "ceu_fully_skipped": true
+        },
+        {
+          "id": "F0:22:493",
+          "answer_tokens": 3,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "F0:23:506",
+          "answer_tokens": 2,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "F0:24:511",
+          "answer_tokens": 4,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "F0:25:528",
+          "answer_tokens": 2,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "F0:26:533",
+          "answer_tokens": 3,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "F0:27:536",
+          "answer_tokens": 5,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "F0:28:578",
+          "answer_tokens": 4,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "F0:29:599",
+          "answer_tokens": 4,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "F0:30:615",
+          "answer_tokens": 7,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "F0:31:629",
+          "answer_tokens": 2,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "F0:32:661",
+          "answer_tokens": 4,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        }
+      ]
+    },
+    "F1": {
+      "n": 5,
+      "prefix_mismatches": 0,
+      "ceu_fully_skipped": 0,
+      "details": [
+        {
+          "id": "F1:0:United States of America|capital|Washington, D.C.",
+          "answer_tokens": 5,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "F1:1:United States of America|continent|North America",
+          "answer_tokens": 2,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "F1:2:United States of America|currency|United States dollar",
+          "answer_tokens": 3,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "F1:3:Los Angeles|country|United States of America",
+          "answer_tokens": 4,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "F1:4:Los Angeles|continent|North America",
+          "answer_tokens": 2,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        }
+      ]
+    },
+    "retain": {
+      "n": 66,
+      "prefix_mismatches": 0,
+      "ceu_fully_skipped": 17,
+      "details": [
+        {
+          "id": "retain:0:0",
+          "answer_tokens": 4,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "retain:1:13",
+          "answer_tokens": 6,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "retain:2:17",
+          "answer_tokens": 2,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "retain:3:34",
+          "answer_tokens": 3,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "retain:4:41",
+          "answer_tokens": 4,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "retain:5:59",
+          "answer_tokens": 1,
+          "prefix_matches": true,
+          "ceu_fully_skipped": true
+        },
+        {
+          "id": "retain:6:66",
+          "answer_tokens": 2,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "retain:7:82",
+          "answer_tokens": 4,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "retain:8:85",
+          "answer_tokens": 4,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "retain:9:92",
+          "answer_tokens": 4,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "retain:10:104",
+          "answer_tokens": 6,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "retain:11:111",
+          "answer_tokens": 2,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "retain:12:120",
+          "answer_tokens": 5,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "retain:13:134",
+          "answer_tokens": 4,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "retain:14:159",
+          "answer_tokens": 3,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "retain:15:165",
+          "answer_tokens": 4,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "retain:16:172",
+          "answer_tokens": 3,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "retain:17:181",
+          "answer_tokens": 2,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "retain:18:189",
+          "answer_tokens": 3,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "retain:19:195",
+          "answer_tokens": 4,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "retain:20:218",
+          "answer_tokens": 1,
+          "prefix_matches": true,
+          "ceu_fully_skipped": true
+        },
+        {
+          "id": "retain:21:224",
+          "answer_tokens": 4,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "retain:22:247",
+          "answer_tokens": 4,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "retain:23:255",
+          "answer_tokens": 1,
+          "prefix_matches": true,
+          "ceu_fully_skipped": true
+        },
+        {
+          "id": "retain:24:261",
+          "answer_tokens": 4,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "retain:25:268",
+          "answer_tokens": 2,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "retain:26:277",
+          "answer_tokens": 1,
+          "prefix_matches": true,
+          "ceu_fully_skipped": true
+        },
+        {
+          "id": "retain:27:285",
+          "answer_tokens": 4,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "retain:28:304",
+          "answer_tokens": 2,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "retain:29:307",
+          "answer_tokens": 1,
+          "prefix_matches": true,
+          "ceu_fully_skipped": true
+        },
+        {
+          "id": "retain:30:339",
+          "answer_tokens": 1,
+          "prefix_matches": true,
+          "ceu_fully_skipped": true
+        },
+        {
+          "id": "retain:31:351",
+          "answer_tokens": 1,
+          "prefix_matches": true,
+          "ceu_fully_skipped": true
+        },
+        {
+          "id": "retain:32:354",
+          "answer_tokens": 1,
+          "prefix_matches": true,
+          "ceu_fully_skipped": true
+        },
+        {
+          "id": "retain:33:362",
+          "answer_tokens": 2,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "retain:34:365",
+          "answer_tokens": 3,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "retain:35:373",
+          "answer_tokens": 1,
+          "prefix_matches": true,
+          "ceu_fully_skipped": true
+        },
+        {
+          "id": "retain:36:377",
+          "answer_tokens": 3,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "retain:37:382",
+          "answer_tokens": 9,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "retain:38:394",
+          "answer_tokens": 2,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "retain:39:465",
+          "answer_tokens": 1,
+          "prefix_matches": true,
+          "ceu_fully_skipped": true
+        },
+        {
+          "id": "retain:40:473",
+          "answer_tokens": 5,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "retain:41:480",
+          "answer_tokens": 4,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "retain:42:509",
+          "answer_tokens": 2,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "retain:43:512",
+          "answer_tokens": 1,
+          "prefix_matches": true,
+          "ceu_fully_skipped": true
+        },
+        {
+          "id": "retain:44:520",
+          "answer_tokens": 2,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "retain:45:526",
+          "answer_tokens": 1,
+          "prefix_matches": true,
+          "ceu_fully_skipped": true
+        },
+        {
+          "id": "retain:46:527",
+          "answer_tokens": 5,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "retain:47:543",
+          "answer_tokens": 5,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "retain:48:549",
+          "answer_tokens": 1,
+          "prefix_matches": true,
+          "ceu_fully_skipped": true
+        },
+        {
+          "id": "retain:49:550",
+          "answer_tokens": 3,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "retain:50:553",
+          "answer_tokens": 4,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "retain:51:556",
+          "answer_tokens": 3,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "retain:52:571",
+          "answer_tokens": 3,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "retain:53:572",
+          "answer_tokens": 4,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "retain:54:575",
+          "answer_tokens": 4,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "retain:55:591",
+          "answer_tokens": 3,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "retain:56:598",
+          "answer_tokens": 1,
+          "prefix_matches": true,
+          "ceu_fully_skipped": true
+        },
+        {
+          "id": "retain:57:604",
+          "answer_tokens": 4,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "retain:58:616",
+          "answer_tokens": 3,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "retain:59:622",
+          "answer_tokens": 1,
+          "prefix_matches": true,
+          "ceu_fully_skipped": true
+        },
+        {
+          "id": "retain:60:624",
+          "answer_tokens": 1,
+          "prefix_matches": true,
+          "ceu_fully_skipped": true
+        },
+        {
+          "id": "retain:61:648",
+          "answer_tokens": 3,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "retain:62:650",
+          "answer_tokens": 2,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "retain:63:651",
+          "answer_tokens": 4,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "retain:64:654",
+          "answer_tokens": 4,
+          "prefix_matches": true,
+          "ceu_fully_skipped": false
+        },
+        {
+          "id": "retain:65:658",
+          "answer_tokens": 1,
+          "prefix_matches": true,
+          "ceu_fully_skipped": true
+        }
+      ]
+    }
+  },
+  "runs": [
+    {
+      "run": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\local_20261023_233138\\GA_formal",
+      "status": {
+        "status": "completed",
+        "updates": 114,
+        "seconds": 227.98206281661987,
+        "ended": "2026-10-23T23:36:31+08:00",
+        "peak_cuda_allocated_bytes": 3321717760
+      },
+      "config": {
+        "method": "GA",
+        "track": "matched_lora",
+        "gamma": 1.0,
+        "alpha": 1.0,
+        "beta": 1.0,
+        "delta": 0.0,
+        "learning_rate": 5e-05,
+        "weight_decay": 0.01,
+        "epochs": 4,
+        "batch_size": 1,
+        "max_updates": 114,
+        "max_grad_norm": null,
+        "lr_scheduler": "constant",
+        "retain_loss_type": "NLL",
+        "config_sha256": "d90e21b4f5601105059f0a746f8dc8a634b22b6e0e49190baebb25d7673ceb81",
+        "raw_upstream": {
+          "defaults": [
+            "finetune"
+          ],
+          "handler": "GradAscent"
+        },
+        "fidelity": "exact frozen upstream loss; architecture/data/optimizer profile disclosed",
+        "model": "E:\\12models\\modelscope\\Qwen2.5-1.5B-Instruct",
+        "seed": 42,
+        "smoke": false,
+        "lr_search": "no test-based tuning; configured source recipe, additional trials separate",
+        "optimizer": "torch AdamW",
+        "prompt": "raw question-space-answer, no chat template; source-paper prompt not certified identical",
+        "native_compatibility": "full parameter update except native KLUE gated FFN neuron mask",
+        "loss_precision": "BF16 backbone, FP32 returned logits/loss matching Accelerate output conversion",
+        "training_pad_to": null,
+        "batching": "actual padded batch, not serial per-example gradient averaging"
+      },
+      "summary": {
+        "updates": 114,
+        "attempted_examples": 114,
+        "skipped": [],
+        "stop_reason": "update_budget",
+        "reference": null
+      },
+      "logged_updates": 114,
+      "consecutive_updates": true,
+      "first_loss": -5.010984420776367,
+      "last_loss": -50.597755432128906,
+      "dual_active_steps": 0,
+      "forget_retain_overlap": [],
+      "forget_count": 33,
+      "retain_count": 33,
+      "metrics": {
+        "all89": 0.2284644194756554,
+        "f0": 0.18181818181818182,
+        "f1": 0.6,
+        "retain": 0.3939393939393939,
+        "retain_is_heldout": true,
+        "smoke": false,
+        "mmlu": null,
+        "ppl": null,
+        "capability_status": "not_run_in_local_behavior_protocol"
+      },
+      "all89_recomputed": 0.22846441947565543,
+      "metric_consistent": true,
+      "choice_ties": 0
+    },
+    {
+      "run": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\local_20261023_233138\\GradDiff_formal",
+      "status": {
+        "status": "completed",
+        "updates": 114,
+        "seconds": 235.34065747261047,
+        "ended": "2026-10-23T23:50:33+08:00",
+        "peak_cuda_allocated_bytes": 3406956032
+      },
+      "config": {
+        "method": "GradDiff",
+        "track": "matched_lora",
+        "gamma": 1.0,
+        "alpha": 1.0,
+        "beta": 1.0,
+        "delta": 0.0,
+        "learning_rate": 5e-05,
+        "weight_decay": 0.01,
+        "epochs": 4,
+        "batch_size": 1,
+        "max_updates": 114,
+        "max_grad_norm": null,
+        "lr_scheduler": "constant",
+        "retain_loss_type": "NLL",
+        "config_sha256": "b25f776f668c2c160da9bf08d5d67754725fe5c5046dd855223ee2bf5e8b6490",
+        "raw_upstream": {
+          "defaults": [
+            "finetune"
+          ],
+          "handler": "GradDiff",
+          "method_args": {
+            "gamma": 1.0,
+            "alpha": 1.0,
+            "retain_loss_type": "NLL"
+          }
+        },
+        "fidelity": "exact frozen upstream loss; architecture/data/optimizer profile disclosed",
+        "model": "E:\\12models\\modelscope\\Qwen2.5-1.5B-Instruct",
+        "seed": 42,
+        "smoke": false,
+        "lr_search": "no test-based tuning; configured source recipe, additional trials separate",
+        "optimizer": "torch AdamW",
+        "prompt": "raw question-space-answer, no chat template; source-paper prompt not certified identical",
+        "native_compatibility": "full parameter update except native KLUE gated FFN neuron mask",
+        "loss_precision": "BF16 backbone, FP32 returned logits/loss matching Accelerate output conversion",
+        "training_pad_to": null,
+        "batching": "actual padded batch, not serial per-example gradient averaging"
+      },
+      "summary": {
+        "updates": 114,
+        "attempted_examples": 114,
+        "skipped": [],
+        "stop_reason": "update_budget",
+        "reference": null
+      },
+      "logged_updates": 114,
+      "consecutive_updates": true,
+      "first_loss": -1.9544565677642822,
+      "last_loss": -17.603927612304688,
+      "dual_active_steps": 0,
+      "forget_retain_overlap": [],
+      "forget_count": 33,
+      "retain_count": 33,
+      "metrics": {
+        "all89": 0.7490636704119851,
+        "f0": 0.3939393939393939,
+        "f1": 1.0,
+        "retain": 0.7272727272727273,
+        "retain_is_heldout": true,
+        "smoke": false,
+        "mmlu": null,
+        "ppl": null,
+        "capability_status": "not_run_in_local_behavior_protocol"
+      },
+      "all89_recomputed": 0.7490636704119851,
+      "metric_consistent": true,
+      "choice_ties": 0
+    },
+    {
+      "run": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\local_20261023_233138\\KLUE_formal",
+      "status": {
+        "status": "completed",
+        "updates": 86,
+        "seconds": 383.6903462409973,
+        "ended": "2026-10-23T23:44:53+08:00",
+        "peak_cuda_allocated_bytes": 5733817856
+      },
+      "config": {
+        "method": "KLUE",
+        "track": "native",
+        "gamma": 0.7,
+        "alpha": 1.0,
+        "batch_size": 4,
+        "epochs": 150,
+        "learning_rate": 1e-05,
+        "weight_decay": 0.0,
+        "beta": 1.0,
+        "attribution_alpha": 10.0,
+        "mismatch_count": 5,
+        "neuron_fraction": 0.05,
+        "early_stop_ua": 0.3333333333333333,
+        "max_updates": 1350,
+        "max_grad_norm": 1.0,
+        "lr_scheduler": "constant",
+        "convention": "gated-MLP pre-down neurons; gate/up rows and down columns; global top5%",
+        "fidelity": "paper reimplementation; gated neuron mapping and optimizer explicit, no official code",
+        "model": "E:\\12models\\modelscope\\Qwen2.5-1.5B-Instruct",
+        "seed": 42,
+        "smoke": false,
+        "lr_search": "no test-based tuning; configured source recipe, additional trials separate",
+        "optimizer": "native neuron CPU masked Adam",
+        "prompt": "raw question-space-answer, no chat template; source-paper prompt not certified identical",
+        "native_compatibility": "full parameter update except native KLUE gated FFN neuron mask",
+        "loss_precision": "BF16 backbone, FP32 returned logits/loss matching Accelerate output conversion",
+        "training_pad_to": 17,
+        "batching": "actual padded batch, not serial per-example gradient averaging"
+      },
+      "summary": {
+        "updates": 86,
+        "attempted_examples": 309,
+        "skipped": [],
+        "stop_reason": "training_UA_threshold",
+        "reference": null
+      },
+      "logged_updates": 86,
+      "consecutive_updates": true,
+      "first_loss": 1.8953967094421387,
+      "last_loss": -0.379097580909729,
+      "dual_active_steps": 0,
+      "forget_retain_overlap": [],
+      "forget_count": 33,
+      "retain_count": 66,
+      "metrics": {
+        "all89": 0.6554307116104869,
+        "f0": 0.24242424242424243,
+        "f1": 1.0,
+        "retain": 0.8484848484848485,
+        "retain_is_heldout": false,
+        "smoke": false,
+        "mmlu": null,
+        "ppl": null,
+        "capability_status": "not_run_in_local_behavior_protocol"
+      },
+      "all89_recomputed": 0.6554307116104869,
+      "metric_consistent": true,
+      "choice_ties": 2
+    },
+    {
+      "run": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\local_20261023_233138\\NPO_formal",
+      "status": {
+        "status": "completed",
+        "updates": 114,
+        "seconds": 240.58905148506165,
+        "ended": "2026-10-23T23:55:07+08:00",
+        "peak_cuda_allocated_bytes": 3417277440
+      },
+      "config": {
+        "method": "NPO",
+        "track": "matched_lora",
+        "gamma": 1.0,
+        "alpha": 1.0,
+        "beta": 0.1,
+        "delta": 0.0,
+        "learning_rate": 5e-05,
+        "weight_decay": 0.01,
+        "epochs": 4,
+        "batch_size": 1,
+        "max_updates": 114,
+        "max_grad_norm": null,
+        "lr_scheduler": "constant",
+        "retain_loss_type": "NLL",
+        "config_sha256": "c8089323715e02783b256a38b54c85b48e8c9e1e97940d86a0bed3f892faea52",
+        "raw_upstream": {
+          "defaults": [
+            "GradDiff"
+          ],
+          "handler": "NPO",
+          "method_args": {
+            "beta": 0.1,
+            "alpha": 1.0,
+            "gamma": 1.0,
+            "retain_loss_type": "NLL"
+          }
+        },
+        "fidelity": "exact frozen upstream loss; architecture/data/optimizer profile disclosed",
+        "model": "E:\\12models\\modelscope\\Qwen2.5-1.5B-Instruct",
+        "seed": 42,
+        "smoke": false,
+        "lr_search": "no test-based tuning; configured source recipe, additional trials separate",
+        "optimizer": "torch AdamW",
+        "prompt": "raw question-space-answer, no chat template; source-paper prompt not certified identical",
+        "native_compatibility": "full parameter update except native KLUE gated FFN neuron mask",
+        "loss_precision": "BF16 backbone, FP32 returned logits/loss matching Accelerate output conversion",
+        "training_pad_to": null,
+        "batching": "actual padded batch, not serial per-example gradient averaging"
+      },
+      "summary": {
+        "updates": 114,
+        "attempted_examples": 114,
+        "skipped": [],
+        "stop_reason": "update_budget",
+        "reference": "base outputs cached before first parameter update"
+      },
+      "logged_updates": 114,
+      "consecutive_updates": true,
+      "first_loss": 16.919471740722656,
+      "last_loss": 6.973699569702148,
+      "dual_active_steps": 0,
+      "forget_retain_overlap": [],
+      "forget_count": 33,
+      "retain_count": 33,
+      "metrics": {
+        "all89": 0.651685393258427,
+        "f0": 0.3333333333333333,
+        "f1": 1.0,
+        "retain": 0.7878787878787878,
+        "retain_is_heldout": true,
+        "smoke": false,
+        "mmlu": null,
+        "ppl": null,
+        "capability_status": "not_run_in_local_behavior_protocol"
+      },
+      "all89_recomputed": 0.651685393258427,
+      "metric_consistent": true,
+      "choice_ties": 2
+    },
+    {
+      "run": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\local_20261023_233138\\RMU_formal",
+      "status": {
+        "status": "completed",
+        "updates": 114,
+        "seconds": 216.28140997886658,
+        "ended": "2026-10-24T00:03:45+08:00",
+        "peak_cuda_allocated_bytes": 3377503744
+      },
+      "config": {
+        "method": "RMU",
+        "track": "matched_lora",
+        "gamma": 1.0,
+        "alpha": 1,
+        "beta": 1.0,
+        "delta": 0.0,
+        "learning_rate": 5e-05,
+        "weight_decay": 0.01,
+        "epochs": 4,
+        "batch_size": 1,
+        "max_updates": 114,
+        "max_grad_norm": null,
+        "lr_scheduler": "constant",
+        "retain_loss_type": "EMBED_DIFF",
+        "config_sha256": "c7a390eab6992f52d427b8562a4d9c3be0bc58f37ba4d63de170d8b33d35a4d3",
+        "raw_upstream": {
+          "defaults": [
+            "GradDiff"
+          ],
+          "handler": "RMU",
+          "method_args": {
+            "gamma": 1.0,
+            "steering_coeff": 2,
+            "retain_loss_type": "EMBED_DIFF",
+            "alpha": 1,
+            "module_regex": "model\\.layers\\.7",
+            "trainable_params_regex": [
+              ".*"
+            ]
+          }
+        },
+        "fidelity": "frozen upstream algorithm with explicit tested semantic repairs; not bitwise source loss parity",
+        "steering_coeff": 2,
+        "module_regex": "model\\.layers\\.7",
+        "trainable_params_regex": [
+          ".*"
+        ],
+        "semantic_repairs": [
+          "per-sequence masked MSE avoids upstream BxB broadcast at batch>1"
+        ],
+        "model": "E:\\12models\\modelscope\\Qwen2.5-1.5B-Instruct",
+        "seed": 42,
+        "smoke": false,
+        "lr_search": "no test-based tuning; configured source recipe, additional trials separate",
+        "optimizer": "torch AdamW",
+        "prompt": "raw question-space-answer, no chat template; source-paper prompt not certified identical",
+        "native_compatibility": "full parameter update except native KLUE gated FFN neuron mask",
+        "loss_precision": "BF16 backbone, FP32 returned logits/loss matching Accelerate output conversion",
+        "training_pad_to": null,
+        "batching": "actual padded batch, not serial per-example gradient averaging"
+      },
+      "summary": {
+        "updates": 114,
+        "attempted_examples": 114,
+        "skipped": [],
+        "stop_reason": "update_budget",
+        "reference": "base outputs cached before first parameter update"
+      },
+      "logged_updates": 114,
+      "consecutive_updates": true,
+      "first_loss": 1.3577618598937988,
+      "last_loss": 0.7082867622375488,
+      "dual_active_steps": 0,
+      "forget_retain_overlap": [],
+      "forget_count": 33,
+      "retain_count": 33,
+      "metrics": {
+        "all89": 0.644194756554307,
+        "f0": 0.6363636363636364,
+        "f1": 1.0,
+        "retain": 0.7878787878787878,
+        "retain_is_heldout": true,
+        "smoke": false,
+        "mmlu": null,
+        "ppl": null,
+        "capability_status": "not_run_in_local_behavior_protocol"
+      },
+      "all89_recomputed": 0.6441947565543071,
+      "metric_consistent": true,
+      "choice_ties": 0
+    },
+    {
+      "run": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\local_20261023_233138\\SimNPO_formal",
+      "status": {
+        "status": "completed",
+        "updates": 114,
+        "seconds": 238.012553691864,
+        "ended": "2026-10-23T23:59:36+08:00",
+        "peak_cuda_allocated_bytes": 3416681984
+      },
+      "config": {
+        "method": "SimNPO",
+        "track": "matched_lora",
+        "gamma": 0.125,
+        "alpha": 1.0,
+        "beta": 4.5,
+        "delta": 0.0,
+        "learning_rate": 5e-05,
+        "weight_decay": 0.01,
+        "epochs": 4,
+        "batch_size": 1,
+        "max_updates": 114,
+        "max_grad_norm": null,
+        "lr_scheduler": "constant",
+        "retain_loss_type": "NLL",
+        "config_sha256": "d1c721f8b89b7c0793e0f233627b83887ac8718ad5158fa15820e941c908572d",
+        "raw_upstream": {
+          "defaults": [
+            "GradDiff"
+          ],
+          "handler": "SimNPO",
+          "method_args": {
+            "delta": 0.0,
+            "beta": 4.5,
+            "alpha": 1.0,
+            "gamma": 0.125,
+            "retain_loss_type": "NLL"
+          }
+        },
+        "fidelity": "exact frozen upstream loss; architecture/data/optimizer profile disclosed",
+        "model": "E:\\12models\\modelscope\\Qwen2.5-1.5B-Instruct",
+        "seed": 42,
+        "smoke": false,
+        "lr_search": "no test-based tuning; configured source recipe, additional trials separate",
+        "optimizer": "torch AdamW",
+        "prompt": "raw question-space-answer, no chat template; source-paper prompt not certified identical",
+        "native_compatibility": "full parameter update except native KLUE gated FFN neuron mask",
+        "loss_precision": "BF16 backbone, FP32 returned logits/loss matching Accelerate output conversion",
+        "training_pad_to": null,
+        "batching": "actual padded batch, not serial per-example gradient averaging"
+      },
+      "summary": {
+        "updates": 114,
+        "attempted_examples": 114,
+        "skipped": [],
+        "stop_reason": "update_budget",
+        "reference": null
+      },
+      "logged_updates": 114,
+      "consecutive_updates": true,
+      "first_loss": 3.056527853012085,
+      "last_loss": 0.003213104559108615,
+      "dual_active_steps": 0,
+      "forget_retain_overlap": [],
+      "forget_count": 33,
+      "retain_count": 33,
+      "metrics": {
+        "all89": 0.7565543071161049,
+        "f0": 0.8484848484848485,
+        "f1": 1.0,
+        "retain": 0.7272727272727273,
+        "retain_is_heldout": true,
+        "smoke": false,
+        "mmlu": null,
+        "ppl": null,
+        "capability_status": "not_run_in_local_behavior_protocol"
+      },
+      "all89_recomputed": 0.7565543071161048,
+      "metric_consistent": true,
+      "choice_ties": 0
+    },
+    {
+      "run": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\continue_20261024_064547\\DPOmis_formal",
+      "status": {
+        "status": "completed",
+        "updates": 114,
+        "seconds": 428.66250801086426,
+        "ended": "2026-10-24T06:54:47+08:00",
+        "peak_cuda_allocated_bytes": 3492008960
+      },
+      "config": {
+        "method": "DPOmis",
+        "track": "matched_lora",
+        "gamma": 1.0,
+        "alpha": 1.0,
+        "beta": 0.1,
+        "delta": 0.0,
+        "learning_rate": 5e-05,
+        "weight_decay": 0.01,
+        "epochs": 4,
+        "batch_size": 1,
+        "max_updates": 114,
+        "max_grad_norm": null,
+        "lr_scheduler": "constant",
+        "retain_loss_type": "NLL",
+        "config_sha256": "c9eca8b4ca1df016fb5d5f80f76444134d8dc794d8536fa1fd0476a53d6290b7",
+        "raw_upstream": {
+          "defaults": [
+            "GradDiff"
+          ],
+          "handler": "DPO",
+          "method_args": {
+            "beta": 0.1,
+            "alpha": 1.0,
+            "gamma": 1.0,
+            "retain_loss_type": "NLL"
+          }
+        },
+        "fidelity": "exact frozen upstream loss; architecture/data/optimizer profile disclosed",
+        "model": "E:\\12models\\modelscope\\Qwen2.5-1.5B-Instruct",
+        "seed": 42,
+        "smoke": false,
+        "lr_search": "no test-based tuning; configured source recipe, additional trials separate",
+        "optimizer": "torch AdamW",
+        "prompt": "raw question-space-answer, no chat template; source-paper prompt not certified identical",
+        "native_compatibility": "full parameter update except native KLUE gated FFN neuron mask",
+        "loss_precision": "BF16 backbone, FP32 returned logits/loss matching Accelerate output conversion",
+        "training_pad_to": null,
+        "batching": "actual padded batch, not serial per-example gradient averaging"
+      },
+      "summary": {
+        "updates": 114,
+        "attempted_examples": 114,
+        "skipped": [],
+        "stop_reason": "update_budget",
+        "reference": "base outputs cached before first parameter update"
+      },
+      "logged_updates": 114,
+      "consecutive_updates": true,
+      "first_loss": 24.459461212158203,
+      "last_loss": 12.13592529296875,
+      "dual_active_steps": 0,
+      "forget_retain_overlap": [],
+      "forget_count": 33,
+      "retain_count": 33,
+      "metrics": {
+        "all89": 0.5917602996254682,
+        "f0": 0.3333333333333333,
+        "f1": 1.0,
+        "retain": 0.6666666666666666,
+        "retain_is_heldout": true,
+        "smoke": false,
+        "mmlu": null,
+        "ppl": null,
+        "capability_status": "not_run_in_local_behavior_protocol"
+      },
+      "all89_recomputed": 0.5917602996254682,
+      "metric_consistent": true,
+      "choice_ties": 0
+    },
+    {
+      "run": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\continue_20261024_064547\\DPOrej_formal",
+      "status": {
+        "status": "running",
+        "phase": "training",
+        "update": 35,
+        "epoch": 1
+      },
+      "config": {
+        "method": "DPOrej",
+        "track": "matched_lora",
+        "gamma": 1.0,
+        "alpha": 1.0,
+        "beta": 0.1,
+        "delta": 0.0,
+        "learning_rate": 5e-05,
+        "weight_decay": 0.01,
+        "epochs": 4,
+        "batch_size": 1,
+        "max_updates": 114,
+        "max_grad_norm": null,
+        "lr_scheduler": "constant",
+        "retain_loss_type": "NLL",
+        "config_sha256": "c9eca8b4ca1df016fb5d5f80f76444134d8dc794d8536fa1fd0476a53d6290b7",
+        "raw_upstream": {
+          "defaults": [
+            "GradDiff"
+          ],
+          "handler": "DPO",
+          "method_args": {
+            "beta": 0.1,
+            "alpha": 1.0,
+            "gamma": 1.0,
+            "retain_loss_type": "NLL"
+          }
+        },
+        "fidelity": "exact frozen upstream loss; architecture/data/optimizer profile disclosed",
+        "model": "E:\\12models\\modelscope\\Qwen2.5-1.5B-Instruct",
+        "seed": 42,
+        "smoke": false,
+        "lr_search": "no test-based tuning; configured source recipe, additional trials separate",
+        "optimizer": "torch AdamW",
+        "prompt": "raw question-space-answer, no chat template; source-paper prompt not certified identical",
+        "native_compatibility": "full parameter update except native KLUE gated FFN neuron mask",
+        "loss_precision": "BF16 backbone, FP32 returned logits/loss matching Accelerate output conversion",
+        "training_pad_to": null,
+        "batching": "actual padded batch, not serial per-example gradient averaging"
+      },
+      "summary": null,
+      "logged_updates": 35,
+      "consecutive_updates": true,
+      "first_loss": 16.919471740722656,
+      "last_loss": 17.679935455322266,
+      "dual_active_steps": 0,
+      "forget_retain_overlap": [],
+      "forget_count": 33,
+      "retain_count": 33
+    }
+  ],
+  "frozen_runner": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\local_20261023_233138\\source_snapshot\\exp\\train\\reproduce_all_baselines.py"
+}

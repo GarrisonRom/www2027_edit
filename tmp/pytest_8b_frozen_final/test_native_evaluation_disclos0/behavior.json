@@ -1,0 +1,26 @@
+{
+  "groups": {
+    "F0": {
+      "summary": {
+        "mcqa_accuracy": 0.25
+      }
+    },
+    "F1": {
+      "summary": {
+        "mcqa_accuracy": 0.25
+      }
+    },
+    "retain_heldout": {
+      "summary": {
+        "mcqa_accuracy": 0.25
+      }
+    }
+  },
+  "full_hop2": {
+    "all_hop2": {
+      "summary": {
+        "path_macro_accuracy": 0.5
+      }
+    }
+  }
+}

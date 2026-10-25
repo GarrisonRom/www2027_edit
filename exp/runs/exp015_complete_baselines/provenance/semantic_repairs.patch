@@ -1,0 +1,92 @@
+*** Begin Patch
+*** Update File: C:/Users/RoboSAMA/Documents/kimi/Workspaces/蓝恩鹏/exp/train/reproduction_losses.py
+@@
+ def bind_trainer(config, model, reference=None, env=None):
+     if env is None:
+         env, _ = upstream_namespace()
++    if config['method']=='UNDIAL':
++        env['compute_undial_loss']=undial_answer_loss
+@@
+     if config['method'] == 'RMU':
+@@
+         trainer.ref_module = reference.layer
++        trainer.compute_activation_loss=masked_activation_loss
+     return trainer
++
++
++def masked_activation_loss(current,target,mask):
++    counts=mask.sum(-1)
++    if bool((counts==0).any()):raise ValueError('RMU empty answer sequence')
++    per_token=(current.float()-target.float()).square().mean(-1)
++    return ((per_token*mask).sum(-1)/counts).mean()
++
++
++def undial_answer_loss(model,ref_model,inputs,beta):
++    outputs=model(**inputs)
++    labels=inputs['labels'][:,1:]
++    valid=labels!=-100
++    if not bool(valid.any()):raise ValueError('UNDIAL no answer targets')
++    logits=outputs.logits[:,:-1].float()[valid]
++    with torch.no_grad():
++        teacher=ref_model(**inputs).logits[:,:-1].float()[valid].clone()
++        teacher.scatter_add_(1,labels[valid].unsqueeze(1),torch.full_like(labels[valid].unsqueeze(1),-beta,dtype=teacher.dtype))
++        targets=teacher.softmax(-1)
++    return F.cross_entropy(logits,targets),outputs
+*** Update File: C:/Users/RoboSAMA/Documents/kimi/Workspaces/蓝恩鹏/exp/train/reproduction_losses.py
+@@
+     if method == 'RMU':
+         config['steering_coeff'] = args['steering_coeff']
++        config['semantic_repairs']=['per-sequence masked MSE avoids upstream BxB broadcast at batch>1']
++    if method == 'UNDIAL':
++        config['semantic_repairs']=['answer-only teacher targets, exclude -100 labels from indexing and CE']
+     return config
+*** Update File: C:/Users/RoboSAMA/Documents/kimi/Workspaces/蓝恩鹏/exp/train/tests/test_complete_reproduction.py
+@@
+ def test_native_sparse_checkpoint_restores_full_weights():
+@@
+     assert all(torch.equal(v,fresh.state_dict()[key]) for key,v in model.state_dict().items())
++
++
++def test_rmu_variable_length_batch_is_per_sequence_not_cross_broadcast():
++    current=torch.tensor([[[2.],[99.]],[[1.],[3.]]],requires_grad=True)
++    mask=torch.tensor([[True,False],[True,True]])
++    value=r.masked_activation_loss(current,torch.zeros_like(current),mask)
++    assert value.item()==4.5
++    value.backward()
++    assert current.grad[0,1].item()==0
++
++
++def test_undial_ignored_prompt_positions_have_zero_direct_logit_gradient():
++    class LogitModel:
++        def __init__(self):self.logits=torch.nn.Parameter(torch.randn(1,5,127))
++        def __call__(self,**kw):return SimpleNamespace(logits=self.logits)
++    model=LogitModel();teacher=LogitModel()
++    value,_=r.undial_answer_loss(model,teacher,batch(),10.)
++    grad=torch.autograd.grad(value,model.logits)[0]
++    assert torch.equal(grad[:,0],torch.zeros_like(grad[:,0]))
++    assert grad[:,1:4].abs().sum()>0
++    assert torch.equal(grad[:,4],torch.zeros_like(grad[:,4]))
+*** End Patch
+*** Begin Patch
+*** Update File: C:/Users/RoboSAMA/Documents/kimi/Workspaces/蓝恩鹏/exp/train/reproduction_losses.py
+@@
+     if method == 'UNDIAL':
+         config['semantic_repairs']=['answer-only teacher targets, exclude -100 labels from indexing and CE']
++    if 'semantic_repairs' in config:
++        config['fidelity']='frozen upstream algorithm with explicit tested semantic repairs; not bitwise source loss parity'
+     return config
+*** Update File: C:/Users/RoboSAMA/Documents/kimi/Workspaces/蓝恩鹏/exp/runs/exp015_complete_baselines/card.md
+@@
+-- UNDIAL executes the frozen source, including its label-indexing and prompt-token behavior.
+-  Loss parity is not an assertion that every upstream implementation matches the original paper.
++- UNDIAL repairs the frozen source's negative ignored-label indexing and prompt/padding CE:
++  teacher targets and cross-entropy are restricted to valid shifted answer labels. Upstream-as-written
++  remains in the audit namespace; corrected results are explicitly not bitwise upstream parity.
++- RMU repairs the source BxB normalization broadcast for batch>1: masked hidden MSE is normalized
++  within each sequence then averaged. Batch1 is unchanged; variable-length counterexample tested.
+@@
+-Observed: local suite37 passed (26 complete-reproduction tests plus11 existing regression tests);
+-earlier cloud CPU suite24 passed; final cloud/source and real-model outcomes recorded in dispatch/run logs.
++Observed: final local suite39 passed (28 complete-reproduction tests plus11 existing regression tests);
++earlier cloud CPU suites24/26 passed; final cloud/source and real-model outcomes recorded in dispatch/run logs.
+*** End Patch

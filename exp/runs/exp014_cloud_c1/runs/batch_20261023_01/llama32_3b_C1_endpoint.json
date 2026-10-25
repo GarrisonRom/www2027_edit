@@ -1,0 +1,10 @@
+{
+  "model_key": "llama32_3b",
+  "model_path": "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+  "run_id": "llama32_3b_C1",
+  "method": "GSU-C1",
+  "supervision": "F0",
+  "adapter_path": "/root/autodl-tmp/www2027_sync_20261023_c1_v1/exp/runs/exp014_cloud_c1/runs/batch_20261023_01/llama32_3b_C1/adapter",
+  "origin": "exp014",
+  "training_metrics_path": "/root/autodl-tmp/www2027_sync_20261023_c1_v1/exp/runs/exp014_cloud_c1/runs/batch_20261023_01/llama32_3b_C1/metrics.json"
+}

@@ -1,0 +1,1962 @@
+{
+  "base_model.model.model.layers.0.self_attn.q_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1706455330
+  },
+  "base_model.model.model.layers.0.self_attn.q_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 536761194
+  },
+  "base_model.model.model.layers.0.self_attn.k_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2367312360
+  },
+  "base_model.model.model.layers.0.self_attn.k_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 920573175
+  },
+  "base_model.model.model.layers.0.self_attn.v_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1930434495
+  },
+  "base_model.model.model.layers.0.self_attn.v_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1226152440
+  },
+  "base_model.model.model.layers.0.self_attn.o_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1096635590
+  },
+  "base_model.model.model.layers.0.self_attn.o_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1248815740
+  },
+  "base_model.model.model.layers.0.mlp.gate_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 168263348
+  },
+  "base_model.model.model.layers.0.mlp.gate_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1728439749
+  },
+  "base_model.model.model.layers.0.mlp.up_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1299074936
+  },
+  "base_model.model.model.layers.0.mlp.up_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 64845656
+  },
+  "base_model.model.model.layers.0.mlp.down_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 494991502
+  },
+  "base_model.model.model.layers.0.mlp.down_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 203953070
+  },
+  "base_model.model.model.layers.1.self_attn.q_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1909638322
+  },
+  "base_model.model.model.layers.1.self_attn.q_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2400389886
+  },
+  "base_model.model.model.layers.1.self_attn.k_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2854157337
+  },
+  "base_model.model.model.layers.1.self_attn.k_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3676134076
+  },
+  "base_model.model.model.layers.1.self_attn.v_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1857223550
+  },
+  "base_model.model.model.layers.1.self_attn.v_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 882234760
+  },
+  "base_model.model.model.layers.1.self_attn.o_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2968794105
+  },
+  "base_model.model.model.layers.1.self_attn.o_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2467619886
+  },
+  "base_model.model.model.layers.1.mlp.gate_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 4076184315
+  },
+  "base_model.model.model.layers.1.mlp.gate_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 4285504192
+  },
+  "base_model.model.model.layers.1.mlp.up_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2323038717
+  },
+  "base_model.model.model.layers.1.mlp.up_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3099048752
+  },
+  "base_model.model.model.layers.1.mlp.down_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1898127210
+  },
+  "base_model.model.model.layers.1.mlp.down_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 163472926
+  },
+  "base_model.model.model.layers.2.self_attn.q_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1481145706
+  },
+  "base_model.model.model.layers.2.self_attn.q_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1271138686
+  },
+  "base_model.model.model.layers.2.self_attn.k_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 321803072
+  },
+  "base_model.model.model.layers.2.self_attn.k_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 4252488666
+  },
+  "base_model.model.model.layers.2.self_attn.v_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1361056480
+  },
+  "base_model.model.model.layers.2.self_attn.v_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1495109720
+  },
+  "base_model.model.model.layers.2.self_attn.o_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3955097301
+  },
+  "base_model.model.model.layers.2.self_attn.o_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3471964076
+  },
+  "base_model.model.model.layers.2.mlp.gate_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 373305625
+  },
+  "base_model.model.model.layers.2.mlp.gate_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 904945483
+  },
+  "base_model.model.model.layers.2.mlp.up_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 336034612
+  },
+  "base_model.model.model.layers.2.mlp.up_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3801628670
+  },
+  "base_model.model.model.layers.2.mlp.down_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3923524047
+  },
+  "base_model.model.model.layers.2.mlp.down_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 428468195
+  },
+  "base_model.model.model.layers.3.self_attn.q_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2821783521
+  },
+  "base_model.model.model.layers.3.self_attn.q_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3994206210
+  },
+  "base_model.model.model.layers.3.self_attn.k_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 93784164
+  },
+  "base_model.model.model.layers.3.self_attn.k_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2678220295
+  },
+  "base_model.model.model.layers.3.self_attn.v_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2524414529
+  },
+  "base_model.model.model.layers.3.self_attn.v_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 384089903
+  },
+  "base_model.model.model.layers.3.self_attn.o_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 4287153993
+  },
+  "base_model.model.model.layers.3.self_attn.o_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3523647688
+  },
+  "base_model.model.model.layers.3.mlp.gate_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 687610988
+  },
+  "base_model.model.model.layers.3.mlp.gate_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3593612358
+  },
+  "base_model.model.model.layers.3.mlp.up_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 4091597095
+  },
+  "base_model.model.model.layers.3.mlp.up_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3393520361
+  },
+  "base_model.model.model.layers.3.mlp.down_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2154442405
+  },
+  "base_model.model.model.layers.3.mlp.down_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3749431656
+  },
+  "base_model.model.model.layers.4.self_attn.q_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1766912310
+  },
+  "base_model.model.model.layers.4.self_attn.q_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 4861265
+  },
+  "base_model.model.model.layers.4.self_attn.k_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2669523672
+  },
+  "base_model.model.model.layers.4.self_attn.k_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 201414063
+  },
+  "base_model.model.model.layers.4.self_attn.v_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 504767736
+  },
+  "base_model.model.model.layers.4.self_attn.v_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2103467479
+  },
+  "base_model.model.model.layers.4.self_attn.o_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2262594546
+  },
+  "base_model.model.model.layers.4.self_attn.o_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3674057987
+  },
+  "base_model.model.model.layers.4.mlp.gate_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 565455567
+  },
+  "base_model.model.model.layers.4.mlp.gate_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 86112055
+  },
+  "base_model.model.model.layers.4.mlp.up_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1777951598
+  },
+  "base_model.model.model.layers.4.mlp.up_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1281352758
+  },
+  "base_model.model.model.layers.4.mlp.down_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 199699035
+  },
+  "base_model.model.model.layers.4.mlp.down_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3349065027
+  },
+  "base_model.model.model.layers.5.self_attn.q_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1584149635
+  },
+  "base_model.model.model.layers.5.self_attn.q_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1675227171
+  },
+  "base_model.model.model.layers.5.self_attn.k_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1662834497
+  },
+  "base_model.model.model.layers.5.self_attn.k_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 4219963641
+  },
+  "base_model.model.model.layers.5.self_attn.v_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 853607098
+  },
+  "base_model.model.model.layers.5.self_attn.v_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 290886086
+  },
+  "base_model.model.model.layers.5.self_attn.o_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 143917711
+  },
+  "base_model.model.model.layers.5.self_attn.o_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1439657424
+  },
+  "base_model.model.model.layers.5.mlp.gate_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1773869254
+  },
+  "base_model.model.model.layers.5.mlp.gate_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2938921668
+  },
+  "base_model.model.model.layers.5.mlp.up_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3082802926
+  },
+  "base_model.model.model.layers.5.mlp.up_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1508835092
+  },
+  "base_model.model.model.layers.5.mlp.down_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2094447088
+  },
+  "base_model.model.model.layers.5.mlp.down_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 4012994711
+  },
+  "base_model.model.model.layers.6.self_attn.q_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 169482177
+  },
+  "base_model.model.model.layers.6.self_attn.q_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2740917365
+  },
+  "base_model.model.model.layers.6.self_attn.k_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1043327375
+  },
+  "base_model.model.model.layers.6.self_attn.k_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 95679777
+  },
+  "base_model.model.model.layers.6.self_attn.v_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2009308020
+  },
+  "base_model.model.model.layers.6.self_attn.v_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 446162380
+  },
+  "base_model.model.model.layers.6.self_attn.o_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 24898231
+  },
+  "base_model.model.model.layers.6.self_attn.o_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 9498005
+  },
+  "base_model.model.model.layers.6.mlp.gate_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2850560117
+  },
+  "base_model.model.model.layers.6.mlp.gate_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1332966459
+  },
+  "base_model.model.model.layers.6.mlp.up_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2217746392
+  },
+  "base_model.model.model.layers.6.mlp.up_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 4008393435
+  },
+  "base_model.model.model.layers.6.mlp.down_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 4056344983
+  },
+  "base_model.model.model.layers.6.mlp.down_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 4112607588
+  },
+  "base_model.model.model.layers.7.self_attn.q_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1428649231
+  },
+  "base_model.model.model.layers.7.self_attn.q_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1178608257
+  },
+  "base_model.model.model.layers.7.self_attn.k_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2037179012
+  },
+  "base_model.model.model.layers.7.self_attn.k_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 4287421572
+  },
+  "base_model.model.model.layers.7.self_attn.v_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1866267226
+  },
+  "base_model.model.model.layers.7.self_attn.v_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 738952814
+  },
+  "base_model.model.model.layers.7.self_attn.o_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1886920810
+  },
+  "base_model.model.model.layers.7.self_attn.o_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 933127215
+  },
+  "base_model.model.model.layers.7.mlp.gate_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3328453075
+  },
+  "base_model.model.model.layers.7.mlp.gate_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3430463754
+  },
+  "base_model.model.model.layers.7.mlp.up_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3468958758
+  },
+  "base_model.model.model.layers.7.mlp.up_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 717116890
+  },
+  "base_model.model.model.layers.7.mlp.down_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2145338359
+  },
+  "base_model.model.model.layers.7.mlp.down_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 984911008
+  },
+  "base_model.model.model.layers.8.self_attn.q_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2223776085
+  },
+  "base_model.model.model.layers.8.self_attn.q_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 544942772
+  },
+  "base_model.model.model.layers.8.self_attn.k_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3290999549
+  },
+  "base_model.model.model.layers.8.self_attn.k_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3550275970
+  },
+  "base_model.model.model.layers.8.self_attn.v_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2983569444
+  },
+  "base_model.model.model.layers.8.self_attn.v_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2980476236
+  },
+  "base_model.model.model.layers.8.self_attn.o_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3991281101
+  },
+  "base_model.model.model.layers.8.self_attn.o_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3392907500
+  },
+  "base_model.model.model.layers.8.mlp.gate_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 4015417115
+  },
+  "base_model.model.model.layers.8.mlp.gate_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2955441859
+  },
+  "base_model.model.model.layers.8.mlp.up_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1713461732
+  },
+  "base_model.model.model.layers.8.mlp.up_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 550807167
+  },
+  "base_model.model.model.layers.8.mlp.down_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 97580408
+  },
+  "base_model.model.model.layers.8.mlp.down_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2529391565
+  },
+  "base_model.model.model.layers.9.self_attn.q_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1649740329
+  },
+  "base_model.model.model.layers.9.self_attn.q_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 4261810988
+  },
+  "base_model.model.model.layers.9.self_attn.k_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3997381441
+  },
+  "base_model.model.model.layers.9.self_attn.k_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1552953198
+  },
+  "base_model.model.model.layers.9.self_attn.v_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1442502779
+  },
+  "base_model.model.model.layers.9.self_attn.v_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 781279828
+  },
+  "base_model.model.model.layers.9.self_attn.o_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3681076530
+  },
+  "base_model.model.model.layers.9.self_attn.o_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2740528097
+  },
+  "base_model.model.model.layers.9.mlp.gate_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1260714287
+  },
+  "base_model.model.model.layers.9.mlp.gate_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 548359137
+  },
+  "base_model.model.model.layers.9.mlp.up_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 674618175
+  },
+  "base_model.model.model.layers.9.mlp.up_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1444188977
+  },
+  "base_model.model.model.layers.9.mlp.down_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 110463502
+  },
+  "base_model.model.model.layers.9.mlp.down_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1811273559
+  },
+  "base_model.model.model.layers.10.self_attn.q_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 331685536
+  },
+  "base_model.model.model.layers.10.self_attn.q_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 805393934
+  },
+  "base_model.model.model.layers.10.self_attn.k_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 111052735
+  },
+  "base_model.model.model.layers.10.self_attn.k_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1850323123
+  },
+  "base_model.model.model.layers.10.self_attn.v_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3622191074
+  },
+  "base_model.model.model.layers.10.self_attn.v_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3280076940
+  },
+  "base_model.model.model.layers.10.self_attn.o_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 426416013
+  },
+  "base_model.model.model.layers.10.self_attn.o_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1552024622
+  },
+  "base_model.model.model.layers.10.mlp.gate_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1312197486
+  },
+  "base_model.model.model.layers.10.mlp.gate_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1411279224
+  },
+  "base_model.model.model.layers.10.mlp.up_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1005808358
+  },
+  "base_model.model.model.layers.10.mlp.up_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3871434957
+  },
+  "base_model.model.model.layers.10.mlp.down_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3226688052
+  },
+  "base_model.model.model.layers.10.mlp.down_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1698574409
+  },
+  "base_model.model.model.layers.11.self_attn.q_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 4001748839
+  },
+  "base_model.model.model.layers.11.self_attn.q_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 425497900
+  },
+  "base_model.model.model.layers.11.self_attn.k_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1351788160
+  },
+  "base_model.model.model.layers.11.self_attn.k_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2793719203
+  },
+  "base_model.model.model.layers.11.self_attn.v_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2928124286
+  },
+  "base_model.model.model.layers.11.self_attn.v_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2897981931
+  },
+  "base_model.model.model.layers.11.self_attn.o_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 4045480254
+  },
+  "base_model.model.model.layers.11.self_attn.o_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1510216838
+  },
+  "base_model.model.model.layers.11.mlp.gate_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 813588489
+  },
+  "base_model.model.model.layers.11.mlp.gate_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 734705971
+  },
+  "base_model.model.model.layers.11.mlp.up_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 308491062
+  },
+  "base_model.model.model.layers.11.mlp.up_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2893942600
+  },
+  "base_model.model.model.layers.11.mlp.down_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1368484777
+  },
+  "base_model.model.model.layers.11.mlp.down_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 616957651
+  },
+  "base_model.model.model.layers.12.self_attn.q_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3961949507
+  },
+  "base_model.model.model.layers.12.self_attn.q_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 416304634
+  },
+  "base_model.model.model.layers.12.self_attn.k_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2895023969
+  },
+  "base_model.model.model.layers.12.self_attn.k_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 426166417
+  },
+  "base_model.model.model.layers.12.self_attn.v_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1864907987
+  },
+  "base_model.model.model.layers.12.self_attn.v_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2123236520
+  },
+  "base_model.model.model.layers.12.self_attn.o_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1599315994
+  },
+  "base_model.model.model.layers.12.self_attn.o_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3922137451
+  },
+  "base_model.model.model.layers.12.mlp.gate_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 134658998
+  },
+  "base_model.model.model.layers.12.mlp.gate_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 788579305
+  },
+  "base_model.model.model.layers.12.mlp.up_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1579497370
+  },
+  "base_model.model.model.layers.12.mlp.up_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2389771307
+  },
+  "base_model.model.model.layers.12.mlp.down_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2654035877
+  },
+  "base_model.model.model.layers.12.mlp.down_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2990690766
+  },
+  "base_model.model.model.layers.13.self_attn.q_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2949744442
+  },
+  "base_model.model.model.layers.13.self_attn.q_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2848695160
+  },
+  "base_model.model.model.layers.13.self_attn.k_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1155191215
+  },
+  "base_model.model.model.layers.13.self_attn.k_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2089796995
+  },
+  "base_model.model.model.layers.13.self_attn.v_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3744279062
+  },
+  "base_model.model.model.layers.13.self_attn.v_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1096114211
+  },
+  "base_model.model.model.layers.13.self_attn.o_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1324698964
+  },
+  "base_model.model.model.layers.13.self_attn.o_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 939962525
+  },
+  "base_model.model.model.layers.13.mlp.gate_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2379611027
+  },
+  "base_model.model.model.layers.13.mlp.gate_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2856013875
+  },
+  "base_model.model.model.layers.13.mlp.up_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 4182423014
+  },
+  "base_model.model.model.layers.13.mlp.up_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 822823863
+  },
+  "base_model.model.model.layers.13.mlp.down_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 505183580
+  },
+  "base_model.model.model.layers.13.mlp.down_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 944291075
+  },
+  "base_model.model.model.layers.14.self_attn.q_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3839728541
+  },
+  "base_model.model.model.layers.14.self_attn.q_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1700391719
+  },
+  "base_model.model.model.layers.14.self_attn.k_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2332850361
+  },
+  "base_model.model.model.layers.14.self_attn.k_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2333580768
+  },
+  "base_model.model.model.layers.14.self_attn.v_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2513156937
+  },
+  "base_model.model.model.layers.14.self_attn.v_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3092902628
+  },
+  "base_model.model.model.layers.14.self_attn.o_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 485208175
+  },
+  "base_model.model.model.layers.14.self_attn.o_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2912707255
+  },
+  "base_model.model.model.layers.14.mlp.gate_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3585189843
+  },
+  "base_model.model.model.layers.14.mlp.gate_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3030150484
+  },
+  "base_model.model.model.layers.14.mlp.up_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3205596690
+  },
+  "base_model.model.model.layers.14.mlp.up_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3119423373
+  },
+  "base_model.model.model.layers.14.mlp.down_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3538690526
+  },
+  "base_model.model.model.layers.14.mlp.down_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3434916397
+  },
+  "base_model.model.model.layers.15.self_attn.q_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3075149568
+  },
+  "base_model.model.model.layers.15.self_attn.q_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 4108345993
+  },
+  "base_model.model.model.layers.15.self_attn.k_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 413272890
+  },
+  "base_model.model.model.layers.15.self_attn.k_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3236110142
+  },
+  "base_model.model.model.layers.15.self_attn.v_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1293010651
+  },
+  "base_model.model.model.layers.15.self_attn.v_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2086660649
+  },
+  "base_model.model.model.layers.15.self_attn.o_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1474547668
+  },
+  "base_model.model.model.layers.15.self_attn.o_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 4001491720
+  },
+  "base_model.model.model.layers.15.mlp.gate_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 739050816
+  },
+  "base_model.model.model.layers.15.mlp.gate_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3975194291
+  },
+  "base_model.model.model.layers.15.mlp.up_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 4067610561
+  },
+  "base_model.model.model.layers.15.mlp.up_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 4015147870
+  },
+  "base_model.model.model.layers.15.mlp.down_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2551935858
+  },
+  "base_model.model.model.layers.15.mlp.down_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3488449272
+  },
+  "base_model.model.model.layers.16.self_attn.q_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1674766568
+  },
+  "base_model.model.model.layers.16.self_attn.q_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 403895018
+  },
+  "base_model.model.model.layers.16.self_attn.k_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2393664255
+  },
+  "base_model.model.model.layers.16.self_attn.k_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 4168843579
+  },
+  "base_model.model.model.layers.16.self_attn.v_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 552851556
+  },
+  "base_model.model.model.layers.16.self_attn.v_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1884210136
+  },
+  "base_model.model.model.layers.16.self_attn.o_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1330832337
+  },
+  "base_model.model.model.layers.16.self_attn.o_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1364604
+  },
+  "base_model.model.model.layers.16.mlp.gate_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1831330104
+  },
+  "base_model.model.model.layers.16.mlp.gate_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2818108384
+  },
+  "base_model.model.model.layers.16.mlp.up_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2794889359
+  },
+  "base_model.model.model.layers.16.mlp.up_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 4109529527
+  },
+  "base_model.model.model.layers.16.mlp.down_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1252820271
+  },
+  "base_model.model.model.layers.16.mlp.down_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 547467277
+  },
+  "base_model.model.model.layers.17.self_attn.q_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3720002777
+  },
+  "base_model.model.model.layers.17.self_attn.q_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3030825281
+  },
+  "base_model.model.model.layers.17.self_attn.k_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1547830992
+  },
+  "base_model.model.model.layers.17.self_attn.k_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2479525285
+  },
+  "base_model.model.model.layers.17.self_attn.v_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 307269922
+  },
+  "base_model.model.model.layers.17.self_attn.v_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 34114928
+  },
+  "base_model.model.model.layers.17.self_attn.o_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3990361931
+  },
+  "base_model.model.model.layers.17.self_attn.o_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 584678609
+  },
+  "base_model.model.model.layers.17.mlp.gate_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 710489123
+  },
+  "base_model.model.model.layers.17.mlp.gate_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2273311851
+  },
+  "base_model.model.model.layers.17.mlp.up_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 4111602341
+  },
+  "base_model.model.model.layers.17.mlp.up_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 909819103
+  },
+  "base_model.model.model.layers.17.mlp.down_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3940930493
+  },
+  "base_model.model.model.layers.17.mlp.down_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1784944248
+  },
+  "base_model.model.model.layers.18.self_attn.q_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1780673277
+  },
+  "base_model.model.model.layers.18.self_attn.q_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1874163535
+  },
+  "base_model.model.model.layers.18.self_attn.k_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 567723501
+  },
+  "base_model.model.model.layers.18.self_attn.k_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3876175995
+  },
+  "base_model.model.model.layers.18.self_attn.v_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 186485675
+  },
+  "base_model.model.model.layers.18.self_attn.v_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1838813673
+  },
+  "base_model.model.model.layers.18.self_attn.o_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 4031867429
+  },
+  "base_model.model.model.layers.18.self_attn.o_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1172087504
+  },
+  "base_model.model.model.layers.18.mlp.gate_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 4016563802
+  },
+  "base_model.model.model.layers.18.mlp.gate_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 296373123
+  },
+  "base_model.model.model.layers.18.mlp.up_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2831655237
+  },
+  "base_model.model.model.layers.18.mlp.up_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1033145266
+  },
+  "base_model.model.model.layers.18.mlp.down_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2586545335
+  },
+  "base_model.model.model.layers.18.mlp.down_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 4082424515
+  },
+  "base_model.model.model.layers.19.self_attn.q_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 4201960370
+  },
+  "base_model.model.model.layers.19.self_attn.q_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1482693153
+  },
+  "base_model.model.model.layers.19.self_attn.k_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 4062307482
+  },
+  "base_model.model.model.layers.19.self_attn.k_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3027116532
+  },
+  "base_model.model.model.layers.19.self_attn.v_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 384671076
+  },
+  "base_model.model.model.layers.19.self_attn.v_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3665218319
+  },
+  "base_model.model.model.layers.19.self_attn.o_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3783921993
+  },
+  "base_model.model.model.layers.19.self_attn.o_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1845022349
+  },
+  "base_model.model.model.layers.19.mlp.gate_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2262246795
+  },
+  "base_model.model.model.layers.19.mlp.gate_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2168385043
+  },
+  "base_model.model.model.layers.19.mlp.up_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 909853802
+  },
+  "base_model.model.model.layers.19.mlp.up_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2297464205
+  },
+  "base_model.model.model.layers.19.mlp.down_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2044041560
+  },
+  "base_model.model.model.layers.19.mlp.down_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1720782690
+  },
+  "base_model.model.model.layers.20.self_attn.q_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2965841613
+  },
+  "base_model.model.model.layers.20.self_attn.q_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2402367572
+  },
+  "base_model.model.model.layers.20.self_attn.k_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3499589794
+  },
+  "base_model.model.model.layers.20.self_attn.k_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1901723282
+  },
+  "base_model.model.model.layers.20.self_attn.v_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 162040075
+  },
+  "base_model.model.model.layers.20.self_attn.v_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3036635042
+  },
+  "base_model.model.model.layers.20.self_attn.o_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 190035282
+  },
+  "base_model.model.model.layers.20.self_attn.o_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3460426333
+  },
+  "base_model.model.model.layers.20.mlp.gate_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 908617802
+  },
+  "base_model.model.model.layers.20.mlp.gate_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1422135664
+  },
+  "base_model.model.model.layers.20.mlp.up_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2309636262
+  },
+  "base_model.model.model.layers.20.mlp.up_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3121251161
+  },
+  "base_model.model.model.layers.20.mlp.down_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1974814015
+  },
+  "base_model.model.model.layers.20.mlp.down_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 120243
+  },
+  "base_model.model.model.layers.21.self_attn.q_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3932968882
+  },
+  "base_model.model.model.layers.21.self_attn.q_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3392380681
+  },
+  "base_model.model.model.layers.21.self_attn.k_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1259620683
+  },
+  "base_model.model.model.layers.21.self_attn.k_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1611360296
+  },
+  "base_model.model.model.layers.21.self_attn.v_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3566668111
+  },
+  "base_model.model.model.layers.21.self_attn.v_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2328104615
+  },
+  "base_model.model.model.layers.21.self_attn.o_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2539964593
+  },
+  "base_model.model.model.layers.21.self_attn.o_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2640666734
+  },
+  "base_model.model.model.layers.21.mlp.gate_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 4010116503
+  },
+  "base_model.model.model.layers.21.mlp.gate_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 4130472737
+  },
+  "base_model.model.model.layers.21.mlp.up_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1220699322
+  },
+  "base_model.model.model.layers.21.mlp.up_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1760522761
+  },
+  "base_model.model.model.layers.21.mlp.down_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2094212781
+  },
+  "base_model.model.model.layers.21.mlp.down_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3001333273
+  },
+  "base_model.model.model.layers.22.self_attn.q_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 647829564
+  },
+  "base_model.model.model.layers.22.self_attn.q_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2776881570
+  },
+  "base_model.model.model.layers.22.self_attn.k_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3538701515
+  },
+  "base_model.model.model.layers.22.self_attn.k_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 54239872
+  },
+  "base_model.model.model.layers.22.self_attn.v_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 829065698
+  },
+  "base_model.model.model.layers.22.self_attn.v_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3167108455
+  },
+  "base_model.model.model.layers.22.self_attn.o_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2153269335
+  },
+  "base_model.model.model.layers.22.self_attn.o_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 761977128
+  },
+  "base_model.model.model.layers.22.mlp.gate_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1101922021
+  },
+  "base_model.model.model.layers.22.mlp.gate_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 966408387
+  },
+  "base_model.model.model.layers.22.mlp.up_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1408866621
+  },
+  "base_model.model.model.layers.22.mlp.up_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 4137781992
+  },
+  "base_model.model.model.layers.22.mlp.down_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2858811767
+  },
+  "base_model.model.model.layers.22.mlp.down_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1331418252
+  },
+  "base_model.model.model.layers.23.self_attn.q_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 4031119025
+  },
+  "base_model.model.model.layers.23.self_attn.q_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 738127931
+  },
+  "base_model.model.model.layers.23.self_attn.k_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 984678658
+  },
+  "base_model.model.model.layers.23.self_attn.k_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 187029897
+  },
+  "base_model.model.model.layers.23.self_attn.v_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 4085732363
+  },
+  "base_model.model.model.layers.23.self_attn.v_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 914024224
+  },
+  "base_model.model.model.layers.23.self_attn.o_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 66651447
+  },
+  "base_model.model.model.layers.23.self_attn.o_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2967335232
+  },
+  "base_model.model.model.layers.23.mlp.gate_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3952244076
+  },
+  "base_model.model.model.layers.23.mlp.gate_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3665992341
+  },
+  "base_model.model.model.layers.23.mlp.up_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 236590244
+  },
+  "base_model.model.model.layers.23.mlp.up_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2178577507
+  },
+  "base_model.model.model.layers.23.mlp.down_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 655134708
+  },
+  "base_model.model.model.layers.23.mlp.down_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1763888539
+  },
+  "base_model.model.model.layers.24.self_attn.q_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3589329655
+  },
+  "base_model.model.model.layers.24.self_attn.q_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3097246004
+  },
+  "base_model.model.model.layers.24.self_attn.k_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 861102549
+  },
+  "base_model.model.model.layers.24.self_attn.k_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3642597798
+  },
+  "base_model.model.model.layers.24.self_attn.v_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1932568308
+  },
+  "base_model.model.model.layers.24.self_attn.v_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 715767033
+  },
+  "base_model.model.model.layers.24.self_attn.o_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 128602920
+  },
+  "base_model.model.model.layers.24.self_attn.o_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1006075242
+  },
+  "base_model.model.model.layers.24.mlp.gate_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 4010092492
+  },
+  "base_model.model.model.layers.24.mlp.gate_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2798805966
+  },
+  "base_model.model.model.layers.24.mlp.up_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1464542224
+  },
+  "base_model.model.model.layers.24.mlp.up_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1151317559
+  },
+  "base_model.model.model.layers.24.mlp.down_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1597179596
+  },
+  "base_model.model.model.layers.24.mlp.down_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 4061487071
+  },
+  "base_model.model.model.layers.25.self_attn.q_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 230321889
+  },
+  "base_model.model.model.layers.25.self_attn.q_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1681754941
+  },
+  "base_model.model.model.layers.25.self_attn.k_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3218975765
+  },
+  "base_model.model.model.layers.25.self_attn.k_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 4130178757
+  },
+  "base_model.model.model.layers.25.self_attn.v_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 645024296
+  },
+  "base_model.model.model.layers.25.self_attn.v_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 956246837
+  },
+  "base_model.model.model.layers.25.self_attn.o_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2338341152
+  },
+  "base_model.model.model.layers.25.self_attn.o_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 439621959
+  },
+  "base_model.model.model.layers.25.mlp.gate_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3880095222
+  },
+  "base_model.model.model.layers.25.mlp.gate_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1108106682
+  },
+  "base_model.model.model.layers.25.mlp.up_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3988057227
+  },
+  "base_model.model.model.layers.25.mlp.up_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2469435261
+  },
+  "base_model.model.model.layers.25.mlp.down_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 79395321
+  },
+  "base_model.model.model.layers.25.mlp.down_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3432719447
+  },
+  "base_model.model.model.layers.26.self_attn.q_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1504217739
+  },
+  "base_model.model.model.layers.26.self_attn.q_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1042223164
+  },
+  "base_model.model.model.layers.26.self_attn.k_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3431589868
+  },
+  "base_model.model.model.layers.26.self_attn.k_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2281405009
+  },
+  "base_model.model.model.layers.26.self_attn.v_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1313280865
+  },
+  "base_model.model.model.layers.26.self_attn.v_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2769942003
+  },
+  "base_model.model.model.layers.26.self_attn.o_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 556225056
+  },
+  "base_model.model.model.layers.26.self_attn.o_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1077052713
+  },
+  "base_model.model.model.layers.26.mlp.gate_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3959900034
+  },
+  "base_model.model.model.layers.26.mlp.gate_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 635797820
+  },
+  "base_model.model.model.layers.26.mlp.up_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 792220763
+  },
+  "base_model.model.model.layers.26.mlp.up_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 4180788498
+  },
+  "base_model.model.model.layers.26.mlp.down_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1053854264
+  },
+  "base_model.model.model.layers.26.mlp.down_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2312074842
+  },
+  "base_model.model.model.layers.27.self_attn.q_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 4048108445
+  },
+  "base_model.model.model.layers.27.self_attn.q_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3565621339
+  },
+  "base_model.model.model.layers.27.self_attn.k_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2367311621
+  },
+  "base_model.model.model.layers.27.self_attn.k_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1274627768
+  },
+  "base_model.model.model.layers.27.self_attn.v_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3143729422
+  },
+  "base_model.model.model.layers.27.self_attn.v_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 211372506
+  },
+  "base_model.model.model.layers.27.self_attn.o_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1023727648
+  },
+  "base_model.model.model.layers.27.self_attn.o_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 122945951
+  },
+  "base_model.model.model.layers.27.mlp.gate_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1425629333
+  },
+  "base_model.model.model.layers.27.mlp.gate_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3371870536
+  },
+  "base_model.model.model.layers.27.mlp.up_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 3947493560
+  },
+  "base_model.model.model.layers.27.mlp.up_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 2764143834
+  },
+  "base_model.model.model.layers.27.mlp.down_proj.lora_A.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 1590803028
+  },
+  "base_model.model.model.layers.27.mlp.down_proj.lora_B.default.weight": {
+    "rank": 5,
+    "identity_fallback": false,
+    "fixed_basis_seed": 757883459
+  }
+}

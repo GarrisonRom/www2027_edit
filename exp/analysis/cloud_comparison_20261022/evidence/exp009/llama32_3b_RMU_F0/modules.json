@@ -1,0 +1,8 @@
+{
+  "targets": [
+    "model.layers.5.mlp.down_proj",
+    "model.layers.6.mlp.down_proj",
+    "model.layers.7.mlp.down_proj"
+  ],
+  "trainable_parameters": 270336
+}

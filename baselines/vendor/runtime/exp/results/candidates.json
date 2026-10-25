@@ -1,0 +1,1430 @@
+{
+ "facts": [
+  {
+   "subject": "Marian Shields Robinson",
+   "relation": "country of citizenship",
+   "object": "United States of America",
+   "covers": [
+    [
+     23,
+     0
+    ]
+   ],
+   "consistency": 1.0,
+   "mastered": true,
+   "distractors": [
+    "Macedonia",
+    "unknown1"
+   ],
+   "S": [
+    [
+     23,
+     0
+    ]
+   ]
+  },
+  {
+   "subject": "Marian Shields Robinson",
+   "relation": "place of birth",
+   "object": "Chicago",
+   "covers": [
+    [
+     23,
+     1
+    ]
+   ],
+   "consistency": 0.0,
+   "mastered": false,
+   "distractors": [
+    "Whittier",
+    "Mayfair"
+   ]
+  },
+  {
+   "subject": "Christianity",
+   "relation": "location",
+   "object": "worldwide",
+   "covers": [
+    [
+     47,
+     0
+    ],
+    [
+     360,
+     0
+    ]
+   ],
+   "consistency": 1.0,
+   "mastered": true,
+   "distractors": [
+    "unknown",
+    "none"
+   ],
+   "S": []
+  },
+  {
+   "subject": "Christianity",
+   "relation": "founded by",
+   "object": "Jesus",
+   "covers": [
+    [
+     47,
+     1
+    ],
+    [
+     360,
+     1
+    ]
+   ],
+   "consistency": 0.5,
+   "mastered": false,
+   "distractors": [
+    "Charles Taze Russell",
+    "Abraham"
+   ]
+  },
+  {
+   "subject": "Hugh E. Rodham",
+   "relation": "country of citizenship",
+   "object": "United States of America",
+   "covers": [
+    [
+     60,
+     0
+    ]
+   ],
+   "consistency": 1.0,
+   "mastered": true,
+   "distractors": [
+    "Macedonia",
+    "unknown1"
+   ],
+   "S": [
+    [
+     60,
+     0
+    ]
+   ]
+  },
+  {
+   "subject": "Hugh E. Rodham",
+   "relation": "place of birth",
+   "object": "Scranton",
+   "covers": [
+    [
+     60,
+     1
+    ]
+   ],
+   "consistency": 1.0,
+   "mastered": true,
+   "distractors": [
+    "Chicago",
+    "Passaron"
+   ],
+   "S": []
+  },
+  {
+   "subject": "Los Angeles",
+   "relation": "country",
+   "object": "United States of America",
+   "covers": [
+    [
+     69,
+     0
+    ],
+    [
+     257,
+     0
+    ]
+   ],
+   "consistency": 1.0,
+   "mastered": true,
+   "distractors": [
+    "unknown",
+    "none"
+   ],
+   "S": [
+    [
+     69,
+     0
+    ],
+    [
+     257,
+     0
+    ]
+   ]
+  },
+  {
+   "subject": "Los Angeles",
+   "relation": "continent",
+   "object": "North America",
+   "covers": [
+    [
+     69,
+     1
+    ],
+    [
+     257,
+     1
+    ]
+   ],
+   "consistency": 1.0,
+   "mastered": true,
+   "distractors": [
+    "Europe",
+    "unknown1"
+   ],
+   "S": [
+    [
+     69,
+     1
+    ],
+    [
+     257,
+     1
+    ]
+   ]
+  },
+  {
+   "subject": "Theodore Roosevelt Sr.",
+   "relation": "occupation",
+   "object": "entrepreneur",
+   "covers": [
+    [
+     119,
+     0
+    ]
+   ],
+   "consistency": 0.0,
+   "mastered": false,
+   "distractors": [
+    "monarch",
+    "politician"
+   ]
+  },
+  {
+   "subject": "Theodore Roosevelt Sr.",
+   "relation": "country of citizenship",
+   "object": "United States of America",
+   "covers": [
+    [
+     119,
+     1
+    ]
+   ],
+   "consistency": 1.0,
+   "mastered": true,
+   "distractors": [
+    "Macedonia",
+    "unknown1"
+   ],
+   "S": [
+    [
+     119,
+     1
+    ]
+   ]
+  },
+  {
+   "subject": "Theodore Roosevelt Sr.",
+   "relation": "place of birth",
+   "object": "New York City",
+   "covers": [
+    [
+     119,
+     2
+    ]
+   ],
+   "consistency": 1.0,
+   "mastered": true,
+   "distractors": [
+    "Scranton",
+    "Passaron"
+   ],
+   "S": [
+    [
+     119,
+     2
+    ]
+   ]
+  },
+  {
+   "subject": "Scott Swift",
+   "relation": "occupation",
+   "object": "financial adviser",
+   "covers": [
+    [
+     132,
+     0
+    ]
+   ],
+   "consistency": 0.5,
+   "mastered": false,
+   "distractors": [
+    "monarch",
+    "entrepreneur"
+   ]
+  },
+  {
+   "subject": "Scott Swift",
+   "relation": "country of citizenship",
+   "object": "United States of America",
+   "covers": [
+    [
+     132,
+     1
+    ]
+   ],
+   "consistency": 1.0,
+   "mastered": true,
+   "distractors": [
+    "Macedonia",
+    "unknown1"
+   ],
+   "S": [
+    [
+     132,
+     1
+    ]
+   ]
+  },
+  {
+   "subject": "Judaism",
+   "relation": "location",
+   "object": "worldwide",
+   "covers": [
+    [
+     139,
+     0
+    ]
+   ],
+   "consistency": 1.0,
+   "mastered": true,
+   "distractors": [
+    "unknown",
+    "none"
+   ],
+   "S": []
+  },
+  {
+   "subject": "Judaism",
+   "relation": "founded by",
+   "object": "Abraham",
+   "covers": [
+    [
+     139,
+     1
+    ]
+   ],
+   "consistency": 0.0,
+   "mastered": false,
+   "distractors": [
+    "Jesus",
+    "Charles Taze Russell"
+   ]
+  },
+  {
+   "subject": "United States of America",
+   "relation": "capital",
+   "object": "Washington, D.C.",
+   "covers": [
+    [
+     148,
+     0
+    ],
+    [
+     201,
+     0
+    ],
+    [
+     446,
+     0
+    ],
+    [
+     511,
+     0
+    ],
+    [
+     578,
+     0
+    ],
+    [
+     599,
+     0
+    ],
+    [
+     661,
+     0
+    ]
+   ],
+   "consistency": 1.0,
+   "mastered": true,
+   "distractors": [
+    "London",
+    "unknown1"
+   ],
+   "S": [
+    [
+     148,
+     0
+    ],
+    [
+     201,
+     0
+    ],
+    [
+     446,
+     0
+    ],
+    [
+     511,
+     0
+    ],
+    [
+     578,
+     0
+    ],
+    [
+     599,
+     0
+    ],
+    [
+     661,
+     0
+    ]
+   ]
+  },
+  {
+   "subject": "United States of America",
+   "relation": "continent",
+   "object": "North America",
+   "covers": [
+    [
+     148,
+     1
+    ],
+    [
+     201,
+     1
+    ],
+    [
+     446,
+     1
+    ],
+    [
+     511,
+     1
+    ],
+    [
+     578,
+     1
+    ],
+    [
+     599,
+     1
+    ],
+    [
+     661,
+     1
+    ]
+   ],
+   "consistency": 1.0,
+   "mastered": true,
+   "distractors": [
+    "Europe",
+    "unknown1"
+   ],
+   "S": [
+    [
+     148,
+     1
+    ],
+    [
+     201,
+     1
+    ],
+    [
+     446,
+     1
+    ],
+    [
+     511,
+     1
+    ],
+    [
+     578,
+     1
+    ],
+    [
+     599,
+     1
+    ],
+    [
+     661,
+     1
+    ]
+   ]
+  },
+  {
+   "subject": "United States of America",
+   "relation": "currency",
+   "object": "United States dollar",
+   "covers": [
+    [
+     148,
+     2
+    ],
+    [
+     201,
+     2
+    ],
+    [
+     446,
+     2
+    ],
+    [
+     511,
+     2
+    ],
+    [
+     578,
+     2
+    ],
+    [
+     599,
+     2
+    ],
+    [
+     661,
+     2
+    ]
+   ],
+   "consistency": 1.0,
+   "mastered": true,
+   "distractors": [
+    "pound sterling",
+    "unknown1"
+   ],
+   "S": [
+    [
+     148,
+     2
+    ],
+    [
+     201,
+     2
+    ],
+    [
+     446,
+     2
+    ],
+    [
+     511,
+     2
+    ],
+    [
+     578,
+     2
+    ],
+    [
+     599,
+     2
+    ],
+    [
+     661,
+     2
+    ]
+   ]
+  },
+  {
+   "subject": "United States of America",
+   "relation": "highest point",
+   "object": "Denali",
+   "covers": [
+    [
+     148,
+     3
+    ],
+    [
+     201,
+     3
+    ],
+    [
+     446,
+     3
+    ],
+    [
+     511,
+     3
+    ],
+    [
+     578,
+     3
+    ],
+    [
+     599,
+     3
+    ],
+    [
+     661,
+     3
+    ]
+   ],
+   "consistency": 1.0,
+   "mastered": true,
+   "distractors": [
+    "Ben Nevis",
+    "unknown1"
+   ],
+   "S": [
+    [
+     446,
+     3
+    ]
+   ]
+  },
+  {
+   "subject": "White Plains",
+   "relation": "country",
+   "object": "United States of America",
+   "covers": [
+    [
+     223,
+     0
+    ]
+   ],
+   "consistency": 1.0,
+   "mastered": true,
+   "distractors": [
+    "unknown",
+    "none"
+   ],
+   "S": [
+    [
+     223,
+     0
+    ]
+   ]
+  },
+  {
+   "subject": "New Orleans",
+   "relation": "country",
+   "object": "United States of America",
+   "covers": [
+    [
+     245,
+     0
+    ]
+   ],
+   "consistency": 1.0,
+   "mastered": true,
+   "distractors": [
+    "unknown",
+    "none"
+   ],
+   "S": [
+    [
+     245,
+     0
+    ]
+   ]
+  },
+  {
+   "subject": "United Kingdom",
+   "relation": "capital",
+   "object": "London",
+   "covers": [
+    [
+     301,
+     0
+    ]
+   ],
+   "consistency": 0.0,
+   "mastered": false,
+   "distractors": [
+    "Washington, D.C.",
+    "unknown1"
+   ]
+  },
+  {
+   "subject": "United Kingdom",
+   "relation": "continent",
+   "object": "Europe",
+   "covers": [
+    [
+     301,
+     1
+    ]
+   ],
+   "consistency": 0.0,
+   "mastered": false,
+   "distractors": [
+    "North America",
+    "unknown1"
+   ]
+  },
+  {
+   "subject": "United Kingdom",
+   "relation": "currency",
+   "object": "pound sterling",
+   "covers": [
+    [
+     301,
+     2
+    ]
+   ],
+   "consistency": 0.0,
+   "mastered": false,
+   "distractors": [
+    "United States dollar",
+    "unknown1"
+   ]
+  },
+  {
+   "subject": "United Kingdom",
+   "relation": "highest point",
+   "object": "Ben Nevis",
+   "covers": [
+    [
+     301,
+     3
+    ]
+   ],
+   "consistency": 1.0,
+   "mastered": true,
+   "distractors": [
+    "Denali",
+    "unknown1"
+   ],
+   "S": [
+    [
+     301,
+     3
+    ]
+   ]
+  },
+  {
+   "subject": "Elliott Bulloch Roosevelt",
+   "relation": "religion",
+   "object": "Dutch Reformed Church",
+   "covers": [
+    [
+     328,
+     0
+    ]
+   ],
+   "consistency": 1.0,
+   "mastered": true,
+   "distractors": [
+    "Catholic Church",
+    "Catholicism"
+   ],
+   "S": [
+    [
+     328,
+     0
+    ]
+   ]
+  },
+  {
+   "subject": "Elliott Bulloch Roosevelt",
+   "relation": "occupation",
+   "object": "socialite",
+   "covers": [
+    [
+     328,
+     1
+    ]
+   ],
+   "consistency": 0.5,
+   "mastered": false,
+   "distractors": [
+    "financial adviser",
+    "monarch"
+   ]
+  },
+  {
+   "subject": "Elliott Bulloch Roosevelt",
+   "relation": "country of citizenship",
+   "object": "United States of America",
+   "covers": [
+    [
+     328,
+     2
+    ]
+   ],
+   "consistency": 1.0,
+   "mastered": true,
+   "distractors": [
+    "Macedonia",
+    "unknown1"
+   ],
+   "S": [
+    [
+     328,
+     2
+    ]
+   ]
+  },
+  {
+   "subject": "Elizabeth II",
+   "relation": "religion",
+   "object": "Church of England",
+   "covers": [
+    [
+     333,
+     0
+    ]
+   ],
+   "consistency": 1.0,
+   "mastered": true,
+   "distractors": [
+    "Catholic Church",
+    "Catholicism"
+   ],
+   "S": [
+    [
+     333,
+     0
+    ]
+   ]
+  },
+  {
+   "subject": "Elizabeth II",
+   "relation": "occupation",
+   "object": "monarch",
+   "covers": [
+    [
+     333,
+     1
+    ]
+   ],
+   "consistency": 1.0,
+   "mastered": true,
+   "distractors": [
+    "boxer",
+    "entrepreneur"
+   ],
+   "S": []
+  },
+  {
+   "subject": "Elizabeth II",
+   "relation": "place of birth",
+   "object": "Mayfair",
+   "covers": [
+    [
+     333,
+     2
+    ]
+   ],
+   "consistency": 1.0,
+   "mastered": true,
+   "distractors": [
+    "Scranton",
+    "Whittier"
+   ],
+   "S": [
+    [
+     333,
+     2
+    ]
+   ]
+  },
+  {
+   "subject": "Elizabeth II",
+   "relation": "native language",
+   "object": "English",
+   "covers": [
+    [
+     333,
+     3
+    ]
+   ],
+   "consistency": 1.0,
+   "mastered": true,
+   "distractors": [
+    "unknown",
+    "none"
+   ],
+   "S": []
+  },
+  {
+   "subject": "Thomas D'Alesandro, Jr.",
+   "relation": "religion",
+   "object": "Catholic Church",
+   "covers": [
+    [
+     412,
+     0
+    ]
+   ],
+   "consistency": 0.0,
+   "mastered": false,
+   "distractors": [
+    "Dutch Reformed Church",
+    "Church of England"
+   ]
+  },
+  {
+   "subject": "Thomas D'Alesandro, Jr.",
+   "relation": "occupation",
+   "object": "politician",
+   "covers": [
+    [
+     412,
+     1
+    ]
+   ],
+   "consistency": 1.0,
+   "mastered": true,
+   "distractors": [
+    "financial adviser",
+    "actor"
+   ],
+   "S": []
+  },
+  {
+   "subject": "Thomas D'Alesandro, Jr.",
+   "relation": "country of citizenship",
+   "object": "United States of America",
+   "covers": [
+    [
+     412,
+     2
+    ]
+   ],
+   "consistency": 1.0,
+   "mastered": true,
+   "distractors": [
+    "Macedonia",
+    "unknown1"
+   ],
+   "S": [
+    [
+     412,
+     2
+    ]
+   ]
+  },
+  {
+   "subject": "Thomas D'Alesandro, Jr.",
+   "relation": "place of birth",
+   "object": "Baltimore",
+   "covers": [
+    [
+     412,
+     3
+    ]
+   ],
+   "consistency": 1.0,
+   "mastered": true,
+   "distractors": [
+    "Passaron",
+    "Scranton"
+   ],
+   "S": []
+  },
+  {
+   "subject": "Nelsonville",
+   "relation": "country",
+   "object": "United States of America",
+   "covers": [
+    [
+     436,
+     0
+    ]
+   ],
+   "consistency": 1.0,
+   "mastered": true,
+   "distractors": [
+    "unknown",
+    "none"
+   ],
+   "S": [
+    [
+     436,
+     0
+    ]
+   ]
+  },
+  {
+   "subject": "Joe Jackson",
+   "relation": "occupation",
+   "object": "boxer",
+   "covers": [
+    [
+     482,
+     0
+    ]
+   ],
+   "consistency": 0.0,
+   "mastered": false,
+   "distractors": [
+    "entrepreneur",
+    "socialite"
+   ]
+  },
+  {
+   "subject": "Joe Jackson",
+   "relation": "country of citizenship",
+   "object": "United States of America",
+   "covers": [
+    [
+     482,
+     1
+    ]
+   ],
+   "consistency": 1.0,
+   "mastered": true,
+   "distractors": [
+    "Macedonia",
+    "unknown1"
+   ],
+   "S": [
+    [
+     482,
+     1
+    ]
+   ]
+  },
+  {
+   "subject": "Joe Jackson",
+   "relation": "sport",
+   "object": "boxing",
+   "covers": [
+    [
+     482,
+     2
+    ]
+   ],
+   "consistency": 1.0,
+   "mastered": true,
+   "distractors": [
+    "unknown",
+    "none"
+   ],
+   "S": []
+  },
+  {
+   "subject": "Joe Jackson",
+   "relation": "place of birth",
+   "object": "Fountain Hill",
+   "covers": [
+    [
+     482,
+     3
+    ]
+   ],
+   "consistency": 0.0,
+   "mastered": false,
+   "distractors": [
+    "Chicago",
+    "Whittier"
+   ]
+  },
+  {
+   "subject": "Joe Jackson",
+   "relation": "native language",
+   "object": "English",
+   "covers": [
+    [
+     482,
+     4
+    ]
+   ],
+   "consistency": 1.0,
+   "mastered": true,
+   "distractors": [
+    "unknown",
+    "none"
+   ],
+   "S": [
+    [
+     482,
+     4
+    ]
+   ]
+  },
+  {
+   "subject": "Katherine Jackson",
+   "relation": "country of citizenship",
+   "object": "United States of America",
+   "covers": [
+    [
+     483,
+     0
+    ]
+   ],
+   "consistency": 1.0,
+   "mastered": true,
+   "distractors": [
+    "Macedonia",
+    "unknown1"
+   ],
+   "S": [
+    [
+     483,
+     0
+    ]
+   ]
+  },
+  {
+   "subject": "Katherine Jackson",
+   "relation": "place of birth",
+   "object": "Barbour County",
+   "covers": [
+    [
+     483,
+     1
+    ]
+   ],
+   "consistency": 1.0,
+   "mastered": true,
+   "distractors": [
+    "Scranton",
+    "Chicago"
+   ],
+   "S": [
+    [
+     483,
+     1
+    ]
+   ]
+  },
+  {
+   "subject": "Brooklyn",
+   "relation": "country",
+   "object": "United States of America",
+   "covers": [
+    [
+     491,
+     0
+    ]
+   ],
+   "consistency": 1.0,
+   "mastered": true,
+   "distractors": [
+    "unknown",
+    "none"
+   ],
+   "S": [
+    [
+     491,
+     0
+    ]
+   ]
+  },
+  {
+   "subject": "Deloris Jordan",
+   "relation": "occupation",
+   "object": "banker",
+   "covers": [
+    [
+     493,
+     0
+    ]
+   ],
+   "consistency": 0.0,
+   "mastered": false,
+   "distractors": [
+    "actor",
+    "boxer"
+   ]
+  },
+  {
+   "subject": "Deloris Jordan",
+   "relation": "country of citizenship",
+   "object": "United States of America",
+   "covers": [
+    [
+     493,
+     1
+    ]
+   ],
+   "consistency": 1.0,
+   "mastered": true,
+   "distractors": [
+    "Macedonia",
+    "unknown1"
+   ],
+   "S": [
+    [
+     493,
+     1
+    ]
+   ]
+  },
+  {
+   "subject": "Kathy Hilton",
+   "relation": "religion",
+   "object": "Catholicism",
+   "covers": [
+    [
+     506,
+     0
+    ]
+   ],
+   "consistency": 0.0,
+   "mastered": false,
+   "distractors": [
+    "Church of England",
+    "Dutch Reformed Church"
+   ]
+  },
+  {
+   "subject": "Kathy Hilton",
+   "relation": "occupation",
+   "object": "actor",
+   "covers": [
+    [
+     506,
+     1
+    ]
+   ],
+   "consistency": 1.0,
+   "mastered": true,
+   "distractors": [
+    "politician",
+    "boxer"
+   ],
+   "S": []
+  },
+  {
+   "subject": "Kathy Hilton",
+   "relation": "country of citizenship",
+   "object": "United States of America",
+   "covers": [
+    [
+     506,
+     2
+    ]
+   ],
+   "consistency": 1.0,
+   "mastered": true,
+   "distractors": [
+    "Macedonia",
+    "unknown1"
+   ],
+   "S": [
+    [
+     506,
+     2
+    ]
+   ]
+  },
+  {
+   "subject": "Kathy Hilton",
+   "relation": "place of birth",
+   "object": "Whittier",
+   "covers": [
+    [
+     506,
+     3
+    ]
+   ],
+   "consistency": 0.0,
+   "mastered": false,
+   "distractors": [
+    "New York City",
+    "Baltimore"
+   ]
+  },
+  {
+   "subject": "Kathy Hilton",
+   "relation": "native language",
+   "object": "English",
+   "covers": [
+    [
+     506,
+     4
+    ]
+   ],
+   "consistency": 1.0,
+   "mastered": true,
+   "distractors": [
+    "unknown",
+    "none"
+   ],
+   "S": [
+    [
+     506,
+     4
+    ]
+   ]
+  },
+  {
+   "subject": "Olympias",
+   "relation": "occupation",
+   "object": "politician",
+   "covers": [
+    [
+     528,
+     0
+    ]
+   ],
+   "consistency": 1.0,
+   "mastered": true,
+   "distractors": [
+    "entrepreneur",
+    "financial adviser"
+   ],
+   "S": []
+  },
+  {
+   "subject": "Olympias",
+   "relation": "country of citizenship",
+   "object": "Macedonia",
+   "covers": [
+    [
+     528,
+     1
+    ]
+   ],
+   "consistency": 0.0,
+   "mastered": false,
+   "distractors": [
+    "United States of America",
+    "unknown1"
+   ]
+  },
+  {
+   "subject": "Olympias",
+   "relation": "place of birth",
+   "object": "Passaron",
+   "covers": [
+    [
+     528,
+     2
+    ]
+   ],
+   "consistency": 0.0,
+   "mastered": false,
+   "distractors": [
+    "Chicago",
+    "Mount Sidney"
+   ]
+  },
+  {
+   "subject": "Jehovah's Witnesses",
+   "relation": "headquarters location",
+   "object": "Warwick",
+   "covers": [
+    [
+     533,
+     0
+    ]
+   ],
+   "consistency": 0.0,
+   "mastered": false,
+   "distractors": [
+    "unknown",
+    "none"
+   ]
+  },
+  {
+   "subject": "Jehovah's Witnesses",
+   "relation": "founded by",
+   "object": "Charles Taze Russell",
+   "covers": [
+    [
+     533,
+     1
+    ]
+   ],
+   "consistency": 1.0,
+   "mastered": true,
+   "distractors": [
+    "Jesus",
+    "Abraham"
+   ],
+   "S": [
+    [
+     533,
+     1
+    ]
+   ]
+  },
+  {
+   "subject": "Ida Stover Eisenhower",
+   "relation": "country of citizenship",
+   "object": "United States of America",
+   "covers": [
+    [
+     536,
+     0
+    ]
+   ],
+   "consistency": 1.0,
+   "mastered": true,
+   "distractors": [
+    "Macedonia",
+    "unknown1"
+   ],
+   "S": [
+    [
+     536,
+     0
+    ]
+   ]
+  },
+  {
+   "subject": "Ida Stover Eisenhower",
+   "relation": "place of birth",
+   "object": "Mount Sidney",
+   "covers": [
+    [
+     536,
+     1
+    ]
+   ],
+   "consistency": 0.0,
+   "mastered": false,
+   "distractors": [
+    "Barbour County",
+    "Mayfair"
+   ]
+  },
+  {
+   "subject": "John Bongiovi Sr.",
+   "relation": "occupation",
+   "object": "barber",
+   "covers": [
+    [
+     615,
+     0
+    ]
+   ],
+   "consistency": 0.0,
+   "mastered": false,
+   "distractors": [
+    "socialite",
+    "boxer"
+   ]
+  },
+  {
+   "subject": "Flatwoods",
+   "relation": "country",
+   "object": "United States of America",
+   "covers": [
+    [
+     629,
+     0
+    ]
+   ],
+   "consistency": 1.0,
+   "mastered": true,
+   "distractors": [
+    "unknown",
+    "none"
+   ],
+   "S": [
+    [
+     629,
+     0
+    ]
+   ]
+  }
+ ],
+ "tau": 0.75
+}

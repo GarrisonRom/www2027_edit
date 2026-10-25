@@ -1,0 +1,11 @@
+{
+  "all89": 0.2172284644194757,
+  "f0": 0.21212121212121213,
+  "f1": 0.2,
+  "retain": 0.3939393939393939,
+  "retain_is_heldout": true,
+  "smoke": false,
+  "mmlu": null,
+  "ppl": null,
+  "capability_status": "not_run_in_local_behavior_protocol"
+}

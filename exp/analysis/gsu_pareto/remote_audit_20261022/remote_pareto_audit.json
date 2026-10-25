@@ -1,0 +1,741 @@
+{
+  "rows": [
+    {
+      "method": "Original_F0",
+      "model": "Qwen3.5-4B",
+      "supervision": "none",
+      "seed": 42,
+      "run_id": "qwen35_4b_Original_F0",
+      "exp_id": "exp008",
+      "multihop_recall": 0.8666666666666667,
+      "retain_heldout": 0.696969696969697,
+      "direct_recall": 0.7272727272727273,
+      "all_hop2_recall": null,
+      "source": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_Original_F0/metrics.json"
+    },
+    {
+      "method": "Original_F0",
+      "model": "Llama-3.2-3B-Instruct",
+      "supervision": "none",
+      "seed": 42,
+      "run_id": "llama32_3b_Original_F0",
+      "exp_id": "exp008",
+      "multihop_recall": 0.92,
+      "retain_heldout": 0.8787878787878788,
+      "direct_recall": 0.8787878787878788,
+      "all_hop2_recall": null,
+      "source": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_Original_F0/metrics.json"
+    },
+    {
+      "method": "GA_F0",
+      "model": "Qwen3.5-4B",
+      "supervision": "F0",
+      "seed": 42,
+      "run_id": "qwen35_4b_GA_F0",
+      "exp_id": "exp008",
+      "multihop_recall": 0.16,
+      "retain_heldout": 0.24242424242424243,
+      "direct_recall": 0.30303030303030304,
+      "all_hop2_recall": null,
+      "source": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_GA_F0/metrics.json"
+    },
+    {
+      "method": "GA_F0",
+      "model": "Llama-3.2-3B-Instruct",
+      "supervision": "F0",
+      "seed": 42,
+      "run_id": "llama32_3b_GA_F0",
+      "exp_id": "exp008",
+      "multihop_recall": 0.013333333333333334,
+      "retain_heldout": 0.21212121212121213,
+      "direct_recall": 0.24242424242424243,
+      "all_hop2_recall": null,
+      "source": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_GA_F0/metrics.json"
+    },
+    {
+      "method": "GradDiff_F0",
+      "model": "Qwen3.5-4B",
+      "supervision": "F0",
+      "seed": 42,
+      "run_id": "qwen35_4b_GradDiff_F0",
+      "exp_id": "exp008",
+      "multihop_recall": 0.6133333333333333,
+      "retain_heldout": 0.48484848484848486,
+      "direct_recall": 0.36363636363636365,
+      "all_hop2_recall": null,
+      "source": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_GradDiff_F0/metrics.json"
+    },
+    {
+      "method": "GradDiff_F0",
+      "model": "Llama-3.2-3B-Instruct",
+      "supervision": "F0",
+      "seed": 42,
+      "run_id": "llama32_3b_GradDiff_F0",
+      "exp_id": "exp008",
+      "multihop_recall": 0.84,
+      "retain_heldout": 0.6666666666666666,
+      "direct_recall": 0.42424242424242425,
+      "all_hop2_recall": null,
+      "source": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_GradDiff_F0/metrics.json"
+    },
+    {
+      "method": "NPO_F0",
+      "model": "Qwen3.5-4B",
+      "supervision": "F0",
+      "seed": 42,
+      "run_id": "qwen35_4b_NPO_F0",
+      "exp_id": "exp008",
+      "multihop_recall": 0.8666666666666667,
+      "retain_heldout": 0.696969696969697,
+      "direct_recall": 0.42424242424242425,
+      "all_hop2_recall": null,
+      "source": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_NPO_F0/metrics.json"
+    },
+    {
+      "method": "NPO_F0",
+      "model": "Llama-3.2-3B-Instruct",
+      "supervision": "F0",
+      "seed": 42,
+      "run_id": "llama32_3b_NPO_F0",
+      "exp_id": "exp008",
+      "multihop_recall": 0.92,
+      "retain_heldout": 0.8787878787878788,
+      "direct_recall": 0.7272727272727273,
+      "all_hop2_recall": null,
+      "source": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_NPO_F0/metrics.json"
+    },
+    {
+      "method": "SimNPO_F0",
+      "model": "Qwen3.5-4B",
+      "supervision": "F0",
+      "seed": 42,
+      "run_id": "qwen35_4b_SimNPO_F0",
+      "exp_id": "exp008",
+      "multihop_recall": 0.9866666666666667,
+      "retain_heldout": 0.7878787878787878,
+      "direct_recall": 0.7575757575757576,
+      "all_hop2_recall": null,
+      "source": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_SimNPO_F0/metrics.json"
+    },
+    {
+      "method": "SimNPO_F0",
+      "model": "Llama-3.2-3B-Instruct",
+      "supervision": "F0",
+      "seed": 42,
+      "run_id": "llama32_3b_SimNPO_F0",
+      "exp_id": "exp008",
+      "multihop_recall": 0.92,
+      "retain_heldout": 0.8787878787878788,
+      "direct_recall": 0.7575757575757576,
+      "all_hop2_recall": null,
+      "source": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_SimNPO_F0/metrics.json"
+    },
+    {
+      "method": "GA_F0F1",
+      "model": "Qwen3.5-4B",
+      "supervision": "F0F1",
+      "seed": 42,
+      "run_id": "qwen35_4b_GA_F0F1",
+      "exp_id": "exp008",
+      "multihop_recall": 0.12,
+      "retain_heldout": 0.24242424242424243,
+      "direct_recall": 0.30303030303030304,
+      "all_hop2_recall": null,
+      "source": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_GA_F0F1/metrics.json"
+    },
+    {
+      "method": "GA_F0F1",
+      "model": "Llama-3.2-3B-Instruct",
+      "supervision": "F0F1",
+      "seed": 42,
+      "run_id": "llama32_3b_GA_F0F1",
+      "exp_id": "exp008",
+      "multihop_recall": 0.0,
+      "retain_heldout": 0.21212121212121213,
+      "direct_recall": 0.24242424242424243,
+      "all_hop2_recall": null,
+      "source": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_GA_F0F1/metrics.json"
+    },
+    {
+      "method": "RMU_F0",
+      "model": "Qwen3.5-4B",
+      "supervision": "F0",
+      "seed": 42,
+      "run_id": "qwen35_4b_RMU_F0",
+      "exp_id": "exp009",
+      "multihop_recall": 0.88,
+      "retain_heldout": 0.6363636363636364,
+      "direct_recall": 0.5454545454545454,
+      "all_hop2_recall": null,
+      "source": "/root/autodl-tmp/www2027_rmu_20261022/exp/runs/exp009_remote_rmu/runs/batch_20261022_01/qwen35_4b_RMU_F0/metrics.json"
+    },
+    {
+      "method": "RMU_F0",
+      "model": "Llama-3.2-3B-Instruct",
+      "supervision": "F0",
+      "seed": 42,
+      "run_id": "llama32_3b_RMU_F0",
+      "exp_id": "exp009",
+      "multihop_recall": 0.9066666666666666,
+      "retain_heldout": 0.9090909090909091,
+      "direct_recall": 0.8484848484848485,
+      "all_hop2_recall": null,
+      "source": "/root/autodl-tmp/www2027_rmu_20261022/exp/runs/exp009_remote_rmu/runs/batch_20261022_01/llama32_3b_RMU_F0/metrics.json"
+    }
+  ],
+  "sources": [
+    {
+      "path": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/status.json",
+      "sha256": "ad76a828b9599fc2a19a1f40ec2095b9c826acb363a820501572a4ff0232c1ac"
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_Original_F0/metrics.json",
+      "sha256": "d8fefa0b33871eb112a1f5843b03dfc40d6debc84256c9f0c6dd13ebd31fc03b"
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_Original_F0/config.json",
+      "sha256": "db7b5757a1b3bd3d6f182b8982569300ed7d2daf352a5a194071622f64307087"
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_Original_F0/metrics.json",
+      "sha256": "9bfc410658b373068120308218aacb21be079b3ac05f3eaed666b9888f7426c9"
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_Original_F0/config.json",
+      "sha256": "9d7064bf9907e500f563ef02cf23bb989cfca43c56baaf7c0dbf1802f07db8db"
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_GA_F0/metrics.json",
+      "sha256": "cb40b755cf3380dd9f30140fd58f56117f166e5b9251ab7085e706855f14b8d7"
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_GA_F0/config.json",
+      "sha256": "9e895aeb009cd91314191985806cde2991910379bf1eda523688751c4f1082e4"
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_GA_F0/metrics.json",
+      "sha256": "4bbc26bea1050bf38e887e3c014646aa8eca1cd157de75df13115def9970b98e"
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_GA_F0/config.json",
+      "sha256": "5aa9f844f658249b9e8b7c0408ee52e039a7720482652e2e4639d42f207df7bb"
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_GradDiff_F0/metrics.json",
+      "sha256": "d9c45e0ead34016a3c0a4c0fc30a3c71a529dd325ea722c78ac0c1eb9553eb32"
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_GradDiff_F0/config.json",
+      "sha256": "8b95199a990f3b8c55152604e741309c99dad4fba1d3de810082052a8d188189"
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_GradDiff_F0/metrics.json",
+      "sha256": "4096869b8d0a1c57ea282c903b31dc196d4a474843b5e4f0ff2efa6b179d864e"
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_GradDiff_F0/config.json",
+      "sha256": "911433552e46ebe89e1a9c760a67aba28ff6381ceab322067b635dfbacfd4a6a"
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_NPO_F0/metrics.json",
+      "sha256": "2da86b113bb0f8a46a711209263fd89e3fcce7a069992558afb6016ba146246b"
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_NPO_F0/config.json",
+      "sha256": "4875c7d519a421687022e0a3d41cf0e0640d34e30d286c2688e8ea04fb14cff1"
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_NPO_F0/metrics.json",
+      "sha256": "b9de78f9acab59453584823585c8f5b680b7b35e49b13965b4ce3d5d9554a7b9"
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_NPO_F0/config.json",
+      "sha256": "ce7e29f18b608851213846a18fc3f0e59dfe456193bcb06c9e52d458e89155ac"
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_SimNPO_F0/metrics.json",
+      "sha256": "c935802ed8cc96e1b988af327d7dd40cec87fded4cfc491a52d8515fb5a04c22"
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_SimNPO_F0/config.json",
+      "sha256": "04384b9415b672ebbc1e2b1fd4703a2801b31cff83ad772fc86d5f9dc1ba1320"
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_SimNPO_F0/metrics.json",
+      "sha256": "67cf812fa5584049770c14167531dbb5836db5674a3c091a2e33b04296f7efa7"
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_SimNPO_F0/config.json",
+      "sha256": "e71a8a2c6c8ded0e545a97a3ff65d516de70c66b5cd76c0772eb27d14af4e854"
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_GA_F0F1/metrics.json",
+      "sha256": "ff3f4dfc4e93d48b1831132f0800b946475bbf55cd693f3f4b0352e6147b415f"
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_GA_F0F1/config.json",
+      "sha256": "9d5be4259f9f1bc7998dfc3fbfc9b6917629fa88562040ba8b49b779e3bdec4c"
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_GA_F0F1/metrics.json",
+      "sha256": "4cd30269ece852b0009c3c0cbf9e0273d50fc27e02d7728e09ebdf2c27ddf169"
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_GA_F0F1/config.json",
+      "sha256": "e1efbf41613157c45986208b17b9b04a5c626919c519c3f877c4ba207dce317e"
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_rmu_20261022/exp/runs/exp009_remote_rmu/runs/batch_20261022_01/status.json",
+      "sha256": "f7190f642fabeb53bc8032b6ac35a0c0b545d38067eb1e045e48be9d61a5c782"
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_rmu_20261022/exp/runs/exp009_remote_rmu/runs/batch_20261022_01/qwen35_4b_RMU_F0/metrics.json",
+      "sha256": "90e58c4244388788e016a453373a9834180ecb176e7a852f7af024425537cc5e"
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_rmu_20261022/exp/runs/exp009_remote_rmu/runs/batch_20261022_01/qwen35_4b_RMU_F0/config.json",
+      "sha256": "fec8ec82f6c7e3a99e323cec416fdf609a07c1a639801726dcef0d1c9c6f9b1f"
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_rmu_20261022/exp/runs/exp009_remote_rmu/runs/batch_20261022_01/llama32_3b_RMU_F0/metrics.json",
+      "sha256": "721d7ba2cd3282bd304e9d97bea9c2380e026499afcedb877e4f3fd9feee7067"
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_rmu_20261022/exp/runs/exp009_remote_rmu/runs/batch_20261022_01/llama32_3b_RMU_F0/config.json",
+      "sha256": "90fa1564acaf11459bc9c429dd79b0e5b9d223aec51869ec8649eb434418615a"
+    }
+  ],
+  "limitations": [
+    "Single-seed fixed-input transfer, not tuned baseline optima",
+    "Current remote evaluator lacks ALL89-path full-hop2 metric",
+    "Adapters permit separate full-hop2 evaluation without retraining",
+    "No same-model GSU run yet; no cross-model common frontier",
+    "Retain heldout is not semantically unrelated by construction"
+  ],
+  "per_model": {
+    "Llama-3.2-3B-Instruct": {
+      "all_supervisions": [
+        {
+          "method": "Original_F0",
+          "model": "Llama-3.2-3B-Instruct",
+          "supervision": "none",
+          "seed": 42,
+          "run_id": "llama32_3b_Original_F0",
+          "exp_id": "exp008",
+          "multihop_recall": 0.92,
+          "retain_heldout": 0.8787878787878788,
+          "direct_recall": 0.8787878787878788,
+          "all_hop2_recall": null,
+          "source": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_Original_F0/metrics.json",
+          "dominated_by": [
+            "RMU_F0"
+          ],
+          "empirically_nondominated": false
+        },
+        {
+          "method": "GA_F0",
+          "model": "Llama-3.2-3B-Instruct",
+          "supervision": "F0",
+          "seed": 42,
+          "run_id": "llama32_3b_GA_F0",
+          "exp_id": "exp008",
+          "multihop_recall": 0.013333333333333334,
+          "retain_heldout": 0.21212121212121213,
+          "direct_recall": 0.24242424242424243,
+          "all_hop2_recall": null,
+          "source": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_GA_F0/metrics.json",
+          "dominated_by": [
+            "GA_F0F1"
+          ],
+          "empirically_nondominated": false
+        },
+        {
+          "method": "GradDiff_F0",
+          "model": "Llama-3.2-3B-Instruct",
+          "supervision": "F0",
+          "seed": 42,
+          "run_id": "llama32_3b_GradDiff_F0",
+          "exp_id": "exp008",
+          "multihop_recall": 0.84,
+          "retain_heldout": 0.6666666666666666,
+          "direct_recall": 0.42424242424242425,
+          "all_hop2_recall": null,
+          "source": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_GradDiff_F0/metrics.json",
+          "dominated_by": [],
+          "empirically_nondominated": true
+        },
+        {
+          "method": "NPO_F0",
+          "model": "Llama-3.2-3B-Instruct",
+          "supervision": "F0",
+          "seed": 42,
+          "run_id": "llama32_3b_NPO_F0",
+          "exp_id": "exp008",
+          "multihop_recall": 0.92,
+          "retain_heldout": 0.8787878787878788,
+          "direct_recall": 0.7272727272727273,
+          "all_hop2_recall": null,
+          "source": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_NPO_F0/metrics.json",
+          "dominated_by": [
+            "RMU_F0"
+          ],
+          "empirically_nondominated": false
+        },
+        {
+          "method": "SimNPO_F0",
+          "model": "Llama-3.2-3B-Instruct",
+          "supervision": "F0",
+          "seed": 42,
+          "run_id": "llama32_3b_SimNPO_F0",
+          "exp_id": "exp008",
+          "multihop_recall": 0.92,
+          "retain_heldout": 0.8787878787878788,
+          "direct_recall": 0.7575757575757576,
+          "all_hop2_recall": null,
+          "source": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_SimNPO_F0/metrics.json",
+          "dominated_by": [
+            "RMU_F0"
+          ],
+          "empirically_nondominated": false
+        },
+        {
+          "method": "GA_F0F1",
+          "model": "Llama-3.2-3B-Instruct",
+          "supervision": "F0F1",
+          "seed": 42,
+          "run_id": "llama32_3b_GA_F0F1",
+          "exp_id": "exp008",
+          "multihop_recall": 0.0,
+          "retain_heldout": 0.21212121212121213,
+          "direct_recall": 0.24242424242424243,
+          "all_hop2_recall": null,
+          "source": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_GA_F0F1/metrics.json",
+          "dominated_by": [],
+          "empirically_nondominated": true
+        },
+        {
+          "method": "RMU_F0",
+          "model": "Llama-3.2-3B-Instruct",
+          "supervision": "F0",
+          "seed": 42,
+          "run_id": "llama32_3b_RMU_F0",
+          "exp_id": "exp009",
+          "multihop_recall": 0.9066666666666666,
+          "retain_heldout": 0.9090909090909091,
+          "direct_recall": 0.8484848484848485,
+          "all_hop2_recall": null,
+          "source": "/root/autodl-tmp/www2027_rmu_20261022/exp/runs/exp009_remote_rmu/runs/batch_20261022_01/llama32_3b_RMU_F0/metrics.json",
+          "dominated_by": [],
+          "empirically_nondominated": true
+        }
+      ],
+      "F0_only_and_original": [
+        {
+          "method": "Original_F0",
+          "model": "Llama-3.2-3B-Instruct",
+          "supervision": "none",
+          "seed": 42,
+          "run_id": "llama32_3b_Original_F0",
+          "exp_id": "exp008",
+          "multihop_recall": 0.92,
+          "retain_heldout": 0.8787878787878788,
+          "direct_recall": 0.8787878787878788,
+          "all_hop2_recall": null,
+          "source": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_Original_F0/metrics.json",
+          "dominated_by": [
+            "RMU_F0"
+          ],
+          "empirically_nondominated": false
+        },
+        {
+          "method": "GA_F0",
+          "model": "Llama-3.2-3B-Instruct",
+          "supervision": "F0",
+          "seed": 42,
+          "run_id": "llama32_3b_GA_F0",
+          "exp_id": "exp008",
+          "multihop_recall": 0.013333333333333334,
+          "retain_heldout": 0.21212121212121213,
+          "direct_recall": 0.24242424242424243,
+          "all_hop2_recall": null,
+          "source": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_GA_F0/metrics.json",
+          "dominated_by": [],
+          "empirically_nondominated": true
+        },
+        {
+          "method": "GradDiff_F0",
+          "model": "Llama-3.2-3B-Instruct",
+          "supervision": "F0",
+          "seed": 42,
+          "run_id": "llama32_3b_GradDiff_F0",
+          "exp_id": "exp008",
+          "multihop_recall": 0.84,
+          "retain_heldout": 0.6666666666666666,
+          "direct_recall": 0.42424242424242425,
+          "all_hop2_recall": null,
+          "source": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_GradDiff_F0/metrics.json",
+          "dominated_by": [],
+          "empirically_nondominated": true
+        },
+        {
+          "method": "NPO_F0",
+          "model": "Llama-3.2-3B-Instruct",
+          "supervision": "F0",
+          "seed": 42,
+          "run_id": "llama32_3b_NPO_F0",
+          "exp_id": "exp008",
+          "multihop_recall": 0.92,
+          "retain_heldout": 0.8787878787878788,
+          "direct_recall": 0.7272727272727273,
+          "all_hop2_recall": null,
+          "source": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_NPO_F0/metrics.json",
+          "dominated_by": [
+            "RMU_F0"
+          ],
+          "empirically_nondominated": false
+        },
+        {
+          "method": "SimNPO_F0",
+          "model": "Llama-3.2-3B-Instruct",
+          "supervision": "F0",
+          "seed": 42,
+          "run_id": "llama32_3b_SimNPO_F0",
+          "exp_id": "exp008",
+          "multihop_recall": 0.92,
+          "retain_heldout": 0.8787878787878788,
+          "direct_recall": 0.7575757575757576,
+          "all_hop2_recall": null,
+          "source": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_SimNPO_F0/metrics.json",
+          "dominated_by": [
+            "RMU_F0"
+          ],
+          "empirically_nondominated": false
+        },
+        {
+          "method": "RMU_F0",
+          "model": "Llama-3.2-3B-Instruct",
+          "supervision": "F0",
+          "seed": 42,
+          "run_id": "llama32_3b_RMU_F0",
+          "exp_id": "exp009",
+          "multihop_recall": 0.9066666666666666,
+          "retain_heldout": 0.9090909090909091,
+          "direct_recall": 0.8484848484848485,
+          "all_hop2_recall": null,
+          "source": "/root/autodl-tmp/www2027_rmu_20261022/exp/runs/exp009_remote_rmu/runs/batch_20261022_01/llama32_3b_RMU_F0/metrics.json",
+          "dominated_by": [],
+          "empirically_nondominated": true
+        }
+      ]
+    },
+    "Qwen3.5-4B": {
+      "all_supervisions": [
+        {
+          "method": "Original_F0",
+          "model": "Qwen3.5-4B",
+          "supervision": "none",
+          "seed": 42,
+          "run_id": "qwen35_4b_Original_F0",
+          "exp_id": "exp008",
+          "multihop_recall": 0.8666666666666667,
+          "retain_heldout": 0.696969696969697,
+          "direct_recall": 0.7272727272727273,
+          "all_hop2_recall": null,
+          "source": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_Original_F0/metrics.json",
+          "dominated_by": [],
+          "empirically_nondominated": true
+        },
+        {
+          "method": "GA_F0",
+          "model": "Qwen3.5-4B",
+          "supervision": "F0",
+          "seed": 42,
+          "run_id": "qwen35_4b_GA_F0",
+          "exp_id": "exp008",
+          "multihop_recall": 0.16,
+          "retain_heldout": 0.24242424242424243,
+          "direct_recall": 0.30303030303030304,
+          "all_hop2_recall": null,
+          "source": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_GA_F0/metrics.json",
+          "dominated_by": [
+            "GA_F0F1"
+          ],
+          "empirically_nondominated": false
+        },
+        {
+          "method": "GradDiff_F0",
+          "model": "Qwen3.5-4B",
+          "supervision": "F0",
+          "seed": 42,
+          "run_id": "qwen35_4b_GradDiff_F0",
+          "exp_id": "exp008",
+          "multihop_recall": 0.6133333333333333,
+          "retain_heldout": 0.48484848484848486,
+          "direct_recall": 0.36363636363636365,
+          "all_hop2_recall": null,
+          "source": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_GradDiff_F0/metrics.json",
+          "dominated_by": [],
+          "empirically_nondominated": true
+        },
+        {
+          "method": "NPO_F0",
+          "model": "Qwen3.5-4B",
+          "supervision": "F0",
+          "seed": 42,
+          "run_id": "qwen35_4b_NPO_F0",
+          "exp_id": "exp008",
+          "multihop_recall": 0.8666666666666667,
+          "retain_heldout": 0.696969696969697,
+          "direct_recall": 0.42424242424242425,
+          "all_hop2_recall": null,
+          "source": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_NPO_F0/metrics.json",
+          "dominated_by": [],
+          "empirically_nondominated": true
+        },
+        {
+          "method": "SimNPO_F0",
+          "model": "Qwen3.5-4B",
+          "supervision": "F0",
+          "seed": 42,
+          "run_id": "qwen35_4b_SimNPO_F0",
+          "exp_id": "exp008",
+          "multihop_recall": 0.9866666666666667,
+          "retain_heldout": 0.7878787878787878,
+          "direct_recall": 0.7575757575757576,
+          "all_hop2_recall": null,
+          "source": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_SimNPO_F0/metrics.json",
+          "dominated_by": [],
+          "empirically_nondominated": true
+        },
+        {
+          "method": "GA_F0F1",
+          "model": "Qwen3.5-4B",
+          "supervision": "F0F1",
+          "seed": 42,
+          "run_id": "qwen35_4b_GA_F0F1",
+          "exp_id": "exp008",
+          "multihop_recall": 0.12,
+          "retain_heldout": 0.24242424242424243,
+          "direct_recall": 0.30303030303030304,
+          "all_hop2_recall": null,
+          "source": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_GA_F0F1/metrics.json",
+          "dominated_by": [],
+          "empirically_nondominated": true
+        },
+        {
+          "method": "RMU_F0",
+          "model": "Qwen3.5-4B",
+          "supervision": "F0",
+          "seed": 42,
+          "run_id": "qwen35_4b_RMU_F0",
+          "exp_id": "exp009",
+          "multihop_recall": 0.88,
+          "retain_heldout": 0.6363636363636364,
+          "direct_recall": 0.5454545454545454,
+          "all_hop2_recall": null,
+          "source": "/root/autodl-tmp/www2027_rmu_20261022/exp/runs/exp009_remote_rmu/runs/batch_20261022_01/qwen35_4b_RMU_F0/metrics.json",
+          "dominated_by": [
+            "Original_F0",
+            "NPO_F0"
+          ],
+          "empirically_nondominated": false
+        }
+      ],
+      "F0_only_and_original": [
+        {
+          "method": "Original_F0",
+          "model": "Qwen3.5-4B",
+          "supervision": "none",
+          "seed": 42,
+          "run_id": "qwen35_4b_Original_F0",
+          "exp_id": "exp008",
+          "multihop_recall": 0.8666666666666667,
+          "retain_heldout": 0.696969696969697,
+          "direct_recall": 0.7272727272727273,
+          "all_hop2_recall": null,
+          "source": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_Original_F0/metrics.json",
+          "dominated_by": [],
+          "empirically_nondominated": true
+        },
+        {
+          "method": "GA_F0",
+          "model": "Qwen3.5-4B",
+          "supervision": "F0",
+          "seed": 42,
+          "run_id": "qwen35_4b_GA_F0",
+          "exp_id": "exp008",
+          "multihop_recall": 0.16,
+          "retain_heldout": 0.24242424242424243,
+          "direct_recall": 0.30303030303030304,
+          "all_hop2_recall": null,
+          "source": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_GA_F0/metrics.json",
+          "dominated_by": [],
+          "empirically_nondominated": true
+        },
+        {
+          "method": "GradDiff_F0",
+          "model": "Qwen3.5-4B",
+          "supervision": "F0",
+          "seed": 42,
+          "run_id": "qwen35_4b_GradDiff_F0",
+          "exp_id": "exp008",
+          "multihop_recall": 0.6133333333333333,
+          "retain_heldout": 0.48484848484848486,
+          "direct_recall": 0.36363636363636365,
+          "all_hop2_recall": null,
+          "source": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_GradDiff_F0/metrics.json",
+          "dominated_by": [],
+          "empirically_nondominated": true
+        },
+        {
+          "method": "NPO_F0",
+          "model": "Qwen3.5-4B",
+          "supervision": "F0",
+          "seed": 42,
+          "run_id": "qwen35_4b_NPO_F0",
+          "exp_id": "exp008",
+          "multihop_recall": 0.8666666666666667,
+          "retain_heldout": 0.696969696969697,
+          "direct_recall": 0.42424242424242425,
+          "all_hop2_recall": null,
+          "source": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_NPO_F0/metrics.json",
+          "dominated_by": [],
+          "empirically_nondominated": true
+        },
+        {
+          "method": "SimNPO_F0",
+          "model": "Qwen3.5-4B",
+          "supervision": "F0",
+          "seed": 42,
+          "run_id": "qwen35_4b_SimNPO_F0",
+          "exp_id": "exp008",
+          "multihop_recall": 0.9866666666666667,
+          "retain_heldout": 0.7878787878787878,
+          "direct_recall": 0.7575757575757576,
+          "all_hop2_recall": null,
+          "source": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_SimNPO_F0/metrics.json",
+          "dominated_by": [],
+          "empirically_nondominated": true
+        },
+        {
+          "method": "RMU_F0",
+          "model": "Qwen3.5-4B",
+          "supervision": "F0",
+          "seed": 42,
+          "run_id": "qwen35_4b_RMU_F0",
+          "exp_id": "exp009",
+          "multihop_recall": 0.88,
+          "retain_heldout": 0.6363636363636364,
+          "direct_recall": 0.5454545454545454,
+          "all_hop2_recall": null,
+          "source": "/root/autodl-tmp/www2027_rmu_20261022/exp/runs/exp009_remote_rmu/runs/batch_20261022_01/qwen35_4b_RMU_F0/metrics.json",
+          "dominated_by": [
+            "Original_F0",
+            "NPO_F0"
+          ],
+          "empirically_nondominated": false
+        }
+      ]
+    }
+  }
+}

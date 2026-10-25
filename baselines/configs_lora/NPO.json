@@ -1,0 +1,39 @@
+{
+  "method": "NPO",
+  "seed": 42,
+  "track": "lora",
+  "batch_size": 4,
+  "microbatch": 1,
+  "epochs": 150,
+  "learning_rate": 1e-05,
+  "weight_decay": 0.0,
+  "max_grad_norm": 1.0,
+  "lr_scheduler": "constant",
+  "gamma": 0.7,
+  "alpha": 1.0,
+  "beta": 0.1,
+  "delta": 0.0,
+  "stop_ua": 0.33,
+  "stop_scope": "training F0 MCQA only; checked each epoch",
+  "retain_loss_type": "NLL",
+  "source": "FaithUn Section4 and AppendixB.3",
+  "fidelity": "explicit LoRA-adapted comparison; source objective retained, not native paper reproduction",
+  "deviations": [
+    "Qwen/FaithUn task transfer; not author-exact model replication",
+    "AdamW/betas(.9,.999)/eps1e-8,norm1,constant LR are explicit conventions",
+    "paper gives LR range, not exact grid: LR_GRID is our frozen discretization",
+    "raw QA training without added template follows FaithUn Section3.4",
+    "User-authorized LoRA adaptation; source loss, batch, schedule and stopping preserved; parameter domain changed"
+  ],
+  "retain_pool": "all66; independent evaluation on test464, not last33 retain",
+  "use_retain": true,
+  "beta_grid": [
+    0.1,
+    0.5
+  ],
+  "source_track": "native",
+  "lora_adapted": true,
+  "lora_r": 8,
+  "lora_alpha": 16,
+  "lora_dropout": 0.0
+}

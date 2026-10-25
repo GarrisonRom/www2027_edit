@@ -1,0 +1,6 @@
+{
+  "smoke": true,
+  "performance_evaluation": "not_run",
+  "mmlu": null,
+  "ppl": null
+}

@@ -1,0 +1,9 @@
+{
+  "model_key": "llama32_3b",
+  "model_path": "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+  "run_id": "llama32_3b_GA_F0F1",
+  "method": "GA",
+  "supervision": "F0F1",
+  "adapter_path": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_GA_F0F1/adapter",
+  "origin": "exp008"
+}

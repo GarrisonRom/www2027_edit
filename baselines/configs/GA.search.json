@@ -1,0 +1,52 @@
+[
+  {
+    "learning_rate": 1e-07,
+    "beta": 0.1,
+    "alpha": 1.0
+  },
+  {
+    "learning_rate": 3e-07,
+    "beta": 0.1,
+    "alpha": 1.0
+  },
+  {
+    "learning_rate": 1e-06,
+    "beta": 0.1,
+    "alpha": 1.0
+  },
+  {
+    "learning_rate": 3e-06,
+    "beta": 0.1,
+    "alpha": 1.0
+  },
+  {
+    "learning_rate": 1e-05,
+    "beta": 0.1,
+    "alpha": 1.0
+  },
+  {
+    "learning_rate": 3e-05,
+    "beta": 0.1,
+    "alpha": 1.0
+  },
+  {
+    "learning_rate": 0.0001,
+    "beta": 0.1,
+    "alpha": 1.0
+  },
+  {
+    "learning_rate": 0.0003,
+    "beta": 0.1,
+    "alpha": 1.0
+  },
+  {
+    "learning_rate": 0.001,
+    "beta": 0.1,
+    "alpha": 1.0
+  },
+  {
+    "learning_rate": 0.003,
+    "beta": 0.1,
+    "alpha": 1.0
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "adapter_path": "/root/autodl-tmp/www2027_sync_20261022_c2_pilot_v1/exp/runs/exp011_cloud_gsu_c2/runs/batch_20261022_01/llama32_3b_C2/adapter",
+  "adapter_sha256": {
+    "adapter_model.safetensors": "a67da4d4a8326586b60072a77dcc241a8350eabd99c43b68048cba487efd05e4"
+  },
+  "training_metrics_sha256": "521207e7ae359f8b1478877eecd74b24ba57d73ef84cd4b1374c4a94d7ec11a3"
+}

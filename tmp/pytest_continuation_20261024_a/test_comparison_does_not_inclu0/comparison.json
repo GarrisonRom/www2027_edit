@@ -1,0 +1,12 @@
+[
+  {
+    "method": "KLUE",
+    "all89": 0.5,
+    "covered75": 3,
+    "f0": 1,
+    "f1": 2,
+    "retain": 28,
+    "heldout": false,
+    "source": "raw/metrics.json"
+  }
+]

@@ -1,0 +1,78 @@
+{
+  "date": "2026-10-25",
+  "scope": "10 prose documents and navigation; raw run/card/decision/metrics/source locks unchanged",
+  "archive": "markdown_before_content_merge_20261025.zip",
+  "archive_sha256": "2205c508da20ca1e67d7ef0e2b460e442a6005f51e4c3322b6bbef7aa3c6c2cc",
+  "archive_git_ignored": false,
+  "originals": {
+    "docs/plans/待验证假设与验证矩阵.md": {
+      "bytes": 5818,
+      "sha256": "69afeacf986ebb028b24a31cd40216f44eb89aeb2c32149b9193ba9fbb1dcf39",
+      "archive_entry": "待验证假设与验证矩阵.md"
+    },
+    "docs/plans/新增数据集与通用能力评测筛选.md": {
+      "bytes": 14247,
+      "sha256": "ce3c254917dd4f3aa8998cafcd0408a43d75d9b187296fc675e79101aa84c86f",
+      "archive_entry": "新增数据集与通用能力评测筛选.md"
+    },
+    "docs/plans/GSU小论文大纲.md": {
+      "bytes": 10408,
+      "sha256": "e36176ecc037bcb7037d93181d9a776d66917f13871ac780cdba96a7a05a6f0d",
+      "archive_entry": "GSU小论文大纲.md"
+    },
+    "docs/plans/GSU最终候选与帕累托验证设计.md": {
+      "bytes": 15515,
+      "sha256": "7483c899b3d060b7e320a609c34bfa8563a0cf557fb0a142473eb968e44f465b",
+      "archive_entry": "GSU最终候选与帕累托验证设计.md"
+    },
+    "docs/plans/RQ_remote_execution_plan.md": {
+      "bytes": 3799,
+      "sha256": "1e32738bafd7859840211f4884ecbc615aa2d2617eaea628e414428b3cc9cb5f",
+      "archive_entry": "RQ_remote_execution_plan.md"
+    },
+    "docs/audits/本地baseline复现审计_20261024.md": {
+      "bytes": 9851,
+      "sha256": "cbe7ee05153ab7e169b9f61c88893b276c13928eeca9bae34229ce4fc6487663",
+      "archive_entry": "本地baseline复现审计_20261024.md"
+    },
+    "docs/audits/KLUE基线复现审查.md": {
+      "bytes": 3611,
+      "sha256": "21ebf3b3dbdb700f4f8fa7d9bc97a4fb21a983676493a9d6e2daf8027fc843af",
+      "archive_entry": "KLUE基线复现审查.md"
+    },
+    "docs/reports/本地C组阶段结果_20261023.md": {
+      "bytes": 3358,
+      "sha256": "bf8803f09aa2e2b292485764099c536ada925fe2e3e9420b3d10326575cac8e5",
+      "archive_entry": "本地C组阶段结果_20261023.md"
+    },
+    "docs/reports/云端GSU-C2与指标说明.md": {
+      "bytes": 15471,
+      "sha256": "c6cb808ca3db0c7055e2186762f5ad31cbd3d76a9b59e3f509bfa150af1d9203",
+      "archive_entry": "云端GSU-C2与指标说明.md"
+    },
+    "docs/literature/论文精读-DUMIC深度遗忘.md": {
+      "bytes": 8303,
+      "sha256": "6b67809b8a1359721a3e51b735db1fb86efae9839aeab8543a13f816a612f686",
+      "archive_entry": "论文精读-DUMIC深度遗忘.md"
+    },
+    "docs/README.md": {
+      "bytes": 4170,
+      "sha256": "33805c36148b18cc85fce942cd9a7c2c72693ac7c176ba52c78cabe596a8db96",
+      "archive_entry": "README.md"
+    }
+  },
+  "consolidated_to": {
+    "docs/plans/GSU小论文大纲.md": "docs/plans/GSU最终候选与帕累托验证设计.md",
+    "docs/plans/RQ_remote_execution_plan.md": "docs/plans/GSU最终候选与帕累托验证设计.md",
+    "docs/plans/待验证假设与验证矩阵.md": "docs/plans/GSU最终候选与帕累托验证设计.md",
+    "docs/plans/新增数据集与通用能力评测筛选.md": "docs/plans/GSU最终候选与帕累托验证设计.md",
+    "docs/audits/KLUE基线复现审查.md": "docs/audits/本地baseline复现审计_20261024.md",
+    "docs/reports/本地C组阶段结果_20261023.md": "exp/runs/exp010_gsu_step_routing/final_comparison_20261023.md"
+  },
+  "canonical": [
+    "docs/plans/GSU最终候选与帕累托验证设计.md",
+    "docs/audits/本地baseline复现审计_20261024.md",
+    "docs/reports/云端GSU-C2与指标说明.md",
+    "docs/literature/论文精读-DUMIC深度遗忘.md"
+  ]
+}

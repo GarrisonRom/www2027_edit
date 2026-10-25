@@ -1,0 +1,135 @@
+{
+  "created": "2026-10-23T23:37:15+08:00",
+  "source": {
+    "code\\open-unlearning\\configs\\trainer\\CEU.yaml": "4c5439d4b954b2e2e98b4df3f23d4c58b8031900de63a33eccab6b725b7eab55",
+    "code\\open-unlearning\\configs\\trainer\\DPO.yaml": "c9eca8b4ca1df016fb5d5f80f76444134d8dc794d8536fa1fd0476a53d6290b7",
+    "code\\open-unlearning\\configs\\trainer\\finetune.yaml": "60ce833516bb63e19a8fbaf63f206fd2402825f58539db0e76bfb922f8aab148",
+    "code\\open-unlearning\\configs\\trainer\\GradAscent.yaml": "d90e21b4f5601105059f0a746f8dc8a634b22b6e0e49190baebb25d7673ceb81",
+    "code\\open-unlearning\\configs\\trainer\\GradDiff.yaml": "b25f776f668c2c160da9bf08d5d67754725fe5c5046dd855223ee2bf5e8b6490",
+    "code\\open-unlearning\\configs\\trainer\\NPO.yaml": "c8089323715e02783b256a38b54c85b48e8c9e1e97940d86a0bed3f892faea52",
+    "code\\open-unlearning\\configs\\trainer\\PDU.yaml": "16ebdb1bf073abc60a6506a77d76b21b3dec70534fd904bca413f4c7460de7d3",
+    "code\\open-unlearning\\configs\\trainer\\RMU.yaml": "c7a390eab6992f52d427b8562a4d9c3be0bc58f37ba4d63de170d8b33d35a4d3",
+    "code\\open-unlearning\\configs\\trainer\\SatImp.yaml": "db7257d356a28dcbb2391e819c2a2d6e494ba4319947ffe42de4e691047d1296",
+    "code\\open-unlearning\\configs\\trainer\\SimNPO.yaml": "d1c721f8b89b7c0793e0f233627b83887ac8718ad5158fa15820e941c908572d",
+    "code\\open-unlearning\\configs\\trainer\\UNDIAL.yaml": "d4df9f1cb04765a81eb05fed5f047b684813f47a632c373511d54cb64829f819",
+    "code\\open-unlearning\\configs\\trainer\\WGA.yaml": "39e58f829a8dc4a5e23f380d7910ea39587cceae4a60f4823b27a77a773a6684",
+    "code\\open-unlearning\\src\\trainer\\__init__.py": "bbfdc8649234a2321c654c3b0b9d60bc2f7537ed28eab2ce7f3038e2eff7c4a0",
+    "code\\open-unlearning\\src\\trainer\\base.py": "b50927fa1e5b0b8d3faf9e7cb556b9f9e427215e0e64c7cc2d4fdf4ac11f20b6",
+    "code\\open-unlearning\\src\\trainer\\unlearn\\base.py": "f514a6faf31167f8e3220434f41bae7fa480151dc4de1f5cd8afa12578e45265",
+    "code\\open-unlearning\\src\\trainer\\unlearn\\ceu.py": "30fe81a6e1c5a022a0d9a46cecaee5e08f13e95f00f49396b5c0b6c334f8e9c4",
+    "code\\open-unlearning\\src\\trainer\\unlearn\\dpo.py": "1a3623ba09306eb51c1106d7b7b77e3c20d340672c3c2ded5776244c53a3fe9d",
+    "code\\open-unlearning\\src\\trainer\\unlearn\\grad_ascent.py": "6188a6e5e23e9d301418e8cf0455144a373625a4468ffdb1e223e8a196b0463f",
+    "code\\open-unlearning\\src\\trainer\\unlearn\\grad_diff.py": "e0f44321d136ff52729f85b9d1e8ca629197709e21d82838ae6478efe520ffee",
+    "code\\open-unlearning\\src\\trainer\\unlearn\\npo.py": "5f5362617f8c5f37da7d21e9c455dd33b9fd513c72c7f2533a2d654eed41fce3",
+    "code\\open-unlearning\\src\\trainer\\unlearn\\pdu.py": "644937acc0574f8dcfb1499de08ba6f43f34b959679e7aeca0c17facd10e733e",
+    "code\\open-unlearning\\src\\trainer\\unlearn\\rmu.py": "b01ab50ec628e5deeb7d7009221e65219529dd0184309bb4c016eb025060e423",
+    "code\\open-unlearning\\src\\trainer\\unlearn\\satimp.py": "549fc2856854c1d1a7849abd305c7489dd7eb13dff963f9c327571425bdf6de3",
+    "code\\open-unlearning\\src\\trainer\\unlearn\\simnpo.py": "d724a08d6f474222ac489faa74050c6ea864788fa3e6762d1dd41bfb16fd80fc",
+    "code\\open-unlearning\\src\\trainer\\unlearn\\undial.py": "1d3ef811632eed4872dfdda13303cd902938861e5461954ee9ec275d48f57db1",
+    "code\\open-unlearning\\src\\trainer\\unlearn\\wga.py": "e98fc5471a11dc50aeb9b469e3fb385c63ece4dc45da33e1a614a87e71e36b7c",
+    "code\\open-unlearning\\src\\trainer\\utils.py": "f384f77c29f2dbfce1c46d29e417eeaa3e1c3965dd1fe1ee201a0629970d4063",
+    "exp\\train\\continue_local_c_group.py": "45ad785d2c4484004932a3f3220c54fa8d8368f243fc299c63ef52e5d72d5143",
+    "exp\\train\\diagnose_gsu_actual_feedback.py": "c0803af7544037dbeda9c613087a3628727a0a02c3903cfa9318bf3ebd0a9bf2",
+    "exp\\train\\diagnose_gsu_integrated_guidance.py": "783cdee92e80c8ef19711bfb60a1c4312ba351347a50fc2e69844240402fbd3d",
+    "exp\\train\\diagnose_gsu_m3.py": "258b746e58597baadd96d2da88fcb8c5e6785675c0456e2446c8a14ef6708444",
+    "exp\\train\\diagnose_gsu_m3a.py": "13d3b4718fdc3b0cbafacc647997dd111cdd1be49cb836d5a20c80f1d548a8e7",
+    "exp\\train\\diagnose_gsu_m3u.py": "55193ada1f61e32abbbd9149c4713486777acff85d1ac9443b99562074cf7b3c",
+    "exp\\train\\diagnose_gsu_memory_guided.py": "17116a82490b944531fbcf12d69818441b2670f799ed3af7642c07b282e98e6a",
+    "exp\\train\\diagnose_gsu_retain_protection.py": "10536813f9c84b19b8a0ffdd4013dc39d8477c7321cb42268312683e7d8fbe36",
+    "exp\\train\\eval_sixset.py": "ff6611a9c699b327ada764c0e8ce5b1228e7a1ef4eb0bfffc969a6c3792fa5b8",
+    "exp\\train\\evaluate_cloud_capabilities.py": "4361b0088845e12ffa240c88165fe15280e14bf56a59b439d5f4b795b77f9795",
+    "exp\\train\\native_delta_checkpoints.py": "6225260e1d5773b49c9b8d6ef2b98b4d05c4b0d784f78f0cb5048b8c63a80f1a",
+    "exp\\train\\plot_gsu.py": "fe9319f5244d82825729f19d8631c039bcfc2ac291291d664071b66e432c7b7d",
+    "exp\\train\\plot_real_results.py": "2db9cecee5e4c271943735ae174122c4fa2dc6fcc2d7fb73d31e13d013f3194c",
+    "exp\\train\\reproduce_all_baselines.py": "a895cc444c6bb4dc6d6dfdbe7d34a6d44fb93c0003d9efeb468994ff10d50b6d",
+    "exp\\train\\reproduction_losses.py": "e3bfc85eff31070365746a6bebdf9253d538a3cf3686b13f87c65d3eaa021e84",
+    "exp\\train\\run_cloud_c1_reproduction.py": "b25374958398a6a91939d86e6b3d0ff1dd0a56366b239b5c642a5333500c26a8",
+    "exp\\train\\run_cloud_gsu_c2.py": "b455d1ae20df83cae21e4d52930fbeb446f9bea7ef83199c1f324a405fe59441",
+    "exp\\train\\run_local_baseline_queue.py": "bd6f43f7cd82ddc02387b6e20980684c6f126537cf5eae030afaa2f6e52b27b8",
+    "exp\\train\\run_local_gsu_c_group.py": "01aaa43ff2d6621679744081f111de7dcc8dcc21a3915e59710211d66970d3a6",
+    "exp\\train\\run_remote_baselines.py": "076a22efe2056c318ad5a08937db2421553b150de9af3ad4e95d53613d162971",
+    "exp\\train\\run_remote_rmu.py": "d3d9d2214f9b997b317da9afb48f91b52bf824a74560cf0d8fd28c86f0209f79",
+    "exp\\train\\train_baselines.py": "2b1cee81550a2e1a699c4049874182c706ec6c9be12be9e8a43de7c9400a35ee",
+    "exp\\train\\train_eval.py": "a64f773ac224f23cc1f3d22b733e1d7a37593b454f29ff579a56dbe69467ed02",
+    "exp\\train\\train_g6.py": "be4812463ad31b608784457ac81dee2df4c19f98d95deb1f64e323ed448a014a",
+    "exp\\train\\train_gsu.py": "691e3d3d60b3dc359755317dacb28113b71e15d88479dcd8133f245bc8217247"
+  },
+  "inputs": {
+    "data\\faithun\\FaithUn_Dataset.json": "d570cc3e30c083357ca45ab4dd9df807abbd800f51a657d89629e4fe7b3adbb0",
+    "data\\faithun\\splits\\forget_set_split.txt": "315312dd50b69993f3e90796e7162a9ade22b771f3aa9ec5f570ceaaad815428",
+    "data\\faithun\\splits\\retaining_set_split.txt": "8680043fe5c1f4f0517d7377664677ee225cd9eebcb72d542c7709b1f5b6e214",
+    "data\\faithun\\splits\\test_set_split.txt": "de0a3a20ebd0474702bbac068c53d5d7eecae1505f609b12be74037458b63ee2",
+    "exp\\results\\F1.json": "22f2892f51cfff76ab9632b3711fc95bd7e0400d7b0c248aa03f6a03dd3cc64b",
+    "exp\\results\\candidates.json": "07f92a2ae334105cc4bfac590493a047af1de61bb8883cdba5389e5f018715e6",
+    "exp\\results\\active_paths.json": "69655a8214f9db20201447bfbd53f66a0162d03cb9bfb218ac67654067a7620e",
+    "exp\\results\\attribution\\items.json": "4156443005f03989f326abbd7a54bb58dc79d33a62a929be9cddb2e86967a194",
+    "exp\\results\\per_item_G2.jsonl": "4ab8705c2f9596d40f15179b5f4681adeb9b81a09988f78a7b75d38cc2cea582"
+  },
+  "command": [
+    "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\run_local_baseline_queue.py",
+    "--worker",
+    "--method",
+    "KLUE",
+    "--track",
+    "native",
+    "--model",
+    "E:\\12models\\modelscope\\Qwen2.5-1.5B-Instruct",
+    "--run-dir",
+    "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\local_20261023_233138\\KLUE_formal"
+  ],
+  "torch": "2.6.0+cu126",
+  "cuda": "12.6",
+  "model_manifest": {
+    "path": "E:\\12models\\modelscope\\Qwen2.5-1.5B-Instruct",
+    "files": {
+      ".gitattributes": {
+        "bytes": 1519,
+        "sha256": "11ad7efa24975ee4b0c3c3a38ed18737f0658a5f75a0a96787b576a78a023361"
+      },
+      ".modelscope_manifest.json": {
+        "bytes": 1120,
+        "sha256": "17d2f7db63fd479cd04c5fbed0781f777a0ab7ecc0268612f84eb86d15e97878"
+      },
+      "config.json": {
+        "bytes": 660,
+        "sha256": "98d2ff8cc47488d08a2b0b3acf4eb99ef210779b42bd48605f6b8e36acdbf670"
+      },
+      "configuration.json": {
+        "bytes": 2,
+        "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+      },
+      "generation_config.json": {
+        "bytes": 242,
+        "sha256": "e558847a8b4402616f1273797b015104dc266fe4b520056fca88823ba8f8ebe6"
+      },
+      "LICENSE": {
+        "bytes": 11343,
+        "sha256": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e"
+      },
+      "merges.txt": {
+        "bytes": 1671839,
+        "sha256": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3"
+      },
+      "model.safetensors": {
+        "bytes": 3087467144,
+        "sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee"
+      },
+      "README.md": {
+        "bytes": 4917,
+        "sha256": "2e1bcd8bd964728a820be709fa0f7b9dd54817a94fd2254c535df70c5e67fada"
+      },
+      "tokenizer.json": {
+        "bytes": 7031645,
+        "sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539"
+      },
+      "tokenizer_config.json": {
+        "bytes": 7305,
+        "sha256": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583"
+      },
+      "vocab.json": {
+        "bytes": 2776833,
+        "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+      }
+    }
+  }
+}

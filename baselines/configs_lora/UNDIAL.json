@@ -1,0 +1,45 @@
+{
+  "method": "UNDIAL",
+  "seed": 42,
+  "track": "lora",
+  "batch_size": 32,
+  "microbatch": 1,
+  "epochs": 10,
+  "learning_rate": 0.0001,
+  "weight_decay": 0.0,
+  "max_grad_norm": 1.0,
+  "lr_scheduler": "constant",
+  "gamma": 1.0,
+  "alpha": 0.0,
+  "beta": 10.0,
+  "delta": 0.0,
+  "stop_ua": null,
+  "stop_scope": "training F0 MCQA only; checked each epoch",
+  "retain_loss_type": "NLL",
+  "source": "open-unlearning author-contributed community recipe, pinned commit17cbbc8",
+  "fidelity": "explicit LoRA-adapted comparison; source objective retained, not native paper reproduction",
+  "deviations": [
+    "Qwen/FaithUn task transfer; not author-exact model replication",
+    "AdamW/betas(.9,.999)/eps1e-8,norm1,constant LR are explicit conventions",
+    "paper gives LR range, not exact grid: LR_GRID is our frozen discretization",
+    "raw QA training without added template follows FaithUn Section3.4",
+    "User-authorized LoRA adaptation; source loss, batch, schedule and stopping preserved; parameter domain changed"
+  ],
+  "retain_pool": "all66; independent evaluation on test464, not last33 retain",
+  "use_retain": false,
+  "lora_r": 8,
+  "lora_alpha": 16,
+  "lora_dropout": 0.0,
+  "lr_grid": [
+    1e-05,
+    0.0001,
+    0.0003
+  ],
+  "beta_grid": [
+    3,
+    10,
+    30
+  ],
+  "source_track": "lora",
+  "lora_adapted": true
+}

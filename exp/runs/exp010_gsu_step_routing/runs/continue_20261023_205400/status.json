@@ -1,0 +1,5 @@
+{
+  "status": "failed",
+  "completed": [],
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\continue_local_c_group.py\", line 59, in main\n    raise RuntimeError('Cannot reconstruct exact frozen source: '+str(source))\nRuntimeError: Cannot reconstruct exact frozen source: C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\run_local_gsu_c_group.py\n"
+}

@@ -1,0 +1,47 @@
+{
+  "observed_at": "2026-10-23T22:07:36+08:00",
+  "status": "waiting_for_dependency",
+  "remote_root": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3",
+  "run": "exp/runs/exp015_complete_baselines/runs/batch_20261023_02",
+  "pid": 340620,
+  "formal_jobs": 50,
+  "smoke_jobs": 50,
+  "methods": [
+    "GA",
+    "GradDiff",
+    "NPO",
+    "SimNPO",
+    "RMU",
+    "DPOmis",
+    "DPOrej",
+    "CEU",
+    "PDU",
+    "WGA",
+    "SatImp",
+    "UNDIAL",
+    "KLUE"
+  ],
+  "tests": {
+    "local_passed": 43,
+    "cloud_reproduction_passed": 32
+  },
+  "dependency": "exp014/batch_20261023_03_local_aligned",
+  "dependency_observed": {
+    "current": "qwen35_4b_C1",
+    "update": 76,
+    "total": 114
+  },
+  "hashes": {
+    "exp/train/reproduction_losses.py": "e3bfc85eff31070365746a6bebdf9253d538a3cf3686b13f87c65d3eaa021e84",
+    "exp/train/reproduce_all_baselines.py": "f25b93b75cf4616a5d7ea13ee061fd601a7659dc0f028c54657c538d2c395f33",
+    "exp/train/native_delta_checkpoints.py": "6225260e1d5773b49c9b8d6ef2b98b4d05c4b0d784f78f0cb5048b8c63a80f1a",
+    "exp/train/tests/test_complete_reproduction.py": "325f92b0a67f8cd8703d203e6c6cf5fc3ac0162619aa604cbb11a005f8a1022d",
+    "tmp/baseline_reproduction_20261023_v3.tar.gz": "d769004c50a482dace87f56a1210f2187d65e7d1052665ba2878a451df0510a5"
+  },
+  "notes": [
+    "No formal exp015 outcomes yet",
+    "KLUE native first after dependency",
+    "Historical results and interrupted preflight batches preserved",
+    "No official author-code equivalence claim for unavailable KLUE implementation"
+  ]
+}

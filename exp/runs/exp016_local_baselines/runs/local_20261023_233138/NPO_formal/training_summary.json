@@ -1,0 +1,7 @@
+{
+  "updates": 114,
+  "attempted_examples": 114,
+  "skipped": [],
+  "stop_reason": "update_budget",
+  "reference": "base outputs cached before first parameter update"
+}

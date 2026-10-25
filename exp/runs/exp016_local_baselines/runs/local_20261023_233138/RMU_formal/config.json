@@ -1,0 +1,52 @@
+{
+  "method": "RMU",
+  "track": "matched_lora",
+  "gamma": 1.0,
+  "alpha": 1,
+  "beta": 1.0,
+  "delta": 0.0,
+  "learning_rate": 5e-05,
+  "weight_decay": 0.01,
+  "epochs": 4,
+  "batch_size": 1,
+  "max_updates": 114,
+  "max_grad_norm": null,
+  "lr_scheduler": "constant",
+  "retain_loss_type": "EMBED_DIFF",
+  "config_sha256": "c7a390eab6992f52d427b8562a4d9c3be0bc58f37ba4d63de170d8b33d35a4d3",
+  "raw_upstream": {
+    "defaults": [
+      "GradDiff"
+    ],
+    "handler": "RMU",
+    "method_args": {
+      "gamma": 1.0,
+      "steering_coeff": 2,
+      "retain_loss_type": "EMBED_DIFF",
+      "alpha": 1,
+      "module_regex": "model\\.layers\\.7",
+      "trainable_params_regex": [
+        ".*"
+      ]
+    }
+  },
+  "fidelity": "frozen upstream algorithm with explicit tested semantic repairs; not bitwise source loss parity",
+  "steering_coeff": 2,
+  "module_regex": "model\\.layers\\.7",
+  "trainable_params_regex": [
+    ".*"
+  ],
+  "semantic_repairs": [
+    "per-sequence masked MSE avoids upstream BxB broadcast at batch>1"
+  ],
+  "model": "E:\\12models\\modelscope\\Qwen2.5-1.5B-Instruct",
+  "seed": 42,
+  "smoke": false,
+  "lr_search": "no test-based tuning; configured source recipe, additional trials separate",
+  "optimizer": "torch AdamW",
+  "prompt": "raw question-space-answer, no chat template; source-paper prompt not certified identical",
+  "native_compatibility": "full parameter update except native KLUE gated FFN neuron mask",
+  "loss_precision": "BF16 backbone, FP32 returned logits/loss matching Accelerate output conversion",
+  "training_pad_to": null,
+  "batching": "actual padded batch, not serial per-example gradient averaging"
+}

@@ -1,0 +1,6 @@
+{
+  "adapter_path": "/root/autodl-tmp/www2027_rmu_20261022/exp/runs/exp009_remote_rmu/runs/batch_20261022_01/qwen35_4b_RMU_F0/adapter",
+  "adapter_sha256": {
+    "adapter_model.safetensors": "920e5fb44ca6f71087cb2128a0da67304346ae29721853416757faef8d68f59b"
+  }
+}

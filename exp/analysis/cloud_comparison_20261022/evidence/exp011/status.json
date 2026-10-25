@@ -1,0 +1,10 @@
+{
+  "status": "completed",
+  "completed": [
+    "llama32_3b_smoke",
+    "qwen35_4b_smoke",
+    "llama32_3b_C2",
+    "qwen35_4b_C2"
+  ],
+  "ended": "2026-10-22T23:12:28+08:00"
+}

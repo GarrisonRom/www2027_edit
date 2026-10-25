@@ -1,0 +1,19 @@
+ M PROJECT_STATUS.md
+ M docs/06_decisions.md
+ M docs/研究证据总账.md
+?? docs/GSU小论文大纲.md
+?? docs/_kaiti_text.txt
+?? docs/_paper_text.txt
+?? docs/method_versions/GSU-v7-integrated-damage-gradient-path.md
+?? exp/runs/exp007_gsu_integrated_guidance/README.md
+?? exp/runs/exp007_gsu_integrated_guidance/batches/batch_20261022_121504_28dccc/config.json
+?? exp/runs/exp007_gsu_integrated_guidance/batches/batch_20261022_121504_28dccc/events.jsonl
+?? exp/runs/exp007_gsu_integrated_guidance/batches/batch_20261022_121504_28dccc/launch.json
+?? exp/runs/exp007_gsu_integrated_guidance/batches/batch_20261022_121504_28dccc/launcher.ps1.snapshot
+?? exp/runs/exp007_gsu_integrated_guidance/batches/batch_20261022_121504_28dccc/status.json
+?? exp/runs/exp007_gsu_integrated_guidance/batches/batch_20261022_121504_28dccc/worker.started
+?? exp/runs/exp007_gsu_integrated_guidance/card.md
+?? exp/runs/exp007_gsu_integrated_guidance/runs/run_batch_20261022_121504_28dccc_B0/status.json
+?? exp/train/diagnose_gsu_integrated_guidance.py
+?? exp/train/start_gsu_integrated_guidance.ps1
+?? exp/train/tests/test_gsu_integrated_guidance.py

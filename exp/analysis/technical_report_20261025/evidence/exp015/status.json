@@ -1,0 +1,252 @@
+{
+  "status": "completed_with_failures",
+  "completed": [
+    "llama32_3b_KLUE_native_smoke",
+    "llama32_3b_KLUE_native",
+    "qwen35_4b_KLUE_native_smoke",
+    "qwen35_4b_KLUE_native",
+    "llama32_3b_GA_matched_lora_smoke",
+    "llama32_3b_GA_matched_lora",
+    "qwen35_4b_GA_matched_lora_smoke",
+    "qwen35_4b_GA_matched_lora",
+    "llama32_3b_GradDiff_matched_lora_smoke",
+    "llama32_3b_GradDiff_matched_lora",
+    "qwen35_4b_GradDiff_matched_lora_smoke",
+    "qwen35_4b_GradDiff_matched_lora",
+    "llama32_3b_NPO_matched_lora_smoke",
+    "llama32_3b_NPO_matched_lora",
+    "qwen35_4b_NPO_matched_lora_smoke",
+    "qwen35_4b_NPO_matched_lora",
+    "llama32_3b_SimNPO_matched_lora_smoke",
+    "llama32_3b_SimNPO_matched_lora",
+    "qwen35_4b_SimNPO_matched_lora_smoke",
+    "qwen35_4b_SimNPO_matched_lora",
+    "llama32_3b_RMU_matched_lora_smoke",
+    "llama32_3b_RMU_matched_lora",
+    "qwen35_4b_RMU_matched_lora_smoke",
+    "qwen35_4b_RMU_matched_lora",
+    "llama32_3b_DPOmis_matched_lora_smoke",
+    "llama32_3b_DPOmis_matched_lora",
+    "qwen35_4b_DPOmis_matched_lora_smoke",
+    "qwen35_4b_DPOmis_matched_lora",
+    "llama32_3b_DPOrej_matched_lora_smoke",
+    "llama32_3b_DPOrej_matched_lora",
+    "qwen35_4b_DPOrej_matched_lora_smoke",
+    "qwen35_4b_DPOrej_matched_lora",
+    "llama32_3b_CEU_matched_lora_smoke",
+    "llama32_3b_CEU_matched_lora",
+    "qwen35_4b_CEU_matched_lora_smoke",
+    "qwen35_4b_CEU_matched_lora",
+    "llama32_3b_PDU_matched_lora_smoke",
+    "llama32_3b_PDU_matched_lora",
+    "qwen35_4b_PDU_matched_lora_smoke",
+    "qwen35_4b_PDU_matched_lora",
+    "llama32_3b_WGA_matched_lora_smoke",
+    "llama32_3b_WGA_matched_lora",
+    "qwen35_4b_WGA_matched_lora_smoke",
+    "qwen35_4b_WGA_matched_lora",
+    "llama32_3b_SatImp_matched_lora_smoke",
+    "llama32_3b_SatImp_matched_lora",
+    "qwen35_4b_SatImp_matched_lora_smoke",
+    "qwen35_4b_SatImp_matched_lora",
+    "llama32_3b_UNDIAL_matched_lora_smoke",
+    "llama32_3b_UNDIAL_matched_lora",
+    "qwen35_4b_UNDIAL_matched_lora_smoke",
+    "qwen35_4b_UNDIAL_matched_lora"
+  ],
+  "failures": [
+    {
+      "label": "llama32_3b_GA_native_smoke",
+      "exit_code": 1
+    },
+    {
+      "label": "llama32_3b_GA_native",
+      "reason": "smoke_failed_not_run"
+    },
+    {
+      "label": "qwen35_4b_GA_native_smoke",
+      "exit_code": 1
+    },
+    {
+      "label": "qwen35_4b_GA_native",
+      "reason": "smoke_failed_not_run"
+    },
+    {
+      "label": "llama32_3b_GradDiff_native_smoke",
+      "exit_code": 1
+    },
+    {
+      "label": "llama32_3b_GradDiff_native",
+      "reason": "smoke_failed_not_run"
+    },
+    {
+      "label": "qwen35_4b_GradDiff_native_smoke",
+      "exit_code": 1
+    },
+    {
+      "label": "qwen35_4b_GradDiff_native",
+      "reason": "smoke_failed_not_run"
+    },
+    {
+      "label": "llama32_3b_NPO_native_smoke",
+      "exit_code": 1
+    },
+    {
+      "label": "llama32_3b_NPO_native",
+      "reason": "smoke_failed_not_run"
+    },
+    {
+      "label": "qwen35_4b_NPO_native_smoke",
+      "exit_code": 1
+    },
+    {
+      "label": "qwen35_4b_NPO_native",
+      "reason": "smoke_failed_not_run"
+    },
+    {
+      "label": "llama32_3b_SimNPO_native_smoke",
+      "exit_code": 1
+    },
+    {
+      "label": "llama32_3b_SimNPO_native",
+      "reason": "smoke_failed_not_run"
+    },
+    {
+      "label": "qwen35_4b_SimNPO_native_smoke",
+      "exit_code": 1
+    },
+    {
+      "label": "qwen35_4b_SimNPO_native",
+      "reason": "smoke_failed_not_run"
+    },
+    {
+      "label": "llama32_3b_RMU_native_smoke",
+      "exit_code": 1
+    },
+    {
+      "label": "llama32_3b_RMU_native",
+      "reason": "smoke_failed_not_run"
+    },
+    {
+      "label": "qwen35_4b_RMU_native_smoke",
+      "exit_code": 1
+    },
+    {
+      "label": "qwen35_4b_RMU_native",
+      "reason": "smoke_failed_not_run"
+    },
+    {
+      "label": "llama32_3b_DPOmis_native_smoke",
+      "exit_code": 1
+    },
+    {
+      "label": "llama32_3b_DPOmis_native",
+      "reason": "smoke_failed_not_run"
+    },
+    {
+      "label": "qwen35_4b_DPOmis_native_smoke",
+      "exit_code": 1
+    },
+    {
+      "label": "qwen35_4b_DPOmis_native",
+      "reason": "smoke_failed_not_run"
+    },
+    {
+      "label": "llama32_3b_DPOrej_native_smoke",
+      "exit_code": 1
+    },
+    {
+      "label": "llama32_3b_DPOrej_native",
+      "reason": "smoke_failed_not_run"
+    },
+    {
+      "label": "qwen35_4b_DPOrej_native_smoke",
+      "exit_code": 1
+    },
+    {
+      "label": "qwen35_4b_DPOrej_native",
+      "reason": "smoke_failed_not_run"
+    },
+    {
+      "label": "llama32_3b_CEU_native_smoke",
+      "exit_code": 1
+    },
+    {
+      "label": "llama32_3b_CEU_native",
+      "reason": "smoke_failed_not_run"
+    },
+    {
+      "label": "qwen35_4b_CEU_native_smoke",
+      "exit_code": 1
+    },
+    {
+      "label": "qwen35_4b_CEU_native",
+      "reason": "smoke_failed_not_run"
+    },
+    {
+      "label": "llama32_3b_PDU_native_smoke",
+      "exit_code": 1
+    },
+    {
+      "label": "llama32_3b_PDU_native",
+      "reason": "smoke_failed_not_run"
+    },
+    {
+      "label": "qwen35_4b_PDU_native_smoke",
+      "exit_code": 1
+    },
+    {
+      "label": "qwen35_4b_PDU_native",
+      "reason": "smoke_failed_not_run"
+    },
+    {
+      "label": "llama32_3b_WGA_native_smoke",
+      "exit_code": 1
+    },
+    {
+      "label": "llama32_3b_WGA_native",
+      "reason": "smoke_failed_not_run"
+    },
+    {
+      "label": "qwen35_4b_WGA_native_smoke",
+      "exit_code": 1
+    },
+    {
+      "label": "qwen35_4b_WGA_native",
+      "reason": "smoke_failed_not_run"
+    },
+    {
+      "label": "llama32_3b_SatImp_native_smoke",
+      "exit_code": 1
+    },
+    {
+      "label": "llama32_3b_SatImp_native",
+      "reason": "smoke_failed_not_run"
+    },
+    {
+      "label": "qwen35_4b_SatImp_native_smoke",
+      "exit_code": 1
+    },
+    {
+      "label": "qwen35_4b_SatImp_native",
+      "reason": "smoke_failed_not_run"
+    },
+    {
+      "label": "llama32_3b_UNDIAL_native_smoke",
+      "exit_code": 1
+    },
+    {
+      "label": "llama32_3b_UNDIAL_native",
+      "reason": "smoke_failed_not_run"
+    },
+    {
+      "label": "qwen35_4b_UNDIAL_native_smoke",
+      "exit_code": 1
+    },
+    {
+      "label": "qwen35_4b_UNDIAL_native",
+      "reason": "smoke_failed_not_run"
+    }
+  ],
+  "ended": "2026-10-24T11:46:00+08:00"
+}

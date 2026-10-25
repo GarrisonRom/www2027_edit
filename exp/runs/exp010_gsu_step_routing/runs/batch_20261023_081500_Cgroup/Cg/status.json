@@ -1,0 +1,9 @@
+{
+  "status": "interrupted_sanity_gate",
+  "phase": "training",
+  "update": 32,
+  "target_updates": 114,
+  "elapsed_seconds": 395.0509247779846,
+  "interrupted_at": "2026-10-23T08:33:28+08:00",
+  "reason": "Stopped at C0-vs-B0 reproduction gate; partial update logs preserved."
+}

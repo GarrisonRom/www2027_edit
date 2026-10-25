@@ -1,0 +1,9 @@
+{
+  "model_key": "qwen35_4b",
+  "model_path": "/root/autodl-tmp/models/Qwen3.5-4B",
+  "run_id": "qwen35_4b_Original_F0",
+  "method": "Original",
+  "supervision": "F0",
+  "adapter_path": null,
+  "origin": "exp008"
+}

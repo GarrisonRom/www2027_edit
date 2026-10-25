@@ -1,0 +1,428 @@
+% !TeX program = pdflatex
+\documentclass[sigconf,anonymous,review]{acmart}
+\usepackage{CJKutf8}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\setlength{\emergencystretch}{2em}
+\sloppy
+\settopmatter{printfolios=true,printacmref=false}
+\setcopyright{none}
+\acmDOI{}
+\acmISBN{}
+\renewcommand{\shortauthors}{Anonymous Authors}
+\title[GSU]{GSU：关联结构引导的多跳知识遗忘}
+\author{Anonymous Authors}
+\acmConference{GSU Research Working Draft}{October 22, 2026}{Internal Version}
+\acmYear{2026}
+\begin{document}
+\begin{CJK*}{UTF8}{gbsn}
+\begin{abstract}
+对原始问答的遗忘不等于目标知识无法经关联知识被恢复。本文围绕“从关联知识中定位多跳回忆风险，将其转化为遗忘更新指导”构建 GSU，区分原始遗忘事实、关联支持事实与最终多跳查询。方法设计以原始事实作为直接遗忘损失来源，通过关联路径覆盖和梯度一致性定位风险组件，在组件内部建立共享方向子空间，并对优化器实际参数位移进行有界路由；实际损失检查用于保持原始遗忘进展。本文给出路由收缩、进展护栏可行性及关联查询迁移的条件分析，将组件定位、更新方向和行为效果对应到可判别实验。最终评估统一在云端服务器执行，比较直接遗忘、多跳回忆、关联影响、MMLU通用知识表现、WikiText预测困惑度与计算成本。当前GSU-C2仅进入单种子先导，能力评测与最终确认仍待完成。
+\end{abstract}
+\keywords{知识遗忘，多跳回忆，关联结构，梯度指导，参数高效微调}
+\maketitle
+
+\section{引言}
+大语言模型中的事实通过实体、关系与计算路径相互连接。知识撤回不仅涉及某条原始问答的输出，也涉及该知识在关联查询中的可访问性。直接回答被削弱后，支持事实和共享计算仍可能维持间接回忆。面向这一问题，遗忘评估需要把直接访问与关联访问放在同一研究框架内。
+
+将支持事实直接加入遗忘集能够改变关联回忆，但同时扩大了直接优化对象。另一条路线是利用支持信息识别风险位置，再指导原始事实的更新。这里存在两个独立问题：定位到哪个组件，以及在该组件内部沿什么方向更新。若组件权重没有转化为优化器实际位移，或者局部多跳下降来自直接遗忘变弱，算法就没有完整兑现这一设计目标。
+
+既有研究分别从输出损失、表示干预与知识定位处理遗忘。NPO和SimNPO研究负偏好优化的训练行为\cite{npo,simnpo}，RMU通过表示控制改变目标知识的可访问性\cite{wmdp}。FaithUn与KLUE强调关联知识评估及知识神经元定位\cite{faithun}；CLUE进一步利用遗忘与保留电路中的冲突进行定位\cite{clue}。本文将研究重点放在关联风险如何依次转化为组件选择、组件内方向与实际参数更新，并逐环验证这种转化。
+
+GSU的核心路线是从关联知识中定位多跳回忆风险，使仅以原始事实构造的遗忘更新影响关联查询。本文首先明确遗忘监督、关联指导和最终评测的数据权限。其次给出组件路由与共享方向过滤的候选算法，并用实际损失护栏维持原始遗忘进展。进一步建立局部性质、可解释性干预和反事实对照的验证链。最终主实验统一在云端执行，以同模型、同协议的比较检验多跳回忆、能力影响和计算代价。当前工作稿固定研究对象、算法合同与验证标准，最终算法由后续云端实验冻结。
+
+\section{问题定义与数据权限}
+\subsection{目标、支持知识与评测查询}
+设底模参数为$\theta_0$，可训练LoRA参数为$\phi$，初始适配参数为$\phi_0$。原始遗忘集为$F_0=\{(q_i,a_i)\}$，关联支持事实集为$F_1=\{f_m\}$。每条支持事实可由固定模板写成直接问答，但它不等于关联多跳查询。记$Q_{\rm direct}$、$Q_{\rm para}$与$Q_{\rm multi}$分别为直接、改写与多跳评测集合。
+
+本文的\emph{仅$F_0$遗忘监督}表示直接遗忘损失只由$F_0$产生。关联事实标签可用于图构建、组件打分与梯度探测，保留事实可用于保护反馈。因此该设定不等于仅访问$F_0$数据，也不等于没有额外监督信息。扩展监督参照直接在$F_0\cup F_1$上计算遗忘损失，与目标方法分别报告。
+
+\subsection{答案概率与优化目标}
+对答案长度$T_a$定义答案平均对数概率
+\begin{equation}
+ \ell_\phi(q,a)=\frac{1}{T_a}\sum_{t=1}^{T_a}
+ \log p_{\theta_0,\phi}(a_t\mid q,a_{<t}).
+ \label{eq:lp}
+\end{equation}
+训练最小化$L_0(\phi)=|F_0|^{-1}\sum_{(q,a)\in F_0}\ell_\phi(q,a)$，即增加原始答案的负对数似然。该符号约定区别于最小化通常的正交叉熵。最终目标是降低目标查询的可访问性，而不是从有限评测推断参数中的信息完全消失。
+
+\subsection{定位、开发与确认权限}
+最终协议区分$Q_{\rm loc}$、$Q_{\rm dev}$与$Q_{\rm test}$：定位查询可用于构造关联风险；开发查询用于固定候选与超参数；确认查询只产生最终结果。最终测试题、选项和正确率不得参与选集、梯度目标、路由接受或检查点选择。历史75题覆盖切片曾参与路径探测和方法观察，归入探索轨，不重新命名为未见确认集。
+
+保留集另按\emph{是否进入保护}划分为$R_{\rm train}$与$R_{\rm audit}$，按\emph{与目标的结构关系}划分为关联与低关联审计层。两个划分维度不互相替代。低关联是预定义图规则下的标签，不是已证明的语义独立性。
+
+\section{方法：从关联风险到实际更新}
+\label{sec:method}
+\subsection{设计合同与云端主候选}
+以下给出待实现的共享方向路由候选，而不是把历史A/B版本组合成已验证的最终算法。主链包含风险识别、组件定位、方向探测、实际位移路由和进展护栏。云端公共主候选采用当前模型的梯度/路径信号，不依赖旧模型的层先验；历史损伤先验作为条件消融单独检验。全文将关联信息视为可检验代理，不直接命名为真实记忆电路。
+
+\subsection{关联图与预算覆盖}
+由允许访问的事实图提取包含$F_0$的路径集合$\mathcal P$，从路径中的非目标边构造候选支持事实$\mathcal C$。固定模板探测估计模型对候选事实的掌握，定位查询估计路径活跃性。记$S(f)\subseteq\mathcal P$为事实$f$覆盖的活跃路径，$\omega_p\geq0$为事前固定的路径权重，在预算$B$下构造
+\begin{equation}
+ F_1=\underset{F\subseteq\mathcal C,\,|F|\leq B}{\arg\max}
+ \sum_{p\in\cup_{f\in F}S(f)}\omega_p.
+ \label{eq:coverage}
+\end{equation}
+实际使用边际新增覆盖最大的贪心选择，并固定事实排序与平局处理。历史实现以两种直接模板、掌握阈值0.75、定位多跳准确率至少$2/3$和$B=5$构造支持集。这些值用于复现轨；云端重探测和确认划分在新实验卡中冻结，不由最终测试表现重新选择。
+
+跨模型设置分成两轨：共同$F_1$用于固定输入迁移比较，各模型重探测$F_1$用于完整pipeline比较。两轨不能混合解释为纯模型规模效应。图路径提供结构候选，模型实际使用这些路径还需后续干预验证。
+
+\subsection{LoRA组件与风险评分}
+LoRA将目标矩阵写为$W_j=W_j^0+(\alpha/r)B_jA_j$\cite{lora}。组件$j$对应一个目标矩阵及其LoRA A/B对；张量块$b$表示其中一个独立可训练张量。前者用于组件定位，后者用于维度兼容的方向投影。模块从实际模型结构枚举，排除视觉分支和不参与当前文本任务的模块，不固定假设每层恰好七个矩阵。
+
+令$g_{ij}=\nabla_{\phi_j}\ell(q_i,a_i)$，$h_{mj}=\nabla_{\phi_j}\ell(q_m,a_m)$，$c_m$为支持事实的活跃路径数，定义
+\begin{align}
+ A_j&=\frac{\|\sum_i g_{ij}\|}{\sum_i\|g_{ij}\|},\quad
+ \bar g_j=\frac{1}{|F_0|}\sum_i g_{ij},\\
+ P_j&=\frac{\sum_m c_m\cos(\bar g_j,h_{mj})}{\sum_m c_m},\\
+ S_j^{\rm grad}&=A_j\max(P_j,0).
+ \label{eq:score}
+\end{align}
+零范数对应项取零，分数在训练前冻结。$A_j$度量原始事实梯度的一致性，$P_j$度量与支持事实梯度的路径加权关系；正值不直接证明该组件必要或足以支持多跳回忆。
+
+\paragraph{历史先验的可选分支。}
+历史B组曾采用$S_j^{\rm hist}=S_j^{\rm grad}\sqrt{\widehat D_1(l)\widehat D_2(l)}$对MLP组件重加权，attention保持中性先验1。$\widehat D$来自旧Qwen2.5模型的FFN层归因。云端模型结构不同，这些数值和层号不迁移。只有同模型、非测试校准数据上的先验及其生成成本归档后，才增加对应消融；没有先验时不把退化的恒等分支冒充一次独立实验。
+
+\subsection{组件内共享方向探测}
+在刷新步$t\in\{1,39,77\}$，计算当前参数处每个支持事实在张量块$b$上的梯度，形成列矩阵
+\begin{equation}
+ H_b=[\operatorname{vec}(h_{1b}),\ldots,
+ \operatorname{vec}(h_{Bb})],\quad
+ \Pi_b=U_bU_b^\top,
+ \label{eq:span}
+\end{equation}
+其中$U_b$为$H_b$数值列空间的正交基。通过小Gram矩阵或薄QR实现，不构造与参数维数同阶的稠密投影矩阵。相对奇异值阈值设为$10^{-6}$，每块秩至多$B$。若块梯度全零，则该块暂用恒等映射并记录回退，刷新时重新判断，避免LoRA初始化导致的A张量零梯度被永久封闭。
+
+该空间描述支持知识的局部敏感方向，不提供确定的遗忘符号。非零列缩放不改变完整列空间，因此路径权重用于式~\eqref{eq:score}，不把它声称为完整投影空间中的额外方向加权。训练时不添加$-h_{mb}$，也不以$F_1$损失下降作为接受条件。
+
+\subsection{由原始事实生成优化器提案}
+一次迭代只用当前$F_0$样本计算遗忘梯度，执行一次AdamW状态更新，得到未指导参数$\phi_t+d_t^0$。$d_t^0$由更新前后参数差实测，包含一阶矩、二阶矩及权重衰减的影响。之后的路由和回退不再次推进优化器矩。梯度重加权与实际位移干预分别记录，避免将二者混为一类机制。
+
+对正组件分数作归一化$s_j=S_j/\max_kS_k$，构造保留底座的权重
+\begin{equation}
+ w_j=\frac{1+s_j}{2},\qquad
+ v_{tb}=w_{j(b)}\left[(1-\beta)d_{tb}^0+
+                  \beta\Pi_b d_{tb}^0\right],
+ \label{eq:route}
+\end{equation}
+默认$\beta=0.5$；全零分数时设$w_j=1$。纯组件消融设$\beta=0$，无组件消融设$w_j=1$。保留至少一半未过滤分量，用于检验硬掩码与近零权重的替代方案；这些常数是待检验设计，不是已找到的最优超参数。
+
+\subsection{总修正预算与保留反馈}
+记$\rho=0.30$，先将路由提案限制在以$d_t^0$为中心的修正球内：
+\begin{align}
+ \mathcal B_t&=\{d:\|d-d_t^0\|\leq\rho\|d_t^0\|\},\\
+ \widetilde d_t&=d_t^0+\zeta_t(v_t-d_t^0),\\
+ \zeta_t&=\min\left\{1,
+ \frac{\rho\|d_t^0\|}{\|v_t-d_t^0\|}\right\}.
+ \label{eq:trust}
+\end{align}
+分母为零时取$\zeta_t=1$。从$R_{\rm train}$抽16个相同计划的锚点，用既有FB16控制器测量实际答案LP变化，最多做两轮有界补偿。路由与反馈共享式~\eqref{eq:trust}的总预算，而不是各自额外获得0.30。反馈候选只有位于$\mathcal B_t$内才参与下一步检查。FB16是保留概率反馈，不是用多跳测试题训练的行为闭环。
+
+\subsection{保持F0实际进展的接受规则}
+在当前F0样本上记$\ell_t(d)=\ell_{\phi_t+d}(q_t,a_t)$。若原始提案取得实际下降$r_t=\ell_t(0)-\ell_t(d_t^0)>0$，则从反馈候选$d_t^c$与原始提案间选择
+\begin{align}
+ d_t(a)&=d_t^0+a(d_t^c-d_t^0),\\
+ \ell_t(d_t(a))&\leq\ell_t(0)-\eta r_t+\epsilon,
+ \label{eq:guard}
+\end{align}
+其中$\eta=0.9$、$\epsilon=10^{-6}$，按$a\in\{1,0.5,0.25,0\}$的顺序接受第一个合格值。若原始提案不下降，则退回$d_t^0$并记录无有效进展提案，不声称此时仍有下降保证。接受检查只使用当前F0，既不读取F1损失，也不读取多跳测试答案。
+
+最终位移可能撤销一部分保留补偿，所以必须在接受后再次测量锚点，记录回退率、反馈撤销量和累计变化。单样本进展不能代替全F0最终遗忘，每38步另外审计固定F0集合，评测结果不影响更新或检查点选择。
+
+\begin{table*}[t]
+\caption{GSU候选的单次更新合同。关联探测是指导数据访问，不是额外F1遗忘损失；多跳确认题不进入任一步。}
+\label{tab:algorithm}
+\centering\small
+\begin{tabular}{p{0.05\textwidth}p{0.88\textwidth}}
+\toprule
+步骤 & 操作及必须保存的诊断\\
+\midrule
+1 & 冻结F0顺序、锚点计划、组件分数及模型/数据哈希；在规定刷新步用F1梯度构建各张量$U_b$。\\
+2 & 保存$\phi_t$，仅对当前F0答案LP计算梯度；执行一次AdamW，实测$d_t^0$和原始F0下降。\\
+3 & 对$d_t^0$施加组件路由和共享方向过滤，限制路由修正范数，得到$\widetilde d_t$。\\
+4 & 运行至多两轮FB16，路由与保留补偿总修正不超过$\rho\|d_t^0\|$。\\
+5 & 在原始提案与反馈候选之间进行固定四点回退，以实际F0下降接受最终位移；不重复推进AdamW矩。\\
+6 & 重测最终锚点与F0，归档raw/routed/final位移、夹角、范数、概率、成本及回退原因。\\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\subsection{计算代价与架构适配}
+设可训练参数数为$d$、支持事实数为$B$。每次刷新需$B$次支持事实反向，基向量存储为$O(dB)$，应用投影为$O(dB)$；其余开销来自初始定位、锚点反馈和接受检查。论文分别报告训练步数、总前向/反向次数、定位时间、墙钟时间及显存，不能用同114步代表计算预算完全相等。Qwen3.5的混合注意力需要枚举文本分支的实际线性模块；Llama使用其实际decoder结构。每个架构先通过损失、反向、模块匹配、保存与重载的完整检查。
+
+\section{局部性质与可解释性理论}
+\label{sec:theory}
+本节给出算法操作的条件性质和可测诊断。其结论不代替最终多跳有效性或全局最优性证明。
+
+\subsection{性质一：固定梯度缩放不保证实际路由}
+考虑Adam\cite{adam}，对单个坐标的完整梯度历史乘固定$c>0$，矩初始化为零且数值稳定项为零。此时$m_t'=cm_t$、$v_t'=c^2v_t$；在$\widehat v_t>0$的坐标上，偏差校正后的比值满足
+\begin{equation}
+ \frac{\widehat m_t'}{\sqrt{\widehat v_t'}}=
+ \frac{\widehat m_t}{\sqrt{\widehat v_t}}.
+\end{equation}
+这一恒等式解释了为什么缩放梯度不能自动推出实际位移按同样比例缩放。真实训练的稳定项、随时间变化的归一化、参数轨迹与权重衰减破坏严格条件。因此实验要测梯度与位移的关系，而不是把该性质当作历史A/B失败原因的既成结论。
+
+\subsection{性质二：路由收缩与共享修正预算}
+当$U_b$列正交、$\beta\in[0,1]$、$w_j\in[0,1]$时，算子$(1-\beta)I+\beta\Pi_b$在子空间内特征值为1、在正交补内为$1-\beta$。故由式~\eqref{eq:route}有
+\begin{equation}
+ \|v_t\|\leq\|d_t^0\|.
+\end{equation}
+式~\eqref{eq:trust}又直接给出$\|\widetilde d_t-d_t^0\|\leq\rho\|d_t^0\|$。反馈输出也须满足同一约束；回退是$d_t^0$与球内点的凸组合，仍在球内。该性质约束数值干预幅度，不保证保留表现或遗忘效果。
+
+\subsection{性质三：实际进展检查的回退可行性}
+若$r_t>0$、$0<\eta\leq1$且$\epsilon\geq0$，则$a=0$给出$\ell_t(d_t^0)=\ell_t(0)-r_t\leq\ell_t(0)-\eta r_t+\epsilon$。因此固定候选集合包含一个可行解，不需要无界线搜索。该结论是对当前样本和当前原始提案的相对保证，不推出全训练集单调下降。若多数步骤都退回$a=0$，则数据不支持新路由机制有效。
+
+\subsection{性质四：关联查询迁移的充分条件}
+设某个关联查询的答案LP在局部是$L$-光滑的，梯度为$z$，在全参数块的投影记为$\Pi$。若$\langle\Pi z,d\rangle\leq-\gamma$，且$\|(I-\Pi)z\|\leq\delta$，则Taylor上界和Cauchy--Schwarz不等式给出
+\begin{align}
+ \ell(\phi+d)-\ell(\phi)
+ &\leq-\gamma+\delta\|(I-\Pi)d\|
+       +\tfrac{L}{2}\|d\|^2.
+ \label{eq:transfer}
+\end{align}
+右侧为负时，关联答案LP局部下降。推导将梯度分成投影内与投影外两项，后一项受范数积约束。投影过滤能够减少投影外位移，却不自动建立$\gamma>0$，也不能凭组件余弦确定$\delta$或$L$。故云端机制实验必须检查方向符号、预测与实际LP的关系；关联梯度诊断只在预先指定的校准查询上离线进行，不反馈到最终测试更新。
+
+\subsection{可解释性层级与反事实预测}
+将证据分为四层：结构覆盖表明事实与路径关联；梯度/归因表明局部敏感性；组件撤销表明某更新对行为的干预影响；跨题目与多种子复现才支持稳定的方法结论。对于分数高的组件，预注册三种预测：撤销这些组件的LoRA更新应比撤销匹配随机组件恢复更多目标回忆；仅保留这些组件应保留部分目标抑制；真实方向应优于等秩随机方向。每个干预同时检查F0直接回弹和低关联知识变化，排除通用破坏。必要性与充分性证据分别报告，不把任一局部结果称为完整因果电路。
+
+\section{云端统一实验协议}
+\label{sec:cloud}
+\subsection{最终证据来源与阶段状态}
+所有最终有效性、消融、解释性、稳健性及成本实验均在云端服务器执行，本地承担开发与历史复查。已有本地A/B作为方法动机与附录参考，不与云端不同模型合算前沿。云端exp008/009已完成baseline先导；GSU-C2已在exp011对两模型各完成114步单种子先导。exp012对已有baseline及C2补做能力评测和全多跳复评。本节严格区分已完成先导与待确认实验。
+
+当前云端硬件为单张 RTX4090 24GB。环境采用 Python 3.12.3、PyTorch 2.8.0+cu128、Transformers 5.20.2 和 PEFT 0.21.2。主模型为 Qwen3.5-4B 与 Llama-3.2-3B-Instruct，权重通过 ModelScope 下载并记录逐文件哈希。每个批次固定环境快照；允许云端与本地不同，但同模型的一组比较不能跨环境静默拼接。可选加速内核的安装也视为新环境版本。
+
+\subsection{数据轨道与独立性}
+FaithUn\cite{faithun}含200个主体、664个事实簇，当前官方forget、retaining和test索引分别为33、66和464；其余簇不自动归入某一集合。复现轨保持原始JSON插入顺序、split文件与数据哈希，$F_0$取33条直接事实，保护池取retaining前33条，后33条单独审计。官方test索引不能不经核对就称为多跳确认集。
+
+探索轨使用89个hop2子项、267个改写问题；历史F1覆盖其中25个子项、75个问题，剩余64个子项、192个问题单独报告。这些数值对应现有选择，不预设重新探测的模型也恰好覆盖25条路径。确认轨另冻结未用于设计的新实体/新路径或独立数据源，登记其实际规模、图权限、题目与答案来源、质检规则及划分哈希。确认轨未建成前，多seed只能说明重复性，不能说明独立泛化。
+
+MQuAKE-CF-3k-v2和RWKU分别作为后续外部多跳链路与实体级遗忘候选。两者数据边界、目标实体、原始事实和改写协议不同于当前FaithUn实验，不并入exp011，也不把知识编辑答案或RWKU测试探针转成训练标签。只有完成实体/事实去重、底模掌握检查和新的数据权限卡后，才启动独立适配实验。
+
+\subsection{训练、参数与预算公平性}
+所有方法使用同模型底座、相同原始QA串接、相同F0顺序及预定义retain采样计划；不混用chat模板或生成式思考开关。基础训练预算为114次提交更新、LoRA秩8、缩放16、dropout0、学习率$5\times10^{-5}$，AdamW采用$(0.9,0.999)$、$\epsilon=10^{-8}$与weight decay0.01。33条F0对应三遍完整遍历加第四遍15条，不称为严格三轮；38条F0+F1对应三遍完整遍历。
+
+现有云端通用LoRA覆盖Qwen的248个文本线性模块、约1623万可训练参数，以及Llama的196个模块、约1216万参数。新GSU与通用baseline应在各自模型内匹配目标模块；RMU受限层适配单独标注参数量。还应提供计算受限比较，报告定位、校准、额外梯度、反馈和检查成本。方法间使用不同数量锚点时，同步给出等更新与等计算两种口径。
+
+\subsection{关键baseline与定位类比较}
+主baseline包括GA、GradDiff、NPO、SimNPO和RMU\cite{npo,simnpo,wmdp}，覆盖直接输出遗忘、遗忘/保持联合优化、参考偏好、无参考偏好及表示干预。Original作为不训练参照。目标方法与这些方法主轨均为F0-only；GA的F0+F1作为扩展参照，另给开发集最强代表baseline配置同样的扩展监督比较。不能只与较弱的扩展方法比较来宣称替代事实扩展。
+
+RMU先导是受限层LoRA表示匹配版本：第5--7层MLP down projection可训练，在第7层使用固定方向扰动与冻结底模保留表示匹配。它不同于官方完整训练方案，冻结系数与额外适配均在配置中记录。KLUE是FaithUn论文中的知识定位方法\cite{faithun}，CLUE是冲突引导电路定位框架\cite{clue}，二者不是名称变体。定位类比较先完成可执行性、数据权限和架构审核；未复现者只列为待验证项，不填造结果。
+
+\subsection{指标与经验帕累托定义}
+新主指标是\emph{全部}多跳路径的宏平均回忆率。每条路径先平均其改写题，再平均路径；直接题、改写题、覆盖/非覆盖切片、F1直接事实、关联与低关联知识作为关键子群。答案LP按式~\eqref{eq:lp}计算；历史选择题采用全串平均logprob，该分数与答案LP分开命名。另在冻结的评估分支使用答案归一化选择题分数，以检查计分口径敏感性，不静默替换旧结果。
+
+通用能力审计增加两个互补量：OpenUnlearning集成的lm-evaluation-harness 0.4.11对MMLU五类示例进行少样本评测，正确率越高越好；在每个官方科目测试划分中用固定seed42无放回抽取10题，共57个科目、最多570题，命名为“MMLU-10/科目”，不冒充完整MMLU。WikiText-2 raw test完整文本采用token级困惑度，按有效目标token总负对数似然计算，越低表示该固定语料上的下一个token预测越好。滑窗最大上下文2048、步长512，重叠上下文只作条件、不重复计分；保存总NLL和有效token数以复算。两项均与各自模型Original比较变化量；不同tokenizer之间不按绝对PPL排名，MMLU子集也不代表全部通用推理能力。
+
+帕累托主图横轴为全部多跳回忆率、纵轴为非锚点utility，最佳方向左上；图中标明直接遗忘可行性。若方法$x$回忆不高于$y$且utility不低于$y$，并至少一项严格改善，则$x$支配$y$。F0-only和扩展监督分别计算条件前沿，同时显示所有参照点。单配置是散点；同一方法的预注册强度扫描才连线，不跨方法平滑插值。当前非锚点utility不自动命名为无关能力，结构分层后再增加对应面板。
+
+开发阶段为所有方法提供相同规模的参数预算，初始建议共同学习率网格$\{2.5,5,10\}\times10^{-5}$，每点114步；温度和保留权重若调节需事前登记同额预算。以原始直接答对数减半作为待冻结的可行性筛选示例，原始表现和全部不合格点仍显示。最后选择规则、容差和最强baseline由开发集冻结，不用确认集挑有利坐标。
+
+\subsection{多种子、置信区间与留档}
+确认计划使用seed42、43、44，按同seed、同主体配对。以F0主体QID为整簇bootstrap单位，保留同路径改写相关性；不能将267道题视为独立试验。最终报告均值、配对差值和置信区间，多个主比较采用事先固定的校正；不把分开的误差条重叠与否当作支配检验。经验前沿是有限配置结论，不能写作全局最优证明。
+
+所有云端run在启动前保存代码快照/dirty patch、依赖、底模和数据哈希、命令、随机数、预算、模块与参数数。运行中保存逐步位移和概率诊断，失败保留报错与现场；补评测创建新eval run而不覆盖旧metrics。主结果使用最后114步检查点，不从已见测试题中选择最优检查点。
+
+\section{研究问题与验证实验}
+每个RQ包含一个机制问题、可判别实验和明确输出。现有先导回答与待运行部分分开，最终结论以云端统一协议为准。
+
+\subsection{RQ1：直接遗忘与关联回忆如何分离？}
+\paragraph{设置。}比较Original、F0-only各baseline及F0+F1参照，联合报告直接、改写、全部多跳及覆盖/非覆盖路径。按原始答题能力分层，检查不同遗忘强度与多跳回忆的关系。
+\paragraph{已有观察。}表~\ref{tab:cloudpilot}显示，当前云端GA在F0-only下已显著降低覆盖切片回忆，同时非锚点保持下降；NPO等固定配置保留较高多跳命中。这否定“所有F0-only方法都必须扩展F1才有效”的笼统表述，尚不能区分目标关联抑制与广泛退化。
+\paragraph{验证输出。}用完整89路径补评测和关系分层判断影响范围，建立GSU必须超过的同模型参照，而非只选择最容易击败的baseline。
+
+\begin{table*}[t]
+\caption{云端seed42先导。baseline来自exp008/009，GSU-C2来自exp011。H为历史F1覆盖切片答对数/75，F为F0答对数/33，R为非锚点审计答对数/33。H与F越低表示该口径回忆越弱，R越高表示该审计集正确率越高。baseline完整89路径补评由exp012完成。}
+\label{tab:cloudpilot}
+\centering\small
+\begin{tabular}{lrrrrrr}
+\toprule
+ & \multicolumn{3}{c}{Qwen3.5-4B} & \multicolumn{3}{c}{Llama-3.2-3B-Instruct}\\
+方法 & H & F & R & H & F & R\\
+\midrule
+Original & 65 & 24 & 23 & 69 & 29 & 29\\
+GA，F0 & 12 & 10 & 8 & 1 & 8 & 7\\
+GradDiff，F0 & 46 & 12 & 16 & 63 & 14 & 22\\
+NPO，F0 & 65 & 14 & 23 & 69 & 24 & 29\\
+SimNPO，F0 & 74 & 25 & 26 & 69 & 25 & 29\\
+RMU-LoRA，F0 & 66 & 18 & 21 & 68 & 28 & 30\\
+GA，F0+F1 & 9 & 10 & 8 & 0 & 8 & 7\\
+GSU-C2，F0 & 12 & 10 & 8 & 1 & 8 & 7\\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\begin{table*}[t]
+\caption{MMLU-10/科目与WikiText-2 token PPL能力审计。MMLU为57个科目各10道固定随机测试题的5-shot子集，非完整MMLU。MMLU准确率及相对原始模型变化越高越好；PPL及相对原始模型比值越低越好。不同tokenizer间不比较绝对PPL。exp012正式批次仍在运行，未完成项保留为“进行中”。}
+\label{tab:capability}
+\centering\small
+\begin{tabular}{lrrrrrrrr}
+\toprule
+ & \multicolumn{4}{c}{Qwen3.5-4B} & \multicolumn{4}{c}{Llama-3.2-3B-Instruct}\\
+方法 & MMLU$\uparrow$ & $\Delta$pp$\uparrow$ & PPL$\downarrow$ & 比值$\downarrow$ & MMLU$\uparrow$ & $\Delta$pp$\uparrow$ & PPL$\downarrow$ & 比值$\downarrow$\\
+\midrule
+Original & 待测 & 0 & 待测 & 1 & 待测 & 0 & 待测 & 1\\
+GA，F0 & 待测 & 待测 & 待测 & 待测 & 待测 & 待测 & 待测 & 待测\\
+GradDiff，F0 & 待测 & 待测 & 待测 & 待测 & 待测 & 待测 & 待测 & 待测\\
+NPO，F0 & 待测 & 待测 & 待测 & 待测 & 待测 & 待测 & 待测 & 待测\\
+SimNPO，F0 & 待测 & 待测 & 待测 & 待测 & 待测 & 待测 & 待测 & 待测\\
+RMU-LoRA，F0 & 待测 & 待测 & 待测 & 待测 & 待测 & 待测 & 待测 & 待测\\
+GA，F0+F1 & 待测 & 待测 & 待测 & 待测 & 待测 & 待测 & 待测 & 待测\\
+GSU-C2，F0 & 进行中 & 进行中 & 进行中 & 进行中 & 进行中 & 进行中 & 进行中 & 进行中\\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\begin{table}[t]
+\caption{全部89条hop2路径的路径宏平均回忆率，越低表示该评测上的目标回忆越弱。GSU-C2来自已完成的seed42 run；baseline统一补评由exp012完成。}
+\label{tab:allhop2pilot}
+\centering\small
+\begin{tabular}{lrr}
+\toprule
+方法 & Qwen3.5-4B & Llama-3.2-3B-Instruct\\
+\midrule
+Original & 进行中 & 进行中\\
+GA，F0 & 进行中 & 进行中\\
+GradDiff，F0 & 进行中 & 进行中\\
+NPO，F0 & 进行中 & 进行中\\
+SimNPO，F0 & 进行中 & 进行中\\
+RMU-LoRA，F0 & 进行中 & 进行中\\
+GA，F0+F1 & 进行中 & 进行中\\
+GSU-C2，F0 & 0.3858 & 0.3034\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{RQ2：GSU能否改善同模型的遗忘--影响前沿？}
+\paragraph{设置。}在云端两模型上运行公共主候选与五种baseline，匹配F0监督、模块、样本顺序和更新预算，再提供计算成本对齐版本。将直接遗忘可行的点与不合格点分别标记，比较全部多跳、覆盖切片和低关联utility。
+\paragraph{判别标准。}主候选须在不削弱直接遗忘的条件下改善全部多跳，并在预定义utility预算下优于开发阶段冻结的最强baseline。只改善75题切片、只改变干扰项排名或只增加训练成本不构成主张所需证据。
+\paragraph{当前先导。}GSU-C2的历史覆盖切片在Qwen为12/75、Llama为1/75，恰与本批GA相同；F0答对分别为10/33和8/33，非锚点retain分别为8/33和7/33，也与本批GA相同。因此当前没有观察到C2相对GA的行为优势。C2全部89条路径宏回忆分别为0.3858和0.3034，但baseline尚未按相同path-macro脚本复评，exp012完成前不作排序。
+\paragraph{结果状态。}C2候选训练完成，MMLU/PPL评测与baseline全多跳补评正在exp012执行；尚无多种子或匹配随机结构对照证据，不能声称GSU优于baseline或已验证定位机制。
+
+\subsection{RQ3：组件、方向与护栏各自贡献什么？}
+\paragraph{设置。}表~\ref{tab:ablation}给出云端公共七组。C2在尚无云端GSU结果时被指定为不依赖旧层先验的公共主候选；这是云端新协议，不追溯更改本地exp010草案中C3的主候选约定。若同模型校准先验完成，再独立登记C3及其匹配随机先验组。
+\paragraph{判别标准。}C2对Cg检验整体路由，对C1检验方向，对C4检验组件，对C2R/C2D分别检验定位与关联方向。若Cg解释全部增益，不能归因于关联结构；若随机方向匹配真实方向，应解释为一般低秩抑制而非关联定位。
+\paragraph{结果状态。}七组待运行。每组输出全部行为指标及实际位移统计，不从某一切片事后挑主方法；下一RQ进一步做组件干预。
+
+\begin{table}[t]
+\caption{云端公共机制组；均只用F0遗忘损失。S为当前模型梯度/路径分数，U为真实支持梯度子空间，G为进展护栏。}
+\label{tab:ablation}
+\centering\small
+\begin{tabular}{llll}
+\toprule
+组 & 组件 & 方向 & 护栏\\
+\midrule
+C0 & 无 & 无 & 无\\
+Cg & 无 & 无 & G\\
+C1 & S路由 & 无 & G\\
+C2 & S路由 & U & G\\
+C2R & 随机S映射 & U & G\\
+C2D & S路由 & 等秩随机U & G\\
+C4 & 无 & U & G\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{RQ4：风险定位有何干预解释，更新是否兑现设计？}
+\paragraph{组件干预。}按事前分数选取固定预算组件，对最终adapter进行选中组件撤销、仅保留选中组件及匹配随机撤销。随机组匹配层/模块类别和可训练参数规模，匹配误差记录。比较目标回忆恢复、直接F0回弹和低关联表现，分别分析必要性与充分性，控制通用退化解释。
+\paragraph{更新链诊断。}记录梯度缩放前后、AdamW raw、组件路由、方向过滤、反馈和最终接受状态。检查权重与实际位移量是否对应、投影保留率、局部$h^\top d$符号、F0实际下降、锚点修正和回退比例。对性质~\eqref{eq:transfer}在校准题上比较预测与实际LP，检查何时迁移成立、何时失败。
+\paragraph{判别与状态。}预期真实定位比随机定位产生更集中的目标影响，且行为变化随预注册干预预算变化；这些仍待云端验证。若效果只是步长变小、全局概率崩溃或反馈被撤销，则机制解释不成立，不能用热力图相似性替代干预证据。
+
+\subsection{RQ5：结果是否稳定，关联探测是否可迁移？}
+\paragraph{设置。}重复三种子，比较共同F1与模型重探测F1两轨；按支持事实预算、路径密度、桥接实体和原始掌握程度分层。现有固定数据只覆盖已实现的hop2，不虚构已完成的三跳或其他数据集结果；新增更长路径必须另冻结真实数据与预算。
+\paragraph{判别标准。}检验方向性收益能否跨seed和两架构复现，并比较“冻结子空间”与三次刷新，区分共享结构与陈旧方向的影响。两模型同时改变架构与规模，因此差异不单独归因为参数量或思维能力。
+\paragraph{结果状态。}当前baseline只提供seed42先导。确认题、共同输入及多种子完成后才能报告稳定性；RQ6审计稳定收益对应的知识影响和成本。
+
+\subsection{RQ6：目标关联影响与通用能力代价如何分布？}
+\paragraph{设置。}在看新方法输出前，以实体ID和三元组解析规则划分直接重合、共享实体、路径邻近与无观测重合；单独处理答案字符串，不把字符串按字符展开。按关系类别和初始答题难度匹配关联与低关联样本，报告子群规模及交集。
+\paragraph{通用能力评测。}exp012在C2两模型训练完成后，对Original、GA、GradDiff、NPO、SimNPO、RMU-LoRA、GA-F0+F1与GSU-C2的同模型checkpoint依序运行MMLU-10/科目和WikiText-2 token PPL。所有模型使用同一科目样本索引、shot、提示和数据revision；MMLU报告宏平均科目正确率及相对本模型Original的百分点变化，PPL报告每token NLL、PPL及相对Original的比值。结果表区分已测和缺失项；PPL绝对值仅作模型内比较。
+\paragraph{判别标准。}允许目标相关知识承担遗忘代价，但同时检查低关联知识和通用语言行为是否出现广泛退化。MMLU正确率下降及通用PPL上升作为能力代价信号，与目标回忆、多跳表现、低关联审计和成本联合报告，不把其中单项当成完整能力指标。
+\paragraph{结果状态。}MMLU、WikiText-2 PPL和全部89路径补评测已冻结在exp012卡，正在独立云端批次中执行。RWKU实体级评测、MQuAKE派生路径评测、关联分层及生成式审计仍需各自的新卡，不与本批混跑。
+
+\section{执行顺序、冻结点与结果合同}
+\subsection{分阶段完成，避免无界搜索}
+exp011已对Llama3.2-3B与Qwen3.5-4B各执行114步GSU-C2单种子先导，不等同最终确认。exp012在隔离venv中固定lm-evaluation-harness 0.4.11，正在对14个baseline端点和2个C2端点依序运行全部89路径、MMLU-10/科目与WikiText-2 PPL。该评测不训练、不改adapter，补齐baseline全多跳与通用能力缺口；超预算或失败保留部分结果并停止。
+
+确认阶段若比较GSU、五种baseline和两个随机结构对照，共8种训练方法$\times$2模型$\times$3seed，即48次训练、5472次提交更新；另外保留Original评测。扩展监督参照另计，不能藏入免费定位预算。已完成run只有代码、数据、模块、顺序及配置满足新协议时才复用，不能把不一致的历史点算作独立重复。墙钟和存储上限在云端实验卡中事先冻结，到预算即停并保留现场。
+
+\subsection{候选淘汰与论文结论}
+若候选削弱直接遗忘、只改善覆盖切片、被同预算参照支配，或有效原始下降步骤中超过一半完全回退，则不作为当前主方法。若真实与随机结构相同，停止对应定位主张；若只有新增先验组失败，保留无先验方法并否定先验增益，不追加模块挽救旧名字。测试集不用于这些设计选择，开发轨的探索失败完整归档。
+
+只有云端结果支持同预算直接/多跳改善、关键随机对照差异、可接受的低关联影响和多种子重复，正文才写有效性结论。只有实际比较的点非支配，才写经验帕累托前沿；只有预定义的配对统计也支持，才进一步写有统计证据的局部优势。候选未完成时，摘要和结论使用设计与待验证状态，不填预期提升数字。
+
+\section{相关工作与定位}
+输出损失方法通过不同形式的负偏好或遗忘/保持权衡改变目标回答，NPO与SimNPO分别讨论参考模型和长度等训练因素\cite{npo,simnpo}。表示方法如RMU从内部激活进行干预\cite{wmdp}。GSU与这些路线的比较必须区分算法损失、LoRA参数化和具体调参预算，不能将适配版结果直接称为官方最佳复现。
+
+FaithUn把改写、多跳及同答案知识纳入评估，并提出知识定位方法KLUE\cite{faithun}。CLUE通过电路分析与冲突结构定位遗忘和保持的相关部分\cite{clue}。本文不将“知识有关联”或“选择组件”本身作为优先性主张，而检验关联结构如何指导F0实际更新，并用组件与方向的独立对照解释收益。优化器与低秩参数化提供实现基础\cite{adam,lora}，不自动构成遗忘有效性的理论保证。
+
+\section{讨论与结论}
+GSU的研究主线把关联风险识别、组件位置、组件内方向和实际更新串成可审查的算法合同。局部性质解释哪些操作有数值或进展保证，干预实验检验代理信号是否对应目标行为，云端统一协议检验多跳抑制和知识影响。该组织方式使方法成功与失败都能定位到具体环节，而不是只比较一组平均正确率。
+
+当前已有云端baseline先导与本地机制探索，最终GSU结果尚未产生。历史覆盖选择、有限题目、LoRA表达能力和图关联标签均构成证据边界；低正确率也可能由计分排序或广泛退化造成。最终论文的有效性与优势结论将由云端确认结果填写，不从本稿的理论条件推出所有恢复途径消失，也不从有限经验前沿推出全局最优。
+
+\begin{thebibliography}{9}
+\bibitem{adam} Diederik P. Kingma and Jimmy Ba. Adam: A Method for Stochastic Optimization. ICLR, 2015. arXiv:1412.6980.
+\bibitem{lora} Edward J. Hu et al. LoRA: Low-Rank Adaptation of Large Language Models. arXiv:2106.09685, 2021.
+\bibitem{npo} Ruiqi Zhang, Licong Lin, Yu Bai, and Song Mei. Negative Preference Optimization: From Catastrophic Collapse to Effective Unlearning. arXiv:2404.05868, 2024.
+\bibitem{simnpo} Chongyu Fan et al. Simplicity Prevails: Rethinking Negative Preference Optimization for LLM Unlearning. arXiv:2410.07163, 2024.
+\bibitem{wmdp} Nathaniel Li et al. The WMDP Benchmark: Measuring and Reducing Malicious Use With Unlearning. arXiv:2403.03218, 2024.
+\bibitem{faithun} Nakyeong Yang, Minsung Kim, Seunghyun Yoon, Joongbo Shin, and Kyomin Jung. FaithUn: Toward Faithful Forgetting in Language Models by Investigating the Interconnectedness of Knowledge. EMNLP, 2025. doi:10.18653/v1/2025.emnlp-main.657.
+\bibitem{clue} Hang Chen, Jiaying Zhu, Xinyu Yang, and Wenya Wang. CLUE: Conflict-guided Localization for LLM Unlearning Framework. ICLR, 2026. arXiv:2509.20977.
+\end{thebibliography}
+
+\appendix
+\section{本地探索证据与设计来源}
+\begin{table}[ht]
+\caption{本地Qwen2.5-1.5B单seed探索，仅作设计依据。H为覆盖多跳/75，F为直接F0/33，A为全部hop2回忆率，R为留出retain/33。与云端结果不合算前沿。}
+\label{tab:localhistory}
+\centering\small
+\begin{tabular}{lrrrr}
+\toprule
+方法 & H & F & A & R\\
+\midrule
+A0/B0 & 52 & 8 & 44.94\% & 15\\
+A2 & 57 & 9 & 55.06\% & 19\\
+A3 & 47 & 6 & 32.21\% & 15\\
+B2 & 44 & 13 & 49.44\% & 14\\
+A1/B1 & 22 & 7 & 30.34\% & 14\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+A组分离梯度一致性、路径权重和软/硬指导；B组在同一原始组件分数上引入历史FFN先验。B2与A2的196个组件原始分数、LoRA初始化和更新顺序一致，不继承A2已训练adapter。B2相对B0在75题中12道对变错、4道错变对，其中对变错的12题只有4题答案LP下降；整体答案LP由$-11.3204$升为$-10.5503$。这促使新设计同时检查概率、排序和直接遗忘强度。
+
+表~\ref{tab:localhistory}中A3在全部hop2与留出retain两坐标支配B2；在覆盖切片中B2改善但被扩展监督B1支配。A0/B0和A1/B1为重复相同端点，不算独立seed。历史硬掩码作用在遗忘梯度，不代表参数绝对冻结；新设计因此区分梯度、实际位移和后续反馈。
+
+\subsection{C组实际位移路由的阶段筛选}
+本地exp010重启批次在Qwen2.5-1.5B上使用seed42、每组114步。C0的八步数值回放与历史B0最大差为0，正式五项计数复现门通过。表~\ref{tab:localcpartial}报告已完成的八组，不与云端模型合算前沿。
+\begin{table}[ht]
+\caption{本地C组八变体完整实测。H为覆盖多跳正确数/75，F为F0正确数/33，R为留出retain正确数/33。回忆指标越低越好，R越高越好。}
+\label{tab:localcpartial}
+\centering\small
+\begin{tabular}{lrrrr}
+\toprule
+方法 & 全89路径宏回忆 & H & F & R\\
+\midrule
+C1 & 27.72\% & 0 & 12 & 12\\
+C4 & 29.59\% & 7 & 12 & 10\\
+C3R & 29.96\% & 7 & 12 & 10\\
+C2 & 29.96\% & 7 & 12 & 10\\
+C3 & 30.71\% & 7 & 13 & 10\\
+C3D & 31.46\% & 9 & 13 & 10\\
+Cg & 32.58\% & 9 & 12 & 10\\
+C0 & 44.94\% & 52 & 8 & 15\\
+\bottomrule
+\end{tabular}
+\end{table}
+C1通过F0内部梯度一致性与F0--F1路径加权梯度对齐构造组件分数，将权重作用于AdamW实际位移，不加入F1遗忘损失或组件内子空间投影。相对Cg/C2，C1的F0残留同为12/33，全路径回忆更低且留出retain更高；C2方向过滤和C3历史先验在该次筛选中未带来额外收益。C1未支配C0，且F1直接事实为0/5，因此不能把多跳降低归因为保持支持事实时独立切断推理。C1/C2/C3分别有103/109/108步发生护栏回退，机制归因还需逐步位移审计与随机对照。
+八组均已完成，续跑于2026年10月23日22:56:59结束。按全89路径宏回忆排序，C1第一，C4第二，C2与C3R并列第三；其后为C3、C3D、Cg、C0。C1相对C4的主指标降低1.87个百分点，F0残留相同且留出retain更高。C3R不是C1的匹配随机对照，因此不能据此单独证明C1组件定位的因果必要性。C3仍为事前主候选，C1为事后探索性领先项，仍需独立云端和多seed确认。前五组来源为\nolinkurl{exp/runs/exp010_gsu_step_routing/runs/batch_20261023_092800_Cgroup_restart1}，后三组来源为\nolinkurl{exp/runs/exp010_gsu_step_routing/runs/local_continue_20261023_205325}；每行对应变体的\nolinkurl{metrics.json}。
+
+\section{状态、版本与结果溯源}
+本文是中文内部研究工作稿，保留pdfLaTeX/CJK构建方式，不代表正式英文投稿定稿。C组已实现并完成八组本地探索，云端baseline与C2为已完成的单种子先导，最终GSU尚未确定；理论为条件推导，MMLU/PPL与baseline全部89路径的正式补评尚无完整比较，最终确认数据和统计检验另行冻结。术语维护于同目录\nolinkurl{glossary.md}，修改前源文件保存于\nolinkurl{history/main_pre_cloud_20261022.tex}。
+
+本地来源为exp006的\nolinkurl{batch_20261021_132023_431bf0}和exp007的\nolinkurl{batch_20261022_121504_28dccc}。云端来源为exp008及exp009的\nolinkurl{batch_20261022_01}；同名批次用实验ID和完整远程路径区分。逐题与配置哈希见工作区\nolinkurl{exp/analysis/gsu_pareto/remote_audit_20261022/remote_pareto_audit.json}。完整多跳指标尚需从现有adapter创建新评测，不覆写先导metrics。
+
+现有本地exp010仍保留其草案来源和主候选约定；本稿新设云端公共主候选C2，理由是旧层先验不能跨架构使用，不是基于尚不存在的云端GSU结果挑选赢家。没有修改历史实验门、没有静默变更已运行baseline，也未因本稿修改自动启动云端训练。
+\clearpage
+\end{CJK*}
+\end{document}

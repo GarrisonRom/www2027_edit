@@ -1,0 +1,59 @@
+{
+  "observed_at": "2026-10-25T11:12:30+08:00",
+  "remote_root": "/root/autodl-tmp/www2027_sync_20261025_decisive_v1",
+  "run": "exp/runs/exp017_decisive_validation/runs/batch_20261025_01",
+  "pid": 584569,
+  "status": "waiting_for_dependency",
+  "dependency": "/root/autodl-tmp/www2027_sync_20261024_8b_v1/exp/runs/exp016_8b_multiseed/runs/batch_20261024_01/status.json",
+  "dependency_current": "qwen3_8b_RMU_matched_lora_seed42",
+  "source_commit": "ae565c152a5b73d7f300e2e991fa7e807d9dd303",
+  "source_dirty": true,
+  "tests": {
+    "local_passed": 82,
+    "cloud_cpu_passed": 64,
+    "gpu_math_regression": "runs after GPU release",
+    "true8b_KLUE_smoke": "pending"
+  },
+  "methods": [
+    "KLUE-repaired",
+    "GA-F0F1",
+    "Cg",
+    "C1R",
+    "C2D"
+  ],
+  "development": {
+    "methods": [
+      "GA",
+      "GradDiff",
+      "NPO",
+      "SimNPO",
+      "RMU"
+    ],
+    "learning_rates": [
+      0.000025,
+      0.00005,
+      0.0001
+    ],
+    "trials": 30,
+    "forget_clusters": 24,
+    "retain_clusters": 24,
+    "official_splits_excluded": true
+  },
+  "fixed_formal_endpoints": 30,
+  "max_selected_confirmations": 36,
+  "hashes": {
+    "exp/train/decisive_controls.py": "7d301ea84fd817429098b92b88ac4f395a9e7f32034ce9dfae4caaec394356f2",
+    "exp/train/development_evaluation.py": "5b01f2b817cf02e1c248106b4d5f2a4953562e7278dc1c085bebb31574a548e7",
+    "exp/train/run_decisive_validation.py": "0f6a51ecaa878e0d7eacf74ee1404d57a5cc9e684b71d8ac020295d7fe829cce",
+    "exp/train/run_local_gsu_c_group.py": "1d58db388c474f38c9d5cb4ec88d9473116f57800339ec9c0c45f3062a20d6c7",
+    "exp/train/reproduce_all_baselines.py": "a608587466c2b0466011754157343c7759b79eb978e7a6e81a25ad7c0a7fb28a",
+    "exp/train/reproduction_losses.py": "1a5a0cf460b46189f484f45da1e139cf7f615913079167c6b0acb5b1fcc09c52",
+    "exp/train/tests/test_decisive_controls.py": "3b189a4f01f3d0666cde375e2695113ae9b87b0d15c5aa97aed57eff48853420"
+  },
+  "limitations": [
+    "No real8B new scores yet",
+    "KLUE native conventions and resource adaptations remain disclosed",
+    "No feasible development configuration means no selected winner",
+    "Current official test has exploratory history; this follow-up does not erase prior access"
+  ]
+}

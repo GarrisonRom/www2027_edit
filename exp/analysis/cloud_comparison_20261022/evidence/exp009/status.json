@@ -1,0 +1,9 @@
+{
+  "status": "completed",
+  "completed": [
+    "qwen35_4b_smoke",
+    "llama32_3b_smoke",
+    "qwen35_4b_RMU_F0",
+    "llama32_3b_RMU_F0"
+  ]
+}

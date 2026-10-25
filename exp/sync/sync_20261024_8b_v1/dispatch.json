@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-24",
+  "last_observed": "2026-10-24T00:25:48+08:00",
+  "timezone": "Asia/Shanghai",
+  "remote_root": "/root/autodl-tmp/www2027_sync_20261024_8b_v1",
+  "run": "exp/runs/exp016_8b_multiseed/runs/batch_20261024_01",
+  "queue_pid": 354460,
+  "download_pid": 353874,
+  "status": "waiting_for_dependency",
+  "waiting_role": "models",
+  "download_status": "/root/autodl-tmp/download8b_20261024_02/status.json",
+  "gpu_dependency": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/status.json",
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "training_endpoints": 162,
+  "original_evaluations": 2,
+  "job_count_including_smokes_and_C_audits": 230,
+  "models": [
+    {
+      "repo": "Qwen/Qwen3-8B",
+      "path": "/root/models8b/Qwen3-8B",
+      "observed_download_status": "completed_and_file_hashes_recorded"
+    },
+    {
+      "repo": "LLM-Research/Meta-Llama-3.1-8B-Instruct",
+      "path": "/root/autodl-tmp/models/Meta-Llama-3.1-8B-Instruct",
+      "observed_download_status": "downloading_shard_1_of4"
+    }
+  ],
+  "tests": {
+    "local_final_passed": 50,
+    "cloud_cpu_passed": 46,
+    "cloud_gpu_tests": "queued_before_training",
+    "local_toy_cuda_parity": "passed"
+  },
+  "sha256": {
+    "exp/train/run_8b_multiseed.py": "4b0b2a370363eb87f2b385a11514b1cf9f43f4fdf82f11984b66ff6c2e461b06",
+    "exp/train/run_local_gsu_c_group.py": "081a218f602dcde19a55320456b6a92b40ccb6a874ef89ff29da2243de4790d5",
+    "exp/train/reproduce_all_baselines.py": "f5d6eec9365a148999247113614aa22b6b8870d68fff8febd42d8e3ac8ec97a9",
+    "exp/train/native_cpu_streaming.py": "3073b427428d91ad16e6670a6cd7932f5dd269c1292f91ab423cdab5d2b2e465",
+    "exp/train/model_8b_resources.py": "889d1c18fd0da3abc010ed3a1a18b72a33fb6cd9a1884b1439701a6715c22f0d",
+    "tools/download_8b_modelscope.py": "f7108d9df55e9a1e5cddbb08af6dfbf0545eb8e88c8d6de2aa41bd4855627fcb"
+  },
+  "notes": [
+    "No8B formal result yet",
+    "No deletion of old artifacts or fallback to quantized/LoRA native surrogate",
+    "Disk gates may require more storage; failed jobs never reported completed",
+    "Native CPU-streaming execution and FP32-moment/BF16-parameter convention explicitly declared"
+  ]
+}

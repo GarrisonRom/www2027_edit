@@ -1,0 +1,7 @@
+{
+  "adapter_path": "/root/autodl-tmp/www2027_sync_20261023_c1_v1/exp/runs/exp014_cloud_c1/runs/batch_20261023_01/llama32_3b_C1/adapter",
+  "adapter_sha256": {
+    "adapter_model.safetensors": "b27b1bb40d665d39b67bb488cb71684535905f99f7d6cc7b17d46c87c3b78479"
+  },
+  "training_metrics_sha256": "82eea711ffb688cfe40425b8e102163c0e9f9333879fd65dbbdd3d80a09b5195"
+}

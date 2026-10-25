@@ -1,0 +1,13 @@
+{
+  "scope": "new LoRA single-config trials; not completed hyperparameter search",
+  "rows": [
+    {
+      "method": "GA",
+      "phase": "training",
+      "updates": 10,
+      "final_training_ua": 0.2,
+      "stop": "threshold",
+      "source": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\tmp\\pytest_resume_eval_20261025_a\\test_summary_does_not_claim_tr0\\GA_formal"
+    }
+  ]
+}

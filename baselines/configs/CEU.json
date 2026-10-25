@@ -1,0 +1,30 @@
+{
+  "method": "CEU",
+  "seed": 42,
+  "track": "native",
+  "batch_size": 32,
+  "microbatch": 1,
+  "epochs": 10,
+  "learning_rate": 1e-05,
+  "weight_decay": 0.0,
+  "max_grad_norm": 1.0,
+  "lr_scheduler": "constant",
+  "gamma": 1.0,
+  "alpha": 1.0,
+  "beta": 1.0,
+  "delta": 0.0,
+  "stop_ua": null,
+  "stop_scope": "training F0 MCQA only; checked each epoch",
+  "retain_loss_type": "NLL",
+  "source": "open-unlearning author-contributed community recipe, pinned commit17cbbc8",
+  "fidelity": "author/source algorithm transfer; not original dataset/model result",
+  "deviations": [
+    "Qwen/FaithUn task transfer; not author-exact model replication",
+    "AdamW/betas(.9,.999)/eps1e-8,norm1,constant LR are explicit conventions",
+    "paper gives LR range, not exact grid: LR_GRID is our frozen discretization",
+    "raw QA training without added template follows FaithUn Section3.4"
+  ],
+  "retain_pool": "all66; independent evaluation on test464, not last33 retain",
+  "use_retain": false,
+  "ignore_first_n_answer_tokens": 1
+}

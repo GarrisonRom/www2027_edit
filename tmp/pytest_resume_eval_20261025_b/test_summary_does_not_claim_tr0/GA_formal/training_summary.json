@@ -1,0 +1,5 @@
+{
+  "updates": 10,
+  "final_training_ua": 0.2,
+  "stop": "threshold"
+}

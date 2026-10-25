@@ -1,0 +1,462 @@
+{
+  "complete": true,
+  "provisional": false,
+  "full": true,
+  "subjects": {
+    "mmlu_subject00": {
+      "n": 1,
+      "accuracy": 1.0
+    },
+    "mmlu_subject01": {
+      "n": 1,
+      "accuracy": 1.0,
+      "dataset_fingerprints": {
+        "test": "fixed"
+      },
+      "samples_sha256": "adf63be5e48c95ea8591c31a2d13cb92261f40a2cd51df6448dddfceef966518"
+    },
+    "mmlu_subject02": {
+      "n": 1,
+      "accuracy": 1.0,
+      "dataset_fingerprints": {
+        "test": "fixed"
+      },
+      "samples_sha256": "adf63be5e48c95ea8591c31a2d13cb92261f40a2cd51df6448dddfceef966518"
+    },
+    "mmlu_subject03": {
+      "n": 1,
+      "accuracy": 1.0,
+      "dataset_fingerprints": {
+        "test": "fixed"
+      },
+      "samples_sha256": "adf63be5e48c95ea8591c31a2d13cb92261f40a2cd51df6448dddfceef966518"
+    },
+    "mmlu_subject04": {
+      "n": 1,
+      "accuracy": 1.0,
+      "dataset_fingerprints": {
+        "test": "fixed"
+      },
+      "samples_sha256": "adf63be5e48c95ea8591c31a2d13cb92261f40a2cd51df6448dddfceef966518"
+    },
+    "mmlu_subject05": {
+      "n": 1,
+      "accuracy": 1.0,
+      "dataset_fingerprints": {
+        "test": "fixed"
+      },
+      "samples_sha256": "adf63be5e48c95ea8591c31a2d13cb92261f40a2cd51df6448dddfceef966518"
+    },
+    "mmlu_subject06": {
+      "n": 1,
+      "accuracy": 1.0,
+      "dataset_fingerprints": {
+        "test": "fixed"
+      },
+      "samples_sha256": "adf63be5e48c95ea8591c31a2d13cb92261f40a2cd51df6448dddfceef966518"
+    },
+    "mmlu_subject07": {
+      "n": 1,
+      "accuracy": 1.0,
+      "dataset_fingerprints": {
+        "test": "fixed"
+      },
+      "samples_sha256": "adf63be5e48c95ea8591c31a2d13cb92261f40a2cd51df6448dddfceef966518"
+    },
+    "mmlu_subject08": {
+      "n": 1,
+      "accuracy": 1.0,
+      "dataset_fingerprints": {
+        "test": "fixed"
+      },
+      "samples_sha256": "adf63be5e48c95ea8591c31a2d13cb92261f40a2cd51df6448dddfceef966518"
+    },
+    "mmlu_subject09": {
+      "n": 1,
+      "accuracy": 1.0,
+      "dataset_fingerprints": {
+        "test": "fixed"
+      },
+      "samples_sha256": "adf63be5e48c95ea8591c31a2d13cb92261f40a2cd51df6448dddfceef966518"
+    },
+    "mmlu_subject10": {
+      "n": 1,
+      "accuracy": 1.0,
+      "dataset_fingerprints": {
+        "test": "fixed"
+      },
+      "samples_sha256": "adf63be5e48c95ea8591c31a2d13cb92261f40a2cd51df6448dddfceef966518"
+    },
+    "mmlu_subject11": {
+      "n": 1,
+      "accuracy": 1.0,
+      "dataset_fingerprints": {
+        "test": "fixed"
+      },
+      "samples_sha256": "adf63be5e48c95ea8591c31a2d13cb92261f40a2cd51df6448dddfceef966518"
+    },
+    "mmlu_subject12": {
+      "n": 1,
+      "accuracy": 1.0,
+      "dataset_fingerprints": {
+        "test": "fixed"
+      },
+      "samples_sha256": "adf63be5e48c95ea8591c31a2d13cb92261f40a2cd51df6448dddfceef966518"
+    },
+    "mmlu_subject13": {
+      "n": 1,
+      "accuracy": 1.0,
+      "dataset_fingerprints": {
+        "test": "fixed"
+      },
+      "samples_sha256": "adf63be5e48c95ea8591c31a2d13cb92261f40a2cd51df6448dddfceef966518"
+    },
+    "mmlu_subject14": {
+      "n": 1,
+      "accuracy": 1.0,
+      "dataset_fingerprints": {
+        "test": "fixed"
+      },
+      "samples_sha256": "adf63be5e48c95ea8591c31a2d13cb92261f40a2cd51df6448dddfceef966518"
+    },
+    "mmlu_subject15": {
+      "n": 1,
+      "accuracy": 1.0,
+      "dataset_fingerprints": {
+        "test": "fixed"
+      },
+      "samples_sha256": "adf63be5e48c95ea8591c31a2d13cb92261f40a2cd51df6448dddfceef966518"
+    },
+    "mmlu_subject16": {
+      "n": 1,
+      "accuracy": 1.0,
+      "dataset_fingerprints": {
+        "test": "fixed"
+      },
+      "samples_sha256": "adf63be5e48c95ea8591c31a2d13cb92261f40a2cd51df6448dddfceef966518"
+    },
+    "mmlu_subject17": {
+      "n": 1,
+      "accuracy": 1.0,
+      "dataset_fingerprints": {
+        "test": "fixed"
+      },
+      "samples_sha256": "adf63be5e48c95ea8591c31a2d13cb92261f40a2cd51df6448dddfceef966518"
+    },
+    "mmlu_subject18": {
+      "n": 1,
+      "accuracy": 1.0,
+      "dataset_fingerprints": {
+        "test": "fixed"
+      },
+      "samples_sha256": "adf63be5e48c95ea8591c31a2d13cb92261f40a2cd51df6448dddfceef966518"
+    },
+    "mmlu_subject19": {
+      "n": 1,
+      "accuracy": 1.0,
+      "dataset_fingerprints": {
+        "test": "fixed"
+      },
+      "samples_sha256": "adf63be5e48c95ea8591c31a2d13cb92261f40a2cd51df6448dddfceef966518"
+    },
+    "mmlu_subject20": {
+      "n": 1,
+      "accuracy": 1.0,
+      "dataset_fingerprints": {
+        "test": "fixed"
+      },
+      "samples_sha256": "adf63be5e48c95ea8591c31a2d13cb92261f40a2cd51df6448dddfceef966518"
+    },
+    "mmlu_subject21": {
+      "n": 1,
+      "accuracy": 1.0,
+      "dataset_fingerprints": {
+        "test": "fixed"
+      },
+      "samples_sha256": "adf63be5e48c95ea8591c31a2d13cb92261f40a2cd51df6448dddfceef966518"
+    },
+    "mmlu_subject22": {
+      "n": 1,
+      "accuracy": 1.0,
+      "dataset_fingerprints": {
+        "test": "fixed"
+      },
+      "samples_sha256": "adf63be5e48c95ea8591c31a2d13cb92261f40a2cd51df6448dddfceef966518"
+    },
+    "mmlu_subject23": {
+      "n": 1,
+      "accuracy": 1.0,
+      "dataset_fingerprints": {
+        "test": "fixed"
+      },
+      "samples_sha256": "adf63be5e48c95ea8591c31a2d13cb92261f40a2cd51df6448dddfceef966518"
+    },
+    "mmlu_subject24": {
+      "n": 1,
+      "accuracy": 1.0,
+      "dataset_fingerprints": {
+        "test": "fixed"
+      },
+      "samples_sha256": "adf63be5e48c95ea8591c31a2d13cb92261f40a2cd51df6448dddfceef966518"
+    },
+    "mmlu_subject25": {
+      "n": 1,
+      "accuracy": 1.0,
+      "dataset_fingerprints": {
+        "test": "fixed"
+      },
+      "samples_sha256": "adf63be5e48c95ea8591c31a2d13cb92261f40a2cd51df6448dddfceef966518"
+    },
+    "mmlu_subject26": {
+      "n": 1,
+      "accuracy": 1.0,
+      "dataset_fingerprints": {
+        "test": "fixed"
+      },
+      "samples_sha256": "adf63be5e48c95ea8591c31a2d13cb92261f40a2cd51df6448dddfceef966518"
+    },
+    "mmlu_subject27": {
+      "n": 1,
+      "accuracy": 1.0,
+      "dataset_fingerprints": {
+        "test": "fixed"
+      },
+      "samples_sha256": "adf63be5e48c95ea8591c31a2d13cb92261f40a2cd51df6448dddfceef966518"
+    },
+    "mmlu_subject28": {
+      "n": 1,
+      "accuracy": 1.0,
+      "dataset_fingerprints": {
+        "test": "fixed"
+      },
+      "samples_sha256": "adf63be5e48c95ea8591c31a2d13cb92261f40a2cd51df6448dddfceef966518"
+    },
+    "mmlu_subject29": {
+      "n": 1,
+      "accuracy": 1.0,
+      "dataset_fingerprints": {
+        "test": "fixed"
+      },
+      "samples_sha256": "adf63be5e48c95ea8591c31a2d13cb92261f40a2cd51df6448dddfceef966518"
+    },
+    "mmlu_subject30": {
+      "n": 1,
+      "accuracy": 1.0,
+      "dataset_fingerprints": {
+        "test": "fixed"
+      },
+      "samples_sha256": "adf63be5e48c95ea8591c31a2d13cb92261f40a2cd51df6448dddfceef966518"
+    },
+    "mmlu_subject31": {
+      "n": 1,
+      "accuracy": 1.0,
+      "dataset_fingerprints": {
+        "test": "fixed"
+      },
+      "samples_sha256": "adf63be5e48c95ea8591c31a2d13cb92261f40a2cd51df6448dddfceef966518"
+    },
+    "mmlu_subject32": {
+      "n": 1,
+      "accuracy": 1.0,
+      "dataset_fingerprints": {
+        "test": "fixed"
+      },
+      "samples_sha256": "adf63be5e48c95ea8591c31a2d13cb92261f40a2cd51df6448dddfceef966518"
+    },
+    "mmlu_subject33": {
+      "n": 1,
+      "accuracy": 1.0,
+      "dataset_fingerprints": {
+        "test": "fixed"
+      },
+      "samples_sha256": "adf63be5e48c95ea8591c31a2d13cb92261f40a2cd51df6448dddfceef966518"
+    },
+    "mmlu_subject34": {
+      "n": 1,
+      "accuracy": 1.0,
+      "dataset_fingerprints": {
+        "test": "fixed"
+      },
+      "samples_sha256": "adf63be5e48c95ea8591c31a2d13cb92261f40a2cd51df6448dddfceef966518"
+    },
+    "mmlu_subject35": {
+      "n": 1,
+      "accuracy": 1.0,
+      "dataset_fingerprints": {
+        "test": "fixed"
+      },
+      "samples_sha256": "adf63be5e48c95ea8591c31a2d13cb92261f40a2cd51df6448dddfceef966518"
+    },
+    "mmlu_subject36": {
+      "n": 1,
+      "accuracy": 1.0,
+      "dataset_fingerprints": {
+        "test": "fixed"
+      },
+      "samples_sha256": "adf63be5e48c95ea8591c31a2d13cb92261f40a2cd51df6448dddfceef966518"
+    },
+    "mmlu_subject37": {
+      "n": 1,
+      "accuracy": 1.0,
+      "dataset_fingerprints": {
+        "test": "fixed"
+      },
+      "samples_sha256": "adf63be5e48c95ea8591c31a2d13cb92261f40a2cd51df6448dddfceef966518"
+    },
+    "mmlu_subject38": {
+      "n": 1,
+      "accuracy": 1.0,
+      "dataset_fingerprints": {
+        "test": "fixed"
+      },
+      "samples_sha256": "adf63be5e48c95ea8591c31a2d13cb92261f40a2cd51df6448dddfceef966518"
+    },
+    "mmlu_subject39": {
+      "n": 1,
+      "accuracy": 1.0,
+      "dataset_fingerprints": {
+        "test": "fixed"
+      },
+      "samples_sha256": "adf63be5e48c95ea8591c31a2d13cb92261f40a2cd51df6448dddfceef966518"
+    },
+    "mmlu_subject40": {
+      "n": 1,
+      "accuracy": 1.0,
+      "dataset_fingerprints": {
+        "test": "fixed"
+      },
+      "samples_sha256": "adf63be5e48c95ea8591c31a2d13cb92261f40a2cd51df6448dddfceef966518"
+    },
+    "mmlu_subject41": {
+      "n": 1,
+      "accuracy": 1.0,
+      "dataset_fingerprints": {
+        "test": "fixed"
+      },
+      "samples_sha256": "adf63be5e48c95ea8591c31a2d13cb92261f40a2cd51df6448dddfceef966518"
+    },
+    "mmlu_subject42": {
+      "n": 1,
+      "accuracy": 1.0,
+      "dataset_fingerprints": {
+        "test": "fixed"
+      },
+      "samples_sha256": "adf63be5e48c95ea8591c31a2d13cb92261f40a2cd51df6448dddfceef966518"
+    },
+    "mmlu_subject43": {
+      "n": 1,
+      "accuracy": 1.0,
+      "dataset_fingerprints": {
+        "test": "fixed"
+      },
+      "samples_sha256": "adf63be5e48c95ea8591c31a2d13cb92261f40a2cd51df6448dddfceef966518"
+    },
+    "mmlu_subject44": {
+      "n": 1,
+      "accuracy": 1.0,
+      "dataset_fingerprints": {
+        "test": "fixed"
+      },
+      "samples_sha256": "adf63be5e48c95ea8591c31a2d13cb92261f40a2cd51df6448dddfceef966518"
+    },
+    "mmlu_subject45": {
+      "n": 1,
+      "accuracy": 1.0,
+      "dataset_fingerprints": {
+        "test": "fixed"
+      },
+      "samples_sha256": "adf63be5e48c95ea8591c31a2d13cb92261f40a2cd51df6448dddfceef966518"
+    },
+    "mmlu_subject46": {
+      "n": 1,
+      "accuracy": 1.0,
+      "dataset_fingerprints": {
+        "test": "fixed"
+      },
+      "samples_sha256": "adf63be5e48c95ea8591c31a2d13cb92261f40a2cd51df6448dddfceef966518"
+    },
+    "mmlu_subject47": {
+      "n": 1,
+      "accuracy": 1.0,
+      "dataset_fingerprints": {
+        "test": "fixed"
+      },
+      "samples_sha256": "adf63be5e48c95ea8591c31a2d13cb92261f40a2cd51df6448dddfceef966518"
+    },
+    "mmlu_subject48": {
+      "n": 1,
+      "accuracy": 1.0,
+      "dataset_fingerprints": {
+        "test": "fixed"
+      },
+      "samples_sha256": "adf63be5e48c95ea8591c31a2d13cb92261f40a2cd51df6448dddfceef966518"
+    },
+    "mmlu_subject49": {
+      "n": 1,
+      "accuracy": 1.0,
+      "dataset_fingerprints": {
+        "test": "fixed"
+      },
+      "samples_sha256": "adf63be5e48c95ea8591c31a2d13cb92261f40a2cd51df6448dddfceef966518"
+    },
+    "mmlu_subject50": {
+      "n": 1,
+      "accuracy": 1.0,
+      "dataset_fingerprints": {
+        "test": "fixed"
+      },
+      "samples_sha256": "adf63be5e48c95ea8591c31a2d13cb92261f40a2cd51df6448dddfceef966518"
+    },
+    "mmlu_subject51": {
+      "n": 1,
+      "accuracy": 1.0,
+      "dataset_fingerprints": {
+        "test": "fixed"
+      },
+      "samples_sha256": "adf63be5e48c95ea8591c31a2d13cb92261f40a2cd51df6448dddfceef966518"
+    },
+    "mmlu_subject52": {
+      "n": 1,
+      "accuracy": 1.0,
+      "dataset_fingerprints": {
+        "test": "fixed"
+      },
+      "samples_sha256": "adf63be5e48c95ea8591c31a2d13cb92261f40a2cd51df6448dddfceef966518"
+    },
+    "mmlu_subject53": {
+      "n": 1,
+      "accuracy": 1.0,
+      "dataset_fingerprints": {
+        "test": "fixed"
+      },
+      "samples_sha256": "adf63be5e48c95ea8591c31a2d13cb92261f40a2cd51df6448dddfceef966518"
+    },
+    "mmlu_subject54": {
+      "n": 1,
+      "accuracy": 1.0,
+      "dataset_fingerprints": {
+        "test": "fixed"
+      },
+      "samples_sha256": "adf63be5e48c95ea8591c31a2d13cb92261f40a2cd51df6448dddfceef966518"
+    },
+    "mmlu_subject55": {
+      "n": 1,
+      "accuracy": 1.0,
+      "dataset_fingerprints": {
+        "test": "fixed"
+      },
+      "samples_sha256": "adf63be5e48c95ea8591c31a2d13cb92261f40a2cd51df6448dddfceef966518"
+    },
+    "mmlu_subject56": {
+      "n": 1,
+      "accuracy": 1.0,
+      "dataset_fingerprints": {
+        "test": "fixed"
+      },
+      "samples_sha256": "adf63be5e48c95ea8591c31a2d13cb92261f40a2cd51df6448dddfceef966518"
+    }
+  },
+  "evaluated_samples": 57,
+  "macro_accuracy": 1.0,
+  "micro_accuracy": 1.0
+}

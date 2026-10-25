@@ -1,0 +1,1082 @@
+{
+  "policy": "one newest successful final checkpoint per model/method/seed/track; one canonical snapshot link; smoke, stale orphan, failed and superseded weights removed; base models and all records retained",
+  "created": "2026-10-24T12:28:30+0800",
+  "retained_final_files": [
+    {
+      "key": [
+        "Qwen3.5-4B",
+        "GA",
+        "42",
+        "F0"
+      ],
+      "run": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_GA_F0",
+      "path": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_GA_F0/adapter/adapter_model.safetensors",
+      "size": 65003848,
+      "sha256": "2add0041c164ae79dd05c9a332b41ee560eebaa12d354fdcc422d0fca6de7025"
+    },
+    {
+      "key": [
+        "Llama-3.2-3B-Instruct",
+        "GA",
+        "42",
+        "F0"
+      ],
+      "run": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_GA_F0",
+      "path": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_GA_F0/adapter/adapter_model.safetensors",
+      "size": 48679352,
+      "sha256": "770c400b54386b3b3dfe52b182e7a4ddbea47cfab1d5d55158a095f08ed8aa30"
+    },
+    {
+      "key": [
+        "Qwen3.5-4B",
+        "GradDiff",
+        "42",
+        "F0"
+      ],
+      "run": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_GradDiff_F0",
+      "path": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_GradDiff_F0/adapter/adapter_model.safetensors",
+      "size": 65003848,
+      "sha256": "e84935f5e6d831e6f8f4a38fbab58f70a28861883adca1bfcdb5bcd846165fa6"
+    },
+    {
+      "key": [
+        "Llama-3.2-3B-Instruct",
+        "GradDiff",
+        "42",
+        "F0"
+      ],
+      "run": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_GradDiff_F0",
+      "path": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_GradDiff_F0/adapter/adapter_model.safetensors",
+      "size": 48679352,
+      "sha256": "23f166b3e5362aeede8f2ed3a66aad35cc9a0cf152afd41c7725464814e4607a"
+    },
+    {
+      "key": [
+        "Qwen3.5-4B",
+        "NPO",
+        "42",
+        "F0"
+      ],
+      "run": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_NPO_F0",
+      "path": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_NPO_F0/adapter/adapter_model.safetensors",
+      "size": 65003848,
+      "sha256": "eb9d2393a96e71758b101d19ad512555df5f85a54136977705ec41ce5981d7e4"
+    },
+    {
+      "key": [
+        "Llama-3.2-3B-Instruct",
+        "NPO",
+        "42",
+        "F0"
+      ],
+      "run": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_NPO_F0",
+      "path": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_NPO_F0/adapter/adapter_model.safetensors",
+      "size": 48679352,
+      "sha256": "3174981b0f027027adb52a0fe2d1e0f96329b32d79c8ff26d24e8074d0e839e8"
+    },
+    {
+      "key": [
+        "Qwen3.5-4B",
+        "SimNPO",
+        "42",
+        "F0"
+      ],
+      "run": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_SimNPO_F0",
+      "path": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_SimNPO_F0/adapter/adapter_model.safetensors",
+      "size": 65003848,
+      "sha256": "da3d46d003caab176e4f3d2c314c502e34ddc89c30846c599757416841f9f006"
+    },
+    {
+      "key": [
+        "Llama-3.2-3B-Instruct",
+        "SimNPO",
+        "42",
+        "F0"
+      ],
+      "run": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_SimNPO_F0",
+      "path": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_SimNPO_F0/adapter/adapter_model.safetensors",
+      "size": 48679352,
+      "sha256": "21f0cce9683035dfad66c71ca13f9987f85e7d4b4e8e5ba44a1cebedb343e547"
+    },
+    {
+      "key": [
+        "Qwen3.5-4B",
+        "GA",
+        "42",
+        "F0F1"
+      ],
+      "run": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_GA_F0F1",
+      "path": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_GA_F0F1/adapter/adapter_model.safetensors",
+      "size": 65003848,
+      "sha256": "183bf10d77e37ef1e288e47dd5c4d559851c382a3cbf2e55cbf613ac8cd62179"
+    },
+    {
+      "key": [
+        "Llama-3.2-3B-Instruct",
+        "GA",
+        "42",
+        "F0F1"
+      ],
+      "run": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_GA_F0F1",
+      "path": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_GA_F0F1/adapter/adapter_model.safetensors",
+      "size": 48679352,
+      "sha256": "d7a2f6e7042bb1c4837d1889283bf619743a930abe6e03bfe9b7e76bd0015471"
+    },
+    {
+      "key": [
+        "Qwen3.5-4B",
+        "RMU",
+        "42",
+        "F0"
+      ],
+      "run": "/root/autodl-tmp/www2027_rmu_20261022/exp/runs/exp009_remote_rmu/runs/batch_20261022_01/qwen35_4b_RMU_F0",
+      "path": "/root/autodl-tmp/www2027_rmu_20261022/exp/runs/exp009_remote_rmu/runs/batch_20261022_01/qwen35_4b_RMU_F0/adapter/adapter_model.safetensors",
+      "size": 1131384,
+      "sha256": "920e5fb44ca6f71087cb2128a0da67304346ae29721853416757faef8d68f59b"
+    },
+    {
+      "key": [
+        "Llama-3.2-3B-Instruct",
+        "RMU",
+        "42",
+        "F0"
+      ],
+      "run": "/root/autodl-tmp/www2027_rmu_20261022/exp/runs/exp009_remote_rmu/runs/batch_20261022_01/llama32_3b_RMU_F0",
+      "path": "/root/autodl-tmp/www2027_rmu_20261022/exp/runs/exp009_remote_rmu/runs/batch_20261022_01/llama32_3b_RMU_F0/adapter/adapter_model.safetensors",
+      "size": 1082136,
+      "sha256": "12a7d543d029635fa0b47b1862adfc1c181e1b69baa8428fd7b09ad34f103134"
+    },
+    {
+      "key": [
+        "Llama-3.2-3B-Instruct",
+        "C2",
+        "42",
+        "unspecified"
+      ],
+      "run": "/root/autodl-tmp/www2027_sync_20261022_c2_pilot_v1/exp/runs/exp011_cloud_gsu_c2/runs/batch_20261022_01/llama32_3b_C2",
+      "path": "/root/autodl-tmp/www2027_sync_20261022_c2_pilot_v1/exp/runs/exp011_cloud_gsu_c2/runs/batch_20261022_01/llama32_3b_C2/adapter/adapter_model.safetensors",
+      "size": 48679352,
+      "sha256": "a67da4d4a8326586b60072a77dcc241a8350eabd99c43b68048cba487efd05e4"
+    },
+    {
+      "key": [
+        "Qwen3.5-4B",
+        "C2",
+        "42",
+        "unspecified"
+      ],
+      "run": "/root/autodl-tmp/www2027_sync_20261022_c2_pilot_v1/exp/runs/exp011_cloud_gsu_c2/runs/batch_20261022_01/qwen35_4b_C2",
+      "path": "/root/autodl-tmp/www2027_sync_20261022_c2_pilot_v1/exp/runs/exp011_cloud_gsu_c2/runs/batch_20261022_01/qwen35_4b_C2/adapter/adapter_model.safetensors",
+      "size": 65003848,
+      "sha256": "344524beeaa106cc1535ede802586fbd241cc55a63abf01c5882ba1106ac7f90"
+    },
+    {
+      "key": [
+        "Llama-3.2-3B-Instruct",
+        "C1",
+        "42",
+        "unspecified"
+      ],
+      "run": "/root/autodl-tmp/www2027_sync_20261024_8b_v1/exp/runs/exp014_cloud_c1/runs/batch_20261023_03_local_aligned/llama32_3b_C1",
+      "path": "/root/autodl-tmp/www2027_sync_20261024_8b_v1/exp/runs/exp014_cloud_c1/runs/batch_20261023_03_local_aligned/llama32_3b_C1/adapter/adapter_model.safetensors",
+      "size": 48679352,
+      "sha256": "b27b1bb40d665d39b67bb488cb71684535905f99f7d6cc7b17d46c87c3b78479"
+    },
+    {
+      "key": [
+        "Qwen3.5-4B",
+        "C1",
+        "42",
+        "unspecified"
+      ],
+      "run": "/root/autodl-tmp/www2027_sync_20261023_c1_v3_local_aligned/exp/runs/exp014_cloud_c1/runs/batch_20261023_03_local_aligned/qwen35_4b_C1",
+      "path": "/root/autodl-tmp/www2027_sync_20261023_c1_v3_local_aligned/exp/runs/exp014_cloud_c1/runs/batch_20261023_03_local_aligned/qwen35_4b_C1/adapter/adapter_model.safetensors",
+      "size": 65003848,
+      "sha256": "7d35b23161503774f70b56fd2872806ae98d52a8bc6ee71d17ead81fb0201423"
+    },
+    {
+      "key": [
+        "Llama-3.2-3B-Instruct",
+        "KLUE",
+        "42",
+        "native"
+      ],
+      "run": "/root/autodl-tmp/www2027_sync_20261024_8b_v1/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/llama32_3b_KLUE_native",
+      "path": "/root/autodl-tmp/www2027_sync_20261024_8b_v1/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/llama32_3b_KLUE_native/native_neuron_checkpoint.pt",
+      "size": 3131850813,
+      "sha256": "ec31bd18b9ed06419880f6a743ddb761a466cf64ea528d4e2a3b38fcb23756c0"
+    },
+    {
+      "key": [
+        "Qwen3.5-4B",
+        "KLUE",
+        "42",
+        "native"
+      ],
+      "run": "/root/autodl-tmp/www2027_sync_20261024_8b_v1/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/qwen35_4b_KLUE_native",
+      "path": "/root/autodl-tmp/www2027_sync_20261024_8b_v1/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/qwen35_4b_KLUE_native/native_neuron_checkpoint.pt",
+      "size": 2859608933,
+      "sha256": "c64e722f7d6e9bbf0e3b7447ead405bd998ab4582d8f1c1d81bca78aa5e24b64"
+    },
+    {
+      "key": [
+        "Llama-3.2-3B-Instruct",
+        "GA",
+        "42",
+        "matched_lora"
+      ],
+      "run": "/root/autodl-tmp/www2027_sync_20261024_8b_v1/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/llama32_3b_GA_matched_lora",
+      "path": "/root/autodl-tmp/www2027_sync_20261024_8b_v1/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/llama32_3b_GA_matched_lora/adapter/adapter_model.safetensors",
+      "size": 48679352,
+      "sha256": "8dca7662f605985417dd1454c2fbe8894365cd972bd5daa74cd3fab0d683800d"
+    },
+    {
+      "key": [
+        "Qwen3.5-4B",
+        "GA",
+        "42",
+        "matched_lora"
+      ],
+      "run": "/root/autodl-tmp/www2027_sync_20261024_8b_v1/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/qwen35_4b_GA_matched_lora",
+      "path": "/root/autodl-tmp/www2027_sync_20261024_8b_v1/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/qwen35_4b_GA_matched_lora/adapter/adapter_model.safetensors",
+      "size": 65003848,
+      "sha256": "9750cef17f59be299e5bae31b9ce34ed617fb888f24b0f90e384cc2dc01492bd"
+    },
+    {
+      "key": [
+        "Llama-3.2-3B-Instruct",
+        "GradDiff",
+        "42",
+        "matched_lora"
+      ],
+      "run": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/llama32_3b_GradDiff_matched_lora",
+      "path": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/llama32_3b_GradDiff_matched_lora/adapter/adapter_model.safetensors",
+      "size": 48679352,
+      "sha256": "4e6001d437e82db8732e5d30d67c93e53039e4cee38111d5ee8cb21ba982181a"
+    },
+    {
+      "key": [
+        "Qwen3.5-4B",
+        "GradDiff",
+        "42",
+        "matched_lora"
+      ],
+      "run": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/qwen35_4b_GradDiff_matched_lora",
+      "path": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/qwen35_4b_GradDiff_matched_lora/adapter/adapter_model.safetensors",
+      "size": 65003848,
+      "sha256": "951abcf8bc0c91ee8438aa54cb7a644d520d96c15b0a0ec35b5e52631501936e"
+    },
+    {
+      "key": [
+        "Llama-3.2-3B-Instruct",
+        "NPO",
+        "42",
+        "matched_lora"
+      ],
+      "run": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/llama32_3b_NPO_matched_lora",
+      "path": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/llama32_3b_NPO_matched_lora/adapter/adapter_model.safetensors",
+      "size": 48679352,
+      "sha256": "7f0ab590d3093d88499c30cd7872889849bd69272358f2bd7d3efeb8ea416868"
+    },
+    {
+      "key": [
+        "Qwen3.5-4B",
+        "NPO",
+        "42",
+        "matched_lora"
+      ],
+      "run": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/qwen35_4b_NPO_matched_lora",
+      "path": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/qwen35_4b_NPO_matched_lora/adapter/adapter_model.safetensors",
+      "size": 65003848,
+      "sha256": "7193168124d12400f40f2d5f48109ff2dcc77820af9bca86f8af39520165e34a"
+    },
+    {
+      "key": [
+        "Llama-3.2-3B-Instruct",
+        "SimNPO",
+        "42",
+        "matched_lora"
+      ],
+      "run": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/llama32_3b_SimNPO_matched_lora",
+      "path": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/llama32_3b_SimNPO_matched_lora/adapter/adapter_model.safetensors",
+      "size": 48679352,
+      "sha256": "d59fab9b5068b33f85c472924d2a5bb7a4add4aaef906d675707aa2a47065719"
+    },
+    {
+      "key": [
+        "Qwen3.5-4B",
+        "SimNPO",
+        "42",
+        "matched_lora"
+      ],
+      "run": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/qwen35_4b_SimNPO_matched_lora",
+      "path": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/qwen35_4b_SimNPO_matched_lora/adapter/adapter_model.safetensors",
+      "size": 65003848,
+      "sha256": "ee34179c388ca354bf81da67b1f90adcc45865fa0d5abfbea1a77374c916be0c"
+    },
+    {
+      "key": [
+        "Llama-3.2-3B-Instruct",
+        "RMU",
+        "42",
+        "matched_lora"
+      ],
+      "run": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/llama32_3b_RMU_matched_lora",
+      "path": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/llama32_3b_RMU_matched_lora/adapter/adapter_model.safetensors",
+      "size": 48679352,
+      "sha256": "64a15c6454ea05de0d61ffabed46f11b9f90320aa281efe06d14adb0399d4f6c"
+    },
+    {
+      "key": [
+        "Qwen3.5-4B",
+        "RMU",
+        "42",
+        "matched_lora"
+      ],
+      "run": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/qwen35_4b_RMU_matched_lora",
+      "path": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/qwen35_4b_RMU_matched_lora/adapter/adapter_model.safetensors",
+      "size": 65003848,
+      "sha256": "f27ee66d05249f769bc95c7b1d825970c6097815ed45d799e44d3d5194a6d87e"
+    },
+    {
+      "key": [
+        "Llama-3.2-3B-Instruct",
+        "DPOmis",
+        "42",
+        "matched_lora"
+      ],
+      "run": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/llama32_3b_DPOmis_matched_lora",
+      "path": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/llama32_3b_DPOmis_matched_lora/adapter/adapter_model.safetensors",
+      "size": 48679352,
+      "sha256": "ce8a26f008b0aa113abbf6eccaab77abb30313a78c19c6236b04e43abe8903db"
+    },
+    {
+      "key": [
+        "Qwen3.5-4B",
+        "DPOmis",
+        "42",
+        "matched_lora"
+      ],
+      "run": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/qwen35_4b_DPOmis_matched_lora",
+      "path": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/qwen35_4b_DPOmis_matched_lora/adapter/adapter_model.safetensors",
+      "size": 65003848,
+      "sha256": "40c81efe29e3516bd29002891fb13d3a8bfa5bf12a26b4fe0c3bc327bafef628"
+    },
+    {
+      "key": [
+        "Llama-3.2-3B-Instruct",
+        "DPOrej",
+        "42",
+        "matched_lora"
+      ],
+      "run": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/llama32_3b_DPOrej_matched_lora",
+      "path": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/llama32_3b_DPOrej_matched_lora/adapter/adapter_model.safetensors",
+      "size": 48679352,
+      "sha256": "c42fb97d907af97f922ff2eabe0630872a86d3898b12e9b1d3fb636b5196f6ce"
+    },
+    {
+      "key": [
+        "Qwen3.5-4B",
+        "DPOrej",
+        "42",
+        "matched_lora"
+      ],
+      "run": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/qwen35_4b_DPOrej_matched_lora",
+      "path": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/qwen35_4b_DPOrej_matched_lora/adapter/adapter_model.safetensors",
+      "size": 65003848,
+      "sha256": "3f5973404d594eb9875087d8488b9f689393daee42895f9ec6f1bdc5d2404ef2"
+    },
+    {
+      "key": [
+        "Llama-3.2-3B-Instruct",
+        "CEU",
+        "42",
+        "matched_lora"
+      ],
+      "run": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/llama32_3b_CEU_matched_lora",
+      "path": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/llama32_3b_CEU_matched_lora/adapter/adapter_model.safetensors",
+      "size": 48679352,
+      "sha256": "4e6d9ec48c65011a3e1f81879b6a208af16b5ede2e2b8d03fb48bd0872691c51"
+    },
+    {
+      "key": [
+        "Qwen3.5-4B",
+        "CEU",
+        "42",
+        "matched_lora"
+      ],
+      "run": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/qwen35_4b_CEU_matched_lora",
+      "path": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/qwen35_4b_CEU_matched_lora/adapter/adapter_model.safetensors",
+      "size": 65003848,
+      "sha256": "15873af6a24908608a6b2462dcc4145c20604935c117adbad6b03c7ee4023f0f"
+    },
+    {
+      "key": [
+        "Llama-3.2-3B-Instruct",
+        "PDU",
+        "42",
+        "matched_lora"
+      ],
+      "run": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/llama32_3b_PDU_matched_lora",
+      "path": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/llama32_3b_PDU_matched_lora/adapter/adapter_model.safetensors",
+      "size": 48679352,
+      "sha256": "eb23196290e0877c371fd6248350c4c62d185d3f85215f6e93156ef78fc5a6fc"
+    },
+    {
+      "key": [
+        "Qwen3.5-4B",
+        "PDU",
+        "42",
+        "matched_lora"
+      ],
+      "run": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/qwen35_4b_PDU_matched_lora",
+      "path": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/qwen35_4b_PDU_matched_lora/adapter/adapter_model.safetensors",
+      "size": 65003848,
+      "sha256": "be0aedbd45e00cf64e7754c2f784e7f56f2301bded913c7eeee79909934cc6af"
+    },
+    {
+      "key": [
+        "Llama-3.2-3B-Instruct",
+        "WGA",
+        "42",
+        "matched_lora"
+      ],
+      "run": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/llama32_3b_WGA_matched_lora",
+      "path": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/llama32_3b_WGA_matched_lora/adapter/adapter_model.safetensors",
+      "size": 48679352,
+      "sha256": "7c87055f0c773cbd2e3cc4e286dddc19bfbd38b953cd80591762a7f4b1b785e3"
+    },
+    {
+      "key": [
+        "Qwen3.5-4B",
+        "WGA",
+        "42",
+        "matched_lora"
+      ],
+      "run": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/qwen35_4b_WGA_matched_lora",
+      "path": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/qwen35_4b_WGA_matched_lora/adapter/adapter_model.safetensors",
+      "size": 65003848,
+      "sha256": "0c827527c2f49a4b0507ad0efb5189ea7c10820c7c5ec17e23fa7ecc51ab3dc3"
+    },
+    {
+      "key": [
+        "Llama-3.2-3B-Instruct",
+        "SatImp",
+        "42",
+        "matched_lora"
+      ],
+      "run": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/llama32_3b_SatImp_matched_lora",
+      "path": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/llama32_3b_SatImp_matched_lora/adapter/adapter_model.safetensors",
+      "size": 48679352,
+      "sha256": "7391f8437ad984193e1bd79f410ad060200de383ac74dd1eab85bea2d191d4ea"
+    },
+    {
+      "key": [
+        "Qwen3.5-4B",
+        "SatImp",
+        "42",
+        "matched_lora"
+      ],
+      "run": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/qwen35_4b_SatImp_matched_lora",
+      "path": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/qwen35_4b_SatImp_matched_lora/adapter/adapter_model.safetensors",
+      "size": 65003848,
+      "sha256": "0bc754c751e4552290e809b7e243d274dc554301cc34649f29c2afe2c263ff11"
+    },
+    {
+      "key": [
+        "Llama-3.2-3B-Instruct",
+        "UNDIAL",
+        "42",
+        "matched_lora"
+      ],
+      "run": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/llama32_3b_UNDIAL_matched_lora",
+      "path": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/llama32_3b_UNDIAL_matched_lora/adapter/adapter_model.safetensors",
+      "size": 48679352,
+      "sha256": "572a0964997f21e64c241df2c1ac3b1b85ed62acd27f9b22f7307709d69ceed4"
+    },
+    {
+      "key": [
+        "Qwen3.5-4B",
+        "UNDIAL",
+        "42",
+        "matched_lora"
+      ],
+      "run": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/qwen35_4b_UNDIAL_matched_lora",
+      "path": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/qwen35_4b_UNDIAL_matched_lora/adapter/adapter_model.safetensors",
+      "size": 65003848,
+      "sha256": "b6141ec5b5085e49ab41046450c8e652f52c9a940785d5b3ce1ce933f17b65b7"
+    }
+  ],
+  "planned_delete_count": 63,
+  "results": [
+    {
+      "path": "/root/autodl-tmp/www2027_rmu_20261022/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_GA_F0/adapter/adapter_model.safetensors",
+      "reason": "duplicate_snapshot_link",
+      "size": 65003848,
+      "sha256": "2add0041c164ae79dd05c9a332b41ee560eebaa12d354fdcc422d0fca6de7025",
+      "run": "/root/autodl-tmp/www2027_rmu_20261022/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_GA_F0",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_rmu_20261022/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_GA_F0/adapter/adapter_model.safetensors",
+      "reason": "duplicate_snapshot_link",
+      "size": 48679352,
+      "sha256": "770c400b54386b3b3dfe52b182e7a4ddbea47cfab1d5d55158a095f08ed8aa30",
+      "run": "/root/autodl-tmp/www2027_rmu_20261022/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_GA_F0",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_rmu_20261022/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_GradDiff_F0/adapter/adapter_model.safetensors",
+      "reason": "duplicate_snapshot_link",
+      "size": 65003848,
+      "sha256": "e84935f5e6d831e6f8f4a38fbab58f70a28861883adca1bfcdb5bcd846165fa6",
+      "run": "/root/autodl-tmp/www2027_rmu_20261022/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_GradDiff_F0",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_rmu_20261022/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_GradDiff_F0/adapter/adapter_model.safetensors",
+      "reason": "duplicate_snapshot_link",
+      "size": 48679352,
+      "sha256": "23f166b3e5362aeede8f2ed3a66aad35cc9a0cf152afd41c7725464814e4607a",
+      "run": "/root/autodl-tmp/www2027_rmu_20261022/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_GradDiff_F0",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_rmu_20261022/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_NPO_F0/adapter/adapter_model.safetensors",
+      "reason": "duplicate_snapshot_link",
+      "size": 65003848,
+      "sha256": "eb9d2393a96e71758b101d19ad512555df5f85a54136977705ec41ce5981d7e4",
+      "run": "/root/autodl-tmp/www2027_rmu_20261022/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_NPO_F0",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v1/exp/runs/exp014_cloud_c1/runs/batch_20261023_03_local_aligned/llama32_3b_C1/adapter/adapter_model.safetensors",
+      "reason": "duplicate_snapshot_link",
+      "size": 48679352,
+      "sha256": "b27b1bb40d665d39b67bb488cb71684535905f99f7d6cc7b17d46c87c3b78479",
+      "run": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v1/exp/runs/exp014_cloud_c1/runs/batch_20261023_03_local_aligned/llama32_3b_C1",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v2/exp/runs/exp014_cloud_c1/runs/batch_20261023_03_local_aligned/llama32_3b_C1/adapter/adapter_model.safetensors",
+      "reason": "duplicate_snapshot_link",
+      "size": 48679352,
+      "sha256": "b27b1bb40d665d39b67bb488cb71684535905f99f7d6cc7b17d46c87c3b78479",
+      "run": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v2/exp/runs/exp014_cloud_c1/runs/batch_20261023_03_local_aligned/llama32_3b_C1",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp014_cloud_c1/runs/batch_20261023_03_local_aligned/llama32_3b_C1/adapter/adapter_model.safetensors",
+      "reason": "duplicate_snapshot_link",
+      "size": 48679352,
+      "sha256": "b27b1bb40d665d39b67bb488cb71684535905f99f7d6cc7b17d46c87c3b78479",
+      "run": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp014_cloud_c1/runs/batch_20261023_03_local_aligned/llama32_3b_C1",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_sync_20261023_c1_v3_local_aligned/exp/runs/exp014_cloud_c1/runs/batch_20261023_03_local_aligned/llama32_3b_C1/adapter/adapter_model.safetensors",
+      "reason": "duplicate_snapshot_link",
+      "size": 48679352,
+      "sha256": "b27b1bb40d665d39b67bb488cb71684535905f99f7d6cc7b17d46c87c3b78479",
+      "run": "/root/autodl-tmp/www2027_sync_20261023_c1_v3_local_aligned/exp/runs/exp014_cloud_c1/runs/batch_20261023_03_local_aligned/llama32_3b_C1",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v1/exp/runs/exp014_cloud_c1/runs/batch_20261023_01/llama32_3b_C1/adapter/adapter_model.safetensors",
+      "reason": "superseded_completed_run",
+      "size": 48679352,
+      "sha256": "b27b1bb40d665d39b67bb488cb71684535905f99f7d6cc7b17d46c87c3b78479",
+      "run": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v1/exp/runs/exp014_cloud_c1/runs/batch_20261023_01/llama32_3b_C1",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v2/exp/runs/exp014_cloud_c1/runs/batch_20261023_01/llama32_3b_C1/adapter/adapter_model.safetensors",
+      "reason": "superseded_completed_run",
+      "size": 48679352,
+      "sha256": "b27b1bb40d665d39b67bb488cb71684535905f99f7d6cc7b17d46c87c3b78479",
+      "run": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v2/exp/runs/exp014_cloud_c1/runs/batch_20261023_01/llama32_3b_C1",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp014_cloud_c1/runs/batch_20261023_01/llama32_3b_C1/adapter/adapter_model.safetensors",
+      "reason": "superseded_completed_run",
+      "size": 48679352,
+      "sha256": "b27b1bb40d665d39b67bb488cb71684535905f99f7d6cc7b17d46c87c3b78479",
+      "run": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp014_cloud_c1/runs/batch_20261023_01/llama32_3b_C1",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_sync_20261023_c1_v1/exp/runs/exp014_cloud_c1/runs/batch_20261023_01/llama32_3b_C1/adapter/adapter_model.safetensors",
+      "reason": "superseded_completed_run",
+      "size": 48679352,
+      "sha256": "b27b1bb40d665d39b67bb488cb71684535905f99f7d6cc7b17d46c87c3b78479",
+      "run": "/root/autodl-tmp/www2027_sync_20261023_c1_v1/exp/runs/exp014_cloud_c1/runs/batch_20261023_01/llama32_3b_C1",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_sync_20261023_c1_v2_local_aligned/exp/runs/exp014_cloud_c1/runs/batch_20261023_01/llama32_3b_C1/adapter/adapter_model.safetensors",
+      "reason": "superseded_completed_run",
+      "size": 48679352,
+      "sha256": "b27b1bb40d665d39b67bb488cb71684535905f99f7d6cc7b17d46c87c3b78479",
+      "run": "/root/autodl-tmp/www2027_sync_20261023_c1_v2_local_aligned/exp/runs/exp014_cloud_c1/runs/batch_20261023_01/llama32_3b_C1",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_sync_20261023_c1_v3_local_aligned/exp/runs/exp014_cloud_c1/runs/batch_20261023_01/llama32_3b_C1/adapter/adapter_model.safetensors",
+      "reason": "superseded_completed_run",
+      "size": 48679352,
+      "sha256": "b27b1bb40d665d39b67bb488cb71684535905f99f7d6cc7b17d46c87c3b78479",
+      "run": "/root/autodl-tmp/www2027_sync_20261023_c1_v3_local_aligned/exp/runs/exp014_cloud_c1/runs/batch_20261023_01/llama32_3b_C1",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_sync_20261024_8b_v1/exp/runs/exp014_cloud_c1/runs/batch_20261023_01/llama32_3b_C1/adapter/adapter_model.safetensors",
+      "reason": "superseded_completed_run",
+      "size": 48679352,
+      "sha256": "b27b1bb40d665d39b67bb488cb71684535905f99f7d6cc7b17d46c87c3b78479",
+      "run": "/root/autodl-tmp/www2027_sync_20261024_8b_v1/exp/runs/exp014_cloud_c1/runs/batch_20261023_01/llama32_3b_C1",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v1/exp/runs/exp014_cloud_c1/runs/batch_20261023_01/qwen35_4b_C1/adapter/adapter_model.safetensors",
+      "reason": "superseded_completed_run",
+      "size": 65003848,
+      "sha256": "7d35b23161503774f70b56fd2872806ae98d52a8bc6ee71d17ead81fb0201423",
+      "run": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v1/exp/runs/exp014_cloud_c1/runs/batch_20261023_01/qwen35_4b_C1",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v2/exp/runs/exp014_cloud_c1/runs/batch_20261023_01/qwen35_4b_C1/adapter/adapter_model.safetensors",
+      "reason": "superseded_completed_run",
+      "size": 65003848,
+      "sha256": "7d35b23161503774f70b56fd2872806ae98d52a8bc6ee71d17ead81fb0201423",
+      "run": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v2/exp/runs/exp014_cloud_c1/runs/batch_20261023_01/qwen35_4b_C1",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp014_cloud_c1/runs/batch_20261023_01/qwen35_4b_C1/adapter/adapter_model.safetensors",
+      "reason": "superseded_completed_run",
+      "size": 65003848,
+      "sha256": "7d35b23161503774f70b56fd2872806ae98d52a8bc6ee71d17ead81fb0201423",
+      "run": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp014_cloud_c1/runs/batch_20261023_01/qwen35_4b_C1",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_sync_20261023_c1_v1/exp/runs/exp014_cloud_c1/runs/batch_20261023_01/qwen35_4b_C1/adapter/adapter_model.safetensors",
+      "reason": "superseded_completed_run",
+      "size": 65003848,
+      "sha256": "7d35b23161503774f70b56fd2872806ae98d52a8bc6ee71d17ead81fb0201423",
+      "run": "/root/autodl-tmp/www2027_sync_20261023_c1_v1/exp/runs/exp014_cloud_c1/runs/batch_20261023_01/qwen35_4b_C1",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_sync_20261023_c1_v2_local_aligned/exp/runs/exp014_cloud_c1/runs/batch_20261023_01/qwen35_4b_C1/adapter/adapter_model.safetensors",
+      "reason": "superseded_completed_run",
+      "size": 65003848,
+      "sha256": "7d35b23161503774f70b56fd2872806ae98d52a8bc6ee71d17ead81fb0201423",
+      "run": "/root/autodl-tmp/www2027_sync_20261023_c1_v2_local_aligned/exp/runs/exp014_cloud_c1/runs/batch_20261023_01/qwen35_4b_C1",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_sync_20261023_c1_v3_local_aligned/exp/runs/exp014_cloud_c1/runs/batch_20261023_01/qwen35_4b_C1/adapter/adapter_model.safetensors",
+      "reason": "superseded_completed_run",
+      "size": 65003848,
+      "sha256": "7d35b23161503774f70b56fd2872806ae98d52a8bc6ee71d17ead81fb0201423",
+      "run": "/root/autodl-tmp/www2027_sync_20261023_c1_v3_local_aligned/exp/runs/exp014_cloud_c1/runs/batch_20261023_01/qwen35_4b_C1",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_sync_20261024_8b_v1/exp/runs/exp014_cloud_c1/runs/batch_20261023_01/qwen35_4b_C1/adapter/adapter_model.safetensors",
+      "reason": "superseded_completed_run",
+      "size": 65003848,
+      "sha256": "7d35b23161503774f70b56fd2872806ae98d52a8bc6ee71d17ead81fb0201423",
+      "run": "/root/autodl-tmp/www2027_sync_20261024_8b_v1/exp/runs/exp014_cloud_c1/runs/batch_20261023_01/qwen35_4b_C1",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/llama32_3b_KLUE_native/native_neuron_checkpoint.pt",
+      "reason": "duplicate_snapshot_link",
+      "size": 3131850813,
+      "sha256": "ec31bd18b9ed06419880f6a743ddb761a466cf64ea528d4e2a3b38fcb23756c0",
+      "run": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/llama32_3b_KLUE_native",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/qwen35_4b_KLUE_native/native_neuron_checkpoint.pt",
+      "reason": "duplicate_snapshot_link",
+      "size": 2859608933,
+      "sha256": "c64e722f7d6e9bbf0e3b7447ead405bd998ab4582d8f1c1d81bca78aa5e24b64",
+      "run": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/qwen35_4b_KLUE_native",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/llama32_3b_GA_matched_lora/adapter/adapter_model.safetensors",
+      "reason": "duplicate_snapshot_link",
+      "size": 48679352,
+      "sha256": "8dca7662f605985417dd1454c2fbe8894365cd972bd5daa74cd3fab0d683800d",
+      "run": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/llama32_3b_GA_matched_lora",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/qwen35_4b_GA_matched_lora/adapter/adapter_model.safetensors",
+      "reason": "duplicate_snapshot_link",
+      "size": 65003848,
+      "sha256": "9750cef17f59be299e5bae31b9ce34ed617fb888f24b0f90e384cc2dc01492bd",
+      "run": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp015_complete_baselines/runs/batch_20261023_02/qwen35_4b_GA_matched_lora",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_baselines_20261022/exp/runs/exp008_remote_baselines/runs/smoke_20261022_01/qwen35_4b_GA_F0/adapter_smoke/adapter_model.safetensors",
+      "reason": "smoke_checkpoint_no_final_model",
+      "size": 65003848,
+      "sha256": "7b2632022620052bc650f16ce22d5ebd655bb26415fd510d3c8738124d4236b0",
+      "run": "/root/autodl-tmp/www2027_baselines_20261022/exp/runs/exp008_remote_baselines/runs/smoke_20261022_01/qwen35_4b_GA_F0",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_baselines_20261022/exp/runs/exp008_remote_baselines/runs/smoke_20261022_01/llama32_3b_GA_F0/adapter_smoke/adapter_model.safetensors",
+      "reason": "smoke_checkpoint_no_final_model",
+      "size": 48679352,
+      "sha256": "67a9617d6da2f3abfe8c50caf50644eedee2fd38fa381d078bbc4fe8c88e5966",
+      "run": "/root/autodl-tmp/www2027_baselines_20261022/exp/runs/exp008_remote_baselines/runs/smoke_20261022_01/llama32_3b_GA_F0",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/smoke_20261022_01/llama32_3b_GA_F0/adapter_smoke/adapter_model.safetensors",
+      "reason": "smoke_checkpoint_no_final_model",
+      "size": 48679352,
+      "sha256": "67a9617d6da2f3abfe8c50caf50644eedee2fd38fa381d078bbc4fe8c88e5966",
+      "run": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/smoke_20261022_01/llama32_3b_GA_F0",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/smoke_20261022_01/qwen35_4b_GA_F0/adapter_smoke/adapter_model.safetensors",
+      "reason": "smoke_checkpoint_no_final_model",
+      "size": 65003848,
+      "sha256": "7b2632022620052bc650f16ce22d5ebd655bb26415fd510d3c8738124d4236b0",
+      "run": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/smoke_20261022_01/qwen35_4b_GA_F0",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_rmu_20261022/exp/runs/exp008_remote_baselines/runs/smoke_20261022_01/llama32_3b_GA_F0/adapter_smoke/adapter_model.safetensors",
+      "reason": "smoke_checkpoint_no_final_model",
+      "size": 48679352,
+      "sha256": "67a9617d6da2f3abfe8c50caf50644eedee2fd38fa381d078bbc4fe8c88e5966",
+      "run": "/root/autodl-tmp/www2027_rmu_20261022/exp/runs/exp008_remote_baselines/runs/smoke_20261022_01/llama32_3b_GA_F0",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_rmu_20261022/exp/runs/exp008_remote_baselines/runs/smoke_20261022_01/qwen35_4b_GA_F0/adapter_smoke/adapter_model.safetensors",
+      "reason": "smoke_checkpoint_no_final_model",
+      "size": 65003848,
+      "sha256": "7b2632022620052bc650f16ce22d5ebd655bb26415fd510d3c8738124d4236b0",
+      "run": "/root/autodl-tmp/www2027_rmu_20261022/exp/runs/exp008_remote_baselines/runs/smoke_20261022_01/qwen35_4b_GA_F0",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_rmu_20261022/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_NPO_F0/adapter/adapter_model.safetensors",
+      "reason": "stale_running_duplicate_of_completed_run",
+      "size": 48679352,
+      "sha256": "3174981b0f027027adb52a0fe2d1e0f96329b32d79c8ff26d24e8074d0e839e8",
+      "run": "/root/autodl-tmp/www2027_rmu_20261022/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_NPO_F0",
+      "status_before": "running",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_rmu_20261022/exp/runs/exp009_remote_rmu/runs/batch_20261022_01/qwen35_4b_smoke/adapter_smoke/adapter_model.safetensors",
+      "reason": "smoke_checkpoint_no_final_model",
+      "size": 1131384,
+      "sha256": "ed8e8e0739779bdbf31b3fae950aa10176e28cb37ceb25d1cffa8b18659143ff",
+      "run": "/root/autodl-tmp/www2027_rmu_20261022/exp/runs/exp009_remote_rmu/runs/batch_20261022_01/qwen35_4b_smoke",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_rmu_20261022/exp/runs/exp009_remote_rmu/runs/batch_20261022_01/llama32_3b_smoke/adapter_smoke/adapter_model.safetensors",
+      "reason": "smoke_checkpoint_no_final_model",
+      "size": 1082136,
+      "sha256": "45c8bf9c9831c911b9f195fcb6e9886b1d85b66750d114c1c02ffa78340cc016",
+      "run": "/root/autodl-tmp/www2027_rmu_20261022/exp/runs/exp009_remote_rmu/runs/batch_20261022_01/llama32_3b_smoke",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_sync_20261022_c2_pilot_v1/exp/runs/exp011_cloud_gsu_c2/runs/batch_20261022_01/llama32_3b_smoke/adapter/adapter_model.safetensors",
+      "reason": "smoke_checkpoint_no_final_model",
+      "size": 48679352,
+      "sha256": "c29e70f5e05e368984c41dfc2e1fed864007a45b3a170e71f73f462c7102f4ad",
+      "run": "/root/autodl-tmp/www2027_sync_20261022_c2_pilot_v1/exp/runs/exp011_cloud_gsu_c2/runs/batch_20261022_01/llama32_3b_smoke",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_sync_20261022_c2_pilot_v1/exp/runs/exp011_cloud_gsu_c2/runs/batch_20261022_01/qwen35_4b_smoke/adapter/adapter_model.safetensors",
+      "reason": "smoke_checkpoint_no_final_model",
+      "size": 65003848,
+      "sha256": "6a2caab7d4d950709f684c646881d920f3e7079fa61ea5cc5d9c5f69ee083502",
+      "run": "/root/autodl-tmp/www2027_sync_20261022_c2_pilot_v1/exp/runs/exp011_cloud_gsu_c2/runs/batch_20261022_01/qwen35_4b_smoke",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v1/exp/runs/exp014_cloud_c1/runs/batch_20261023_03_local_aligned/qwen35_4b_C1_smoke/adapter/adapter_model.safetensors",
+      "reason": "smoke_checkpoint_no_final_model",
+      "size": 65003848,
+      "sha256": "f4192ef1dd334aa08a4131c6ce71046de282637a275a8181852b71a649e3be53",
+      "run": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v1/exp/runs/exp014_cloud_c1/runs/batch_20261023_03_local_aligned/qwen35_4b_C1_smoke",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v1/exp/runs/exp014_cloud_c1/runs/batch_20261023_03_local_aligned/llama32_3b_C1_smoke/adapter/adapter_model.safetensors",
+      "reason": "smoke_checkpoint_no_final_model",
+      "size": 48679352,
+      "sha256": "005779fe20d69375eab313d439c93bc3378231c207e965ca80174ac1e2b7da2b",
+      "run": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v1/exp/runs/exp014_cloud_c1/runs/batch_20261023_03_local_aligned/llama32_3b_C1_smoke",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v1/exp/runs/exp014_cloud_c1/runs/batch_20261023_01/llama32_3b_C1_smoke/adapter/adapter_model.safetensors",
+      "reason": "smoke_checkpoint_no_final_model",
+      "size": 48679352,
+      "sha256": "108dc6db98dc6c5d3d4b60da6060c8606792937a488fbd00369c9f771d20b443",
+      "run": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v1/exp/runs/exp014_cloud_c1/runs/batch_20261023_01/llama32_3b_C1_smoke",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v1/exp/runs/exp014_cloud_c1/runs/batch_20261023_01/qwen35_4b_C1_smoke/adapter/adapter_model.safetensors",
+      "reason": "smoke_checkpoint_no_final_model",
+      "size": 65003848,
+      "sha256": "4eb18931bff31157ebc2dee0b9364b913040467f40728aa065f0eee76d2c119a",
+      "run": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v1/exp/runs/exp014_cloud_c1/runs/batch_20261023_01/qwen35_4b_C1_smoke",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v2/exp/runs/exp014_cloud_c1/runs/batch_20261023_03_local_aligned/qwen35_4b_C1_smoke/adapter/adapter_model.safetensors",
+      "reason": "smoke_checkpoint_no_final_model",
+      "size": 65003848,
+      "sha256": "f4192ef1dd334aa08a4131c6ce71046de282637a275a8181852b71a649e3be53",
+      "run": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v2/exp/runs/exp014_cloud_c1/runs/batch_20261023_03_local_aligned/qwen35_4b_C1_smoke",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v2/exp/runs/exp014_cloud_c1/runs/batch_20261023_03_local_aligned/llama32_3b_C1_smoke/adapter/adapter_model.safetensors",
+      "reason": "smoke_checkpoint_no_final_model",
+      "size": 48679352,
+      "sha256": "005779fe20d69375eab313d439c93bc3378231c207e965ca80174ac1e2b7da2b",
+      "run": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v2/exp/runs/exp014_cloud_c1/runs/batch_20261023_03_local_aligned/llama32_3b_C1_smoke",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v2/exp/runs/exp014_cloud_c1/runs/batch_20261023_01/llama32_3b_C1_smoke/adapter/adapter_model.safetensors",
+      "reason": "smoke_checkpoint_no_final_model",
+      "size": 48679352,
+      "sha256": "108dc6db98dc6c5d3d4b60da6060c8606792937a488fbd00369c9f771d20b443",
+      "run": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v2/exp/runs/exp014_cloud_c1/runs/batch_20261023_01/llama32_3b_C1_smoke",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v2/exp/runs/exp014_cloud_c1/runs/batch_20261023_01/qwen35_4b_C1_smoke/adapter/adapter_model.safetensors",
+      "reason": "smoke_checkpoint_no_final_model",
+      "size": 65003848,
+      "sha256": "4eb18931bff31157ebc2dee0b9364b913040467f40728aa065f0eee76d2c119a",
+      "run": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v2/exp/runs/exp014_cloud_c1/runs/batch_20261023_01/qwen35_4b_C1_smoke",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp014_cloud_c1/runs/batch_20261023_03_local_aligned/qwen35_4b_C1_smoke/adapter/adapter_model.safetensors",
+      "reason": "smoke_checkpoint_no_final_model",
+      "size": 65003848,
+      "sha256": "f4192ef1dd334aa08a4131c6ce71046de282637a275a8181852b71a649e3be53",
+      "run": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp014_cloud_c1/runs/batch_20261023_03_local_aligned/qwen35_4b_C1_smoke",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp014_cloud_c1/runs/batch_20261023_03_local_aligned/llama32_3b_C1_smoke/adapter/adapter_model.safetensors",
+      "reason": "smoke_checkpoint_no_final_model",
+      "size": 48679352,
+      "sha256": "005779fe20d69375eab313d439c93bc3378231c207e965ca80174ac1e2b7da2b",
+      "run": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp014_cloud_c1/runs/batch_20261023_03_local_aligned/llama32_3b_C1_smoke",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp014_cloud_c1/runs/batch_20261023_01/llama32_3b_C1_smoke/adapter/adapter_model.safetensors",
+      "reason": "smoke_checkpoint_no_final_model",
+      "size": 48679352,
+      "sha256": "108dc6db98dc6c5d3d4b60da6060c8606792937a488fbd00369c9f771d20b443",
+      "run": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp014_cloud_c1/runs/batch_20261023_01/llama32_3b_C1_smoke",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp014_cloud_c1/runs/batch_20261023_01/qwen35_4b_C1_smoke/adapter/adapter_model.safetensors",
+      "reason": "smoke_checkpoint_no_final_model",
+      "size": 65003848,
+      "sha256": "4eb18931bff31157ebc2dee0b9364b913040467f40728aa065f0eee76d2c119a",
+      "run": "/root/autodl-tmp/www2027_sync_20261023_baselines_complete_v3/exp/runs/exp014_cloud_c1/runs/batch_20261023_01/qwen35_4b_C1_smoke",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_sync_20261023_c1_v1/exp/runs/exp014_cloud_c1/runs/batch_20261023_01/llama32_3b_C1_smoke/adapter/adapter_model.safetensors",
+      "reason": "smoke_checkpoint_no_final_model",
+      "size": 48679352,
+      "sha256": "108dc6db98dc6c5d3d4b60da6060c8606792937a488fbd00369c9f771d20b443",
+      "run": "/root/autodl-tmp/www2027_sync_20261023_c1_v1/exp/runs/exp014_cloud_c1/runs/batch_20261023_01/llama32_3b_C1_smoke",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_sync_20261023_c1_v1/exp/runs/exp014_cloud_c1/runs/batch_20261023_01/qwen35_4b_C1_smoke/adapter/adapter_model.safetensors",
+      "reason": "smoke_checkpoint_no_final_model",
+      "size": 65003848,
+      "sha256": "4eb18931bff31157ebc2dee0b9364b913040467f40728aa065f0eee76d2c119a",
+      "run": "/root/autodl-tmp/www2027_sync_20261023_c1_v1/exp/runs/exp014_cloud_c1/runs/batch_20261023_01/qwen35_4b_C1_smoke",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_sync_20261023_c1_v2_local_aligned/exp/runs/exp014_cloud_c1/runs/batch_20261023_01/qwen35_4b_C1_smoke/adapter/adapter_model.safetensors",
+      "reason": "smoke_checkpoint_no_final_model",
+      "size": 65003848,
+      "sha256": "4eb18931bff31157ebc2dee0b9364b913040467f40728aa065f0eee76d2c119a",
+      "run": "/root/autodl-tmp/www2027_sync_20261023_c1_v2_local_aligned/exp/runs/exp014_cloud_c1/runs/batch_20261023_01/qwen35_4b_C1_smoke",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_sync_20261023_c1_v2_local_aligned/exp/runs/exp014_cloud_c1/runs/batch_20261023_01/llama32_3b_C1_smoke/adapter/adapter_model.safetensors",
+      "reason": "smoke_checkpoint_no_final_model",
+      "size": 48679352,
+      "sha256": "108dc6db98dc6c5d3d4b60da6060c8606792937a488fbd00369c9f771d20b443",
+      "run": "/root/autodl-tmp/www2027_sync_20261023_c1_v2_local_aligned/exp/runs/exp014_cloud_c1/runs/batch_20261023_01/llama32_3b_C1_smoke",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_sync_20261023_c1_v3_local_aligned/exp/runs/exp014_cloud_c1/runs/batch_20261023_01/llama32_3b_C1_smoke/adapter/adapter_model.safetensors",
+      "reason": "smoke_checkpoint_no_final_model",
+      "size": 48679352,
+      "sha256": "108dc6db98dc6c5d3d4b60da6060c8606792937a488fbd00369c9f771d20b443",
+      "run": "/root/autodl-tmp/www2027_sync_20261023_c1_v3_local_aligned/exp/runs/exp014_cloud_c1/runs/batch_20261023_01/llama32_3b_C1_smoke",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_sync_20261023_c1_v3_local_aligned/exp/runs/exp014_cloud_c1/runs/batch_20261023_01/qwen35_4b_C1_smoke/adapter/adapter_model.safetensors",
+      "reason": "smoke_checkpoint_no_final_model",
+      "size": 65003848,
+      "sha256": "4eb18931bff31157ebc2dee0b9364b913040467f40728aa065f0eee76d2c119a",
+      "run": "/root/autodl-tmp/www2027_sync_20261023_c1_v3_local_aligned/exp/runs/exp014_cloud_c1/runs/batch_20261023_01/qwen35_4b_C1_smoke",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_sync_20261023_c1_v3_local_aligned/exp/runs/exp014_cloud_c1/runs/batch_20261023_03_local_aligned/llama32_3b_C1_smoke/adapter/adapter_model.safetensors",
+      "reason": "smoke_checkpoint_no_final_model",
+      "size": 48679352,
+      "sha256": "005779fe20d69375eab313d439c93bc3378231c207e965ca80174ac1e2b7da2b",
+      "run": "/root/autodl-tmp/www2027_sync_20261023_c1_v3_local_aligned/exp/runs/exp014_cloud_c1/runs/batch_20261023_03_local_aligned/llama32_3b_C1_smoke",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_sync_20261023_c1_v3_local_aligned/exp/runs/exp014_cloud_c1/runs/batch_20261023_03_local_aligned/qwen35_4b_C1_smoke/adapter/adapter_model.safetensors",
+      "reason": "smoke_checkpoint_no_final_model",
+      "size": 65003848,
+      "sha256": "f4192ef1dd334aa08a4131c6ce71046de282637a275a8181852b71a649e3be53",
+      "run": "/root/autodl-tmp/www2027_sync_20261023_c1_v3_local_aligned/exp/runs/exp014_cloud_c1/runs/batch_20261023_03_local_aligned/qwen35_4b_C1_smoke",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_sync_20261024_8b_v1/exp/runs/exp014_cloud_c1/runs/batch_20261023_01/qwen35_4b_C1_smoke/adapter/adapter_model.safetensors",
+      "reason": "smoke_checkpoint_no_final_model",
+      "size": 65003848,
+      "sha256": "4eb18931bff31157ebc2dee0b9364b913040467f40728aa065f0eee76d2c119a",
+      "run": "/root/autodl-tmp/www2027_sync_20261024_8b_v1/exp/runs/exp014_cloud_c1/runs/batch_20261023_01/qwen35_4b_C1_smoke",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_sync_20261024_8b_v1/exp/runs/exp014_cloud_c1/runs/batch_20261023_01/llama32_3b_C1_smoke/adapter/adapter_model.safetensors",
+      "reason": "smoke_checkpoint_no_final_model",
+      "size": 48679352,
+      "sha256": "108dc6db98dc6c5d3d4b60da6060c8606792937a488fbd00369c9f771d20b443",
+      "run": "/root/autodl-tmp/www2027_sync_20261024_8b_v1/exp/runs/exp014_cloud_c1/runs/batch_20261023_01/llama32_3b_C1_smoke",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_sync_20261024_8b_v1/exp/runs/exp014_cloud_c1/runs/batch_20261023_03_local_aligned/qwen35_4b_C1_smoke/adapter/adapter_model.safetensors",
+      "reason": "smoke_checkpoint_no_final_model",
+      "size": 65003848,
+      "sha256": "f4192ef1dd334aa08a4131c6ce71046de282637a275a8181852b71a649e3be53",
+      "run": "/root/autodl-tmp/www2027_sync_20261024_8b_v1/exp/runs/exp014_cloud_c1/runs/batch_20261023_03_local_aligned/qwen35_4b_C1_smoke",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_sync_20261024_8b_v1/exp/runs/exp014_cloud_c1/runs/batch_20261023_03_local_aligned/llama32_3b_C1_smoke/adapter/adapter_model.safetensors",
+      "reason": "smoke_checkpoint_no_final_model",
+      "size": 48679352,
+      "sha256": "005779fe20d69375eab313d439c93bc3378231c207e965ca80174ac1e2b7da2b",
+      "run": "/root/autodl-tmp/www2027_sync_20261024_8b_v1/exp/runs/exp014_cloud_c1/runs/batch_20261023_03_local_aligned/llama32_3b_C1_smoke",
+      "status_before": "completed",
+      "removed": true
+    },
+    {
+      "path": "/root/autodl-tmp/www2027_sync_20261024_8b_v1/exp/runs/exp016_8b_multiseed/runs/batch_20261024_01/llama31_8b_C1_matched_lora_seed42_smoke/adapter/adapter_model.safetensors",
+      "reason": "smoke_checkpoint_no_final_model",
+      "size": 83945296,
+      "sha256": "0d7b75bdbb69180feb315b0c9edf94bff2c5695c2e4ad762f47bf24314a987fa",
+      "run": "/root/autodl-tmp/www2027_sync_20261024_8b_v1/exp/runs/exp016_8b_multiseed/runs/batch_20261024_01/llama31_8b_C1_matched_lora_seed42_smoke",
+      "status_before": "completed",
+      "removed": true
+    }
+  ],
+  "expected_freed_bytes": 1222990816,
+  "completed": true
+}

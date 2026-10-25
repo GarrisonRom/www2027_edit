@@ -1,0 +1,239 @@
+{
+  "status": "running",
+  "jobs": [
+    {
+      "name": "GA_smoke",
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "-B",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\run_local_baseline_queue.py",
+        "--worker",
+        "--method",
+        "GA",
+        "--track",
+        "matched_lora",
+        "--model",
+        "E:\\12models\\modelscope\\Qwen2.5-1.5B-Instruct",
+        "--run-dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\local_20261023_233138\\GA_smoke",
+        "--smoke"
+      ],
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "name": "GA_formal",
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "-B",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\run_local_baseline_queue.py",
+        "--worker",
+        "--method",
+        "GA",
+        "--track",
+        "matched_lora",
+        "--model",
+        "E:\\12models\\modelscope\\Qwen2.5-1.5B-Instruct",
+        "--run-dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\local_20261023_233138\\GA_formal"
+      ],
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "name": "KLUE_smoke",
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "-B",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\run_local_baseline_queue.py",
+        "--worker",
+        "--method",
+        "KLUE",
+        "--track",
+        "native",
+        "--model",
+        "E:\\12models\\modelscope\\Qwen2.5-1.5B-Instruct",
+        "--run-dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\local_20261023_233138\\KLUE_smoke",
+        "--smoke"
+      ],
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "name": "KLUE_formal",
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "-B",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\run_local_baseline_queue.py",
+        "--worker",
+        "--method",
+        "KLUE",
+        "--track",
+        "native",
+        "--model",
+        "E:\\12models\\modelscope\\Qwen2.5-1.5B-Instruct",
+        "--run-dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\local_20261023_233138\\KLUE_formal"
+      ],
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "name": "GradDiff_smoke",
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "-B",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\run_local_baseline_queue.py",
+        "--worker",
+        "--method",
+        "GradDiff",
+        "--track",
+        "matched_lora",
+        "--model",
+        "E:\\12models\\modelscope\\Qwen2.5-1.5B-Instruct",
+        "--run-dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\local_20261023_233138\\GradDiff_smoke",
+        "--smoke"
+      ],
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "name": "GradDiff_formal",
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "-B",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\run_local_baseline_queue.py",
+        "--worker",
+        "--method",
+        "GradDiff",
+        "--track",
+        "matched_lora",
+        "--model",
+        "E:\\12models\\modelscope\\Qwen2.5-1.5B-Instruct",
+        "--run-dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\local_20261023_233138\\GradDiff_formal"
+      ],
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "name": "NPO_smoke",
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "-B",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\run_local_baseline_queue.py",
+        "--worker",
+        "--method",
+        "NPO",
+        "--track",
+        "matched_lora",
+        "--model",
+        "E:\\12models\\modelscope\\Qwen2.5-1.5B-Instruct",
+        "--run-dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\local_20261023_233138\\NPO_smoke",
+        "--smoke"
+      ],
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "name": "NPO_formal",
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "-B",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\run_local_baseline_queue.py",
+        "--worker",
+        "--method",
+        "NPO",
+        "--track",
+        "matched_lora",
+        "--model",
+        "E:\\12models\\modelscope\\Qwen2.5-1.5B-Instruct",
+        "--run-dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\local_20261023_233138\\NPO_formal"
+      ],
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "name": "SimNPO_smoke",
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "-B",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\run_local_baseline_queue.py",
+        "--worker",
+        "--method",
+        "SimNPO",
+        "--track",
+        "matched_lora",
+        "--model",
+        "E:\\12models\\modelscope\\Qwen2.5-1.5B-Instruct",
+        "--run-dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\local_20261023_233138\\SimNPO_smoke",
+        "--smoke"
+      ],
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "name": "SimNPO_formal",
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "-B",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\run_local_baseline_queue.py",
+        "--worker",
+        "--method",
+        "SimNPO",
+        "--track",
+        "matched_lora",
+        "--model",
+        "E:\\12models\\modelscope\\Qwen2.5-1.5B-Instruct",
+        "--run-dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\local_20261023_233138\\SimNPO_formal"
+      ],
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "name": "RMU_smoke",
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "-B",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\run_local_baseline_queue.py",
+        "--worker",
+        "--method",
+        "RMU",
+        "--track",
+        "matched_lora",
+        "--model",
+        "E:\\12models\\modelscope\\Qwen2.5-1.5B-Instruct",
+        "--run-dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\local_20261023_233138\\RMU_smoke",
+        "--smoke"
+      ],
+      "status": "completed",
+      "returncode": 0
+    },
+    {
+      "name": "RMU_formal",
+      "command": [
+        "D:\\Anaconda\\envs\\cuda126_env\\python.exe",
+        "-B",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\run_local_baseline_queue.py",
+        "--worker",
+        "--method",
+        "RMU",
+        "--track",
+        "matched_lora",
+        "--model",
+        "E:\\12models\\modelscope\\Qwen2.5-1.5B-Instruct",
+        "--run-dir",
+        "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\local_20261023_233138\\RMU_formal"
+      ],
+      "status": "completed",
+      "returncode": 0
+    }
+  ]
+}

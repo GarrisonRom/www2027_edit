@@ -1,0 +1,6 @@
+{
+  "root": "D:/GSU_datasets/modelscope_eval_20261025_02",
+  "source": "ModelScope",
+  "manifest": "D:/GSU_datasets/modelscope_eval_20261025_02/manifest.json",
+  "note": "Downloaded and validated local data; current immutable evaluation snapshot is not silently changed."
+}

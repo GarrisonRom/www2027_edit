@@ -1,0 +1,31 @@
+{
+  "experiment": "exp010_gsu_step_routing",
+  "status": "invalid_control_pending_diagnosis",
+  "rows": [
+    {
+      "variant": "C0",
+      "all89_path_macro_recall": 0.453183520599251,
+      "covered25_accuracy": 0.5333333333333333,
+      "F0_direct": 0.15151515151515152,
+      "F1_direct": 0.8,
+      "retain_train": 0.6060606060606061,
+      "retain_heldout": 0.45454545454545453,
+      "guard_backtracks": 0,
+      "run_dir": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp010_gsu_step_routing\\runs\\batch_20261023_081500_Cgroup\\C0"
+    }
+  ],
+  "missing_variants": [
+    "Cg",
+    "C1",
+    "C2",
+    "C3",
+    "C3R",
+    "C3D",
+    "C4"
+  ],
+  "interpretation": "Single seed 42; exploratory local screen, not an optimality or significance claim.",
+  "protocol_gate": {
+    "passed": false,
+    "reason": "C0 outcome differs from historical B0; do not rank C variants until the environment/trajectory discrepancy is resolved."
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "contract": {
+    "seed": 42,
+    "updates": 114,
+    "lr": 5e-05,
+    "weight_decay": 0.01,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "lora_r": 8,
+    "lora_alpha": 16,
+    "lora_dropout": 0.0,
+    "route_floor": 0.5,
+    "span_mix": 0.5,
+    "svd_relative_cutoff": 1e-06,
+    "refresh_before": [
+      1,
+      39,
+      77
+    ],
+    "correction_ratio": 0.3,
+    "anchor_count": 16,
+    "feedback_rounds": 2,
+    "progress_fraction": 0.9,
+    "progress_tolerance": 1e-06,
+    "backtracking": [
+      1.0,
+      0.5,
+      0.25,
+      0.0
+    ],
+    "batch_budget_seconds": 57600,
+    "primary": "all89_path_macro_recall"
+  },
+  "model": "E:\\12models\\modelscope\\Qwen2.5-1.5B-Instruct",
+  "variants": [
+    "C0",
+    "Cg",
+    "C1",
+    "C2",
+    "C3",
+    "C3R",
+    "C3D",
+    "C4"
+  ],
+  "source_sha256": {
+    "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\run_local_gsu_c_group.py": "f9df933b27bfb8eb4b7411305bca68a9e570d16e407879e88a15988aa658bd31",
+    "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\run_cloud_gsu_c2.py": "e5dff998ec828ca44e45a2b8204ead9e66b70a335c09f7615ac66ca18b8bf607",
+    "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\diagnose_gsu_integrated_guidance.py": "783cdee92e80c8ef19711bfb60a1c4312ba351347a50fc2e69844240402fbd3d",
+    "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\run_remote_baselines.py": "076a22efe2056c318ad5a08937db2421553b150de9af3ad4e95d53613d162971",
+    "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\train_baselines.py": "2b1cee81550a2e1a699c4049874182c706ec6c9be12be9e8a43de7c9400a35ee",
+    "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\diagnose_gsu_memory_guided.py": "17116a82490b944531fbcf12d69818441b2670f799ed3af7642c07b282e98e6a",
+    "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\diagnose_gsu_actual_feedback.py": "c0803af7544037dbeda9c613087a3628727a0a02c3903cfa9318bf3ebd0a9bf2",
+    "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\diagnose_gsu_retain_protection.py": "10536813f9c84b19b8a0ffdd4013dc39d8477c7321cb42268312683e7d8fbe36",
+    "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\diagnose_gsu_m3.py": "258b746e58597baadd96d2da88fcb8c5e6785675c0456e2446c8a14ef6708444",
+    "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\train_gsu.py": "691e3d3d60b3dc359755317dacb28113b71e15d88479dcd8133f245bc8217247",
+    "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\damage\\component_ablation.py": "8d6aea832dd2f9f7ac8375a5caaeac3523e4701472aa45cf97667dc76b21410b",
+    "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\damage\\eval_per_item.py": "9fdf037c731986051d9f015335fc5cf5eff5d0d2b1bb747169a4fe0194fc5e83",
+    "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp010_gsu_step_routing\\card.md": "8a99bac520a71b68e024943a237f52e1ae7c1c443c2e8170946f20e4cab4f574"
+  },
+  "legacy_B0_reference_sha256": {
+    "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp007_gsu_integrated_guidance\\runs\\run_batch_20261022_121504_28dccc_B0\\diagnostics.jsonl": "c7ecb61707d00792c7eae59d5aceeaccb6ccc16d3d744746c3d09a7471100c01",
+    "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp007_gsu_integrated_guidance\\runs\\run_batch_20261022_121504_28dccc_B0\\metrics.json": "611a39f277f3b1196599763f2d2a06a9655bc79155e6e59ce45ee525761bb5c4",
+    "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp007_gsu_integrated_guidance\\runs\\run_batch_20261022_121504_28dccc_B0\\schedule.json": "c25738395881e6c43b71060ccb09455a7a2ef3b42c7f004103b932080cd6b9ca",
+    "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp007_gsu_integrated_guidance\\runs\\run_batch_20261022_121504_28dccc_B0\\anchor_schedule.json": "b59a87c08565194492c3a6073d24666f79cd889bb2a25061b0eff40779999072",
+    "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp007_gsu_integrated_guidance\\runs\\run_batch_20261022_121504_28dccc_B0\\resolved_config.json": "ec69d97cc987f31de21ca36d98a48a0713efd6ba0cbaec79183274166c58b61c"
+  },
+  "input_manifest": {
+    "data\\faithun\\FaithUn_Dataset.json": "d570cc3e30c083357ca45ab4dd9df807abbd800f51a657d89629e4fe7b3adbb0",
+    "data\\faithun\\splits\\forget_set_split.txt": "315312dd50b69993f3e90796e7162a9ade22b771f3aa9ec5f570ceaaad815428",
+    "data\\faithun\\splits\\retaining_set_split.txt": "8680043fe5c1f4f0517d7377664677ee225cd9eebcb72d542c7709b1f5b6e214",
+    "data\\faithun\\splits\\test_set_split.txt": "de0a3a20ebd0474702bbac068c53d5d7eecae1505f609b12be74037458b63ee2",
+    "exp\\results\\F1.json": "22f2892f51cfff76ab9632b3711fc95bd7e0400d7b0c248aa03f6a03dd3cc64b",
+    "exp\\results\\candidates.json": "07f92a2ae334105cc4bfac590493a047af1de61bb8883cdba5389e5f018715e6",
+    "exp\\results\\active_paths.json": "69655a8214f9db20201447bfbd53f66a0162d03cb9bfb218ac67654067a7620e",
+    "exp\\results\\attribution\\items.json": "4156443005f03989f326abbd7a54bb58dc79d33a62a929be9cddb2e86967a194",
+    "exp\\results\\per_item_G2.jsonl": "4ab8705c2f9596d40f15179b5f4681adeb9b81a09988f78a7b75d38cc2cea582"
+  },
+  "torch": "2.6.0+cu126",
+  "cuda": "12.6",
+  "gpu": "NVIDIA GeForce RTX 4060 Ti",
+  "command": [
+    "exp\\train\\run_local_gsu_c_group.py",
+    "--batch",
+    "--model",
+    "E:\\12models\\modelscope\\Qwen2.5-1.5B-Instruct",
+    "--run_dir",
+    "exp\\runs\\exp010_gsu_step_routing\\runs\\batch_20261023_092800_Cgroup_restart1"
+  ]
+}

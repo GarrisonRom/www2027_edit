@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "stage": "scoring",
+  "input_sha256": "7e920ba4ea2a11f3add28ed5575b251c6a606b6d8a33656ac1835c51eac1bad9",
+  "identity": {},
+  "expected": 1,
+  "protocol": "same Figure8 and raw QA scoring as frozen formal batch",
+  "generation": {
+    "max_new_tokens": 64,
+    "do_sample": false
+  },
+  "source_hashes": {
+    "protocol.py": "6140a815895bc3d5cf6c06b91c4f681885a263a1e703242f9274467e471bdddf",
+    "evaluate.py": "ec0b9e57690ac7f07c7a2fc38f884d591a3902ab01e332a45c0e5f41601e44a9",
+    "resume_evaluation.py": "ec8d2588380ec2a3b4f3b9eec00597b66d8f8012c75c965254dfa0a80f207e9a"
+  }
+}

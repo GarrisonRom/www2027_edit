@@ -1,0 +1,331 @@
+{
+  "forget/hop1_unlearn": {
+    "paper_prompt/answer_sum": {
+      "n": 1,
+      "accuracy": 1.0,
+      "ties": 0,
+      "mean_margin": 1.0
+    },
+    "paper_prompt/answer_mean": {
+      "n": 1,
+      "accuracy": 1.0,
+      "ties": 0,
+      "mean_margin": 1.0
+    },
+    "paper_prompt/full_sequence_mean": {
+      "n": 1,
+      "accuracy": 1.0,
+      "ties": 0,
+      "mean_margin": 1.0
+    },
+    "raw_qa/answer_sum": {
+      "n": 1,
+      "accuracy": 1.0,
+      "ties": 0,
+      "mean_margin": 1.0
+    },
+    "raw_qa/answer_mean": {
+      "n": 1,
+      "accuracy": 1.0,
+      "ties": 0,
+      "mean_margin": 1.0
+    },
+    "raw_qa/full_sequence_mean": {
+      "n": 1,
+      "accuracy": 1.0,
+      "ties": 0,
+      "mean_margin": 1.0
+    }
+  },
+  "forget/hop1_test": {
+    "paper_prompt/answer_sum": {
+      "n": 1,
+      "accuracy": 1.0,
+      "ties": 0,
+      "mean_margin": 1.0
+    },
+    "paper_prompt/answer_mean": {
+      "n": 1,
+      "accuracy": 1.0,
+      "ties": 0,
+      "mean_margin": 1.0
+    },
+    "paper_prompt/full_sequence_mean": {
+      "n": 1,
+      "accuracy": 1.0,
+      "ties": 0,
+      "mean_margin": 1.0
+    },
+    "raw_qa/answer_sum": {
+      "n": 1,
+      "accuracy": 1.0,
+      "ties": 0,
+      "mean_margin": 1.0
+    },
+    "raw_qa/answer_mean": {
+      "n": 1,
+      "accuracy": 1.0,
+      "ties": 0,
+      "mean_margin": 1.0
+    },
+    "raw_qa/full_sequence_mean": {
+      "n": 1,
+      "accuracy": 1.0,
+      "ties": 0,
+      "mean_margin": 1.0
+    }
+  },
+  "test/hop1_unlearn": {
+    "paper_prompt/answer_sum": {
+      "n": 1,
+      "accuracy": 1.0,
+      "ties": 0,
+      "mean_margin": 1.0
+    },
+    "paper_prompt/answer_mean": {
+      "n": 1,
+      "accuracy": 1.0,
+      "ties": 0,
+      "mean_margin": 1.0
+    },
+    "paper_prompt/full_sequence_mean": {
+      "n": 1,
+      "accuracy": 1.0,
+      "ties": 0,
+      "mean_margin": 1.0
+    },
+    "raw_qa/answer_sum": {
+      "n": 1,
+      "accuracy": 1.0,
+      "ties": 0,
+      "mean_margin": 1.0
+    },
+    "raw_qa/answer_mean": {
+      "n": 1,
+      "accuracy": 1.0,
+      "ties": 0,
+      "mean_margin": 1.0
+    },
+    "raw_qa/full_sequence_mean": {
+      "n": 1,
+      "accuracy": 1.0,
+      "ties": 0,
+      "mean_margin": 1.0
+    }
+  },
+  "forget/hop2_test": {
+    "paper_prompt/answer_sum": {
+      "n": 1,
+      "accuracy": 1.0,
+      "ties": 0,
+      "mean_margin": 1.0
+    },
+    "paper_prompt/answer_mean": {
+      "n": 1,
+      "accuracy": 1.0,
+      "ties": 0,
+      "mean_margin": 1.0
+    },
+    "paper_prompt/full_sequence_mean": {
+      "n": 1,
+      "accuracy": 1.0,
+      "ties": 0,
+      "mean_margin": 1.0
+    },
+    "raw_qa/answer_sum": {
+      "n": 1,
+      "accuracy": 1.0,
+      "ties": 0,
+      "mean_margin": 1.0
+    },
+    "raw_qa/answer_mean": {
+      "n": 1,
+      "accuracy": 1.0,
+      "ties": 0,
+      "mean_margin": 1.0
+    },
+    "raw_qa/full_sequence_mean": {
+      "n": 1,
+      "accuracy": 1.0,
+      "ties": 0,
+      "mean_margin": 1.0
+    }
+  },
+  "forget/noncovered_hop2": {
+    "paper_prompt/answer_sum": {
+      "n": 1,
+      "accuracy": 1.0,
+      "ties": 0,
+      "mean_margin": 1.0
+    },
+    "paper_prompt/answer_mean": {
+      "n": 1,
+      "accuracy": 1.0,
+      "ties": 0,
+      "mean_margin": 1.0
+    },
+    "paper_prompt/full_sequence_mean": {
+      "n": 1,
+      "accuracy": 1.0,
+      "ties": 0,
+      "mean_margin": 1.0
+    },
+    "raw_qa/answer_sum": {
+      "n": 1,
+      "accuracy": 1.0,
+      "ties": 0,
+      "mean_margin": 1.0
+    },
+    "raw_qa/answer_mean": {
+      "n": 1,
+      "accuracy": 1.0,
+      "ties": 0,
+      "mean_margin": 1.0
+    },
+    "raw_qa/full_sequence_mean": {
+      "n": 1,
+      "accuracy": 1.0,
+      "ties": 0,
+      "mean_margin": 1.0
+    }
+  },
+  "test/hop2_test": {
+    "paper_prompt/answer_sum": {
+      "n": 1,
+      "accuracy": 1.0,
+      "ties": 0,
+      "mean_margin": 1.0
+    },
+    "paper_prompt/answer_mean": {
+      "n": 1,
+      "accuracy": 1.0,
+      "ties": 0,
+      "mean_margin": 1.0
+    },
+    "paper_prompt/full_sequence_mean": {
+      "n": 1,
+      "accuracy": 1.0,
+      "ties": 0,
+      "mean_margin": 1.0
+    },
+    "raw_qa/answer_sum": {
+      "n": 1,
+      "accuracy": 1.0,
+      "ties": 0,
+      "mean_margin": 1.0
+    },
+    "raw_qa/answer_mean": {
+      "n": 1,
+      "accuracy": 1.0,
+      "ties": 0,
+      "mean_margin": 1.0
+    },
+    "raw_qa/full_sequence_mean": {
+      "n": 1,
+      "accuracy": 1.0,
+      "ties": 0,
+      "mean_margin": 1.0
+    }
+  },
+  "forget/same_object": {
+    "paper_prompt/answer_sum": {
+      "n": 1,
+      "accuracy": 1.0,
+      "ties": 0,
+      "mean_margin": 1.0
+    },
+    "paper_prompt/answer_mean": {
+      "n": 1,
+      "accuracy": 1.0,
+      "ties": 0,
+      "mean_margin": 1.0
+    },
+    "paper_prompt/full_sequence_mean": {
+      "n": 1,
+      "accuracy": 1.0,
+      "ties": 0,
+      "mean_margin": 1.0
+    },
+    "raw_qa/answer_sum": {
+      "n": 1,
+      "accuracy": 1.0,
+      "ties": 0,
+      "mean_margin": 1.0
+    },
+    "raw_qa/answer_mean": {
+      "n": 1,
+      "accuracy": 1.0,
+      "ties": 0,
+      "mean_margin": 1.0
+    },
+    "raw_qa/full_sequence_mean": {
+      "n": 1,
+      "accuracy": 1.0,
+      "ties": 0,
+      "mean_margin": 1.0
+    }
+  },
+  "test/same_object": {
+    "paper_prompt/answer_sum": {
+      "n": 1,
+      "accuracy": 1.0,
+      "ties": 0,
+      "mean_margin": 1.0
+    },
+    "paper_prompt/answer_mean": {
+      "n": 1,
+      "accuracy": 1.0,
+      "ties": 0,
+      "mean_margin": 1.0
+    },
+    "paper_prompt/full_sequence_mean": {
+      "n": 1,
+      "accuracy": 1.0,
+      "ties": 0,
+      "mean_margin": 1.0
+    },
+    "raw_qa/answer_sum": {
+      "n": 1,
+      "accuracy": 1.0,
+      "ties": 0,
+      "mean_margin": 1.0
+    },
+    "raw_qa/answer_mean": {
+      "n": 1,
+      "accuracy": 1.0,
+      "ties": 0,
+      "mean_margin": 1.0
+    },
+    "raw_qa/full_sequence_mean": {
+      "n": 1,
+      "accuracy": 1.0,
+      "ties": 0,
+      "mean_margin": 1.0
+    }
+  },
+  "paper_metrics": {
+    "UA": 1.0,
+    "UA_extended": 1.0,
+    "TA": 1.0,
+    "SA_pooled": 1.0,
+    "SA_forget_mapped": 1.0,
+    "SA_test_mapped": 1.0,
+    "MA_forget": 1.0,
+    "MA_test": 1.0,
+    "MA": 0.5,
+    "Score_pooledSA": 0.625,
+    "Score_forgetSA": 0.625,
+    "score_scope_note": "Paper3.5 total formula; SA pooling scope explicit, author-code exact scope not certified"
+  },
+  "ppl": {
+    "status": "failed",
+    "error": "ConnectionError('dataset unavailable')"
+  },
+  "mmlu": {
+    "status": "failed",
+    "error": "ConnectionError('dataset unavailable')"
+  },
+  "capability_status": "incomplete",
+  "evaluation_complete": false,
+  "scope": "formal"
+}

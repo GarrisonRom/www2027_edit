@@ -1,0 +1,10 @@
+{
+  "project_commit": "ae565c152a5b73d7f300e2e991fa7e807d9dd303",
+  "upstream_commit": "17cbbc87192e6934deb92875c359c91bbd837fb4",
+  "source_kind": "dirty/untracked implementation; complete source diffs in source_0.patch through source_2.patch",
+  "files": [
+    "exp/train/reproduction_losses.py",
+    "exp/train/reproduce_all_baselines.py",
+    "exp/train/tests/test_complete_reproduction.py"
+  ]
+}

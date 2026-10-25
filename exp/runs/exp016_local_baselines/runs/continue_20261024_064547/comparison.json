@@ -1,0 +1,212 @@
+[
+  {
+    "method": "PDU",
+    "all89": 0.2172284644194757,
+    "covered75": 0,
+    "f0": 7,
+    "f1": 1,
+    "retain": 13,
+    "heldout": true,
+    "source": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\continue_20261024_064547\\PDU_formal\\metrics.json"
+  },
+  {
+    "method": "GA",
+    "all89": 0.2284644194756554,
+    "covered75": 22,
+    "f0": 6,
+    "f1": 3,
+    "retain": 13,
+    "heldout": true,
+    "source": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\local_20261023_233138\\GA_formal\\metrics.json"
+  },
+  {
+    "method": "C1",
+    "all89": 0.27715355805243447,
+    "covered75": 0,
+    "f0": 12,
+    "f1": 0,
+    "retain": 12,
+    "heldout": true,
+    "source": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp010_gsu_step_routing\\runs\\batch_20261023_092800_Cgroup_restart1\\C1\\metrics.json"
+  },
+  {
+    "method": "C4",
+    "all89": 0.2958801498127341,
+    "covered75": 7,
+    "f0": 12,
+    "f1": 0,
+    "retain": 10,
+    "heldout": true,
+    "source": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp010_gsu_step_routing\\runs\\local_continue_20261023_205325\\C4\\metrics.json"
+  },
+  {
+    "method": "C3R",
+    "all89": 0.29962546816479396,
+    "covered75": 7,
+    "f0": 12,
+    "f1": 0,
+    "retain": 10,
+    "heldout": true,
+    "source": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp010_gsu_step_routing\\runs\\local_continue_20261023_205325\\C3R\\metrics.json"
+  },
+  {
+    "method": "C2",
+    "all89": 0.2996254681647941,
+    "covered75": 7,
+    "f0": 12,
+    "f1": 0,
+    "retain": 10,
+    "heldout": true,
+    "source": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp010_gsu_step_routing\\runs\\batch_20261023_092800_Cgroup_restart1\\C2\\metrics.json"
+  },
+  {
+    "method": "C3",
+    "all89": 0.3071161048689139,
+    "covered75": 7,
+    "f0": 13,
+    "f1": 0,
+    "retain": 10,
+    "heldout": true,
+    "source": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp010_gsu_step_routing\\runs\\batch_20261023_092800_Cgroup_restart1\\C3\\metrics.json"
+  },
+  {
+    "method": "C3D",
+    "all89": 0.31460674157303375,
+    "covered75": 9,
+    "f0": 13,
+    "f1": 0,
+    "retain": 10,
+    "heldout": true,
+    "source": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp010_gsu_step_routing\\runs\\local_continue_20261023_205325\\C3D\\metrics.json"
+  },
+  {
+    "method": "Cg",
+    "all89": 0.3258426966292135,
+    "covered75": 9,
+    "f0": 12,
+    "f1": 1,
+    "retain": 10,
+    "heldout": true,
+    "source": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp010_gsu_step_routing\\runs\\batch_20261023_092800_Cgroup_restart1\\Cg\\metrics.json"
+  },
+  {
+    "method": "CEU",
+    "all89": 0.35205992509363293,
+    "covered75": 37,
+    "f0": 9,
+    "f1": 5,
+    "retain": 18,
+    "heldout": true,
+    "source": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\continue_20261024_064547\\CEU_formal\\metrics.json"
+  },
+  {
+    "method": "C0",
+    "all89": 0.449438202247191,
+    "covered75": 52,
+    "f0": 8,
+    "f1": 5,
+    "retain": 15,
+    "heldout": true,
+    "source": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp010_gsu_step_routing\\runs\\batch_20261023_092800_Cgroup_restart1\\C0\\metrics.json"
+  },
+  {
+    "method": "DPOmis",
+    "all89": 0.5917602996254682,
+    "covered75": 58,
+    "f0": 11,
+    "f1": 5,
+    "retain": 22,
+    "heldout": true,
+    "source": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\continue_20261024_064547\\DPOmis_formal\\metrics.json"
+  },
+  {
+    "method": "UNDIAL",
+    "all89": 0.6217228464419475,
+    "covered75": 63,
+    "f0": 15,
+    "f1": 5,
+    "retain": 23,
+    "heldout": true,
+    "source": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\continue_20261024_064547\\UNDIAL_formal\\metrics.json"
+  },
+  {
+    "method": "RMU",
+    "all89": 0.644194756554307,
+    "covered75": 71,
+    "f0": 21,
+    "f1": 5,
+    "retain": 26,
+    "heldout": true,
+    "source": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\local_20261023_233138\\RMU_formal\\metrics.json"
+  },
+  {
+    "method": "NPO",
+    "all89": 0.651685393258427,
+    "covered75": 69,
+    "f0": 11,
+    "f1": 5,
+    "retain": 26,
+    "heldout": true,
+    "source": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\local_20261023_233138\\NPO_formal\\metrics.json"
+  },
+  {
+    "method": "KLUE",
+    "all89": 0.6554307116104869,
+    "covered75": 73,
+    "f0": 8,
+    "f1": 5,
+    "retain": 28,
+    "heldout": false,
+    "source": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\local_20261023_233138\\KLUE_formal\\metrics.json"
+  },
+  {
+    "method": "DPOrej",
+    "all89": 0.6704119850187266,
+    "covered75": 70,
+    "f0": 14,
+    "f1": 5,
+    "retain": 24,
+    "heldout": true,
+    "source": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\continue_20261024_064547\\DPOrej_formal\\metrics.json"
+  },
+  {
+    "method": "GradDiff",
+    "all89": 0.7490636704119851,
+    "covered75": 74,
+    "f0": 13,
+    "f1": 5,
+    "retain": 24,
+    "heldout": true,
+    "source": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\local_20261023_233138\\GradDiff_formal\\metrics.json"
+  },
+  {
+    "method": "SimNPO",
+    "all89": 0.7565543071161049,
+    "covered75": 75,
+    "f0": 28,
+    "f1": 5,
+    "retain": 24,
+    "heldout": true,
+    "source": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\local_20261023_233138\\SimNPO_formal\\metrics.json"
+  },
+  {
+    "method": "SatImp",
+    "all89": 0.7565543071161049,
+    "covered75": 75,
+    "f0": 28,
+    "f1": 5,
+    "retain": 24,
+    "heldout": true,
+    "source": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\continue_20261024_064547\\SatImp_formal\\metrics.json"
+  },
+  {
+    "method": "WGA",
+    "all89": 0.7565543071161049,
+    "covered75": 75,
+    "f0": 26,
+    "f1": 5,
+    "retain": 24,
+    "heldout": true,
+    "source": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp016_local_baselines\\runs\\continue_20261024_064547\\WGA_formal\\metrics.json"
+  }
+]

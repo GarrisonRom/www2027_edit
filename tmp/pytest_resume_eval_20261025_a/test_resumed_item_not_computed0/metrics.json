@@ -1,0 +1,47 @@
+{
+  "stage": "scoring",
+  "completed_items": 2,
+  "expected_items": 2,
+  "complete": true,
+  "provisional": false,
+  "metrics": {
+    "forget/hop1_test": {
+      "paper_prompt/answer_sum": {
+        "n": 2,
+        "accuracy": 1.0,
+        "ties": 0,
+        "mean_margin": 1.0
+      },
+      "paper_prompt/answer_mean": {
+        "n": 2,
+        "accuracy": 1.0,
+        "ties": 0,
+        "mean_margin": 1.0
+      },
+      "paper_prompt/full_sequence_mean": {
+        "n": 2,
+        "accuracy": 1.0,
+        "ties": 0,
+        "mean_margin": 1.0
+      },
+      "raw_qa/answer_sum": {
+        "n": 2,
+        "accuracy": 1.0,
+        "ties": 0,
+        "mean_margin": 1.0
+      },
+      "raw_qa/answer_mean": {
+        "n": 2,
+        "accuracy": 1.0,
+        "ties": 0,
+        "mean_margin": 1.0
+      },
+      "raw_qa/full_sequence_mean": {
+        "n": 2,
+        "accuracy": 1.0,
+        "ties": 0,
+        "mean_margin": 1.0
+      }
+    }
+  }
+}

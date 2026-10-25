@@ -1,0 +1,5 @@
+{
+  "status": "failed",
+  "reason": "Windows default text decoder misread UTF8 manifest paths; no jobs launched",
+  "rerun": "plan_20261023_02"
+}

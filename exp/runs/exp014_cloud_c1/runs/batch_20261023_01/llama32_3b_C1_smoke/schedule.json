@@ -1,0 +1,62 @@
+{
+  "forget": [
+    {
+      "update": 1,
+      "schedule_block": 1,
+      "item_index": 27,
+      "item_id": "F0:27:536",
+      "source": "F0",
+      "question": "Who was the mother of Dwight D. Eisenhower?",
+      "answer": "Ida Stover Eisenhower",
+      "question_sha1": "ce4c5dd34bcb"
+    },
+    {
+      "update": 2,
+      "schedule_block": 1,
+      "item_index": 5,
+      "item_id": "F0:5:132",
+      "source": "F0",
+      "question": "Who is Taylor Swift's father?",
+      "answer": "Scott Swift",
+      "question_sha1": "d5e745862ebd"
+    }
+  ],
+  "anchors": [
+    [
+      7,
+      1,
+      23,
+      8,
+      32,
+      28,
+      4,
+      30,
+      3,
+      21,
+      17,
+      2,
+      18,
+      13,
+      31,
+      0
+    ],
+    [
+      5,
+      13,
+      7,
+      16,
+      19,
+      0,
+      17,
+      6,
+      22,
+      20,
+      24,
+      26,
+      31,
+      30,
+      14,
+      8
+    ]
+  ]
+}

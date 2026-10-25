@@ -1,0 +1,148 @@
+[
+  {
+    "model_key": "qwen35_4b",
+    "model_path": "/root/autodl-tmp/models/Qwen3.5-4B",
+    "run_id": "qwen35_4b_Original_F0",
+    "method": "Original",
+    "supervision": "F0",
+    "adapter_path": null,
+    "origin": "exp008"
+  },
+  {
+    "model_key": "qwen35_4b",
+    "model_path": "/root/autodl-tmp/models/Qwen3.5-4B",
+    "run_id": "qwen35_4b_GA_F0",
+    "method": "GA",
+    "supervision": "F0",
+    "adapter_path": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_GA_F0/adapter",
+    "origin": "exp008"
+  },
+  {
+    "model_key": "qwen35_4b",
+    "model_path": "/root/autodl-tmp/models/Qwen3.5-4B",
+    "run_id": "qwen35_4b_GradDiff_F0",
+    "method": "GradDiff",
+    "supervision": "F0",
+    "adapter_path": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_GradDiff_F0/adapter",
+    "origin": "exp008"
+  },
+  {
+    "model_key": "qwen35_4b",
+    "model_path": "/root/autodl-tmp/models/Qwen3.5-4B",
+    "run_id": "qwen35_4b_NPO_F0",
+    "method": "NPO",
+    "supervision": "F0",
+    "adapter_path": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_NPO_F0/adapter",
+    "origin": "exp008"
+  },
+  {
+    "model_key": "qwen35_4b",
+    "model_path": "/root/autodl-tmp/models/Qwen3.5-4B",
+    "run_id": "qwen35_4b_SimNPO_F0",
+    "method": "SimNPO",
+    "supervision": "F0",
+    "adapter_path": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_SimNPO_F0/adapter",
+    "origin": "exp008"
+  },
+  {
+    "model_key": "qwen35_4b",
+    "model_path": "/root/autodl-tmp/models/Qwen3.5-4B",
+    "run_id": "qwen35_4b_GA_F0F1",
+    "method": "GA",
+    "supervision": "F0F1",
+    "adapter_path": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/qwen35_4b_GA_F0F1/adapter",
+    "origin": "exp008"
+  },
+  {
+    "model_key": "qwen35_4b",
+    "model_path": "/root/autodl-tmp/models/Qwen3.5-4B",
+    "run_id": "qwen35_4b_RMU_F0",
+    "method": "RMU",
+    "supervision": "F0",
+    "adapter_path": "/root/autodl-tmp/www2027_rmu_20261022/exp/runs/exp009_remote_rmu/runs/batch_20261022_01/qwen35_4b_RMU_F0/adapter",
+    "origin": "exp009"
+  },
+  {
+    "model_key": "qwen35_4b",
+    "model_path": "/root/autodl-tmp/models/Qwen3.5-4B",
+    "run_id": "qwen35_4b_C2",
+    "method": "GSU-C2",
+    "supervision": "F0",
+    "adapter_path": "/root/autodl-tmp/www2027_sync_20261022_c2_pilot_v1/exp/runs/exp011_cloud_gsu_c2/runs/batch_20261022_01/qwen35_4b_C2/adapter",
+    "origin": "exp011",
+    "training_metrics_path": "/root/autodl-tmp/www2027_sync_20261022_c2_pilot_v1/exp/runs/exp011_cloud_gsu_c2/runs/batch_20261022_01/qwen35_4b_C2/metrics.json"
+  },
+  {
+    "model_key": "llama32_3b",
+    "model_path": "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+    "run_id": "llama32_3b_Original_F0",
+    "method": "Original",
+    "supervision": "F0",
+    "adapter_path": null,
+    "origin": "exp008"
+  },
+  {
+    "model_key": "llama32_3b",
+    "model_path": "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+    "run_id": "llama32_3b_GA_F0",
+    "method": "GA",
+    "supervision": "F0",
+    "adapter_path": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_GA_F0/adapter",
+    "origin": "exp008"
+  },
+  {
+    "model_key": "llama32_3b",
+    "model_path": "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+    "run_id": "llama32_3b_GradDiff_F0",
+    "method": "GradDiff",
+    "supervision": "F0",
+    "adapter_path": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_GradDiff_F0/adapter",
+    "origin": "exp008"
+  },
+  {
+    "model_key": "llama32_3b",
+    "model_path": "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+    "run_id": "llama32_3b_NPO_F0",
+    "method": "NPO",
+    "supervision": "F0",
+    "adapter_path": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_NPO_F0/adapter",
+    "origin": "exp008"
+  },
+  {
+    "model_key": "llama32_3b",
+    "model_path": "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+    "run_id": "llama32_3b_SimNPO_F0",
+    "method": "SimNPO",
+    "supervision": "F0",
+    "adapter_path": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_SimNPO_F0/adapter",
+    "origin": "exp008"
+  },
+  {
+    "model_key": "llama32_3b",
+    "model_path": "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+    "run_id": "llama32_3b_GA_F0F1",
+    "method": "GA",
+    "supervision": "F0F1",
+    "adapter_path": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/runs/exp008_remote_baselines/runs/batch_20261022_01/llama32_3b_GA_F0F1/adapter",
+    "origin": "exp008"
+  },
+  {
+    "model_key": "llama32_3b",
+    "model_path": "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+    "run_id": "llama32_3b_RMU_F0",
+    "method": "RMU",
+    "supervision": "F0",
+    "adapter_path": "/root/autodl-tmp/www2027_rmu_20261022/exp/runs/exp009_remote_rmu/runs/batch_20261022_01/llama32_3b_RMU_F0/adapter",
+    "origin": "exp009"
+  },
+  {
+    "model_key": "llama32_3b",
+    "model_path": "/root/autodl-tmp/models/Llama-3.2-3B-Instruct",
+    "run_id": "llama32_3b_C2",
+    "method": "GSU-C2",
+    "supervision": "F0",
+    "adapter_path": "/root/autodl-tmp/www2027_sync_20261022_c2_pilot_v1/exp/runs/exp011_cloud_gsu_c2/runs/batch_20261022_01/llama32_3b_C2/adapter",
+    "origin": "exp011",
+    "training_metrics_path": "/root/autodl-tmp/www2027_sync_20261022_c2_pilot_v1/exp/runs/exp011_cloud_gsu_c2/runs/batch_20261022_01/llama32_3b_C2/metrics.json"
+  }
+]

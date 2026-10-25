@@ -1,0 +1,18 @@
+{
+  "method": "Original",
+  "track": "none",
+  "trainable_parameter_estimate": 0,
+  "cpu_required_bytes": 0,
+  "cpu_free_bytes": 10540126208,
+  "resource_ready": true,
+  "mmlu_registered": true,
+  "dependency_errors": [],
+  "datasets_ready": "unverified until actual MMLU/WikiText downloads and scoring succeed",
+  "source_fidelity": "paper algorithm transferred to new model; explicit implementation conventions",
+  "pdu_calibration_required": false,
+  "data_check": {
+    "rows": 9640,
+    "errors": [],
+    "passed": true
+  }
+}

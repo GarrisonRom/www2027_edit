@@ -38,6 +38,7 @@ local_config.json
 *.lof
 *.lot
 *.zip
+!/docs/archive/markdown_before_content_merge_20261025.zip
 *.doc
 *.docx
 *.pptx

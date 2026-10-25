@@ -1,0 +1,14 @@
+{
+  "targets": [
+    "q_proj",
+    "k_proj",
+    "v_proj",
+    "o_proj",
+    "gate_proj",
+    "up_proj",
+    "down_proj"
+  ],
+  "component_count": 196,
+  "trainable_parameters": 9232384,
+  "initial_lora_sha256": "78ff8da2cbf8e331d6fbc9456fb50857581c8813ae74850ff29e0bae24d35269"
+}

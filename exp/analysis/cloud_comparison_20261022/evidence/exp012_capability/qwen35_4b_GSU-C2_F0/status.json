@@ -1,0 +1,6 @@
+{
+  "status": "completed",
+  "ended": "2026-10-23T12:20:53+08:00",
+  "seconds": 405.94256019592285,
+  "peak_cuda_allocated_bytes": 14237653504
+}

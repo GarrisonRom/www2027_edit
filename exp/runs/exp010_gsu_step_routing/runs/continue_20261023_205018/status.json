@@ -1,0 +1,5 @@
+{
+  "status": "failed",
+  "completed": [],
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\train\\continue_local_c_group.py\", line 33, in main\n    if not json.loads((OLD/gate).read_text())['passed']:\n  File \"D:\\Anaconda\\envs\\cuda126_env\\lib\\json\\__init__.py\", line 346, in loads\n    return _default_decoder.decode(s)\n  File \"D:\\Anaconda\\envs\\cuda126_env\\lib\\json\\decoder.py\", line 337, in decode\n    obj, end = self.raw_decode(s, idx=_w(s, 0).end())\n  File \"D:\\Anaconda\\envs\\cuda126_env\\lib\\json\\decoder.py\", line 353, in raw_decode\n    obj, end = self.scan_once(s, idx)\njson.decoder.JSONDecodeError: Invalid \\escape: line 15 column 76 (char 230)\n"
+}

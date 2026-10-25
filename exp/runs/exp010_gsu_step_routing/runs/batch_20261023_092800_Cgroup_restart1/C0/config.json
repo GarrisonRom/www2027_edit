@@ -1,0 +1,41 @@
+{
+  "batch": false,
+  "smoke": false,
+  "self_test": false,
+  "model": "E:\\12models\\modelscope\\Qwen2.5-1.5B-Instruct",
+  "variant": "C0",
+  "run_dir": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp010_gsu_step_routing\\runs\\batch_20261023_092800_Cgroup_restart1\\C0",
+  "seed": 42,
+  "updates": 114,
+  "lr": 5e-05,
+  "weight_decay": 0.01,
+  "betas": [
+    0.9,
+    0.999
+  ],
+  "eps": 1e-08,
+  "lora_r": 8,
+  "lora_alpha": 16,
+  "lora_dropout": 0.0,
+  "route_floor": 0.5,
+  "span_mix": 0.5,
+  "svd_relative_cutoff": 1e-06,
+  "refresh_before": [
+    1,
+    39,
+    77
+  ],
+  "correction_ratio": 0.3,
+  "anchor_count": 16,
+  "feedback_rounds": 2,
+  "progress_fraction": 0.9,
+  "progress_tolerance": 1e-06,
+  "backtracking": [
+    1.0,
+    0.5,
+    0.25,
+    0.0
+  ],
+  "batch_budget_seconds": 57600,
+  "primary": "all89_path_macro_recall"
+}

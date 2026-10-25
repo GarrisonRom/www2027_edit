@@ -1,0 +1,9 @@
+{
+  "dataset": {
+    "revision": "fixed"
+  },
+  "input_tokens": 9,
+  "max_length": 5,
+  "stride": 4,
+  "smoke": false
+}

@@ -1,0 +1,20 @@
+{
+  "batch_id": "batch_20261022_121504_28dccc",
+  "status": "completed",
+  "started": "2026-10-22T12:15:04.6647909+08:00",
+  "controller_pid": 18216,
+  "phase": "completed",
+  "current_variant": null,
+  "current_run_dir": null,
+  "completed_variants": [
+    "B0",
+    "B1",
+    "B2",
+    "B3",
+    "B2R",
+    "B3R"
+  ],
+  "last_exit_code": 0,
+  "comparison_dir": "C:\\Users\\RoboSAMA\\Documents\\kimi\\Workspaces\\蓝恩鹏\\exp\\runs\\exp007_gsu_integrated_guidance\\comparisons\\screen_batch_20261022_121504_28dccc",
+  "ended": "2026-10-22T19:42:41.8852597+08:00"
+}

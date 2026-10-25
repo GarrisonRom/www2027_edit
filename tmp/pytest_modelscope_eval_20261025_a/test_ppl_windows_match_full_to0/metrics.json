@@ -1,0 +1,12 @@
+{
+  "complete": true,
+  "provisional": false,
+  "scored_tokens": 8,
+  "total_nll": 8.788898468017578,
+  "mean_nll": 1.0986123085021973,
+  "token_ppl": 3.000000059502263,
+  "smoke": false,
+  "source": {
+    "revision": "fixed"
+  }
+}

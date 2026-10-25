@@ -1,0 +1,6 @@
+{
+  "adapter_path": "/root/autodl-tmp/www2027_rmu_20261022/exp/runs/exp009_remote_rmu/runs/batch_20261022_01/llama32_3b_RMU_F0/adapter",
+  "adapter_sha256": {
+    "adapter_model.safetensors": "12a7d543d029635fa0b47b1862adfc1c181e1b69baa8428fd7b09ad34f103134"
+  }
+}

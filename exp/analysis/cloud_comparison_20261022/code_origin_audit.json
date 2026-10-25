@@ -1,0 +1,51 @@
+[
+  {
+    "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/train/train_baselines.py",
+    "local": "exp/train/train_baselines.py",
+    "same": true,
+    "remote_sha256": "2b1cee81550a2e1a699c4049874182c706ec6c9be12be9e8a43de7c9400a35ee",
+    "local_sha256": "2b1cee81550a2e1a699c4049874182c706ec6c9be12be9e8a43de7c9400a35ee"
+  },
+  {
+    "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/train/diagnose_gsu_memory_guided.py",
+    "local": "exp/train/diagnose_gsu_memory_guided.py",
+    "same": true,
+    "remote_sha256": "17116a82490b944531fbcf12d69818441b2670f799ed3af7642c07b282e98e6a",
+    "local_sha256": "17116a82490b944531fbcf12d69818441b2670f799ed3af7642c07b282e98e6a"
+  },
+  {
+    "remote": "/root/autodl-tmp/www2027_baselines_20261022_v2/exp/train/run_remote_baselines.py",
+    "local": "exp/train/run_remote_baselines.py",
+    "same": true,
+    "remote_sha256": "076a22efe2056c318ad5a08937db2421553b150de9af3ad4e95d53613d162971",
+    "local_sha256": "076a22efe2056c318ad5a08937db2421553b150de9af3ad4e95d53613d162971"
+  },
+  {
+    "remote": "/root/autodl-tmp/www2027_rmu_20261022/exp/train/train_baselines.py",
+    "local": "exp/train/train_baselines.py",
+    "same": true,
+    "remote_sha256": "2b1cee81550a2e1a699c4049874182c706ec6c9be12be9e8a43de7c9400a35ee",
+    "local_sha256": "2b1cee81550a2e1a699c4049874182c706ec6c9be12be9e8a43de7c9400a35ee"
+  },
+  {
+    "remote": "/root/autodl-tmp/www2027_rmu_20261022/exp/train/diagnose_gsu_memory_guided.py",
+    "local": "exp/train/diagnose_gsu_memory_guided.py",
+    "same": true,
+    "remote_sha256": "17116a82490b944531fbcf12d69818441b2670f799ed3af7642c07b282e98e6a",
+    "local_sha256": "17116a82490b944531fbcf12d69818441b2670f799ed3af7642c07b282e98e6a"
+  },
+  {
+    "remote": "/root/autodl-tmp/www2027_rmu_20261022/exp/train/run_remote_baselines.py",
+    "local": "exp/train/run_remote_baselines.py",
+    "same": true,
+    "remote_sha256": "076a22efe2056c318ad5a08937db2421553b150de9af3ad4e95d53613d162971",
+    "local_sha256": "076a22efe2056c318ad5a08937db2421553b150de9af3ad4e95d53613d162971"
+  },
+  {
+    "remote": "/root/autodl-tmp/www2027_rmu_20261022/exp/train/run_remote_rmu.py",
+    "local": "exp/train/run_remote_rmu.py",
+    "same": true,
+    "remote_sha256": "d3d9d2214f9b997b317da9afb48f91b52bf824a74560cf0d8fd28c86f0209f79",
+    "local_sha256": "d3d9d2214f9b997b317da9afb48f91b52bf824a74560cf0d8fd28c86f0209f79"
+  }
+]
